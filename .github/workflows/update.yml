@@ -28,7 +28,6 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Run pipeline
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
         run: python main.py

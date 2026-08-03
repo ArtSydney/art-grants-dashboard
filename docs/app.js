@@ -221,10 +221,14 @@ function deadlineIndex() {
   return idx;
 }
 
-// ── Render calendar month grid ───────────────────────────────────────────────
+// ── Render calendar: grid on desktop, list on mobile ────────────────────────
 const DOW_LABELS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 function renderCalendar() {
+  if (window.innerWidth <= 600) { renderCalendarList(); return; }
+  // ensure grid class and toolbar are restored after a mobile→desktop resize
+  document.getElementById("cal-grid").className = "cal-grid";
+  document.querySelector(".cal-toolbar").hidden = false;
   const { year, month } = calState;
   const idx = deadlineIndex();
 
@@ -312,6 +316,81 @@ function renderCalendar() {
     grid.appendChild(cell);
   }
 }
+
+// ── Mobile calendar list ─────────────────────────────────────────────────────
+// On narrow screens the month grid cells are too small to show any text.
+// Instead we render a scrollable list of deadline dates, grouped by date,
+// with the same "Add to calendar" action available inline.
+function renderCalendarList() {
+  const idx = deadlineIndex();
+  const grid = document.getElementById("cal-grid");
+  grid.innerHTML = "";
+  grid.className = "cal-list"; // swap CSS class so list styles apply
+
+  // hide the month-nav toolbar — not needed for the list view
+  document.querySelector(".cal-toolbar").hidden = true;
+
+  // collect all future (or today) deadline dates, sorted ascending
+  const today = new Date(); today.setHours(0,0,0,0);
+  const dates = Object.keys(idx)
+    .filter((d) => new Date(d + "T00:00:00") >= today)
+    .sort();
+
+  if (!dates.length) {
+    grid.innerHTML = "<p class='cal-list-empty'>No upcoming deadlines.</p>";
+    return;
+  }
+
+  dates.forEach((dateStr) => {
+    const items = idx[dateStr];
+    const d = new Date(dateStr + "T00:00:00");
+    const n = daysLeft(dateStr);
+    const cd = countdownLabel(n);
+
+    // date heading
+    const heading = document.createElement("div");
+    heading.className = "cal-list-heading";
+    heading.innerHTML = `
+      <span class="cal-list-date">${d.toLocaleDateString("en-AU", { weekday:"short", day:"numeric", month:"short", year:"numeric" })}</span>
+      <span class="count ${cd.cls}" style="font-size:.75rem">${cd.text}</span>
+    `;
+    grid.appendChild(heading);
+
+    // one row per item
+    items.forEach((item) => {
+      const cat = item.category && CATS.includes(item.category) ? item.category : "Other";
+      const row = document.createElement("div");
+      row.className = "cal-list-row";
+      row.innerHTML = `
+        <span class="cat" style="background:${CAT_COLOUR[cat]};font-size:.65rem;padding:3px 8px">${escapeHtml(cat)}</span>
+        <span class="cal-list-title">${escapeHtml(item.title)}</span>
+        ${item.amount ? `<span class="cal-list-amount">${escapeHtml(item.amount)}</span>` : ""}
+        <div class="cal-list-actions">
+          ${item.link ? `<a class="view" style="padding:8px 12px;font-size:.7rem" href="${encodeURI(item.link)}" target="_blank" rel="noopener">View →</a>` : ""}
+          <button class="cal-ics-btn">+ Calendar</button>
+        </div>
+      `;
+      row.querySelector(".cal-ics-btn").addEventListener("click", () => downloadSingleIcs(item));
+      grid.appendChild(row);
+    });
+  });
+}
+
+// Re-render when crossing the 600px breakpoint (e.g. rotating device)
+let _lastMobile = window.innerWidth <= 600;
+window.addEventListener("resize", () => {
+  const nowMobile = window.innerWidth <= 600;
+  if (nowMobile !== _lastMobile) {
+    _lastMobile = nowMobile;
+    // restore toolbar visibility before re-render so grid mode can show it
+    document.querySelector(".cal-toolbar").hidden = false;
+    const calPanel = document.getElementById("panel-calendar");
+    if (!calPanel.hidden) {
+      document.getElementById("cal-grid").className = "cal-grid";
+      renderCalendar();
+    }
+  }
+});
 
 // ── Popup ────────────────────────────────────────────────────────────────────
 function openPopup(dateStr, events) {
