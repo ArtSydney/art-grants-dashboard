@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03T15:09:56+10:00",
-  "count": 173,
+  "generated": "2026-08-03T15:56:51+10:00",
+  "count": 177,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -558,6 +558,32 @@
       "closing_soon_sent": false
     },
     {
+      "id": "ff0d1ee31baccddc17f49c7a88ba288a145b5858",
+      "source": "Google: Australian art prizes",
+      "title": "2026 sculpture prize entry form",
+      "link": "https://www.artfarmbirchsbay.org.au/2026sculptureprize",
+      "summary": "2026 sculpture prize entry form | Art Farm Birchs Bay top of page 2025 winner Alice RG, Play Wariors 2026 SCULPTURE PRIZE This year, in our twentieth year, we are waiving the entry fee as our birthday",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-09-01",
+      "amount": "$4,000",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Sculpture",
+        "Photography",
+        "Ceramics",
+        "Textiles",
+        "Installation"
+      ],
+      "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
       "id": "1441b2daac353c01da6af1c33048e48e69146fba",
       "source": "Artshow.com International",
       "title": "93rd Annual International Exhibition of Fine Art in Miniature - Rockville, MD",
@@ -781,6 +807,28 @@
       "closing_soon_sent": false
     },
     {
+      "id": "d562db369465598d6f9a300f3cd2ecabd1b1d466",
+      "source": "Google: Australian art prizes",
+      "title": "West Torrens Art Prize 2026",
+      "link": "https://www.westtorrens.sa.gov.au/Community/Community-Connections/Community-arts/West-Torrens-Art-Prize/West-Torrens-Art-Prize-2026",
+      "summary": "Entries are now open until 30 September 2026, for all South Australian artists ...",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-09-30",
+      "amount": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
       "id": "90dc9f9ca90dd8cefb26737e560e9956ca2c74c2",
       "source": "BNE Art: Opportunities",
       "title": "M16 Artspace: Drawing Prize 2026",
@@ -985,6 +1033,31 @@
         "Painting",
         "Photography",
         "Digital/New Media"
+      ],
+      "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
+      "id": "8cb885eeaad0a6bd0bc5476b6112266b026d806c",
+      "source": "Google: Australian art prizes",
+      "title": "Josephine Ulrick and Win Schubert Photography Award 2026",
+      "link": "https://hota.com.au/events/juwspa-2026",
+      "summary": "Open Call: Josephine Ulrick and Win Schubert Photography Award 2026 | HOTA Events Open Call: Josephine Ulrick and Win Schubert Photography Award 2026 Entries now open 28 November 2026 - 19 January 202",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-28",
+      "amount": "$15",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Sculpture",
+        "Photography",
+        "Digital/New Media",
+        "Installation"
       ],
       "first_seen": "2026-08-03",
       "closing_soon_sent": false
@@ -3985,6 +4058,32 @@
       "art_forms": [
         "Drawing",
         "Sculpture"
+      ],
+      "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
+      "id": "3a90fbac9a071178b9935f64f3d0f8be5691118f",
+      "source": "Google: Australian art prizes",
+      "title": "Community Art Awards",
+      "link": "https://www.wanneroo.wa.gov.au/info/20252/arts/255/community_art_awards",
+      "summary": "Community Art Awards - City of Wanneroo Menu Navigation Your Wanneroo Libraries Sport & leisure Community Business Animals and pets Bins, recycling and waste Things to do Planning and building Communi",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "$10,000",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Sculpture",
+        "Photography",
+        "Digital/New Media"
       ],
       "first_seen": "2026-08-03",
       "closing_soon_sent": false
