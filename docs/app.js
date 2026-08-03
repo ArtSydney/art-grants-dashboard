@@ -367,7 +367,8 @@ function renderCalendarList() {
         ${item.amount ? `<span class="cal-list-amount">${escapeHtml(item.amount)}</span>` : ""}
         <div class="cal-list-actions">
           ${item.link ? `<a class="view" style="padding:8px 12px;font-size:.7rem" href="${encodeURI(item.link)}" target="_blank" rel="noopener">View →</a>` : ""}
-          <button class="cal-ics-btn">+ Calendar</button>
+          <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" target="_blank" rel="noopener">+ Google Cal</a>
+          <button class="cal-ics-btn">.ics</button>
         </div>
       `;
       row.querySelector(".cal-ics-btn").addEventListener("click", () => downloadSingleIcs(item));
@@ -413,11 +414,10 @@ function openPopup(dateStr, events) {
       ${item.summary ? `<p style="font-size:.82rem;color:var(--c-muted);margin:6px 0 0">${escapeHtml(item.summary)}</p>` : ""}
       <div class="popup-links">
         ${item.link ? `<a href="${encodeURI(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
-        <button class="cal-ics-btn">Add to calendar</button>
+        <button class="cal-ics-btn">Download .ics</button>
+        <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" target="_blank" rel="noopener">+ Google Calendar</a>
       </div>
     `;
-    // Attach listener directly — avoids serialising item into an inline onclick
-    // attribute, which breaks when the JSON contains double-quotes.
     div.querySelector(".cal-ics-btn").addEventListener("click", () => downloadSingleIcs(item));
     body.appendChild(div);
   });
@@ -443,6 +443,26 @@ function icsDate(dateStr) {
 
 function icsEscape(s) {
   return String(s || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+}
+
+// ── Google Calendar URL ───────────────────────────────────────────────────────
+// Opens Google Calendar in the browser and pre-fills the event. Works on iOS
+// where .ics files can't be opened directly by Google Calendar.
+function buildGoogleCalUrl(item) {
+  const date = (item.deadline || "").replace(/-/g, "");
+  // DTEND is the day after for all-day events
+  const nextDay = new Date(new Date(item.deadline + "T00:00:00").getTime() + 86400000)
+    .toISOString().slice(0, 10).replace(/-/g, "");
+  const details = [item.source, item.category, item.amount, item.link]
+    .filter(Boolean).join(" | ");
+  const p = new URLSearchParams({
+    action: "TEMPLATE",
+    text: `DEADLINE: ${item.title}`,
+    dates: `${date}/${nextDay}`,
+    details,
+    ...(item.link ? { location: item.link } : {}),
+  });
+  return `https://calendar.google.com/calendar/render?${p.toString()}`;
 }
 
 function buildIcs(item) {

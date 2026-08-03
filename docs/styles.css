@@ -451,16 +451,28 @@ h1 {
 }
 .cal-popup-item a:hover { text-decoration: underline; }
 .cal-ics-btn {
-  background: var(--c-espresso);
+  background: var(--cocoa);
   border: none;
   border-radius: 6px;
-  color: var(--c-cream);
+  color: var(--cream);
   cursor: pointer;
   font-size: .75rem;
   font-weight: 600;
   padding: 4px 10px;
 }
 .cal-ics-btn:hover { opacity: .85; }
+.cal-gcal-btn {
+  display: inline-block;
+  background: #1a73e8;
+  border-radius: 6px;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.cal-gcal-btn:hover { opacity: .85; }
 
 @media (max-width: 600px) {
   /* grid styles not needed — mobile renders the list view instead */
