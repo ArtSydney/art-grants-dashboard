@@ -450,19 +450,20 @@ function icsEscape(s) {
 // where .ics files can't be opened directly by Google Calendar.
 function buildGoogleCalUrl(item) {
   const date = (item.deadline || "").replace(/-/g, "");
-  // DTEND is the day after for all-day events
   const nextDay = new Date(new Date(item.deadline + "T00:00:00").getTime() + 86400000)
     .toISOString().slice(0, 10).replace(/-/g, "");
   const details = [item.source, item.category, item.amount, item.link]
     .filter(Boolean).join(" | ");
-  const p = new URLSearchParams({
-    action: "TEMPLATE",
-    text: `DEADLINE: ${item.title}`,
-    dates: `${date}/${nextDay}`,
-    details,
-    ...(item.link ? { location: item.link } : {}),
-  });
-  return `https://calendar.google.com/calendar/render?${p.toString()}`;
+  // Build manually so the slash in dates= is not percent-encoded — Google
+  // Calendar's frontend rejects %2F and gets stuck loading.
+  const base = "https://calendar.google.com/calendar/render?action=TEMPLATE";
+  const parts = [
+    `text=${encodeURIComponent("DEADLINE: " + item.title)}`,
+    `dates=${date}/${nextDay}`,
+    `details=${encodeURIComponent(details)}`,
+    item.link ? `location=${encodeURIComponent(item.link)}` : null,
+  ].filter(Boolean);
+  return `${base}&${parts.join("&")}`;
 }
 
 function buildIcs(item) {
