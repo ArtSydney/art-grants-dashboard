@@ -329,12 +329,41 @@ def fetch_bneart(source, max_pages=4):
             else:
                 summary = title
 
+            # card text is truncated ("Presented by the…") so fetch the
+            # detail page for the full description including the deadline
+            detail_text = summary
+            try:
+                dr = requests.get(href, headers=headers, timeout=REQUEST_TIMEOUT)
+                dr.raise_for_status()
+                dsoup = BeautifulSoup(dr.text, "html.parser")
+                for t in dsoup(["script", "style", "nav", "footer", "header", "noscript", "img", "svg"]):
+                    t.decompose()
+                page_text = " ".join(dsoup.get_text(" ", strip=True).split())
+                # re-run deadline extraction on the full page text
+                import re
+                m = re.search(r'\b(202\d)(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\b', page_text)
+                if m:
+                    y, mo, d = m.group(1), m.group(2), m.group(3)
+                    deadline_raw = f"Deadline: {y}-{mo}-{d}."
+                else:
+                    months = "January|February|March|April|May|June|July|August|September|October|November|December"
+                    m2 = re.search(
+                        rf'\b(\d{{1,2}})\s+({months})(?:\s+(202\d))?\b'
+                        rf'|\b({months})\s+(\d{{1,2}})(?:\s+(202\d))?\b',
+                        page_text, re.IGNORECASE
+                    )
+                    if m2:
+                        deadline_raw = f"Deadline: {m2.group(0).strip()}."
+                detail_text = f"{deadline_raw} {page_text[:3000]}".strip()
+            except Exception as e:
+                print(f"  ! BNE Art detail failed ({e}): {title[:50]}")
+
             items.append({
                 "id": _item_id(href, title),
                 "source": source["name"],
                 "title": title,
                 "link": href,
-                "summary": summary[:1500],
+                "summary": detail_text[:4000],
             })
             new_on_page += 1
 
@@ -342,6 +371,7 @@ def fetch_bneart(source, max_pages=4):
             break
 
     return items
+
 
 
 def fetch_google_search(source):
