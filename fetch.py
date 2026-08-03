@@ -249,76 +249,6 @@ def fetch_page(source):
     }]
 
 
-def fetch_bneart(source, max_pages=4):
-    """Scrape BNE Art's opportunities listing. WordPress site, server-rendered,
-    no Cloudflare. Each card carries a clean title, description, and a deadline
-    in YYYYMMDD format embedded as text. Links follow /slug/ pattern.
-    80 pages exist; we read the first few since they are sorted newest-first.
-    """
-    headers = {"User-Agent": USER_AGENT}
-    base = "https://bneart.com"
-    seen, items = set(), []
-
-    for page_num in range(1, max_pages + 1):
-        if page_num == 1:
-            url = source["url"]
-        else:
-            url = f"{source['url']}?sf_paged={page_num}"
-        try:
-            resp = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
-            resp.raise_for_status()
-        except Exception as e:
-            print(f"  ! BNE Art page {page_num}: {e}")
-            break
-
-        soup = BeautifulSoup(resp.text, "html.parser")
-        new_on_page = 0
-
-        # each article block has an <h4> with the link and a deadline text node
-        for article in soup.select("article, .post, h4"):
-            a = article.find("a", href=True) if article.name != "a" else article
-            if not a:
-                continue
-            href = a.get("href", "")
-            if not href.startswith("https://bneart.com/") or "/category/" in href:
-                continue
-            if href in seen:
-                continue
-            seen.add(href)
-
-            title = a.get_text(strip=True)
-            if not title or len(title) < 5:
-                continue
-
-            # extract deadline — appears as an 8-digit YYYYMMDD text node
-            deadline_raw = ""
-            parent = a.find_parent(["article", "div", "section"])
-            if parent:
-                block_text = parent.get_text(" ", strip=True)
-                import re
-                m = re.search(r'\b(202\d)(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\b', block_text)
-                if m:
-                    y, mo, d = m.group(1), m.group(2), m.group(3)
-                    deadline_raw = f"Deadline: {y}-{mo}-{d}."
-                summary = f"{deadline_raw} {block_text[:1000]}".strip()
-            else:
-                summary = title
-
-            items.append({
-                "id": _item_id(href, title),
-                "source": source["name"],
-                "title": title,
-                "link": href,
-                "summary": summary[:1500],
-            })
-            new_on_page += 1
-
-        if new_on_page == 0:
-            break
-
-    return items
-
-
 def fetch_google_search(source):
     """Run one or more Serper API queries and return each unique result URL as
     a fetchable item.
@@ -615,7 +545,6 @@ CUSTOM_PARSERS = {
     "artsoz_prizes": fetch_artsoz_prizes,
     "artshub_opportunities": fetch_artshub_opportunities,
     "google_search": fetch_google_search,
-    "bneart": fetch_bneart,
 }
 
 

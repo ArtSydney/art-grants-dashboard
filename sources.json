@@ -8,20 +8,28 @@
     "note": "Primary AU source. Drupal, server-rendered, not Cloudflare-blocked. Custom paginated parser. Every item is Australian-eligible arts funding."
   },
   {
+    "name": "Neon Marketplace",
+    "type": "html",
+    "parser": "neon_marketplace",
+    "url": "https://www.neonmarketplace.nsw.gov.au/opportunity",
+    "enabled": false,
+    "note": "Disabled. Listing is mostly stallholder calls, vendor EOIs and community events. Only ~2 real arts opportunities per 10 items across multiple pages. Too noisy for the HTTP overhead of fetching each detail page before classification."
+  },
+  {
+    "name": "ArtsHub Opportunities",
+    "type": "html",
+    "parser": "artshub_opportunities",
+    "url": "https://www.artshub.com.au/opportunity/",
+    "enabled": false,
+    "note": "Disabled: artshub.com.au/opportunity/ is Cloudflare-blocked for plain HTTP requests. HTML scraper cannot reach it."
+  },
+  {
     "name": "Calendar for Artists",
     "type": "html",
     "parser": "calendarforartists",
     "url": "https://calendarforartists.com/events/categories/art-competitions/",
     "enabled": true,
     "note": "Australian art competitions/prizes calendar (The Events Calendar plugin). Covers independent and regional prizes. Community-submitted, so not exhaustive."
-  },
-  {
-    "name": "BNE Art: Opportunities",
-    "type": "html",
-    "parser": "bneart",
-    "url": "https://bneart.com/category/opportunities/",
-    "enabled": true,
-    "note": "Brisbane Art Guide opportunities listing. 80 pages sorted newest-first. Cards carry title, description and YYYYMMDD deadline. Covers Australian prizes, residencies, commissions not found elsewhere."
   },
   {
     "name": "Artsoz prize registry",
@@ -34,6 +42,15 @@
       "Kangaroo Valley Art Prize": "https://www.artsinthevalley.net.au/visualarts2026",
       "Churchie Emerging Art Prize": "https://www.churchie.com.au/community/the-churchie-emerging-art-prize/"
     }
+  },
+  {
+    "name": "ArtsHub",
+    "type": "rss",
+    "url": "https://www.artshub.com.au/feed/",
+    "enabled": false,
+    "prefilter": true,
+    "note": "Disabled permanently. The main /feed/ is 200 news articles with no structured opportunity data. Opportunity-specific feeds (/opportunity/feed/, ?post_type=opportunity) return 403 Cloudflare challenge even with browser User-Agent. Not a viable source.",
+    "user_agent": "Mozilla/5.0 (compatible; Feedfetcher-Google; +http://www.google.com/feedfetcher.html)"
   },
   {
     "name": "Artshow.com Competitions",
@@ -50,16 +67,44 @@
     "note": "Overlaps the competitions feed; dedup merges identical links automatically."
   },
   {
+    "name": "Colossal",
+    "type": "rss",
+    "url": "https://www.thisiscolossal.com/feed/",
+    "enabled": false,
+    "note": "Disabled. Feed is 10 art journalism items per run, no opportunities. All correctly tagged Other by the classifier but costs API calls for zero useful output."
+  },
+  {
+    "name": "e-flux announcements",
+    "type": "rss",
+    "url": "https://www.e-flux.com/announcements/feed/",
+    "enabled": false,
+    "note": "International prizes and open calls. Confirm the exact feed path before enabling."
+  },
+  {
+    "name": "Urunga Small Sculpture Prize",
+    "type": "page",
+    "url": "https://urungasmallsculptureprize.com.au/277-2/",
+    "enabled": true,
+    "note": "Registry page source. Judges subpage has full details including judge bios, prize amounts and deadline."
+  },
+  {
+    "name": "Paddington Art Prize",
+    "type": "page",
+    "url": "https://www.paddingtonartprize.com.au/",
+    "enabled": true,
+    "note": "Registry: standalone prize site. Painting $30k + sculpture $10k, closes early Aug."
+  },
+  {
     "name": "Google: Australian art prizes",
     "type": "html",
     "parser": "google_search",
     "url": "https://google.serper.dev/search",
     "enabled": true,
     "queries": [
-      "Australian art prize 2026 \"entries open\" OR \"entries now open\" site:.au -artshub.com.au",
-      "Australian sculpture prize award 2026 \"entries open\" OR \"open for entries\" site:.au",
-      "Australia art prize 2026 acquisitive portrait landscape photography -artshub.com.au"
+      "Australian art prize entries open 2026 site:.au",
+      "\"art prize\" OR \"art award\" \"entries close\" OR \"entries open\" 2026 Australia visual",
+      "Australian visual art prize competition 2026 open entries deadline"
     ],
-    "note": "Daily Google search via Serper API (free at serper.dev, 2500 free searches). Three targeted queries: general prizes, sculpture-specific, and acquisitive prizes by medium. Aggregator domains excluded."
+    "note": "Daily Google search via Serper API. Requires SERPER_API_KEY in .env (free at serper.dev, 2500 free searches). Surfaces prize pages not covered by other sources. Aggregator domains are excluded to avoid duplicates."
   }
 ]
