@@ -68,18 +68,6 @@ Creative Australia is pre-filled as a disabled template to copy.
 - **Creative Australia** (the big national funder) publishes pages, not a clean
   feed, so it needs the `html` scraper. High value, worth configuring first.
 
-## Host it publicly (later)
-
-1. Push the repo to GitHub.
-2. Settings > Pages: serve from the `main` branch, `/docs` folder.
-3. Settings > Secrets and variables > Actions: add `ANTHROPIC_API_KEY` and
-   `DISCORD_WEBHOOK_URL`.
-4. The workflow in `.github/workflows/update.yml` runs daily, refreshes
-   `docs/data.json`, and commits it so Pages updates itself.
-
-Same code, whether it runs on your machine or in Actions. The only difference is
-where the schedule and the secrets live.
-
 ## Config
 
 Everything tweakable is in `config.py`: the model string, the closing-soon
