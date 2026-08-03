@@ -19,57 +19,86 @@
     <h1>Open Calls</h1>
     <p class="tagline">Grants, prizes, residencies and fellowships worth applying for, sorted by what closes next.</p>
     <p class="meta" id="meta">Loading the latest run…</p>
+    <nav class="tab-nav" role="tablist">
+      <button class="tab-btn active" id="tab-list" role="tab" aria-selected="true" aria-controls="panel-list">List</button>
+      <button class="tab-btn" id="tab-calendar" role="tab" aria-selected="false" aria-controls="panel-calendar">Calendar</button>
+    </nav>
   </div>
 </header>
 
-<div class="controls">
-  <div class="wrap controls-inner">
-    <input id="search" type="search" placeholder="Search titles and sources" aria-label="Search" />
-    <div class="chip-group">
-      <span class="chip-label">Type</span>
-      <div class="chips" id="category-chips" role="group" aria-label="Filter by opportunity type"></div>
+<!-- LIST VIEW -->
+<div id="panel-list" role="tabpanel">
+  <div class="controls">
+    <div class="wrap controls-inner">
+      <input id="search" type="search" placeholder="Search titles and sources" aria-label="Search" />
+      <div class="chip-group">
+        <span class="chip-label">Type</span>
+        <div class="chips" id="category-chips" role="group" aria-label="Filter by opportunity type"></div>
+      </div>
+      <div class="chip-group">
+        <span class="chip-label">Discipline</span>
+        <div class="chips" id="discipline-chips" role="group" aria-label="Filter by discipline"></div>
+      </div>
+      <div class="selects">
+        <label class="field">
+          <span>Location</span>
+          <select id="location">
+            <option value="all">All</option>
+            <option value="Australia">Australia only</option>
+            <option value="International">International only</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Eligibility</span>
+          <select id="eligibility">
+            <option value="all">All</option>
+            <option value="eligible">Australians eligible</option>
+            <option value="unclear">Unclear</option>
+          </select>
+        </label>
+        <label class="field toggle">
+          <input type="checkbox" id="closing-soon" />
+          <span>Closing within 7 days</span>
+        </label>
+      </div>
     </div>
-    <div class="chip-group">
-      <span class="chip-label">Discipline</span>
-      <div class="chips" id="discipline-chips" role="group" aria-label="Filter by discipline"></div>
+  </div>
+  <main class="wrap">
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty" hidden>
+      <p>Nothing matches those filters right now.</p>
+      <p class="empty-sub">Clear a filter, or check back after the next run.</p>
     </div>
-    <div class="selects">
-      <label class="field">
-        <span>Location</span>
-        <select id="location">
-          <option value="all">All</option>
-          <option value="Australia">Australia only</option>
-          <option value="International">International only</option>
-        </select>
-      </label>
-      <label class="field">
-        <span>Eligibility</span>
-        <select id="eligibility">
-          <option value="all">All</option>
-          <option value="eligible">Australians eligible</option>
-          <option value="unclear">Unclear</option>
-        </select>
-      </label>
-      <label class="field toggle">
-        <input type="checkbox" id="closing-soon" />
-        <span>Closing within 7 days</span>
-      </label>
-    </div>
+  </main>
+</div>
+
+<!-- CALENDAR VIEW -->
+<div id="panel-calendar" role="tabpanel" hidden>
+  <div class="cal-toolbar wrap">
+    <button class="cal-nav" id="cal-prev" aria-label="Previous month">&#8249;</button>
+    <h2 class="cal-month-label" id="cal-month-label"></h2>
+    <button class="cal-nav" id="cal-next" aria-label="Next month">&#8250;</button>
+    <button class="cal-download-btn" id="cal-download">Download .ics (zip)</button>
+  </div>
+  <div class="wrap">
+    <div class="cal-grid" id="cal-grid"></div>
   </div>
 </div>
 
-<main class="wrap">
-  <div id="grid" class="grid"></div>
-  <div id="empty" class="empty" hidden>
-    <p>Nothing matches those filters right now.</p>
-    <p class="empty-sub">Clear a filter, or check back after the next run.</p>
+<!-- DAY POPUP -->
+<div class="cal-popup-overlay" id="cal-overlay" hidden>
+  <div class="cal-popup" role="dialog" aria-modal="true" aria-labelledby="cal-popup-title">
+    <button class="cal-popup-close" id="cal-popup-close" aria-label="Close">&#10005;</button>
+    <h3 id="cal-popup-title"></h3>
+    <div id="cal-popup-body"></div>
   </div>
-</main>
+</div>
 
 <footer class="wrap foot">
   <p>Assembled from public feeds and pages. Always confirm eligibility, amounts and deadlines on the original listing before you apply.</p>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

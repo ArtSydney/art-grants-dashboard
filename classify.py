@@ -18,13 +18,21 @@ from config import ART_FORMS, WILDCARD_FORMS, DROP_IF_NO_ART_FORM
 _DROP_TITLES = [
     "workshop", "webinar", "info session", "information session",
     "knowledge series", "fundamentals of", "delivery partner",
-    "how to apply", "making a grant application", "life drawing",
-    "long pose", "drawing session", "painting session",
-    "artist talk", "mask making", "weaving workshop",
+    "how to apply", "making a grant application",
+    "life drawing", "long pose", "drawing session", "painting session",
+    "drawing & painting", "drawing and painting",
+    "artist talk", "mask making", "weaving workshop", "weaving yourself",
     "vendor", "stallholder", "market stall",
     "job ", " jobs", "vacancy", "vacancies", "employment",
     "call for facilitators", "expression of interest for facilitators",
     "call for educators", "call for teachers",
+    "networking", "meet by ", "events june", "events july", "events august",
+    "drawing festival", "art & wellbeing", "art and wellbeing",
+    "navigating a digital", "new writers' program", "new writers program",
+    "paste up festival", "art fair ",
+    "how a zoom", "super choir", "wellbeing workshop",
+    "facilitation 2026",  # Workshop Facilitation 2026
+    "working with the grain",  # specific workshop
 ]
 
 _DROP_SOURCES = []  # currently none
@@ -32,13 +40,15 @@ _DROP_SOURCES = []  # currently none
 # non-visual art forms — items exclusively about these are dropped
 _NON_VISUAL = [
     "record label", "music australia", "contemporary music touring",
-    "music residency", "sound art", "audio recording", "songwriting",
-    "literary", "literature", "writing australia", "publishing",
-    "writers festival", "poet laureate", "poetry award",
-    "dance services", "dance residency", "theatre award", "opera",
+    "music touring", "music residency", "sound art", "audio recording",
+    "songwriting", "for musicians", "for bands", "for composers",
+    "music industry", "music export", "music program",
+    "literary", "literature award", "writing australia", "publishing fund",
+    "publishing and promotion", "writers festival", "poet laureate",
+    "poetry award", "book prize", "literary prize",
+    "dance services", "dance residency", "theatre award", "opera grant",
     "screen australia", "film commission", "screenwriting",
-    "games design", "for musicians", "for bands", "for composers",
-    "music industry", "music export",
+    "games design", "australian publishing",
 ]
 
 # ---------------------------------------------------------------------------
@@ -64,13 +74,19 @@ _AU_KEYWORDS = [
 # ---------------------------------------------------------------------------
 
 _CATEGORY_MAP = [
-    ("Residency",   ["residency", "residencies", "artist in residence", "air program", "studio residency"]),
-    ("Fellowship",  ["fellowship", "fellowships", "fellow "]),
-    ("Scholarship", ["scholarship", "scholarships", "travelling scholarship", "bequest"]),
-    ("Commission",  ["commission", "commissioning", "commissioned work", "public art commission", "eoi"]),
-    ("Grant",       ["grant", "grants", "funding", "fund ", "micro grant", "matched funding"]),
-    ("Prize",       ["prize", "prizes", "art prize", "award", "awards", "competition", "acquisitive"]),
-    ("Award",       ["award", "awards", "lifetime achievement", "recognition award"]),
+    ("Prize",       ["art prize", "art award", "acquisitive prize", "acquisitive award",
+                     "prize pool", "prize money", "prize for", "award for", "award celebrating",
+                     "competition", "art competition", "portrait prize", "landscape prize",
+                     "sculpture prize", "photography prize", "drawing prize",
+                     "painting prize", "open prize", "non-acquisitive prize"]),
+    ("Residency",   [" residency", "residency.", "residency program", "artist in residence",
+                     "air program", "studio residency", "residencies"]),
+    ("Fellowship",  ["fellowship", "fellowships", "creative fellow"]),
+    ("Scholarship", ["scholarship", "scholarships", "travelling scholarship", "bursary"]),
+    ("Commission",  ["commission", "commissioning", "commissioned work", "public art commission"]),
+    ("Grant",       ["grant program", "grant funding", "micro grant", "matched funding",
+                     "funding program", "funding opportunity", "apply for funding",
+                     "project fund", "development fund"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -126,17 +142,23 @@ _MONTH_NUM = {
 
 def _extract_deadline(text):
     """Return YYYY-MM-DD or '' from free text.
-    Prioritises dates that appear near closing/deadline keywords.
+    Strips Related Posts sections (BNE Art includes other items' deadlines there).
+    Prioritises dates near closing keywords over bare dates.
     """
-    # YYYYMMDD numeric (BNE Art widget format)
+    # strip "Related Posts" section — everything after it contains other items' dates
+    for marker in ("Related Posts", "related posts", "You may also like", "See also"):
+        idx = text.find(marker)
+        if idx != -1:
+            text = text[:idx]
+
+    # YYYYMMDD numeric — only valid if in the main article, not related posts
     m = re.search(r'\b(202\d)(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\b', text)
     if m:
         return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
 
-    # Look for closing-keyword + date patterns first (highest confidence)
-    # "closes: 5 October 2026", "close 5 Oct 2026", "deadline: 5 October"
+    # closing keyword + day month year: "closes 5 October 2026"
     m = re.search(
-        rf'(?:clos(?:es?|ing)|deadline|due|submit(?:ted)?\s+by|applications?\s+close)[:\s]+(\d{{1,2}})\s+({_MONTHS})\s+(202\d)',
+        rf'(?:clos(?:es?|ing)|deadline|due|submit(?:ted)?\s+by|applications?\s+close|open\s+until|until)[:\s]+(\d{{1,2}})\s+({_MONTHS})\s+(202\d)',
         text, re.IGNORECASE
     )
     if m:
@@ -146,19 +168,30 @@ def _extract_deadline(text):
         if mo:
             return f"{y}-{mo}-{d}"
 
-    # "until 5 October 2026" / "open until 5 Oct 2026"
+    # closing keyword + month day year: "until October 5 2026"
     m = re.search(
-        rf'until\s+(\d{{1,2}})\s+({_MONTHS})\s+(202\d)',
+        rf'(?:clos(?:es?|ing)|deadline|until|open\s+until)[:\s]+({_MONTHS})\s+(\d{{1,2}})(?:[,\s]+(202\d))?',
         text, re.IGNORECASE
     )
     if m:
-        d = m.group(1).zfill(2)
-        mo = _MONTH_NUM.get(m.group(2).lower()[:3], "")
-        y = m.group(3)
+        mo = _MONTH_NUM.get(m.group(1).lower()[:3], "")
+        d = m.group(2).zfill(2)
+        y = m.group(3) if m.group(3) else None
         if mo:
+            if not y:
+                from datetime import datetime
+                from zoneinfo import ZoneInfo
+                now = datetime.now(ZoneInfo("Australia/Sydney"))
+                y = str(now.year)
+                try:
+                    from datetime import datetime as dt
+                    if dt(int(y), int(mo), int(d)).date() < now.date():
+                        y = str(int(y) + 1)
+                except ValueError:
+                    pass
             return f"{y}-{mo}-{d}"
 
-    # "5 October 2026" anywhere — only if it's a future year
+    # bare "5 October 2026" anywhere (future years only)
     m = re.search(
         rf'\b(\d{{1,2}})\s+({_MONTHS})\s+(202[6-9]|203\d)\b',
         text, re.IGNORECASE
@@ -170,7 +203,7 @@ def _extract_deadline(text):
         if mo:
             return f"{y}-{mo}-{d}"
 
-    # "October 5, 2026" or "October 5 2026"
+    # bare "October 5, 2026"
     m = re.search(
         rf'\b({_MONTHS})\s+(\d{{1,2}})[,\s]+(202[6-9]|203\d)\b',
         text, re.IGNORECASE
@@ -182,22 +215,25 @@ def _extract_deadline(text):
         if mo:
             return f"{y}-{mo}-{d}"
 
-    # "14 August" with no year — assume current or next year
+    # closing keyword + no-year: "closes 2 August" / "Deadline: October 5"
     m = re.search(
-        rf'(?:clos(?:es?|ing)|deadline|until)[:\s]+(\d{{1,2}})\s+({_MONTHS})\b',
+        rf'(?:clos(?:es?|ing)|deadline|until)[:\s]+(?:(\d{{1,2}})\s+({_MONTHS})|({_MONTHS})\s+(\d{{1,2}}))',
         text, re.IGNORECASE
     )
     if m:
         from datetime import datetime
         from zoneinfo import ZoneInfo
         now = datetime.now(ZoneInfo("Australia/Sydney"))
-        d = m.group(1).zfill(2)
-        mo = _MONTH_NUM.get(m.group(2).lower()[:3], "")
+        if m.group(1):  # day month
+            d, mo_str = m.group(1).zfill(2), m.group(2)
+        else:           # month day
+            d, mo_str = m.group(4).zfill(2), m.group(3)
+        mo = _MONTH_NUM.get(mo_str.lower()[:3], "")
         if mo:
             y = now.year
             try:
-                candidate = datetime(y, int(mo), int(d))
-                if candidate.date() < now.date():
+                from datetime import datetime as dt
+                if dt(y, int(mo), int(d)).date() < now.date():
                     y += 1
             except ValueError:
                 pass
@@ -235,9 +271,29 @@ def classify(item):
     # --- drop non-opportunity content by title keywords ---
     title_low = title.lower()
     if any(kw in title_low for kw in _DROP_TITLES):
-        return _not_relevant(f"Dropped: title matches noise keyword.")
+        return _not_relevant("Dropped: title matches noise keyword.")
 
-    # --- drop exclusively non-visual art forms ---
+    # also check summary for workshop/event signals when title is clean
+    _DROP_SUMMARY = [
+        "register now for free", "register to attend", "book your spot",
+        "life drawing session", "weekly session", "weekly drawing",
+        "drop-in session", "attend this workshop",
+    ]
+    summary_low = summary.lower()
+    if any(kw in summary_low for kw in _DROP_SUMMARY):
+        return _not_relevant("Dropped: summary matches event keyword.")
+
+    # --- filter Artshow items to Australia-relevant only ---
+    # Artshow feeds include many US/EU competitions with no Australian eligibility
+    if source in ("Artshow.com Competitions", "Artshow.com International"):
+        us_eu_signals = [
+            ", tx", ", ny", ", ca", ", oh", ", sc", ", pa", ", mi",
+            ", wa,", "greenville, sc", "wayne, pa", "muskegon", "sugar land",
+            "miami university", "oxford, oh", "troy, oh",
+            "los angeles, c", "lacda", "nyc4pa",
+        ]
+        if any(sig in text for sig in us_eu_signals):
+            return _not_relevant("Dropped: US/EU-only competition.")
     # check title separately since summary may not repeat the art form
     title_low = title.lower()
     non_visual_hit = any(kw in text for kw in _NON_VISUAL) or any(kw in title_low for kw in _NON_VISUAL)
@@ -260,11 +316,27 @@ def classify(item):
         return _not_relevant("No opportunity signal found.")
 
     # --- category ---
+    # title-based overrides for common patterns that confuse keyword matching
+    title_low = title.lower()
     category = "Other"
-    for cat, keywords in _CATEGORY_MAP:
-        if any(kw in text for kw in keywords):
-            category = cat
-            break
+    if any(x in title_low for x in ["art prize", "art award", "photography prize",
+                                      "sculpture prize", "painting prize", "drawing prize",
+                                      "portrait prize", "landscape prize"]):
+        category = "Prize"
+    elif "fellowship" in title_low or "fellowships" == title_low.strip():
+        category = "Fellowship"
+    elif "residency" in title_low or "artist in residence" in title_low:
+        category = "Residency"
+    elif "scholarship" in title_low:
+        category = "Scholarship"
+    elif any(x in title_low for x in ["arts projects", "grant program", "micro grant",
+                                        "development fund", "project fund", "matched funding"]):
+        category = "Grant"
+    else:
+        for cat, keywords in _CATEGORY_MAP:
+            if any(kw in text for kw in keywords):
+                category = cat
+                break
 
     # --- au_eligibility ---
     if source in _AU_SOURCES or any(kw in text for kw in _AU_KEYWORDS):
@@ -284,6 +356,20 @@ def classify(item):
 
     # --- deadline ---
     deadline = _extract_deadline(summary + " " + title)
+
+    # sanity check: if the extracted deadline is more than 30 days in the past,
+    # it's likely an old round date from a page that hasn't updated yet — drop it
+    if deadline:
+        try:
+            from datetime import datetime
+            from zoneinfo import ZoneInfo
+            dl_date = datetime.strptime(deadline, "%Y-%m-%d").date()
+            today = datetime.now(ZoneInfo("Australia/Sydney")).date()
+            from datetime import timedelta
+            if dl_date < today - timedelta(days=30):
+                deadline = ""
+        except ValueError:
+            pass
 
     # --- amount ---
     amount = _extract_amount(summary + " " + title)

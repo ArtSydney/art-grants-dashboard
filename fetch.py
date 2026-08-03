@@ -107,6 +107,48 @@ def fetch_creative_australia(source, max_pages=12):
         "digital-culture", "peer-feedback", "leadership-capability",
         "private-investment-capability", "training-professional-development",
     }
+    # slug fragments that indicate non-opportunity content
+    SLUG_DROP = (
+        # workshops and events
+        "knowledge-series", "artist-fundraiser", "fundraiser-workshop",
+        "art-science-fundraising", "fundraising",
+        "how-a-zoom", "shifting-lines", "new-vision",
+        "navigating-a-digital", "zoom-super-choir",
+        # non-visual art forms
+        "music-australia", "music-export", "music-residency",
+        "music-touring", "music-core", "contemporary-music",
+        "record-label", "publishing-and-promotion", "publishers-program",
+        "writers-festival", "translation-fund", "international-rights-fund",
+        "dal-stivens", "poet-laureate", "prime-ministers-literary",
+        "ballet-scholarship", "operatic-scholarship",
+        "dance-services", "playing-australia",
+        "victorian-circus", "circus-and-physical",
+        "international-travel-fund",  # primarily for screen/music
+        # delivery partners and services
+        "delivery-partner",
+        # org-only / not individual artists
+        "company-director", "capacity-building", "four-year-investment",
+        "multi-year-investment", "national-performing-arts-partnership",
+        "matched-funding-for-organisations",
+        # digital/tech programs
+        "createch", "digital-enterprise", "beyond-bubble", "nft",
+        "uplift-digital", "digital-skills",
+        "download-online", "download-digital",
+        # resources and info pages
+        "making-a-grant-application", "visual-arts-and-craft-strategy",
+        "international-arts-strategy",
+        "marten-bequest-scholarships-terms",  # terms page, not the scholarship itself
+        "fellowships$",  # bare nav page
+        # other specific non-relevant
+        "gifts-in-wills", "pick-up-the-phone",
+        "tri-nations-exchange", "kathleen-mitchell-award",
+        "visiting-international-publishers",
+        "oceania-pacific", "first-nations-writing-services",
+        "storytelling-and-recording", "flourish-first-nations-fashion",
+        "legacy-first-nations", "elevate-first-nations",
+        "young-people-first-nations", "space-to-create",
+        "download-digital-indigenous",
+    )
     headers = {"User-Agent": USER_AGENT}
     items, seen = [], set()
 
@@ -121,6 +163,8 @@ def fetch_creative_australia(source, max_pages=12):
             full = urljoin(base, a.get("href", "")).split("?")[0]
             slug = full.split("/investments-opportunities/")[-1].strip("/")
             if not slug or "/" in slug or slug in NAV:
+                continue
+            if any(s in slug for s in SLUG_DROP):
                 continue
             entry = cards.setdefault(full, {"title": "", "text": ""})
             title_attr = (a.get("title") or "").strip()
@@ -339,8 +383,13 @@ def fetch_bneart(source, max_pages=4):
                 for t in dsoup(["script", "style", "nav", "footer", "header", "noscript", "img", "svg"]):
                     t.decompose()
                 page_text = " ".join(dsoup.get_text(" ", strip=True).split())
-                # re-run deadline extraction on the full page text
-                import re
+                # strip Related Posts section before truncating — it contains
+                # other items' deadlines which corrupt extraction
+                for marker in ("Related Posts", "You may also like"):
+                    idx = page_text.find(marker)
+                    if idx != -1:
+                        page_text = page_text[:idx]
+                page_text = page_text[:3000]
                 m = re.search(r'\b(202\d)(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\b', page_text)
                 if m:
                     y, mo, d = m.group(1), m.group(2), m.group(3)
@@ -420,10 +469,36 @@ def fetch_google_search(source):
                 snippet = (r.get("snippet") or "").strip()
                 if not url or url in seen_urls:
                     continue
-                # skip aggregator and news domains — we already handle those
-                skip = ("artshub.com.au", "artsoz.com.au", "calendarforartists.com",
-                        "artshow.com", "creative.gov.au", "neonmarketplace.nsw.gov.au")
-                if any(d in url for d in skip):
+                # skip aggregator and news domains
+                skip_domains = (
+                    "artshub.com.au", "artsoz.com.au", "calendarforartists.com",
+                    "artshow.com", "creative.gov.au", "neonmarketplace.nsw.gov.au",
+                    "bneart.com",
+                    # news and PR sites
+                    "newshub.medianet.com.au", "miragenews.com", "medianet.com.au",
+                    "newcastleherald.com.au", "newcastleweekly.com.au",
+                    "insidelocalgovernment.com.au", "ausleisure.com.au",
+                    "artcollector.net.au", "artgallery.nsw.gov.au",
+                )
+                if any(d in url for d in skip_domains):
+                    continue
+                # skip URLs that look like news, FAQs, info booklets, or directories
+                skip_url_patterns = (
+                    "/news/", "/news-", "congratulations", "winner-of",
+                    "faq", "info-booklet", "information-booklet",
+                    "artprizelistings", "art-prize-listings",
+                    "/blog/", "/press-release/", "/media-release/",
+                    "instagram.com", "facebook.com", "twitter.com",
+                )
+                if any(p in url.lower() for p in skip_url_patterns):
+                    continue
+                # skip titles that are obviously news/announcements
+                title_low = title.lower()
+                if any(p in title_low for p in (
+                    "congratulations", "winner of", "announces winner",
+                    "finalists announced", "faq", "info booklet",
+                    "art prizes planner", "prize listings",
+                )):
                     continue
                 seen_urls.add(url)
                 raw_results.append({"url": url, "title": title, "snippet": snippet})
