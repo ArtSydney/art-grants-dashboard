@@ -17,7 +17,7 @@ const FALLBACK_DISCIPLINES = ["Painting", "Drawing", "Sculpture", "Photography",
 let WILDCARDS = ["Visual Arts", "Multidisciplinary"];
 
 const state = {
-  items: [], search: "", eligibility: "all", location: "all", soonOnly: false,
+  items: [], search: "", eligibility: "all", location: "all", soonOnly: false, freeOnly: false,
   cats: new Set(),        // opportunity-type chips
   forms: new Set(),       // discipline chips
 };
@@ -85,6 +85,7 @@ function wireControls() {
   $("#location").addEventListener("change", (e) => { state.location = e.target.value; render(); });
   $("#eligibility").addEventListener("change", (e) => { state.eligibility = e.target.value; render(); });
   $("#closing-soon").addEventListener("change", (e) => { state.soonOnly = e.target.checked; render(); });
+  $("#free-only").addEventListener("change", (e) => { state.freeOnly = e.target.checked; render(); });
 }
 
 function daysLeft(deadline) {
@@ -121,6 +122,7 @@ function passes(item) {
     const n = daysLeft(item.deadline);
     if (n === null || n > SOON_DAYS || n < 0) return false;
   }
+  if (state.freeOnly && String(item.entry_fee || "").toLowerCase() !== "free") return false;
   if (state.search) {
     const hay = `${item.title} ${item.source} ${item.summary || ""}`.toLowerCase();
     if (!hay.includes(state.search)) return false;
@@ -156,7 +158,10 @@ function card(item) {
     ${item.summary ? `<p class="desc">${escapeHtml(item.summary)}</p>` : ""}
     ${forms.length ? `<div class="forms">${forms.map((f) => `<span class="form-tag">${escapeHtml(f)}</span>`).join("")}</div>` : ""}
     <div class="card-foot">
-      <span class="amount">${item.amount ? escapeHtml(item.amount) : ""}</span>
+      <span class="foot-left">
+        <span class="amount">${item.amount ? escapeHtml(item.amount) : ""}</span>
+        ${String(item.entry_fee || "").toLowerCase() === "free" ? `<span class="fee free">Free entry</span>` : ""}
+      </span>
       ${elig ? `<span class="elig ${elig}">${elig === "eligible" ? "AU eligible" : "eligibility unclear"}</span>` : ""}
     </div>
     ${item.link ? `<a class="view" href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
@@ -374,6 +379,7 @@ function renderCalendarList() {
         <span class="cat" style="background:${CAT_COLOUR[cat]};font-size:.65rem;padding:3px 8px">${escapeHtml(cat)}</span>
         <span class="cal-list-title">${escapeHtml(item.title)}</span>
         ${item.amount ? `<span class="cal-list-amount">${escapeHtml(item.amount)}</span>` : ""}
+        ${String(item.entry_fee || "").toLowerCase() === "free" ? `<span class="cal-list-fee free">Free entry</span>` : ""}
         <div class="cal-list-actions">
           ${item.link ? `<a class="view" style="padding:8px 12px;font-size:.7rem" href="${safeLink(item.link)}" target="_blank" rel="noopener">View →</a>` : ""}
           <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" target="_blank" rel="noopener">+ Google Cal</a>
@@ -420,6 +426,7 @@ function openPopup(dateStr, events) {
       <h4>${escapeHtml(item.title)}</h4>
       <p class="popup-meta">${escapeHtml(item.source)} &middot; <span style="background:${CAT_COLOUR[cat]};color:#fff;border-radius:4px;padding:1px 6px;font-size:.7rem">${escapeHtml(cat)}</span></p>
       ${item.amount ? `<div class="popup-amount">${escapeHtml(item.amount)}</div>` : ""}
+      ${String(item.entry_fee || "").toLowerCase() === "free" ? `<div class="popup-fee free">Free entry</div>` : ""}
       ${item.summary ? `<p style="font-size:.82rem;color:var(--c-muted);margin:6px 0 0">${escapeHtml(item.summary)}</p>` : ""}
       <div class="popup-links">
         ${item.link ? `<a href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}

@@ -243,7 +243,13 @@ def _extract_deadline(text):
 
 
 def _extract_amount(text):
-    """Return first dollar amount found, e.g. '$30,000'."""
+    """Return first dollar amount found, e.g. '$30,000'.
+
+    Entry/application fees are blanked out first so the prize/grant figure is
+    never confused with the cost to enter (a fee often sits above the prize on
+    the page, and the old first-match rule would grab it).
+    """
+    text = _FEE_SPAN_RE.sub(" ", text)
     m = re.search(r'AUD\s*\$[\d,]+|\$[\d,]+(?:\s*(?:million|k))?\b', text, re.IGNORECASE)
     if not m:
         return ""
@@ -251,6 +257,38 @@ def _extract_amount(text):
     # normalise AUD $50,000 -> $50,000
     val = re.sub(r'^AUD\s*', '', val, flags=re.IGNORECASE)
     return val
+
+
+# ---------------------------------------------------------------------------
+# Entry fee: we only surface "Free". A paid or unknown fee is left blank, so
+# the dashboard can tag and filter free-to-enter calls without ever guessing a
+# dollar cost (which is unreliable and usually not on the page we fetch).
+# ---------------------------------------------------------------------------
+
+# Phrases that mean "free to enter". Anchored to entry/application context so a
+# stray "free" (free workshop, free to visit) never trips it.
+_FREE_ENTRY_SIGNALS = [
+    "free to enter", "free entry", "no entry fee", "entry is free",
+    "entry fee: free", "entry fee is free", "no cost to enter",
+    "free to apply", "no application fee", "no submission fee",
+    "free to submit", "no fee to enter", "entry: free",
+]
+
+# Fee figures in three shapes, used only to blank them out of the text before
+# the prize amount is read. We do not report these as the entry fee.
+_FEE_SPAN_RE = re.compile(
+    r'\$\s?\d+(?:\.\d{2})?\s*per\s+(?:entry|work|artwork|image|piece|submission)'
+    r'|\$\s?\d+(?:\.\d{2})?\s*(?:entry|application|submission|registration)\s+fee'
+    r'|(?:entry fee|entry cost|application fee|submission fee|registration fee|'
+    r'cost to enter|cost of entry|fee to enter)(?:\s+(?:is|of|:))?\s*\$\s?\d+(?:\.\d{2})?',
+    re.IGNORECASE)
+
+
+def _extract_entry_fee(text):
+    """Return 'Free' when the text clearly says entry is free, else '' .
+    Paid and unknown both map to '' so nothing but free is ever tagged."""
+    low = text.lower()
+    return "Free" if any(sig in low for sig in _FREE_ENTRY_SIGNALS) else ""
 
 
 # ---------------------------------------------------------------------------
@@ -371,7 +409,10 @@ def classify(item):
         except ValueError:
             pass
 
-    # --- amount ---
+    # --- entry fee (free-only; blank otherwise) ---
+    entry_fee = _extract_entry_fee(summary + " " + title)
+
+    # --- amount (prize / grant value) ---
     amount = _extract_amount(summary + " " + title)
 
     # --- art_forms ---
@@ -406,6 +447,7 @@ def classify(item):
         "eligibility_note": "",
         "deadline":       deadline,
         "amount":         amount,
+        "entry_fee":      entry_fee,
         "summary":        brief,
         "curator":        "",
         "judge":          "",
@@ -418,6 +460,6 @@ def _not_relevant(reason=""):
         "relevant": False, "english": True,
         "category": "Other", "au_eligibility": "unclear",
         "location_scope": "Unknown", "eligibility_note": "",
-        "deadline": "", "amount": "", "summary": reason,
+        "deadline": "", "amount": "", "entry_fee": "", "summary": reason,
         "curator": "", "judge": "", "art_forms": [],
     }

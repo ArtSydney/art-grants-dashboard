@@ -199,6 +199,9 @@ h1 {
   flex-wrap: wrap;   /* amount + badge wrap on very narrow cards */
 }
 .amount { font-family: "JetBrains Mono", monospace; font-size: 13px; font-weight: 700; color: var(--ink); }
+.foot-left { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; }
+.fee { font-size: 10.5px; font-weight: 600; padding: 3px 9px; border-radius: 999px; font-family: "JetBrains Mono", monospace; }
+.fee.free { color: #fff; background: var(--c-grant); }
 .elig { font-size: 10.5px; font-weight: 600; padding: 3px 9px; border-radius: 999px; }
 .elig.eligible { color: #fff; background: var(--c-grant); }
 .elig.unclear  { color: var(--cocoa); background: #EFD9AE; }
@@ -440,6 +443,13 @@ h1 {
   font-weight: 700;
   color: var(--c-espresso);
 }
+.cal-popup-item .popup-fee.free {
+  font-family: var(--f-mono);
+  font-size: .72rem;
+  font-weight: 700;
+  color: var(--c-grant);
+  margin-top: 2px;
+}
 .cal-popup-item .popup-links {
   display: flex;
   gap: 10px;
@@ -551,6 +561,12 @@ h1 {
   font-size: .75rem;
   font-weight: 700;
   color: var(--cocoa);
+}
+.cal-list-fee.free {
+  font-family: "JetBrains Mono", monospace;
+  font-size: .68rem;
+  font-weight: 700;
+  color: var(--c-grant);
 }
 .cal-list-actions {
   display: flex;

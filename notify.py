@@ -45,6 +45,8 @@ def _fmt(rec):
     meta = []
     if rec.get("amount"):
         meta.append(rec["amount"])
+    if str(rec.get("entry_fee") or "").lower() == "free":
+        meta.append("free entry")
     if rec.get("deadline"):
         meta.append(f"closes {rec['deadline']}")
     if rec.get("au_eligibility") == "unclear":
