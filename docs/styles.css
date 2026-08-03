@@ -449,17 +449,24 @@ h1 {
 
 @media (max-width: 600px) {
   .cal-grid { grid-template-columns: repeat(7, 1fr); gap: 1px; }
-  .cal-cell { min-height: 54px; padding: 3px; }
-  .cal-dot { display: none; }
-  .cal-cell.has-events::after {
-    content: '';
-    background: var(--c-coral);
+  .cal-cell { min-height: 60px; padding: 5px 3px; text-align: center; }
+  .cal-day-num { margin-bottom: 3px; }
+
+  /* Show each opportunity as a small category-coloured dot rather than one
+     anonymous marker, so a day cell conveys how many close and roughly what
+     type. Tapping the cell still opens the full, readable list popup. */
+  .cal-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    padding: 0; margin: 1.5px;
     border-radius: 50%;
-    display: block;
-    height: 6px;
-    margin: 2px auto 0;
-    width: 6px;
+    font-size: 0; line-height: 0;      /* hide the label, keep the colour */
+    overflow: hidden; vertical-align: middle;
   }
+  .cal-more { display: block; font-size: .58rem; margin-top: 1px; }
+
+  /* the old single generic dot is no longer needed */
+  .cal-cell.has-events::after { content: none; }
 }
 
 
