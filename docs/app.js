@@ -471,7 +471,7 @@ async function downloadAllIcs() {
     });
   });
 
-  let saved = "default";
-  try { saved = localStorage.getItem(KEY) || "default"; } catch (e) {}
+  let saved = "bloom";
+  try { saved = localStorage.getItem(KEY) || "bloom"; } catch (e) {}
   apply(saved);
 })();

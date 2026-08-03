@@ -519,3 +519,27 @@ h1 {
   background: var(--cocoa); color: var(--cream); border-color: var(--cocoa);
 }
 .theme-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 1px; }
+
+
+/* ── Fix: let the `hidden` attribute actually hide the day-popup overlay ──
+   .cal-popup-overlay sets display:flex, which overrides the browser's
+   [hidden]{display:none}. Without this, the overlay covers the page on load
+   and blocks all clicks. Higher specificity + present only while hidden. */
+.cal-popup-overlay[hidden] { display: none !important; }
+
+
+/* ── Fix: define the calendar/popup variables ───────────────────────────
+   The calendar layer references --c-* and --f-* custom properties that were
+   never declared, so those rules (including the popup's white background)
+   resolved to invalid values. Alias them to the real theme variables. They
+   use var(), so they follow whichever theme is active, Chocolate or Bloom. */
+:root {
+  --c-espresso: var(--cocoa);
+  --c-cream:    var(--cream);
+  --c-coral:    var(--coral);
+  --c-bg:       var(--card);
+  --c-rule:     var(--hairline);
+  --c-muted:    var(--muted);
+  --f-head: "Space Grotesk", sans-serif;
+  --f-mono: "JetBrains Mono", monospace;
+}
