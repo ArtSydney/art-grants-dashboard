@@ -9,8 +9,8 @@ static dashboard sorted by what closes next, and posts to Discord.
 
 ```
 sources.json ──▶ fetch.py ──▶ classify.py ──▶ seen.json ──▶ build_data.py ──▶ docs/data.json ──▶ dashboard
-                 (rss+html)   (python)   (dedup +      (filter open      (what the page
-                                                record store) opportunities)    reads)
+                 (rss+html)   (rule-based,     (dedup +      (filter open      (what the page
+                               no API calls)   record store) opportunities)    reads)
                                                      │
                                                      └──▶ notify.py (Discord: daily digest + closing-soon)
 ```
@@ -18,9 +18,9 @@ sources.json ──▶ fetch.py ──▶ classify.py ──▶ seen.json ──
 - **fetch.py** reads every enabled entry in `sources.json`. `rss` sources are
   parsed with feedparser; `html` sources are scraped with selectors you declare
   in the config. Both produce the same item shape.
-- **classify.py** sends each new item to Claude Haiku and gets back structured
-  fields: category, English yes/no, Australian eligibility, deadline, amount, and
-  a one-line summary.
+- **classify.py** uses deterministic keyword and regex rules to extract
+  structured fields: category, Australian eligibility, deadline, amount, and
+  a one-line summary. No API calls, no cost, no latency.
 - **seen.json** records everything processed so nothing is classified or notified
   twice. It is also the store the dashboard is built from.
 - **build_data.py** writes `docs/data.json`: relevant, English, still-open items,

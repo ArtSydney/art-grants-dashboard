@@ -159,7 +159,7 @@ function card(item) {
       <span class="amount">${item.amount ? escapeHtml(item.amount) : ""}</span>
       ${elig ? `<span class="elig ${elig}">${elig === "eligible" ? "AU eligible" : "eligibility unclear"}</span>` : ""}
     </div>
-    ${item.link ? `<a class="view" href="${encodeURI(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
+    ${item.link ? `<a class="view" href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
   `;
   return el;
 }
@@ -168,6 +168,15 @@ function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => (
     { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
   ));
+}
+
+// Reject any link whose scheme is not http or https, guarding against
+// javascript: or data: URLs that could appear in scraped content.
+function safeLink(url) {
+  try {
+    const u = new URL(url);
+    return (u.protocol === "https:" || u.protocol === "http:") ? url : "#";
+  } catch { return "#"; }
 }
 
 // ── Tab switching ────────────────────────────────────────────────────────────
@@ -366,7 +375,7 @@ function renderCalendarList() {
         <span class="cal-list-title">${escapeHtml(item.title)}</span>
         ${item.amount ? `<span class="cal-list-amount">${escapeHtml(item.amount)}</span>` : ""}
         <div class="cal-list-actions">
-          ${item.link ? `<a class="view" style="padding:8px 12px;font-size:.7rem" href="${encodeURI(item.link)}" target="_blank" rel="noopener">View →</a>` : ""}
+          ${item.link ? `<a class="view" style="padding:8px 12px;font-size:.7rem" href="${safeLink(item.link)}" target="_blank" rel="noopener">View →</a>` : ""}
           <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" target="_blank" rel="noopener">+ Google Cal</a>
           <button class="cal-ics-btn">.ics</button>
         </div>
@@ -413,7 +422,7 @@ function openPopup(dateStr, events) {
       ${item.amount ? `<div class="popup-amount">${escapeHtml(item.amount)}</div>` : ""}
       ${item.summary ? `<p style="font-size:.82rem;color:var(--c-muted);margin:6px 0 0">${escapeHtml(item.summary)}</p>` : ""}
       <div class="popup-links">
-        ${item.link ? `<a href="${encodeURI(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
+        ${item.link ? `<a href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
         <button class="cal-ics-btn">Download .ics</button>
         <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" target="_blank" rel="noopener">+ Google Calendar</a>
       </div>
