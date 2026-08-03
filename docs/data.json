@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03T15:56:51+10:00",
-  "count": 177,
+  "generated": "2026-08-03T21:38:04+10:00",
+  "count": 175,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -33,6 +33,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-03",
       "amount": "$500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -55,6 +56,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-03",
       "amount": "$1,500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -80,6 +82,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-05",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -108,6 +111,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-07",
       "amount": "$25,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -130,6 +134,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-07",
       "amount": "$5,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -152,6 +157,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-09",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -175,6 +181,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-09",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -197,6 +204,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-10",
       "amount": "$5,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -219,6 +227,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-12",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -241,6 +250,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-14",
       "amount": "$30,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -264,6 +274,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-14",
       "amount": "$30,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -287,6 +298,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-15",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -315,6 +327,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-15",
       "amount": "$10k",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -343,6 +356,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-16",
       "amount": "$55,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -365,6 +379,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-20",
       "amount": "$5,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -387,6 +402,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-21",
       "amount": "$23,500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -409,6 +425,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-21",
       "amount": "$3,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -431,6 +448,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-26",
       "amount": "$6,250",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -454,6 +472,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-28",
       "amount": "$25,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -476,6 +495,7 @@
       "eligibility_note": "",
       "deadline": "2026-08-31",
       "amount": "$40,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -499,6 +519,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-01",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -521,6 +542,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-01",
       "amount": "$20,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -543,6 +565,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-01",
       "amount": "$5,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -553,32 +576,6 @@
         "Printmaking",
         "Installation",
         "Mixed Media"
-      ],
-      "first_seen": "2026-08-03",
-      "closing_soon_sent": false
-    },
-    {
-      "id": "ff0d1ee31baccddc17f49c7a88ba288a145b5858",
-      "source": "Google: Australian art prizes",
-      "title": "2026 sculpture prize entry form",
-      "link": "https://www.artfarmbirchsbay.org.au/2026sculptureprize",
-      "summary": "2026 sculpture prize entry form | Art Farm Birchs Bay top of page 2025 winner Alice RG, Play Wariors 2026 SCULPTURE PRIZE This year, in our twentieth year, we are waiving the entry fee as our birthday",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-09-01",
-      "amount": "$4,000",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Sculpture",
-        "Photography",
-        "Ceramics",
-        "Textiles",
-        "Installation"
       ],
       "first_seen": "2026-08-03",
       "closing_soon_sent": false
@@ -597,6 +594,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-05",
       "amount": "$8,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -619,6 +617,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-10",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -642,6 +641,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-11",
       "amount": "$55,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -666,6 +666,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-14",
       "amount": "$30,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -688,6 +689,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-15",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -710,6 +712,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-17",
       "amount": "$1,800",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -732,6 +735,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-17",
       "amount": "$3,600",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -754,6 +758,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-21",
       "amount": "$20,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -776,6 +781,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-25",
       "amount": "$60,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -798,6 +804,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-30",
       "amount": "$50,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -820,6 +827,7 @@
       "eligibility_note": "",
       "deadline": "2026-09-30",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -842,6 +850,7 @@
       "eligibility_note": "",
       "deadline": "2026-10-04",
       "amount": "$15,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -864,6 +873,7 @@
       "eligibility_note": "",
       "deadline": "2026-10-05",
       "amount": "$50,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -886,6 +896,7 @@
       "eligibility_note": "",
       "deadline": "2026-10-06",
       "amount": "$50,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -909,6 +920,7 @@
       "eligibility_note": "",
       "deadline": "2026-10-07",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -933,6 +945,7 @@
       "eligibility_note": "",
       "deadline": "2026-10-12",
       "amount": "$6,272",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -955,6 +968,7 @@
       "eligibility_note": "",
       "deadline": "2026-10-14",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -977,6 +991,7 @@
       "eligibility_note": "",
       "deadline": "2026-10-30",
       "amount": "$18,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1005,6 +1020,7 @@
       "eligibility_note": "",
       "deadline": "2026-10-31",
       "amount": "$4,750",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1027,59 +1043,13 @@
       "eligibility_note": "",
       "deadline": "2026-11-08",
       "amount": "$65",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
         "Painting",
         "Photography",
         "Digital/New Media"
-      ],
-      "first_seen": "2026-08-03",
-      "closing_soon_sent": false
-    },
-    {
-      "id": "8cb885eeaad0a6bd0bc5476b6112266b026d806c",
-      "source": "Google: Australian art prizes",
-      "title": "Josephine Ulrick and Win Schubert Photography Award 2026",
-      "link": "https://hota.com.au/events/juwspa-2026",
-      "summary": "Open Call: Josephine Ulrick and Win Schubert Photography Award 2026 | HOTA Events Open Call: Josephine Ulrick and Win Schubert Photography Award 2026 Entries now open 28 November 2026 - 19 January 202",
-      "relevant": true,
-      "english": true,
-      "category": "Other",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-11-28",
-      "amount": "$15",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Sculpture",
-        "Photography",
-        "Digital/New Media",
-        "Installation"
-      ],
-      "first_seen": "2026-08-03",
-      "closing_soon_sent": false
-    },
-    {
-      "id": "0f73fde879a97ab5e7eb8c3ff73a0acfdd145731",
-      "source": "Google: Australian art prizes",
-      "title": "Heysen Prize for Landscape — Hahndorf Academy",
-      "link": "https://hahndorfacademy.org.au/heysen-prize",
-      "summary": "Heysen Prize for Landscape — Hahndorf Academy HEYSEN PRIZE FOR LANDSCAPE –ACQUISITIVE $15,000 PEOPLE’S CHOICE PRIZE – NON-ACQUISITIVE $1,000 The Heysen Prize for Landscape 2026 invites artists to expr",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-12-06",
-      "amount": "$15,000",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Painting"
       ],
       "first_seen": "2026-08-03",
       "closing_soon_sent": false
@@ -1098,6 +1068,7 @@
       "eligibility_note": "",
       "deadline": "2026-12-28",
       "amount": "$5,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1120,6 +1091,7 @@
       "eligibility_note": "",
       "deadline": "2026-12-31",
       "amount": "$35,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1142,6 +1114,7 @@
       "eligibility_note": "",
       "deadline": "2027-02-16",
       "amount": "$16,300",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1164,6 +1137,7 @@
       "eligibility_note": "",
       "deadline": "2027-02-17",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1186,6 +1160,7 @@
       "eligibility_note": "",
       "deadline": "2027-02-20",
       "amount": "$40,000",
+      "entry_fee": "Free",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1208,6 +1183,7 @@
       "eligibility_note": "",
       "deadline": "2027-02-23",
       "amount": "$190,000",
+      "entry_fee": "Free",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1231,6 +1207,7 @@
       "eligibility_note": "",
       "deadline": "2027-03-12",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1254,6 +1231,7 @@
       "eligibility_note": "",
       "deadline": "2027-03-31",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1276,6 +1254,7 @@
       "eligibility_note": "",
       "deadline": "2027-04-05",
       "amount": "$275",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1303,6 +1282,7 @@
       "eligibility_note": "",
       "deadline": "2027-04-12",
       "amount": "$2,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1325,6 +1305,7 @@
       "eligibility_note": "",
       "deadline": "2027-04-12",
       "amount": "$30,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1347,6 +1328,7 @@
       "eligibility_note": "",
       "deadline": "2027-04-19",
       "amount": "$70,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1369,6 +1351,7 @@
       "eligibility_note": "",
       "deadline": "2027-04-20",
       "amount": "$500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1391,6 +1374,7 @@
       "eligibility_note": "",
       "deadline": "2027-04-24",
       "amount": "$3,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1417,6 +1401,7 @@
       "eligibility_note": "",
       "deadline": "2027-04-27",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1439,6 +1424,7 @@
       "eligibility_note": "",
       "deadline": "2027-04-28",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1461,6 +1447,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-03",
       "amount": "$33,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1483,6 +1470,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-04",
       "amount": "$400",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1505,6 +1493,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-07",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1531,6 +1520,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-10",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1553,6 +1543,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-10",
       "amount": "$15,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1576,6 +1567,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-10",
       "amount": "$15,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1602,7 +1594,8 @@
       "location_scope": "Australia",
       "eligibility_note": "",
       "deadline": "2027-05-10",
-      "amount": "$30",
+      "amount": "$25",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1626,6 +1619,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-10",
       "amount": "$25,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1649,6 +1643,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-15",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1672,6 +1667,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-15",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1695,6 +1691,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-15",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1725,6 +1722,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-17",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1748,6 +1746,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-18",
       "amount": "$46,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1770,6 +1769,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-24",
       "amount": "$12,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1792,6 +1792,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-25",
       "amount": "$2,500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1815,6 +1816,7 @@
       "eligibility_note": "",
       "deadline": "2027-05-31",
       "amount": "$1000",
+      "entry_fee": "Free",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1841,6 +1843,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-05",
       "amount": "$15,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1863,6 +1866,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-05",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1885,6 +1889,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-07",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1907,6 +1912,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-08",
       "amount": "$20,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1935,6 +1941,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-12",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1957,6 +1964,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-14",
       "amount": "$70,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -1979,6 +1987,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-16",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2001,6 +2010,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-18",
       "amount": "$1,800",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2024,6 +2034,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-25",
       "amount": "$25,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2046,6 +2057,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-26",
       "amount": "$20,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2068,6 +2080,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-28",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2090,6 +2103,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-30",
       "amount": "$15,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2112,6 +2126,7 @@
       "eligibility_note": "",
       "deadline": "2027-06-30",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2138,6 +2153,7 @@
       "eligibility_note": "",
       "deadline": "2027-07-09",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2160,6 +2176,7 @@
       "eligibility_note": "",
       "deadline": "2027-07-12",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2183,6 +2200,7 @@
       "eligibility_note": "",
       "deadline": "2027-07-17",
       "amount": "$30,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2205,6 +2223,7 @@
       "eligibility_note": "",
       "deadline": "2027-07-17",
       "amount": "$130,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2227,6 +2246,7 @@
       "eligibility_note": "",
       "deadline": "2027-07-17",
       "amount": "$77,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2254,6 +2274,7 @@
       "eligibility_note": "",
       "deadline": "2027-07-19",
       "amount": "$30,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2276,6 +2297,7 @@
       "eligibility_note": "",
       "deadline": "2027-07-20",
       "amount": "$24,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2298,6 +2320,7 @@
       "eligibility_note": "",
       "deadline": "2027-07-28",
       "amount": "$1,500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2320,6 +2343,7 @@
       "eligibility_note": "",
       "deadline": "2027-07-30",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2342,6 +2366,7 @@
       "eligibility_note": "",
       "deadline": "2027-08-02",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2364,6 +2389,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$5,500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2386,6 +2412,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$25,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2408,6 +2435,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$80,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2430,6 +2458,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$25,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2452,6 +2481,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$25,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2474,6 +2504,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$25,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2496,6 +2527,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$80,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2518,6 +2550,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$100,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2540,6 +2573,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2562,6 +2596,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$15,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2584,6 +2619,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$5,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2606,6 +2642,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$50,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2628,6 +2665,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$50,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2650,6 +2688,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$5,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2673,6 +2712,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2695,6 +2735,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2717,6 +2758,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2739,6 +2781,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2761,6 +2804,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2783,6 +2827,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$5,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2806,6 +2851,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$50,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2829,6 +2875,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$8,500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2851,6 +2898,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$10,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2873,6 +2921,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2895,6 +2944,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$3,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2919,6 +2969,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$5,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2943,6 +2994,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$13,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2965,6 +3017,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -2987,6 +3040,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3009,6 +3063,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$30,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3031,6 +3086,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$7,500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3053,6 +3109,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$200,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3077,6 +3134,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$50,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3102,6 +3160,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3124,6 +3183,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3146,6 +3206,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3168,6 +3229,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3190,6 +3252,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3212,6 +3275,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "Free",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3234,6 +3298,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3256,6 +3321,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3279,6 +3345,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3303,6 +3370,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3330,6 +3398,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3353,6 +3422,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3378,6 +3448,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3405,6 +3476,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3427,6 +3499,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3449,6 +3522,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3471,6 +3545,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$35",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3497,6 +3572,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$55,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3521,6 +3597,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3543,7 +3620,8 @@
       "location_scope": "Australia",
       "eligibility_note": "",
       "deadline": "",
-      "amount": "$35",
+      "amount": "$140",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3566,6 +3644,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3588,6 +3667,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$2,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3610,6 +3690,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$20,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3632,6 +3713,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3655,6 +3737,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$750",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3677,6 +3760,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$6,891",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3699,6 +3783,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3721,6 +3806,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3743,6 +3829,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3765,6 +3852,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "Free",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3788,6 +3876,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "Free",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3812,6 +3901,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3834,6 +3924,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$30,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3856,34 +3947,13 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$70,000",
+      "entry_fee": "Free",
       "curator": "",
       "judge": "",
       "art_forms": [
         "Painting",
         "Sculpture",
         "Mixed Media"
-      ],
-      "first_seen": "2026-08-03",
-      "closing_soon_sent": false
-    },
-    {
-      "id": "64892cad3dea459661d862c62fe4806eabb5413b",
-      "source": "Google: Australian art prizes",
-      "title": "REDLAND ART AWARDS 2026",
-      "link": "https://artgallery.redland.qld.gov.au/exhibitions/redland-art-awards-2026/",
-      "summary": "REDLAND ART AWARDS 2026 | Redland Art Gallery The Redland Art Awards is a biennial contemporary painting competition.",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "",
-      "amount": "$20,000",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Painting"
       ],
       "first_seen": "2026-08-03",
       "closing_soon_sent": false
@@ -3902,6 +3972,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$3,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3909,6 +3980,29 @@
         "Photography",
         "Digital/New Media",
         "Installation"
+      ],
+      "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
+      "id": "64892cad3dea459661d862c62fe4806eabb5413b",
+      "source": "Google: Australian art prizes",
+      "title": "REDLAND ART AWARDS 2026",
+      "link": "https://artgallery.redland.qld.gov.au/exhibitions/redland-art-awards-2026/",
+      "summary": "REDLAND ART AWARDS 2026 | Redland Art Gallery The Redland Art Awards is a biennial contemporary painting competition.",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "$20,000",
+      "entry_fee": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting"
       ],
       "first_seen": "2026-08-03",
       "closing_soon_sent": false
@@ -3927,6 +4021,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$15,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3953,7 +4048,8 @@
       "location_scope": "Australia",
       "eligibility_note": "",
       "deadline": "",
-      "amount": "$50",
+      "amount": "$4500",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -3981,7 +4077,8 @@
       "location_scope": "Australia",
       "eligibility_note": "",
       "deadline": "",
-      "amount": "$150",
+      "amount": "",
+      "entry_fee": "Free",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -4007,6 +4104,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$60,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -4031,6 +4129,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -4053,6 +4152,7 @@
       "eligibility_note": "",
       "deadline": "",
       "amount": "$6000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -4063,11 +4163,11 @@
       "closing_soon_sent": false
     },
     {
-      "id": "3a90fbac9a071178b9935f64f3d0f8be5691118f",
+      "id": "e3b40d24845bcf0c68efa2f5d8e112641492b90b",
       "source": "Google: Australian art prizes",
-      "title": "Community Art Awards",
-      "link": "https://www.wanneroo.wa.gov.au/info/20252/arts/255/community_art_awards",
-      "summary": "Community Art Awards - City of Wanneroo Menu Navigation Your Wanneroo Libraries Sport & leisure Community Business Animals and pets Bins, recycling and waste Things to do Planning and building Communi",
+      "title": "Burwood Art Prize 2026 - Studio A",
+      "link": "https://www.studioa.org.au/events/burwood-art-prize-2026",
+      "summary": "Studio A - Burwood Art Prize 2026 Home / Events / Burwood Art Prize 2026 Burwood Art Prize 2026 Exhibitions | Adam Mandarano Lex Tan Start 9:30am Monday, 25 May 2026 End 4:00pm Sunday, 28 June 2026 Lo",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -4075,15 +4175,38 @@
       "location_scope": "Australia",
       "eligibility_note": "",
       "deadline": "",
-      "amount": "$10,000",
+      "amount": "$20,000",
+      "entry_fee": "",
       "curator": "",
       "judge": "",
       "art_forms": [
         "Painting",
-        "Drawing",
         "Sculpture",
         "Photography",
-        "Digital/New Media"
+        "Mixed Media"
+      ],
+      "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
+      "id": "f707d4cf49b2bee56094fc752c63492fcff967a7",
+      "source": "Google: Australian art prizes",
+      "title": "Australian Art Prizes",
+      "link": "https://artloversaustralia.com.au/australian-art-prizes/?srsltid=AfmBOoqsDCemnnp3_JY_rFs07O0kIPjxsVmH7AEbzScnXT6Xli2Xe3Yc",
+      "summary": "Are you an artist looking for a competition to enter your work in?",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
       ],
       "first_seen": "2026-08-03",
       "closing_soon_sent": false
