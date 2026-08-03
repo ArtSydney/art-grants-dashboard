@@ -459,8 +459,13 @@ function icsEscape(s) {
 // where .ics files can't be opened directly by Google Calendar.
 function buildGoogleCalUrl(item) {
   const date = (item.deadline || "").replace(/-/g, "");
-  const nextDay = new Date(new Date(item.deadline + "T00:00:00").getTime() + 86400000)
-    .toISOString().slice(0, 10).replace(/-/g, "");
+  // Parse parts directly to avoid local-timezone drift when converting back
+  // via toISOString() (which is always UTC). E.g. midnight Sydney is 2pm UTC
+  // the day before, so adding 86400000ms and calling toISOString() can return
+  // the same date rather than the next one.
+  const [y, m, d] = (item.deadline || "").split("-").map(Number);
+  const next = new Date(Date.UTC(y, m - 1, d + 1));
+  const nextDay = `${next.getUTCFullYear()}${String(next.getUTCMonth()+1).padStart(2,"0")}${String(next.getUTCDate()).padStart(2,"0")}`;
   const details = [item.source, item.category, item.amount, item.link]
     .filter(Boolean).join(" | ");
   // Build manually so the slash in dates= is not percent-encoded — Google
