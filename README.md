@@ -9,7 +9,7 @@ static dashboard sorted by what closes next, and posts to Discord.
 
 ```
 sources.json ──▶ fetch.py ──▶ classify.py ──▶ seen.json ──▶ build_data.py ──▶ docs/data.json ──▶ dashboard
-                 (rss+html)   (Claude Haiku)   (dedup +      (filter open      (what the page
+                 (rss+html)   (AI)   (dedup +      (filter open      (what the page
                                                 record store) opportunities)    reads)
                                                      │
                                                      └──▶ notify.py (Discord: daily digest + closing-soon)
@@ -30,28 +30,6 @@ sources.json ──▶ fetch.py ──▶ classify.py ──▶ seen.json ──
 
 English is a hard gate. News, reviews and job ads are dropped as not relevant.
 
-## Run it locally (Kali/Linux)
-
-```bash
-pip install -r requirements.txt
-cp .env.example .env          # then edit .env and add your API key
-chmod +x run_local.sh
-./run_local.sh
-```
-
-`run_local.sh` loads `.env`, runs the pipeline once, then serves the dashboard at
-http://localhost:8000. The Discord webhook is optional: leave it blank in `.env`
-and notifications are skipped so you can test quietly.
-
-To run just the pipeline without serving:
-
-```bash
-export ANTHROPIC_API_KEY=sk-ant-...
-python3 main.py
-```
-
-Note: open the dashboard over http (the server above), not by double-clicking
-`index.html`, because browsers block `fetch` of a local file over `file://`.
 
 ## Adding a source
 
