@@ -91,16 +91,14 @@ def fetch_html(source):
 def fetch_creative_australia(source, max_pages=12):
     """Custom parser for creative.gov.au (Drupal, paginated, not Cloudflare-blocked).
 
-    Rather than depend on CSS classes (which change), this keys off the stable
-    URL shape: real opportunities live at /investments-opportunities/<slug> with
-    a single-segment slug. Nav links under the same path are excluded by the
-    NAV blocklist. Each opportunity appears as two anchors sharing one href: an
-    image/title link (carries the clean title in its `title` attribute) and a
-    text link (carries the description, status and close date). We merge them.
+    Two-pass approach:
+    1. Walk the listing pages to discover all opportunity URLs and card text.
+    2. Fetch each detail page to get the full Key dates section (deadline, amount,
+       notification date). This is what the classifier needs to extract a deadline.
 
-    We hand the full card text to the classifier as the summary; it already
-    extracts deadline, amount, category and eligibility, so the scraper doesn't
-    need to parse those itself.
+    The listing card text alone is too thin — it carries only a one-line description,
+    which is why items came through with no deadline. The detail page reliably contains
+    "Applications close: [date]" in the Key dates section.
     """
     base = "https://creative.gov.au/investments-opportunities"
     NAV = {
@@ -112,17 +110,18 @@ def fetch_creative_australia(source, max_pages=12):
     headers = {"User-Agent": USER_AGENT}
     items, seen = [], set()
 
+    # Pass 1: discover URLs from listing pages
     for page in range(max_pages):
         resp = requests.get(f"{base}?page={page}", headers=headers, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        cards = {}  # href -> {title, text}
+        cards = {}
         for a in soup.select('a[href*="/investments-opportunities/"]'):
             full = urljoin(base, a.get("href", "")).split("?")[0]
             slug = full.split("/investments-opportunities/")[-1].strip("/")
             if not slug or "/" in slug or slug in NAV:
-                continue  # landing page, nav link, or sub-page, not an opportunity
+                continue
             entry = cards.setdefault(full, {"title": "", "text": ""})
             title_attr = (a.get("title") or "").strip()
             if title_attr and not entry["title"]:
@@ -132,21 +131,35 @@ def fetch_creative_australia(source, max_pages=12):
                 entry["text"] = text
 
         if not cards:
-            break  # ran past the last page of results
+            break
 
         for full, entry in cards.items():
             if full in seen:
                 continue
             seen.add(full)
             title = entry["title"] or entry["text"][:80]
+
+            # Pass 2: fetch the detail page for key dates and amount
+            detail_text = entry["text"]
+            try:
+                dr = requests.get(full, headers=headers, timeout=REQUEST_TIMEOUT)
+                dr.raise_for_status()
+                dsoup = BeautifulSoup(dr.text, "html.parser")
+                for t in dsoup(["script", "style", "nav", "footer", "header", "noscript"]):
+                    t.decompose()
+                detail_text = " ".join(dsoup.get_text(" ", strip=True).split())[:4000]
+            except Exception as e:
+                print(f"  ! Creative Australia detail fetch failed ({e}): {title[:50]}")
+
             items.append({
                 "id": _item_id(full, title),
                 "source": source["name"],
                 "title": title,
                 "link": full,
-                "summary": entry["text"][:1500],
+                "summary": detail_text,
             })
     return items
+
 
 
 def fetch_calendarforartists(source, max_pages=6):
