@@ -9,7 +9,7 @@ static dashboard sorted by what closes next, and posts to Discord.
 
 ```
 sources.json ──▶ fetch.py ──▶ classify.py ──▶ seen.json ──▶ build_data.py ──▶ docs/data.json ──▶ dashboard
-                 (rss+html)   (AI)   (dedup +      (filter open      (what the page
+                 (rss+html)   (python)   (dedup +      (filter open      (what the page
                                                 record store) opportunities)    reads)
                                                      │
                                                      └──▶ notify.py (Discord: daily digest + closing-soon)

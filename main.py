@@ -11,7 +11,7 @@ so re-running is cheap and safe.
 import sys
 from datetime import date
 
-from config import ANTHROPIC_API_KEY, CLOSING_SOON_DAYS
+from config import CLOSING_SOON_DAYS
 from fetch import fetch_all, load_sources
 from classify import classify
 from state import load_state, save_state
@@ -21,9 +21,6 @@ from prefilter import looks_like_opportunity
 
 
 def run():
-    if not ANTHROPIC_API_KEY:
-        sys.exit("ANTHROPIC_API_KEY is not set. Export it and re-run.")
-
     print("1. Fetching sources")
     raw = fetch_all()
 
