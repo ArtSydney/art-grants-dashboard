@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Creative Australia",
+    "type": "html",
+    "parser": "creative_australia",
+    "url": "https://creative.gov.au/investments-opportunities",
+    "enabled": true,
+    "note": "Primary AU source. Drupal, server-rendered, not Cloudflare-blocked. Custom paginated parser. Every item is Australian-eligible arts funding."
+  },
+  {
+    "name": "Calendar for Artists",
+    "type": "html",
+    "parser": "calendarforartists",
+    "url": "https://calendarforartists.com/events/categories/art-competitions/",
+    "enabled": true,
+    "note": "Australian art competitions/prizes calendar (The Events Calendar plugin). Covers independent and regional prizes. Community-submitted, so not exhaustive."
+  },
+  {
+    "name": "BNE Art: Opportunities",
+    "type": "html",
+    "parser": "bneart",
+    "url": "https://bneart.com/category/opportunities/",
+    "enabled": true,
+    "note": "Brisbane Art Guide opportunities listing. 80 pages sorted newest-first. Cards carry title, description and YYYYMMDD deadline. Covers Australian prizes, residencies, commissions not found elsewhere."
+  },
+  {
+    "name": "Artsoz prize registry",
+    "type": "html",
+    "parser": "artsoz_prizes",
+    "url": "https://artsoz.com.au/art-prizes.json",
+    "enabled": true,
+    "note": "Reads Artsoz's structured list of major Australian prizes (official URLs + state/medium metadata) and scrapes each official site for live dates. Heaviest source; grows as Artsoz adds prizes. URL overrides applied for Kangaroo Valley (real site is artsinthevalley.net.au) and Churchie (real entry site is churchie.com.au).",
+    "url_overrides": {
+      "Kangaroo Valley Art Prize": "https://www.artsinthevalley.net.au/visualarts2026",
+      "Churchie Emerging Art Prize": "https://www.churchie.com.au/community/the-churchie-emerging-art-prize/"
+    }
+  },
+  {
+    "name": "Artshow.com Competitions",
+    "type": "rss",
+    "url": "https://artshow.com/RSSfeeds/artshows.xml",
+    "enabled": true,
+    "note": "Clean feed of juried competitions and prizes. Amount and deadline already in each description."
+  },
+  {
+    "name": "Artshow.com International",
+    "type": "rss",
+    "url": "https://artshow.com/RSSfeeds/international_artshows.xml",
+    "enabled": true,
+    "note": "Overlaps the competitions feed; dedup merges identical links automatically."
+  },
+  {
+    "name": "Google: Australian art prizes",
+    "type": "html",
+    "parser": "google_search",
+    "url": "https://google.serper.dev/search",
+    "enabled": true,
+    "queries": [
+      "Australian art prize 2026 \"entries open\" OR \"entries now open\" site:.au -artshub.com.au",
+      "Australian sculpture prize award 2026 \"entries open\" OR \"open for entries\" site:.au",
+      "Australia art prize 2026 acquisitive portrait landscape photography -artshub.com.au"
+    ],
+    "note": "Daily Google search via Serper API (free at serper.dev, 2500 free searches). Three targeted queries: general prizes, sculpture-specific, and acquisitive prizes by medium. Aggregator domains excluded."
+  }
+]

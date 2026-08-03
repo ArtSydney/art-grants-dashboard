@@ -1,0 +1,223 @@
+/* Open Calls — a board for artists chasing funding.
+   Visual direction borrowed from Simply Chocolate: a warm cream base, a bold
+   colour-blocked hero, oversized confident type, and chunky tactile cards.
+   The deadline countdown stays the functional signature, escalating to the
+   urgent colour as time runs out. */
+
+:root {
+  --paper:      #F3E7D2;
+  --cocoa:      #241511;
+  --ink:        #241511;
+  --cream:      #F7EFE1;
+  --card:       #FFFFFF;
+  --muted:      #8B7A67;
+  --muted-cream:#C9B69C;
+  --hairline:   #E4D5BC;
+
+  --coral:      #FF5A3C;
+  --marigold:   #F4B01F;
+  --urgent:     #DE3A1E;
+
+  --c-grant:      #1F7A57;
+  --c-scholarship:#2E5AAC;
+  --c-prize:      #C42B6E;
+  --c-award:      #E07A17;
+  --c-residency:  #6A3FB0;
+  --c-fellowship: #B2368A;
+  --c-commission: #A56E1C;
+  --c-other:      #6B5A48;
+
+  --radius: 22px;
+  --shadow: 0 2px 3px rgba(36,21,17,.05), 0 16px 34px rgba(36,21,17,.09);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* tighter side padding on small screens */
+.wrap { width: min(1180px, 100%); padding-inline: clamp(16px, 4vw, 48px); margin-inline: auto; }
+
+/* ---- hero ---- */
+.site {
+  background: var(--cocoa); color: var(--cream);
+  padding: 44px 0 40px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+.brandline { display: flex; align-items: center; gap: 11px; margin-bottom: 18px; }
+.mark {
+  font-size: 18px; color: var(--cocoa); background: var(--marigold);
+  border-radius: 50%; width: 36px; height: 36px; display: grid; place-items: center;
+  font-weight: 700; flex-shrink: 0;
+}
+.kicker {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--marigold);
+}
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: clamp(38px, 10vw, 108px);   /* starts at 38px on narrow screens */
+  letter-spacing: -.03em; line-height: .92; margin: 0 0 16px;
+}
+.tagline {
+  font-size: clamp(15px, 4vw, 19px);
+  color: var(--cream); opacity: .82; max-width: 46ch; margin: 0 0 16px;
+}
+.meta {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px; color: var(--muted-cream); margin: 0;
+}
+
+/* ---- controls: collapsible on mobile ---- */
+.controls {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hairline);
+  padding: 12px 0;
+}
+.controls-inner { display: flex; flex-direction: column; gap: 10px; }
+
+/* search always full-width */
+#search {
+  width: 100%;
+  padding: 11px 16px; font-size: 15px; font-family: inherit;
+  background: var(--card); color: var(--ink);
+  border: 1.5px solid var(--hairline); border-radius: 999px;
+}
+#search::placeholder { color: var(--muted); }
+#search:focus-visible { outline: 2px solid var(--coral); outline-offset: 1px; }
+
+/* chip rows scroll horizontally on mobile — much easier than wrapping */
+.chip-group { display: flex; align-items: center; gap: 10px; width: 100%; min-width: 0; }
+.chip-label {
+  font-family: "JetBrains Mono", monospace; font-size: 10px;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+  flex-shrink: 0; width: 68px;
+}
+.chips {
+  display: flex; gap: 7px; flex: 1; min-width: 0;
+  overflow-x: auto; padding-bottom: 3px;    /* horizontal scroll on narrow screens */
+  scrollbar-width: none;                    /* hide scrollbar on Firefox */
+  -ms-overflow-style: none;
+}
+.chips::-webkit-scrollbar { display: none; }  /* hide scrollbar on Chrome/Safari */
+
+.chip {
+  font-family: "JetBrains Mono", monospace; font-size: 11.5px; font-weight: 500;
+  padding: 6px 12px; border-radius: 999px; cursor: pointer; white-space: nowrap;
+  background: var(--card); color: var(--muted);
+  border: 1.5px solid var(--hairline); flex-shrink: 0;
+  transition: transform .1s ease;
+}
+.chip:hover { transform: translateY(-1px); }
+.chip[aria-pressed="true"] { background: var(--cocoa); color: var(--cream); border-color: var(--cocoa); }
+.chip:focus-visible { outline: 2px solid var(--coral); outline-offset: 1px; }
+
+/* selects row: wraps naturally, no more margin-left auto pushing off-screen */
+.selects {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  padding-top: 2px;
+}
+.field { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--muted); }
+.field select {
+  font-family: inherit; font-size: 13px; padding: 8px 11px;
+  border: 1.5px solid var(--hairline); border-radius: 999px;
+  background: var(--card); color: var(--ink);
+  max-width: 180px;
+}
+.field.toggle { cursor: pointer; }
+.field.toggle input { width: 16px; height: 16px; accent-color: var(--coral); }
+
+/* ---- grid ---- */
+.grid {
+  display: grid; gap: 18px; padding: 28px 0 8px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+}
+
+.card {
+  background: var(--card); border: 1.5px solid var(--hairline);
+  border-radius: var(--radius); padding: 20px 18px 16px;
+  display: flex; flex-direction: column; gap: 11px;
+  box-shadow: var(--shadow); transition: transform .14s ease, box-shadow .14s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 4px 6px rgba(36,21,17,.06), 0 22px 44px rgba(36,21,17,.12); }
+.card.urgent { border-color: color-mix(in srgb, var(--urgent) 55%, var(--hairline)); }
+
+.card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.cat {
+  font-family: "JetBrains Mono", monospace; font-size: 10.5px; font-weight: 700;
+  letter-spacing: .07em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px; color: #fff; white-space: nowrap;
+}
+.count {
+  font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 12.5px;
+  color: var(--muted); white-space: nowrap;
+}
+.count.soon { color: #fff; background: var(--urgent); padding: 4px 9px; border-radius: 999px; }
+.count.none { color: var(--hairline); }
+
+.card h2 {
+  font-family: "Space Grotesk", sans-serif; font-weight: 700;
+  font-size: clamp(17px, 4.5vw, 21px); line-height: 1.2;
+  margin: 0; letter-spacing: -.01em;
+}
+.source { font-size: 12px; color: var(--muted); margin: -4px 0 0; font-weight: 500; }
+.desc { font-size: 13.5px; color: #4a3f36; margin: 0; }
+
+.forms { display: flex; flex-wrap: wrap; gap: 5px; }
+.form-tag {
+  font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 500;
+  color: var(--cocoa); background: var(--marigold);
+  padding: 3px 8px; border-radius: 999px;
+}
+
+.card-foot {
+  margin-top: auto; display: flex; align-items: center;
+  justify-content: space-between; gap: 8px; padding-top: 6px;
+  flex-wrap: wrap;   /* amount + badge wrap on very narrow cards */
+}
+.amount { font-family: "JetBrains Mono", monospace; font-size: 13px; font-weight: 700; color: var(--ink); }
+.elig { font-size: 10.5px; font-weight: 600; padding: 3px 9px; border-radius: 999px; }
+.elig.eligible { color: #fff; background: var(--c-grant); }
+.elig.unclear  { color: var(--cocoa); background: #EFD9AE; }
+
+/* view button: full width on mobile so it's easy to tap */
+.view {
+  display: block; text-align: center; text-decoration: none; margin-top: 2px;
+  font-family: "JetBrains Mono", monospace; font-size: 12.5px; font-weight: 700;
+  color: #fff; background: var(--coral);
+  padding: 11px 15px; border-radius: 999px;
+  transition: transform .1s ease, background .1s ease;
+}
+.view:hover { transform: translateY(-1px); background: #ff4526; }
+
+/* ---- empty + footer ---- */
+.empty { text-align: center; padding: 64px 0; color: var(--muted); }
+.empty p { margin: 0; font-size: 17px; }
+.empty-sub { font-size: 13.5px; margin-top: 6px; }
+.foot { padding: 36px 0 56px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--hairline); margin-top: 16px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .chip, .view { transition: none; }
+}
+
+/* desktop: restore the side-by-side selects layout */
+@media (min-width: 640px) {
+  .controls-inner { flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+  #search { width: auto; flex: 1 1 240px; }
+  .selects { margin-left: auto; flex-wrap: nowrap; }
+  h1 { font-size: clamp(52px, 9vw, 108px); }
+  .site { padding: 60px 0 54px; }
+}
+

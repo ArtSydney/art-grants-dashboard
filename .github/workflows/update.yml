@@ -1,0 +1,41 @@
+# Optional: runs the pipeline daily and commits the refreshed data so GitHub
+# Pages updates itself. You don't need this to run locally. When you're ready to
+# host it, add the following as repository secrets
+# (Settings > Secrets and variables > Actions):
+#   ANTHROPIC_API_KEY   - required
+#   DISCORD_WEBHOOK_URL - optional, skip for no Discord notifications
+#   SERPER_API_KEY      - optional, skip to disable Google search discovery
+# Then enable Pages from /docs.
+name: Update opportunities
+
+on:
+  schedule:
+    - cron: "0 20 * * *"   # 20:00 UTC daily (~06:00 AEST / 07:00 AEDT)
+      timezone: "Australia/Sydney"
+  workflow_dispatch: {}     # lets you trigger a run by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+        run: python main.py
+      - name: Commit refreshed data
+        run: |
+          git config user.name "grants-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add docs/data.json seen.json
+          git commit -m "Update opportunities $(date -u +%F)" || echo "nothing to commit"
+          git push

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Open Calls · arts funding for Australian artists</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="mark">◷</span>
+      <span class="kicker">Arts funding, Australia</span>
+    </div>
+    <h1>Open Calls</h1>
+    <p class="tagline">Grants, prizes, residencies and fellowships worth applying for, sorted by what closes next.</p>
+    <p class="meta" id="meta">Loading the latest run…</p>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap controls-inner">
+    <input id="search" type="search" placeholder="Search titles and sources" aria-label="Search" />
+    <div class="chip-group">
+      <span class="chip-label">Type</span>
+      <div class="chips" id="category-chips" role="group" aria-label="Filter by opportunity type"></div>
+    </div>
+    <div class="chip-group">
+      <span class="chip-label">Discipline</span>
+      <div class="chips" id="discipline-chips" role="group" aria-label="Filter by discipline"></div>
+    </div>
+    <div class="selects">
+      <label class="field">
+        <span>Location</span>
+        <select id="location">
+          <option value="all">All</option>
+          <option value="Australia">Australia only</option>
+          <option value="International">International only</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>Eligibility</span>
+        <select id="eligibility">
+          <option value="all">All</option>
+          <option value="eligible">Australians eligible</option>
+          <option value="unclear">Unclear</option>
+        </select>
+      </label>
+      <label class="field toggle">
+        <input type="checkbox" id="closing-soon" />
+        <span>Closing within 7 days</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div id="grid" class="grid"></div>
+  <div id="empty" class="empty" hidden>
+    <p>Nothing matches those filters right now.</p>
+    <p class="empty-sub">Clear a filter, or check back after the next run.</p>
+  </div>
+</main>
+
+<footer class="wrap foot">
+  <p>Assembled from public feeds and pages. Always confirm eligibility, amounts and deadlines on the original listing before you apply.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
