@@ -49,8 +49,12 @@ async function init() {
 
 function metaLine(data) {
   const when = data.generated ? new Date(data.generated) : null;
-  const stamp = when ? when.toLocaleString("en-AU", { dateStyle: "medium", timeStyle: "short" }) : "unknown";
-  return `${data.count ?? state.items.length} open opportunities · last updated ${stamp}`;
+  const stamp = when ? when.toLocaleString("en-AU", {
+    timeZone: "Australia/Sydney",
+    dateStyle: "medium",
+    timeStyle: "short"
+  }) : "unknown";
+  return `${data.count ?? state.items.length} open opportunities · last updated ${stamp} AEST`;
 }
 
 function makeChip(label, selectedSet, container) {
