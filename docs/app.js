@@ -159,7 +159,7 @@ function card(item) {
       <span class="amount">${item.amount ? escapeHtml(item.amount) : ""}</span>
       ${elig ? `<span class="elig ${elig}">${elig === "eligible" ? "AU eligible" : "eligibility unclear"}</span>` : ""}
     </div>
-    ${item.link ? `<a class="view" href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
+    ${item.link ? `<a class="view" href="${encodeURI(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
   `;
   return el;
 }
@@ -168,15 +168,6 @@ function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => (
     { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
   ));
-}
-
-// Reject any link whose scheme is not http or https, guarding against
-// javascript: or data: URLs that could appear in scraped content.
-function safeLink(url) {
-  try {
-    const u = new URL(url);
-    return (u.protocol === "https:" || u.protocol === "http:") ? url : "#";
-  } catch { return "#"; }
 }
 
 // ── Tab switching ────────────────────────────────────────────────────────────
@@ -230,14 +221,10 @@ function deadlineIndex() {
   return idx;
 }
 
-// ── Render calendar: grid on desktop, list on mobile ────────────────────────
+// ── Render calendar month grid ───────────────────────────────────────────────
 const DOW_LABELS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 function renderCalendar() {
-  if (window.innerWidth <= 600) { renderCalendarList(); return; }
-  // ensure grid class and toolbar are restored after a mobile→desktop resize
-  document.getElementById("cal-grid").className = "cal-grid";
-  document.querySelector(".cal-toolbar").hidden = false;
   const { year, month } = calState;
   const idx = deadlineIndex();
 
@@ -326,82 +313,6 @@ function renderCalendar() {
   }
 }
 
-// ── Mobile calendar list ─────────────────────────────────────────────────────
-// On narrow screens the month grid cells are too small to show any text.
-// Instead we render a scrollable list of deadline dates, grouped by date,
-// with the same "Add to calendar" action available inline.
-function renderCalendarList() {
-  const idx = deadlineIndex();
-  const grid = document.getElementById("cal-grid");
-  grid.innerHTML = "";
-  grid.className = "cal-list"; // swap CSS class so list styles apply
-
-  // hide the month-nav toolbar — not needed for the list view
-  document.querySelector(".cal-toolbar").hidden = true;
-
-  // collect all future (or today) deadline dates, sorted ascending
-  const today = new Date(); today.setHours(0,0,0,0);
-  const dates = Object.keys(idx)
-    .filter((d) => new Date(d + "T00:00:00") >= today)
-    .sort();
-
-  if (!dates.length) {
-    grid.innerHTML = "<p class='cal-list-empty'>No upcoming deadlines.</p>";
-    return;
-  }
-
-  dates.forEach((dateStr) => {
-    const items = idx[dateStr];
-    const d = new Date(dateStr + "T00:00:00");
-    const n = daysLeft(dateStr);
-    const cd = countdownLabel(n);
-
-    // date heading
-    const heading = document.createElement("div");
-    heading.className = "cal-list-heading";
-    heading.innerHTML = `
-      <span class="cal-list-date">${d.toLocaleDateString("en-AU", { weekday:"short", day:"numeric", month:"short", year:"numeric" })}</span>
-      <span class="count ${cd.cls}" style="font-size:.75rem">${cd.text}</span>
-    `;
-    grid.appendChild(heading);
-
-    // one row per item
-    items.forEach((item) => {
-      const cat = item.category && CATS.includes(item.category) ? item.category : "Other";
-      const row = document.createElement("div");
-      row.className = "cal-list-row";
-      row.innerHTML = `
-        <span class="cat" style="background:${CAT_COLOUR[cat]};font-size:.65rem;padding:3px 8px">${escapeHtml(cat)}</span>
-        <span class="cal-list-title">${escapeHtml(item.title)}</span>
-        ${item.amount ? `<span class="cal-list-amount">${escapeHtml(item.amount)}</span>` : ""}
-        <div class="cal-list-actions">
-          ${item.link ? `<a class="view" style="padding:8px 12px;font-size:.7rem" href="${safeLink(item.link)}" target="_blank" rel="noopener">View →</a>` : ""}
-          <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" target="_blank" rel="noopener">+ Google Cal</a>
-          <button class="cal-ics-btn">.ics</button>
-        </div>
-      `;
-      row.querySelector(".cal-ics-btn").addEventListener("click", () => downloadSingleIcs(item));
-      grid.appendChild(row);
-    });
-  });
-}
-
-// Re-render when crossing the 600px breakpoint (e.g. rotating device)
-let _lastMobile = window.innerWidth <= 600;
-window.addEventListener("resize", () => {
-  const nowMobile = window.innerWidth <= 600;
-  if (nowMobile !== _lastMobile) {
-    _lastMobile = nowMobile;
-    // restore toolbar visibility before re-render so grid mode can show it
-    document.querySelector(".cal-toolbar").hidden = false;
-    const calPanel = document.getElementById("panel-calendar");
-    if (!calPanel.hidden) {
-      document.getElementById("cal-grid").className = "cal-grid";
-      renderCalendar();
-    }
-  }
-});
-
 // ── Popup ────────────────────────────────────────────────────────────────────
 function openPopup(dateStr, events) {
   const d = new Date(dateStr + "T00:00:00");
@@ -422,12 +333,10 @@ function openPopup(dateStr, events) {
       ${item.amount ? `<div class="popup-amount">${escapeHtml(item.amount)}</div>` : ""}
       ${item.summary ? `<p style="font-size:.82rem;color:var(--c-muted);margin:6px 0 0">${escapeHtml(item.summary)}</p>` : ""}
       <div class="popup-links">
-        ${item.link ? `<a href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
-        <button class="cal-ics-btn">Download .ics</button>
-        <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" target="_blank" rel="noopener">+ Google Calendar</a>
+        ${item.link ? `<a href="${encodeURI(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
+        <button class="cal-ics-btn" onclick="downloadSingleIcs(${JSON.stringify(JSON.stringify(item))})">Add to calendar</button>
       </div>
     `;
-    div.querySelector(".cal-ics-btn").addEventListener("click", () => downloadSingleIcs(item));
     body.appendChild(div);
   });
 
@@ -452,32 +361,6 @@ function icsDate(dateStr) {
 
 function icsEscape(s) {
   return String(s || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
-}
-
-// ── Google Calendar URL ───────────────────────────────────────────────────────
-// Opens Google Calendar in the browser and pre-fills the event. Works on iOS
-// where .ics files can't be opened directly by Google Calendar.
-function buildGoogleCalUrl(item) {
-  const date = (item.deadline || "").replace(/-/g, "");
-  // Parse parts directly to avoid local-timezone drift when converting back
-  // via toISOString() (which is always UTC). E.g. midnight Sydney is 2pm UTC
-  // the day before, so adding 86400000ms and calling toISOString() can return
-  // the same date rather than the next one.
-  const [y, m, d] = (item.deadline || "").split("-").map(Number);
-  const next = new Date(Date.UTC(y, m - 1, d + 1));
-  const nextDay = `${next.getUTCFullYear()}${String(next.getUTCMonth()+1).padStart(2,"0")}${String(next.getUTCDate()).padStart(2,"0")}`;
-  const details = [item.source, item.category, item.amount, item.link]
-    .filter(Boolean).join(" | ");
-  // Build manually so the slash in dates= is not percent-encoded — Google
-  // Calendar's frontend rejects %2F and gets stuck loading.
-  const base = "https://calendar.google.com/calendar/render?action=TEMPLATE";
-  const parts = [
-    `text=${encodeURIComponent("DEADLINE: " + item.title)}`,
-    `dates=${date}/${nextDay}`,
-    `details=${encodeURIComponent(details)}`,
-    item.link ? `location=${encodeURIComponent(item.link)}` : null,
-  ].filter(Boolean);
-  return `${base}&${parts.join("&")}`;
 }
 
 function buildIcs(item) {
@@ -524,7 +407,8 @@ function slugify(s) {
   return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 50);
 }
 
-function downloadSingleIcs(item) {
+function downloadSingleIcs(itemJson) {
+  const item = JSON.parse(itemJson);
   const content = buildIcs(item);
   const blob = new Blob([content], { type: "text/calendar;charset=utf-8" });
   const a = document.createElement("a");
@@ -560,3 +444,34 @@ async function downloadAllIcs() {
     btn.disabled = false;
   }
 }
+
+
+// ── Theme switcher ───────────────────────────────────────────────────────────
+// Footer buttons flip data-theme on <html> and remember the choice. A tiny
+// inline script in <head> applies the saved theme before paint to avoid a flash.
+(function themeSwitcher() {
+  const KEY = "oc-theme";
+  const root = document.documentElement;
+  const btns = document.querySelectorAll(".theme-btn");
+
+  function apply(name) {
+    if (name && name !== "default") root.setAttribute("data-theme", name);
+    else root.removeAttribute("data-theme");
+    btns.forEach((b) => {
+      const active = (b.dataset.theme || "default") === (name || "default");
+      b.setAttribute("aria-pressed", active);
+    });
+  }
+
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const name = btn.dataset.theme || "default";
+      apply(name);
+      try { localStorage.setItem(KEY, name); } catch (e) {}
+    });
+  });
+
+  let saved = "default";
+  try { saved = localStorage.getItem(KEY) || "default"; } catch (e) {}
+  apply(saved);
+})();

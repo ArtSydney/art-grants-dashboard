@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
+<script>try{var t=localStorage.getItem('oc-theme');if(t&&t!=='default')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
 <header class="site">
@@ -96,6 +97,11 @@
 
 <footer class="wrap foot">
   <p>Assembled from public feeds and pages. Always confirm eligibility, amounts and deadlines on the original listing before you apply.</p>
+  <div class="theme-switch" role="group" aria-label="Colour theme">
+    <span class="theme-switch-label">Theme</span>
+    <button class="theme-btn" data-theme="default" aria-pressed="true">Chocolate</button>
+    <button class="theme-btn" data-theme="bloom" aria-pressed="false">Bloom</button>
+  </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
