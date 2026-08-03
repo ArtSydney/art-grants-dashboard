@@ -305,13 +305,14 @@ h1 {
 /* ── Calendar grid ──────────────────────────────────────────────── */
 .cal-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 2px;
   background: var(--c-rule);
   border: 1px solid var(--c-rule);
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 40px;
+  width: 100%;
 }
 .cal-dow {
   background: var(--c-espresso);
@@ -327,6 +328,8 @@ h1 {
 .cal-cell {
   background: var(--c-bg);
   min-height: 90px;
+  min-width: 0;
+  overflow: hidden;
   padding: 6px;
   position: relative;
   vertical-align: top;
