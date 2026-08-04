@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-03T22:56:43+10:00",
-  "count": 178,
+  "generated": "2026-08-04T22:07:05+10:00",
+  "count": 177,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -19,55 +19,6 @@
     "Multidisciplinary"
   ],
   "items": [
-    {
-      "id": "c3acac9c4b7cfb5a6a73e92bd12afcb8ab44cadc",
-      "source": "BNE Art: Opportunities",
-      "title": "Queer Here 2026",
-      "link": "https://bneart.com/queer-here-2026/",
-      "summary": "Deadline: August 3.",
-      "relevant": true,
-      "english": true,
-      "category": "Other",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-08-03",
-      "amount": "$500",
-      "entry_fee": "",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Mixed Media"
-      ],
-      "first_seen": "2026-08-03",
-      "closing_soon_sent": true
-    },
-    {
-      "id": "48149d91bc6baaf1eaa5ce83c648788d1445faa0",
-      "source": "BNE Art: Opportunities",
-      "title": "Korean Cultural Centre Australia",
-      "link": "https://bneart.com/korean-cultural-centre-australia/",
-      "summary": "Deadline: August 3.",
-      "relevant": true,
-      "english": true,
-      "category": "Other",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-08-03",
-      "amount": "$1,500",
-      "entry_fee": "",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Painting",
-        "Sculpture",
-        "Digital/New Media",
-        "Installation"
-      ],
-      "first_seen": "2026-08-03",
-      "closing_soon_sent": true
-    },
     {
       "id": "2cf9e39d95829b3ff2f0926bf977c343c317091e",
       "source": "BNE Art: Opportunities",
@@ -1052,6 +1003,29 @@
         "Digital/New Media"
       ],
       "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
+      "id": "2ecf5f8eb3a710e54f886be391ff97c5293bc585",
+      "source": "Google: Australian art prizes",
+      "title": "Ladder Art Prize 2026 | Australian Art ...",
+      "link": "https://ladderartspace.com.au/ladder-art-prize-2026/",
+      "summary": "Ladder Art Prize 2026 | Australian Art Prize Skip to content Ladder Art Space Pirze The Ladder Art Prize 2026 Entries are now open for the 2026 edition of Ladder Art Space’s annual open-entry art awar",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-10",
+      "amount": "$6,000",
+      "entry_fee": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Multidisciplinary"
+      ],
+      "first_seen": "2026-08-04",
       "closing_soon_sent": false
     },
     {
