@@ -25,8 +25,23 @@ def _post(content):
     if not DISCORD_WEBHOOK_URL:
         print("  (no DISCORD_WEBHOOK_URL, skipping Discord)")
         return
-    for chunk in _chunks(content, 1900):  # Discord caps content at 2000 chars
+    for chunk in _chunks(content, 1900):
         requests.post(DISCORD_WEBHOOK_URL, json={"content": chunk}, timeout=20)
+
+
+def _post_embeds(content, embeds):
+    if not DISCORD_WEBHOOK_URL:
+        print("  (no DISCORD_WEBHOOK_URL, skipping Discord)")
+        return
+    payload = {}
+    if content:
+        payload["content"] = content
+    for i in range(0, len(embeds), 10):
+        chunk_payload = dict(payload)
+        chunk_payload["embeds"] = embeds[i:i + 10]
+        if i > 0:
+            chunk_payload.pop("content", None)
+        requests.post(DISCORD_WEBHOOK_URL, json=chunk_payload, timeout=20)
 
 
 def _chunks(text, size):
@@ -40,22 +55,59 @@ def _chunks(text, size):
         yield buf
 
 
-def _fmt(rec):
-    lines = [f"**{rec['title']}**  ({rec.get('category', '?')} · {rec['source']})"]
-    meta = []
+def _embed_color(deadline):
+    n = days_left(deadline)
+    if n is None:
+        return 0x5865F2
+    if n < 14:
+        return 0xED4245
+    if n < 30:
+        return 0xFAA61A
+    return 0x3BA55D
+
+
+def _embed(rec):
+    n = days_left(rec.get("deadline"))
+    fields = []
     if rec.get("amount"):
-        meta.append(rec["amount"])
-    if str(rec.get("entry_fee") or "").lower() == "free":
-        meta.append("free entry")
+        fields.append({"name": "Prize", "value": rec["amount"], "inline": True})
+    entry = "Free" if str(rec.get("entry_fee") or "").lower() == "free" else "Open"
     if rec.get("deadline"):
-        meta.append(f"closes {rec['deadline']}")
+        if n is None:
+            days_str = ""
+        elif n < 0:
+            days_str = " · closed"
+        elif n == 0:
+            days_str = " · closes today"
+        else:
+            warning = " ⚠️" if n < 14 else ""
+            days_str = f" · {n} days left{warning}"
+        fields.append({"name": "Closes", "value": rec["deadline"] + days_str, "inline": True})
+    fields.append({"name": "Entry", "value": entry, "inline": True})
     if rec.get("au_eligibility") == "unclear":
-        meta.append("eligibility unclear")
-    if meta:
-        lines.append("  " + " · ".join(meta))
+        fields.append({"name": "Eligibility", "value": "Unclear", "inline": True})
+
+    _SOURCE_NAMES = {
+        "Google: Australian art prizes": "via Google search",
+        "BNE Art: Opportunities": "BNE Art",
+        "Calendar for Artists": "Calendar for Artists",
+        "Artsoz prize registry": "Artsoz",
+        "Creative Australia": "Creative Australia",
+        "Neon Marketplace": "Neon Marketplace",
+        "ArtsHub": "ArtsHub",
+    }
+    source_label = _SOURCE_NAMES.get(rec["source"], rec["source"])
+    embed = {
+        "title": rec["title"],
+        "color": _embed_color(rec.get("deadline")),
+        "fields": fields,
+        "footer": {"text": f"{rec.get('category', '?')} · Source: {source_label}"},
+    }
     if rec.get("link"):
-        lines.append(f"  {rec['link']}")
-    return "\n".join(lines)
+        embed["url"] = rec["link"]
+    if rec.get("description"):
+        embed["description"] = rec["description"]
+    return embed
 
 
 def send_digest(new_records):
@@ -63,9 +115,9 @@ def send_digest(new_records):
     if not new_records:
         print("  no new items for the digest")
         return
-    header = f"__**New arts opportunities — {date.today():%d %b %Y}**__ ({len(new_records)} new)\n"
-    body = "\n\n".join(_fmt(r) for r in new_records)
-    _post(header + "\n" + body)
+    header = f"__**New arts opportunities — {date.today():%d %b %Y}**__ ({len(new_records)} new)"
+    embeds = [_embed(r) for r in new_records]
+    _post_embeds(header, embeds)
     print(f"  digest sent ({len(new_records)} items)")
 
 

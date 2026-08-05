@@ -434,9 +434,17 @@ def classify(item):
     if DROP_IF_NO_ART_FORM and not art_forms:
         return _not_relevant("No visual art form detected.")
 
-    # --- one-line summary from first sentence of summary ---
-    first_sent = re.split(r'(?<=[.!?])\s', summary)
-    brief = first_sent[0][:200] if first_sent else title
+    # --- one-line description: strip nav boilerplate, take first real sentence ---
+    clean = re.sub(
+        r'^.*?(?:skip to (?:content|main content)|please note\s*:)[^\n]*\n?',
+        '', summary, flags=re.IGNORECASE
+    ).strip()
+    # strip repeated page title from the start
+    clean = re.sub(r'^' + re.escape(title[:50]) + r'[^\w]*', '', clean, flags=re.IGNORECASE).strip()
+    # strip pipe-separated site name prefix e.g. "Creative Australia | Skip..."
+    clean = re.sub(r'^[^|]{0,60}\|\s*', '', clean).strip()
+    first_sent = re.split(r'(?<=[.!?])\s', clean)
+    description = first_sent[0].strip()[:180] if first_sent and len(first_sent[0].strip()) > 20 else ""
 
     return {
         "relevant":       True,
@@ -448,7 +456,7 @@ def classify(item):
         "deadline":       deadline,
         "amount":         amount,
         "entry_fee":      entry_fee,
-        "summary":        brief,
+        "description":    description,
         "curator":        "",
         "judge":          "",
         "art_forms":      art_forms,
