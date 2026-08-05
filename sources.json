@@ -58,7 +58,7 @@
     "queries": [
       "Australian art prize 2026 \"entries open\" OR \"entries now open\" site:.au -artshub.com.au",
       "Australian sculpture prize award 2026 \"entries open\" OR \"open for entries\" site:.au",
-      "Australia art prize 2026 acquisitive portrait landscape photography -artshub.com.au"
+      "Australia art prize 2026 acquisitive portrait landscape photography \"entries open\" OR \"open for entries\" -artshub.com.au"
     ],
     "note": "Daily Google search via Serper API (free at serper.dev, 2500 free searches). Three targeted queries: general prizes, sculpture-specific, and acquisitive prizes by medium. Aggregator domains excluded."
   }
