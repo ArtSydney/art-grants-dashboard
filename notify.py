@@ -127,9 +127,36 @@ def send_closing_soon(rec):
     if n is None:
         return
     when = "today" if n == 0 else f"in {n} day{'s' if n != 1 else ''}"
-    msg = (
-        f"\u23f0 **Closing {when}:** {rec['title']} ({rec.get('category', '?')})\n"
-        f"  {rec.get('amount', '')}  {rec.get('link', '')}"
-    )
-    _post(msg)
+    days_str = "closes today" if n == 0 else f"{n} day{'s' if n != 1 else ''} left \u26a0\ufe0f"
+
+    fields = []
+    if rec.get("amount"):
+        fields.append({"name": "Prize", "value": rec["amount"], "inline": True})
+    if rec.get("deadline"):
+        fields.append({"name": "Closes", "value": f"{rec['deadline']} \u00b7 {days_str}", "inline": True})
+    entry = "Free" if str(rec.get("entry_fee") or "").lower() == "free" else "Open"
+    fields.append({"name": "Entry", "value": entry, "inline": True})
+
+    _SOURCE_NAMES = {
+        "Google: Australian art prizes": "via Google search",
+        "BNE Art: Opportunities": "BNE Art",
+        "Calendar for Artists": "Calendar for Artists",
+        "Artsoz prize registry": "Artsoz",
+        "Creative Australia": "Creative Australia",
+        "Neon Marketplace": "Neon Marketplace",
+        "ArtsHub": "ArtsHub",
+    }
+    source_label = _SOURCE_NAMES.get(rec["source"], rec["source"])
+
+    embed = {
+        "title": f"\u23f0 Closing {when}",
+        "description": rec["title"],
+        "color": 0xED4245,
+        "fields": fields,
+        "footer": {"text": f"{rec.get('category', '?')} \u00b7 Source: {source_label}"},
+    }
+    if rec.get("link"):
+        embed["url"] = rec["link"]
+
+    _post_embeds(None, [embed])
     print(f"  closing-soon ping: {rec['title'][:50]}")
