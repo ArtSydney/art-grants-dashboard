@@ -1,4 +1,4 @@
-# Open Calls
+# Open Calls 
 
 A dashboard of arts grants, prizes, scholarships, residencies, fellowships and
 commissions for artists based in Australia. It pulls from RSS feeds and scraped
