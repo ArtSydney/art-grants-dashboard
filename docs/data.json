@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05T18:17:25+10:00",
-  "count": 178,
+  "generated": "2026-08-06T18:15:10+10:00",
+  "count": 181,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -19,35 +19,6 @@
     "Multidisciplinary"
   ],
   "items": [
-    {
-      "id": "2cf9e39d95829b3ff2f0926bf977c343c317091e",
-      "source": "BNE Art: Opportunities",
-      "title": "Victorian Pride Centre: 2027 Exhibition Program",
-      "link": "https://bneart.com/victorian-pride-centre-2027-exhibition-program/",
-      "summary": "Deadline: August 5.",
-      "relevant": true,
-      "english": true,
-      "category": "Other",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-08-05",
-      "amount": "",
-      "entry_fee": "",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Painting",
-        "Drawing",
-        "Sculpture",
-        "Photography",
-        "Printmaking",
-        "Textiles",
-        "Digital/New Media"
-      ],
-      "first_seen": "2026-08-03",
-      "closing_soon_sent": true
-    },
     {
       "id": "cc74a869257f033de9b59647075e1a03ce074a18",
       "source": "BNE Art: Opportunities",
@@ -604,6 +575,35 @@
       "closing_soon_sent": false
     },
     {
+      "id": "6a1b71c1d9f04448079e808b8c219284a1f823a4",
+      "source": "Google: Australian art prizes",
+      "title": "Artist Opportunities",
+      "link": "https://mgnsw.org.au/sector/funding/other-grants/artist-opportunities/",
+      "summary": "Artist Opportunities - MGNSW Artist Opportunities Are you an artist looking for your next big opportunity? We have compiled a list of artist opportunities currently seeking applications. Creative and cultural residency – Vaucluse House Expressions of interest now open – A 12 month creative residency in a unique harbourside heritage setting. Find out more Sculpture in the Garden Wollongong Artist applications open This exhibition, held at Wollongong Botanic Garden every two years, includes the $40,000 Wollongong Acquisitive Sculpture Prize, a $3,000 People’s Choice Award, and a $10,000 Ephemeral Prize. Sculpture in the Garden Wollongong is open to any artist living in Australia. Applications to be part of the 2027 exhibition are open until 5pm, Monday 31 August 2026 . Find out more Basil Sellers Art Prize The Basil Sellers Art Prize places artists at its heart, offering a supportive platform for 2D works in painting, drawing and printmaking. Held at the Bas in Moruya, on the South Coast of NSW, the Prize continues to refine an artist-first model, shaped by listening closely to creative practitioners and nurturing ongoing relationships with them. The 2026 Prize strengthens this ethos with two major supports: courier fees fully covered and a $100 framing subsidy for all finalists to improve accessibility and reduce exhibition costs. The major acquisitive award has been increased to $50,000, alongside the $5,000 Eurobodalla Award celebrating an outstanding local entry. All entry fees support local creative programming. Open to artists at all career stages and from all regions of Australia, the Prize is committed to care, accessibility and the belief that exceptional art can come from anywhere. Entries now open – closing 11 September 2026 Find out more 2027 Community Art Space Program The Dragon’s Lair Gallery at Hurstville Museum & Gallery, and the Clive James Library and Service Centre, Kogarah, provide opportunities for new and established local artists and groups with a connection to the Georges River area to display their works in a professional gallery space. These spaces are suitable for a wide range of mediums, including sculptures, paintings, photographs, and drawings. For more information, refer to the Community Art Space Program’s Terms and Conditions and apply via Smartygrants . Applications for exhibitions in 2027 will close Sunday 26 July 2026 (11.59pm). Find out more Peakhurst Park Adventure Playspace Mural EOI Georges River Council is seeking expressions of interest from an Artist (or Artistic team) to create an artwork design for a mixed used court (basketball and futsal) at Peakhurst Park Adventure Playspace. Please read the Expression of Interest document before applying through Smartygrants . Applications close Sunday 16 August 2026 (11.59pm). Find out more UNSW Library Alumni Mural Program The UNSW Library Alumni Mural program is a curated initiative to transform the Library’s internal environment through site-specific contemporary art. We are currently inviting expressions of interest (EOI) for this commission, which offers UNSW alumni the opportunity to create a high-impact, temporary mural that reflects the Library’s role as a centre for innovation, community, and lifelong learning. Eligibility: Open to all UNSW alumni (graduates of any degree program). We strongly encourage applications from Aboriginal and Torres Strait Islander artists. EOI Opens: Monday, 13 July 2026 at 9:00 am EOI Closes: Friday, 14 August 2026 at 5:00 pm Find out more Call for Entries – BigCi Environmental Awards 2026 International and Australian artists from all fields are invited to submit entries for the BigCi Environmental Awards 2026. Two Winners of the Awards will each receive (4) free weeks of BigCi residency and AUD$5,000 prize money. The winning artists will also be able to explore the Wollemi, the Blue Mountains and the Gardens of Stone National Parks on guided walks and will be given research assistance relevant to their proj",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-09-11",
+      "amount": "$40,000",
+      "entry_fee": "",
+      "description": "MGNSW Artist Opportunities Are you an artist looking for your next big opportunity?",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Sculpture",
+        "Photography",
+        "Printmaking",
+        "Installation"
+      ],
+      "first_seen": "2026-08-05",
+      "closing_soon_sent": false
+    },
+    {
       "id": "b60fcb8518208bf1a28724135a9a9c216c502c11",
       "source": "BNE Art: Opportunities",
       "title": "Dobell Drawing Prize",
@@ -739,6 +739,30 @@
         "Painting"
       ],
       "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
+      "id": "0bf1f348aaeb66f2b1dd97297cf82b4c34175068",
+      "source": "Creative Australia",
+      "title": "Creative Futures Fund 2026-2027",
+      "link": "https://creative.gov.au/investments-opportunities/creative-futures-fund-2026-2027",
+      "summary": "Creative Futures Fund 2026-2027 | Creative Australia Skip to main content Multi-art form Open Creative Futures Fund 2026-2027 The fund invests in bold, new work across all art forms that tell Australian stories and strive for next level scale, ambition and impact. Apply now Creative Futures Fund 2026-2027 Stage 1 Key Dates Stage 1 closes: Tuesday 29 September 2026 (3pm AEST) Notifications of outcomes and invitations to Stage 2: Friday 11 December 2026 Stage 2 Key Dates Supplementary material and information round opens (invitation only): Friday 11 December 2026 Supplementary materials and information round closes: Tuesday 2 February 2027 at 3pm (AEST) Notification of outcomes: May 2027 Successful projects can begin: July 2027 Contact If you have a question about eligibility, or need help with the Application Management System, please call or email us . Phone: 02 9215 9000 Toll-free: 1800 226 912 NRS: 1800 555 677 | Visit the NRS If you have read the guidelines and would like to discuss your project or idea, you can request an appointment with the Creative Futures Fund team: creativefuturesfund@creative.gov.au . Creative Futures Fund 2025-2026 Outcomes Read about the successful 2025-26 Creative Futures Fund projects here . Apply now Access If you are a d/Deaf applicant, an applicant with disability, or are working with d/Deaf artists or artists with disability, you may apply for access costs associated with the use of an interpreter, translation services, specific technical equipment, carer, or support worker assistance. Please contact Artists Services to discuss your specific needs. Please note: You must be registered in our Application Management System to submit your application. Are you registering to use our Application Management System for the first time? Make sure you register well before the closing date. Registrations take up to two business days to process. About the program The fund invests in projects across two streams: Development: investments between $150,000 – $250,000 Delivery: investments between $250,000 – $1,500,000 The aim of the Creative Futures Fund is to invest in the creation and sharing of Australian stories through exceptional creative projects across all artforms that can clearly demonstrate ambition, audience reach and impact. Support through this Fund should enable projects to secure other significant partners and financial contributions from a range of sources. The Fund invests in projects through two streams, Development investment and Delivery investment. Both streams must tell Australian stories, and utilise Intellectual Property that is majority Australian owned. Expand all Collapse all Development: investments between $150,000 – $250,000 Development investment supports the creative development and testing of ambitious works of scale that will tell distinctly Australian stories. Projects in this stream must have a clear pathway towards a future public presentation for Australian audiences. They may also seek to reach international audiences. Applicants should show how they will develop the partnerships, resources and investment needed to support that future outcome. The aim of Development investment is to help works reach proof-of-concept stage and enable them to secure further investment, co-producing partners and presenting partners. Please note that the Creative Futures Fund is not designed to support early-stage creative development of a new and untested idea. Projects in early-stage development may be more suitable for other funding opportunities. Delivery: investments between $250,000 – $1,500,000 Delivery investment supports the presentation of new works, or the significant re-development and presentation of existing works to reach a new level of ambition and impact. Projects in this stream must be ready to deliver public outcomes, with the creative, production and presentation aspects of the work all well developed. Projects in this stream should use the checklists below to determine ",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-09-29",
+      "amount": "$150,000",
+      "entry_fee": "",
+      "description": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Multidisciplinary"
+      ],
+      "first_seen": "2026-08-06",
       "closing_soon_sent": false
     },
     {
@@ -926,6 +950,31 @@
         "Mixed Media"
       ],
       "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
+      "id": "d45d1a06c04d75f842cd27328023366c146fe401",
+      "source": "Google: Australian art prizes",
+      "title": "2026 Ludlow Art Prize",
+      "link": "https://www.ludlowtuartforest.org.au/2026-ludlow-art-prize/",
+      "summary": "Ludlow Art Prize Ludlow Tuart Forest Restoration Group Skip to main content New announcement. Learn more admin@ludlowtuartforest.org.au 2026 Ludlow Art Prize LUDLOW, WESTERN AUSTRALIA about the prize The purpose of the Ludlow Art Prize is to bring people together to shine a light on the listed, critically endangered Tuart Forest located at Ludlow, while fostering creativity and supporting artists in their artistic endeavours. The Ludlow Art Prize is managed by the Ludlow Tuart Forest Restoration Group Inc, a not-for-profit organisation founded in 2018 to help restore the last remaining tall stand Tuart Forest in the world, located at Ludlow. Register for updates Open Open now Close 25 October 2026 Award 6 November 2026 Ludlow Art Prize - Sculpture in the Forest The Ludlow Art Prize for a sculpture. The Ludlow Art Prize for a sculpture (Selected by an independent panel of judges; non-acquisitive) $5,000 cash . All entrants will be invited to attend the official opening and prize presentation. Closing date: 25 October 2026. The work must be for sale. The sales commission is 33% (GST inclusive). Entry fee: $40 Inc. GST per art work (includes entry to the official opening) Terms & Conditions Sculpture entry form SCULPTURE Ludlow Art Prize - Australian Landscape Painting The Ludlow Art Prize for a landscape painting. The Ludlow Art Prize for an Australian Landscape painting (Selected by an independent panel of judges; non-acquisitive) $5,000 cash . All entrants will be invited to attend the official opening and prize presentation. Closing date: 25 October 2026. The work must be for sale. The sales commission is 33% (GST inclusive). Entry fee: $40 Inc. GST per art work (includes entry to the official opening) Terms & Conditions Landscape entry form AUSTRALIAN LANDSCAPE PAINTING Peoples Choice Award Peoples Choice Award $1,000 cash Key dates Entries open 1 March 2026 Entries close 25 October 2026 Art delivery 31 October to 1 November 2026 10am to 2pm Award 6 November 2026 Art exhibition 7 November to 15 November 2026 Artwork collection To be advised Become a supporter/donor The purpose of the Ludlow Art Prize is to bring people together to shine a light on the listed, critically endangered Tuart Forest located at Ludlow, while fostering creativity and supporting artists in their artistic endeavours. Your donation will be greatly appreciated and will help us to secure the Ludlow Art Prize as a permanent event in future years. As a not-for-profit organisation with DGR status your donation is 100% tax deductible. Donation form Facebook Instagram LinkedIn Ludlow Art Prize Ludlow Settlement 21 Ludlow Road North, LUDLOW 6280 WESTERN AUSTRALIA Administration Group information Privacy policy Events calendar Committee Volunteer Code of Conduct 2025 AGM 2024 AGM 2023 AGM 2022 AGM 2021 AGM 2020 AGM 2019 AGM Strategic plan Support us Memberships Volunteer with us Donate Ludlow caretakers 2025 Ludlow Art Prize 2024 Ludlow Art Prize 2023 Ludlow Art Prize Donate to the Ludlow Prize Tuart forest Management plan Advocacy Forestry mill & settlement We want our stuff back! Ludlow heritage Settlement rehabilitation list Copyright © 2026 - dashboard - Terms & Conditions POWERED BY ROCKETSPARK Loading... This product has been added to your cart CONTINUE SHOPPING CHECKOUT",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-10-25",
+      "amount": "$5,000",
+      "entry_fee": "",
+      "description": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Sculpture"
+      ],
+      "first_seen": "2026-08-06",
       "closing_soon_sent": false
     },
     {
@@ -3773,7 +3822,7 @@
       "source": "Artsoz prize registry",
       "title": "Wynne Prize",
       "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture.",
+      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
       "relevant": true,
       "english": true,
       "category": "Other",
@@ -4265,6 +4314,54 @@
         "Visual Arts"
       ],
       "first_seen": "2026-08-03",
+      "closing_soon_sent": false
+    },
+    {
+      "id": "031173807a52665a70058ce3c7eb4929fa2acdca",
+      "source": "Google: Australian art prizes",
+      "title": "Terms and Conditions",
+      "link": "https://churchieemergingart.com.au/terms-and-conditions/",
+      "summary": "Entries Open: 1 April 2026 · Entries Close: 11:59 pm AEST 24 May 2026 · Finalists Notified: 4 June 2026 · Exhibition Opening: 24 July 2026 ...",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Entries Open: 1 April 2026 · Entries Close: 11:59 pm AEST 24 May 2026 · Finalists Notified: 4 June 2026 · Exhibition Opening: 24 July 2026 ...",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-08-06",
+      "closing_soon_sent": false
+    },
+    {
+      "id": "22df966fb42d3e4140506dd412443dc59d7871cd",
+      "source": "Google: Australian art prizes",
+      "title": "Awards",
+      "link": "https://headon.org.au/awards",
+      "summary": "Head On Photo Awards 2026 – Entries open. Head On Photo Awards offer an $80,000 prize pool. Open to photographers of every level and judged completely ...",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "$80,000",
+      "entry_fee": "",
+      "description": "Head On Photo Awards 2026 – Entries open.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-08-06",
       "closing_soon_sent": false
     }
   ]
