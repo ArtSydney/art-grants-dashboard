@@ -124,7 +124,7 @@ function passes(item) {
   }
   if (state.freeOnly && String(item.entry_fee || "").toLowerCase() !== "free") return false;
   if (state.search) {
-    const hay = `${item.title} ${item.source} ${item.summary || ""}`.toLowerCase();
+    const hay = `${item.title} ${item.source} ${item.description || item.summary || ""}`.toLowerCase();
     if (!hay.includes(state.search)) return false;
   }
   return true;
@@ -155,7 +155,7 @@ function card(item) {
     </div>
     <h2>${escapeHtml(item.title)}</h2>
     <p class="source">${escapeHtml(item.source)}</p>
-    ${item.summary ? `<p class="desc">${escapeHtml(item.summary)}</p>` : ""}
+    ${(item.description || item.summary) ? `<p class="desc">${escapeHtml(item.description || item.summary)}</p>` : ""}
     ${forms.length ? `<div class="forms">${forms.map((f) => `<span class="form-tag">${escapeHtml(f)}</span>`).join("")}</div>` : ""}
     <div class="card-foot">
       <span class="foot-left">
@@ -427,7 +427,7 @@ function openPopup(dateStr, events) {
       <p class="popup-meta">${escapeHtml(item.source)} &middot; <span style="background:${CAT_COLOUR[cat]};color:#fff;border-radius:4px;padding:1px 6px;font-size:.7rem">${escapeHtml(cat)}</span></p>
       ${item.amount ? `<div class="popup-amount">${escapeHtml(item.amount)}</div>` : ""}
       ${String(item.entry_fee || "").toLowerCase() === "free" ? `<div class="popup-fee free">Free entry</div>` : ""}
-      ${item.summary ? `<p style="font-size:.82rem;color:var(--c-muted);margin:6px 0 0">${escapeHtml(item.summary)}</p>` : ""}
+      ${(item.description || item.summary) ? `<p style="font-size:.82rem;color:var(--c-muted);margin:6px 0 0">${escapeHtml(item.description || item.summary)}</p>` : ""}
       <div class="popup-links">
         ${item.link ? `<a href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
         <button class="cal-ics-btn">Download .ics</button>
