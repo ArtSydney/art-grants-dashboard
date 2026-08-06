@@ -21,6 +21,26 @@ def _item_id(link, title):
     return hashlib.sha1(basis.encode("utf-8")).hexdigest()
 
 
+def _meta_description(soup):
+    """Pull a clean one-line description from a page's meta tags.
+
+    Sites almost always carry a human-written og:description or meta description
+    that reads far better than scraped body text (which is riddled with nav
+    fragments). Returns '' if none found. Call this BEFORE decomposing tags.
+    """
+    for sel, attr in (
+        ('meta[property="og:description"]', "content"),
+        ('meta[name="description"]', "content"),
+        ('meta[name="twitter:description"]', "content"),
+    ):
+        tag = soup.select_one(sel)
+        if tag and tag.get(attr):
+            text = " ".join(tag.get(attr).split()).strip()
+            if len(text) > 20:
+                return text[:300]
+    return ""
+
+
 def load_sources():
     with open(SOURCES_FILE, "r", encoding="utf-8") as f:
         sources = json.load(f)
@@ -185,10 +205,12 @@ def fetch_creative_australia(source, max_pages=12):
 
             # Pass 2: fetch the detail page for key dates and amount
             detail_text = entry["text"]
+            meta_desc = ""
             try:
                 dr = requests.get(full, headers=headers, timeout=REQUEST_TIMEOUT)
                 dr.raise_for_status()
                 dsoup = BeautifulSoup(dr.text, "html.parser")
+                meta_desc = _meta_description(dsoup)  # grab before decomposing
                 for t in dsoup(["script", "style", "nav", "footer", "header", "noscript"]):
                     t.decompose()
                 detail_text = " ".join(dsoup.get_text(" ", strip=True).split())[:4000]
@@ -201,6 +223,7 @@ def fetch_creative_australia(source, max_pages=12):
                 "title": title,
                 "link": full,
                 "summary": detail_text,
+                "meta_desc": meta_desc,
             })
     return items
 
@@ -292,6 +315,7 @@ def fetch_page(source):
     resp = requests.get(source["url"], headers=headers, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
+    meta_desc = _meta_description(soup)  # grab before decomposing
     for tag in soup(["script", "style", "nav", "footer", "header", "noscript", "img", "svg"]):
         tag.decompose()
     text = " ".join(soup.get_text(" ", strip=True).split())
@@ -302,6 +326,7 @@ def fetch_page(source):
         "title": title,
         "link": source["url"],
         "summary": text[:6000],   # generous, since dates often sit low on the page
+        "meta_desc": meta_desc,
         "refresh": True,
     }]
 
@@ -376,10 +401,12 @@ def fetch_bneart(source, max_pages=4):
             # card text is truncated ("Presented by the…") so fetch the
             # detail page for the full description including the deadline
             detail_text = summary
+            meta_desc = ""
             try:
                 dr = requests.get(href, headers=headers, timeout=REQUEST_TIMEOUT)
                 dr.raise_for_status()
                 dsoup = BeautifulSoup(dr.text, "html.parser")
+                meta_desc = _meta_description(dsoup)  # grab before decomposing
                 for t in dsoup(["script", "style", "nav", "footer", "header", "noscript", "img", "svg"]):
                     t.decompose()
                 page_text = " ".join(dsoup.get_text(" ", strip=True).split())
@@ -413,6 +440,7 @@ def fetch_bneart(source, max_pages=4):
                 "title": title,
                 "link": href,
                 "summary": detail_text[:4000],
+                "meta_desc": meta_desc,
             })
             new_on_page += 1
 
@@ -479,7 +507,6 @@ def fetch_google_search(source):
                     "newcastleherald.com.au", "newcastleweekly.com.au",
                     "insidelocalgovernment.com.au", "ausleisure.com.au",
                     "artcollector.net.au", "artgallery.nsw.gov.au",
-                    "artloversaustralia.com.au", "headon.org.au",
                 )
                 if any(d in url for d in skip_domains):
                     continue
@@ -491,7 +518,7 @@ def fetch_google_search(source):
                     "/blog/", "/press-release/", "/media-release/",
                     "instagram.com", "facebook.com", "twitter.com",
                     "/artist-opportunities/", "/funding/other-grants/", 
-                    "/sector/funding/", "/terms-and-conditions/",
+                    "/sector/funding/",
                 )
                 if any(p in url.lower() for p in skip_url_patterns):
                     continue
@@ -501,8 +528,6 @@ def fetch_google_search(source):
                     "congratulations", "winner of", "announces winner",
                     "finalists announced", "faq", "info booklet",
                     "art prizes planner", "prize listings",
-                    "artist opportunities", "funding opportunities", "australian art prizes",
-                    "awards", "opportunities",
                 )):
                     continue
                 seen_urls.add(url)
@@ -515,12 +540,14 @@ def fetch_google_search(source):
     for r in raw_results:
         url, title, snippet = r["url"], r["title"], r["snippet"]
         page_text = snippet  # fallback if page fetch fails
+        meta_desc = ""
         try:
             pr = requests.get(url, headers=headers_fetch, timeout=REQUEST_TIMEOUT)
             pr.raise_for_status()
             if "just a moment" in pr.text.lower() or "challenge-platform" in pr.text:
                 continue  # Cloudflare block, skip silently
             soup = BeautifulSoup(pr.text, "html.parser")
+            meta_desc = _meta_description(soup)  # grab before decomposing
             for t in soup(["script", "style", "nav", "footer", "header", "noscript", "img", "svg"]):
                 t.decompose()
             page_text = " ".join(soup.get_text(" ", strip=True).split())[:4000]
@@ -533,6 +560,7 @@ def fetch_google_search(source):
             "title": title,
             "link": url,
             "summary": page_text,
+            "meta_desc": meta_desc,
         })
 
     return items
@@ -649,10 +677,12 @@ def fetch_artsoz_prizes(source, max_prizes=40):
         meta_text = ". ".join(meta)
 
         page_text = ""
+        meta_desc = ""
         try:
             pr = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
             pr.raise_for_status()
             soup = BeautifulSoup(pr.text, "html.parser")
+            meta_desc = _meta_description(soup)  # grab before decomposing
             for t in soup(["script", "style", "nav", "footer", "header", "noscript", "img", "svg"]):
                 t.decompose()
             page_text = " ".join(soup.get_text(" ", strip=True).split())[:5000]
@@ -665,6 +695,7 @@ def fetch_artsoz_prizes(source, max_prizes=40):
             "title": name,
             "link": url,
             "summary": f"{meta_text}. {page_text}".strip()[:6000],
+            "meta_desc": meta_desc,
             "refresh": True,
         })
     return items

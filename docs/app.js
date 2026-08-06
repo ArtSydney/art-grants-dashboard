@@ -137,6 +137,17 @@ function render() {
   shown.forEach((item) => grid.appendChild(card(item)));
 }
 
+// Card/popup blurb: prefer the clean classifier description; if only the raw
+// scraped summary exists (older records), truncate it so it never spills as a
+// wall of text on the card.
+function blurb(item) {
+  if (item.description) return item.description;
+  const s = String(item.summary || "").trim();
+  if (!s) return "";
+  if (s.length <= 180) return s;
+  return s.slice(0, 180).replace(/\s+\S*$/, "") + "…";
+}
+
 function card(item) {
   const n = daysLeft(item.deadline);
   const cd = countdownLabel(n);
@@ -155,7 +166,7 @@ function card(item) {
     </div>
     <h2>${escapeHtml(item.title)}</h2>
     <p class="source">${escapeHtml(item.source)}</p>
-    ${(item.description || item.summary) ? `<p class="desc">${escapeHtml(item.description || item.summary)}</p>` : ""}
+    ${blurb(item) ? `<p class="desc">${escapeHtml(blurb(item))}</p>` : ""}
     ${forms.length ? `<div class="forms">${forms.map((f) => `<span class="form-tag">${escapeHtml(f)}</span>`).join("")}</div>` : ""}
     <div class="card-foot">
       <span class="foot-left">
@@ -427,7 +438,7 @@ function openPopup(dateStr, events) {
       <p class="popup-meta">${escapeHtml(item.source)} &middot; <span style="background:${CAT_COLOUR[cat]};color:#fff;border-radius:4px;padding:1px 6px;font-size:.7rem">${escapeHtml(cat)}</span></p>
       ${item.amount ? `<div class="popup-amount">${escapeHtml(item.amount)}</div>` : ""}
       ${String(item.entry_fee || "").toLowerCase() === "free" ? `<div class="popup-fee free">Free entry</div>` : ""}
-      ${(item.description || item.summary) ? `<p style="font-size:.82rem;color:var(--c-muted);margin:6px 0 0">${escapeHtml(item.description || item.summary)}</p>` : ""}
+      ${blurb(item) ? `<p style="font-size:.82rem;color:var(--c-muted);margin:6px 0 0">${escapeHtml(blurb(item))}</p>` : ""}
       <div class="popup-links">
         ${item.link ? `<a href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
         <button class="cal-ics-btn">Download .ics</button>

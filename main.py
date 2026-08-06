@@ -37,11 +37,13 @@ def run():
             continue  # seen in a previous run, skip
         if item["source"] in noisy and not looks_like_opportunity(item):
             # record as seen-and-skipped so we never pay to look at it again
+            item.pop("meta_desc", None)
             state[item["id"]] = {**item, "relevant": False, "prefiltered": True}
             continue
         result = classify(item)
         if result is None:
             continue
+        item.pop("meta_desc", None)   # raw scratch field; description is derived from it
         record = {
             **item,
             **result,

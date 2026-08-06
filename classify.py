@@ -33,9 +33,6 @@ _DROP_TITLES = [
     "how a zoom", "super choir", "wellbeing workshop",
     "facilitation 2026",  # Workshop Facilitation 2026
     "working with the grain",  # specific workshop
-    "terms and conditions", "terms & conditions",  # T&C pages
-    "artist opportunities",  # generic landing pages
-    "funding opportunities",  # generic landing pages
 ]
 
 _DROP_SOURCES = []  # currently none
@@ -138,7 +135,7 @@ _MONTH_NUM = {
     "january":"01","february":"02","march":"03","april":"04",
     "may":"05","june":"06","july":"07","august":"08",
     "september":"09","october":"10","november":"11","december":"12",
-    "jan":"01","feb":"02","mar":"03","apr":"04","may":"05",
+    "jan":"01","feb":"02","mar":"03","apr":"04",
     "jun":"06","jul":"07","aug":"08","sep":"09","oct":"10","nov":"11","dec":"12",
 }
 
@@ -437,20 +434,39 @@ def classify(item):
     if DROP_IF_NO_ART_FORM and not art_forms:
         return _not_relevant("No visual art form detected.")
 
-    # --- one-line description: strip nav boilerplate, take first real sentence ---
-    # strip Artsoz metadata prefix e.g. "Location: QLD, Australia. Medium: ..."
-    clean = re.sub(r'^(?:Location|Medium|Type|Tags):[^.]+\.\s*', '', summary, flags=re.IGNORECASE)
-    clean = re.sub(r'^(?:Location|Medium|Type|Tags):[^.]+\.\s*', '', clean, flags=re.IGNORECASE)
-    clean = re.sub(
-        r'^.*?(?:skip to (?:content|main content)|please note\s*:)[^\n]*\n?',
-        '', clean, flags=re.IGNORECASE
-    ).strip()
-    # strip repeated page title from the start
-    clean = re.sub(r'^' + re.escape(title[:50]) + r'[^\w]*', '', clean, flags=re.IGNORECASE).strip()
-    # strip pipe-separated site name prefix e.g. "Creative Australia | Skip..."
-    clean = re.sub(r'^[^|]{0,60}\|\s*', '', clean).strip()
-    first_sent = re.split(r'(?<=[.!?])\s', clean)
-    description = first_sent[0].strip()[:180] if first_sent and len(first_sent[0].strip()) > 20 else ""
+    # --- one-line description ---
+    # Prefer the page's own meta description (clean, human-written), but only if
+    # it reads like a real sentence — some pages set it to just a site or gallery
+    # name ("Brunswick Street Gallery"), which is useless. Fall back to extracting
+    # the first real sentence from scraped text, stripping nav boilerplate and
+    # metadata prefixes that pollute the start of the summary.
+    description = ""
+    meta_desc = (item.get("meta_desc") or "").strip()
+    md_first = re.split(r'(?<=[.!?])\s', meta_desc)[0].strip() if meta_desc else ""
+    # a usable meta description is reasonably long and has several words
+    if len(md_first) >= 30 and len(md_first.split()) >= 5:
+        description = md_first[:180]
+    else:
+        # strip Artsoz metadata prefix e.g. "Location: QLD. Medium: X. Type: Y. Tags: Z."
+        # loop because there can be several segments back-to-back
+        prev = None
+        clean = summary
+        while prev != clean:
+            prev = clean
+            clean = re.sub(r'^(?:Location|Medium|Type|Tags):[^.]+\.\s*', '', clean, flags=re.IGNORECASE).strip()
+        # strip everything up to and including a nav marker (single-line safe)
+        clean = re.sub(r'^.*?skip to (?:main )?content\s*', '', clean, flags=re.IGNORECASE).strip()
+        clean = re.sub(r'^(?:please note\s*:)\s*', '', clean, flags=re.IGNORECASE).strip()
+        # strip common Creative Australia listing prefixes e.g. "Multi-art form Open"
+        clean = re.sub(r'^(?:multi-art form|visual arts|literature|music|theatre|dance|first nations)\s+(?:open|closed)\s+', '', clean, flags=re.IGNORECASE).strip()
+        # strip a leading email address
+        clean = re.sub(r'^[\w.\-]+@[\w.\-]+\s*', '', clean).strip()
+        # strip repeated page title from the start
+        clean = re.sub(r'^' + re.escape(title[:50]) + r'[^\w]*', '', clean, flags=re.IGNORECASE).strip()
+        # strip pipe-separated site name prefix e.g. "Creative Australia | Skip..."
+        clean = re.sub(r'^[^|]{0,60}\|\s*', '', clean).strip()
+        first_sent = re.split(r'(?<=[.!?])\s', clean)
+        description = first_sent[0].strip()[:180] if first_sent and len(first_sent[0].strip()) > 20 else ""
 
     return {
         "relevant":       True,
