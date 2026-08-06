@@ -4286,30 +4286,6 @@
       ],
       "first_seen": "2026-08-06",
       "closing_soon_sent": false
-    },
-    {
-      "id": "22df966fb42d3e4140506dd412443dc59d7871cd",
-      "source": "Google: Australian art prizes",
-      "title": "Awards",
-      "link": "https://headon.org.au/awards",
-      "summary": "Head On Photo Awards 2026 – Entries open. Head On Photo Awards offer an $80,000 prize pool. Open to photographers of every level and judged completely ...",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "",
-      "amount": "$80,000",
-      "entry_fee": "",
-      "description": "Head On Photo Awards 2026 – Entries open.",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Photography"
-      ],
-      "first_seen": "2026-08-06",
-      "closing_soon_sent": false
     }
   ]
 }
