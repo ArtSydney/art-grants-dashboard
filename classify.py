@@ -33,6 +33,9 @@ _DROP_TITLES = [
     "how a zoom", "super choir", "wellbeing workshop",
     "facilitation 2026",  # Workshop Facilitation 2026
     "working with the grain",  # specific workshop
+    "terms and conditions", "terms & conditions",  # T&C pages
+    "artist opportunities",  # generic landing pages
+    "funding opportunities",  # generic landing pages
 ]
 
 _DROP_SOURCES = []  # currently none
@@ -135,7 +138,7 @@ _MONTH_NUM = {
     "january":"01","february":"02","march":"03","april":"04",
     "may":"05","june":"06","july":"07","august":"08",
     "september":"09","october":"10","november":"11","december":"12",
-    "jan":"01","feb":"02","mar":"03","apr":"04",
+    "jan":"01","feb":"02","mar":"03","apr":"04","may":"05",
     "jun":"06","jul":"07","aug":"08","sep":"09","oct":"10","nov":"11","dec":"12",
 }
 
@@ -435,9 +438,12 @@ def classify(item):
         return _not_relevant("No visual art form detected.")
 
     # --- one-line description: strip nav boilerplate, take first real sentence ---
+    # strip Artsoz metadata prefix e.g. "Location: QLD, Australia. Medium: ..."
+    clean = re.sub(r'^(?:Location|Medium|Type|Tags):[^.]+\.\s*', '', summary, flags=re.IGNORECASE)
+    clean = re.sub(r'^(?:Location|Medium|Type|Tags):[^.]+\.\s*', '', clean, flags=re.IGNORECASE)
     clean = re.sub(
         r'^.*?(?:skip to (?:content|main content)|please note\s*:)[^\n]*\n?',
-        '', summary, flags=re.IGNORECASE
+        '', clean, flags=re.IGNORECASE
     ).strip()
     # strip repeated page title from the start
     clean = re.sub(r'^' + re.escape(title[:50]) + r'[^\w]*', '', clean, flags=re.IGNORECASE).strip()

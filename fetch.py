@@ -479,6 +479,7 @@ def fetch_google_search(source):
                     "newcastleherald.com.au", "newcastleweekly.com.au",
                     "insidelocalgovernment.com.au", "ausleisure.com.au",
                     "artcollector.net.au", "artgallery.nsw.gov.au",
+                    "artloversaustralia.com.au", "headon.org.au",
                 )
                 if any(d in url for d in skip_domains):
                     continue
@@ -490,7 +491,7 @@ def fetch_google_search(source):
                     "/blog/", "/press-release/", "/media-release/",
                     "instagram.com", "facebook.com", "twitter.com",
                     "/artist-opportunities/", "/funding/other-grants/", 
-                    "/sector/funding/",
+                    "/sector/funding/", "/terms-and-conditions/",
                 )
                 if any(p in url.lower() for p in skip_url_patterns):
                     continue
@@ -500,6 +501,8 @@ def fetch_google_search(source):
                     "congratulations", "winner of", "announces winner",
                     "finalists announced", "faq", "info booklet",
                     "art prizes planner", "prize listings",
+                    "artist opportunities", "funding opportunities", "australian art prizes",
+                    "awards", "opportunities",
                 )):
                     continue
                 seen_urls.add(url)
