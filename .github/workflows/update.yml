@@ -10,7 +10,7 @@ name: Update opportunities
 
 on:
   schedule:
-    - cron: "0 16 * * *"   # 20:00 UTC daily (~06:00 AEST / 07:00 AEDT)
+    - cron: "0 5 * * *"   # 20:00 UTC daily (~06:00 AEST / 07:00 AEDT)
       timezone: "Australia/Sydney"
   workflow_dispatch: {}     # lets you trigger a run by hand from the Actions tab
 
