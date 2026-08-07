@@ -294,6 +294,57 @@ def _extract_entry_fee(text):
 
 
 # ---------------------------------------------------------------------------
+# Description sentence selection
+# ---------------------------------------------------------------------------
+
+# Boilerplate a page's meta/body sometimes leads with — never use as description.
+_DESC_BOILERPLATE = (
+    "acknowledge", "traditional custodians", "traditional owners",
+    "always was and always will be", "pay respect", "pay our respect",
+    "we recognise", "we pay our", "elders past and present",
+)
+
+
+def _good_sentence(s):
+    """True if s reads like a real descriptive sentence — not boilerplate, not a
+    navigation/year list, not a stray fragment. Guards against junk like an
+    archive index ('Continue 2026 2025 2024 …') becoming the card description."""
+    s = s.strip()
+    if len(s) < 25:
+        return False
+    low = s.lower()
+    if any(b in low for b in _DESC_BOILERPLATE):
+        return False
+    tokens = s.split()
+    if len(tokens) < 5:
+        return False
+    # need enough real word-tokens (3+ alphabetic chars) vs numbers/short bits —
+    # a year list or nav strip fails this because it's mostly numeric tokens
+    wordish = sum(1 for t in tokens if sum(c.isalpha() for c in t) >= 3)
+    if wordish < 4:
+        return False
+    if wordish / len(tokens) < 0.5:
+        return False
+    return True
+
+
+def _first_good_sentence(text):
+    """Return the first sentence in text that passes _good_sentence, or ''."""
+    # collapse archive/nav year runs ("Continue 2026 2025 2024 … 1993 1") that
+    # AGNSW-style pages embed with no punctuation — they glue onto the real
+    # sentence after them and would otherwise swallow it. A lone 1-2 digit page
+    # number sometimes trails the run, so sweep that too.
+    text = re.sub(r'(?:\b(?:19|20)\d{2}\b[\s,]*){3,}(?:\b\d{1,2}\b\s*)?', ' ', text or "")
+    text = re.sub(r'\bContinue\b\s*', ' ', text)
+    text = re.sub(r'\s{2,}', ' ', text).strip()
+    for sent in re.split(r'(?<=[.!?])\s', text):
+        s = sent.strip()
+        if _good_sentence(s):
+            return s[:180]
+    return ""
+
+
+# ---------------------------------------------------------------------------
 # Main classify function
 # ---------------------------------------------------------------------------
 
@@ -397,17 +448,20 @@ def classify(item):
     # --- deadline ---
     deadline = _extract_deadline(summary + " " + title)
 
-    # sanity check: if the extracted deadline is more than 30 days in the past,
-    # it's likely an old round date from a page that hasn't updated yet — drop it
+    # If we found a deadline that's well in the past, the opportunity has closed
+    # (or the page shows a stale prior-round date). Drop it entirely rather than
+    # blanking the date — a blanked date would make a closed call look like an
+    # open, undated one and it would linger on the dashboard forever. Genuinely
+    # undated opportunities (no date found at all) are unaffected and still show.
+    # The 30-day grace keeps very-recently-closed items visible briefly.
     if deadline:
         try:
-            from datetime import datetime
+            from datetime import datetime, timedelta
             from zoneinfo import ZoneInfo
             dl_date = datetime.strptime(deadline, "%Y-%m-%d").date()
             today = datetime.now(ZoneInfo("Australia/Sydney")).date()
-            from datetime import timedelta
             if dl_date < today - timedelta(days=30):
-                deadline = ""
+                return _not_relevant("Deadline passed.")
         except ValueError:
             pass
 
@@ -439,16 +493,18 @@ def classify(item):
     # --- one-line description ---
     # Prefer the page's own meta description (clean, human-written), but only if
     # it reads like a real sentence — some pages set it to just a site or gallery
-    # name ("Brunswick Street Gallery"), which is useless. Fall back to extracting
-    # the first real sentence from scraped text, stripping nav boilerplate and
-    # metadata prefixes that pollute the start of the summary.
+    # name ("Brunswick Street Gallery"), or lead with an Acknowledgement of
+    # Country, which is respectful but not a description of the opportunity.
+    # Fall back to extracting the first real sentence from scraped text.
     description = ""
     meta_desc = (item.get("meta_desc") or "").strip()
-    md_first = re.split(r'(?<=[.!?])\s', meta_desc)[0].strip() if meta_desc else ""
-    # a usable meta description is reasonably long and has several words
-    if len(md_first) >= 30 and len(md_first.split()) >= 5:
-        description = md_first[:180]
-    else:
+
+    # Prefer the page's own meta description, taking its first genuinely
+    # descriptive sentence (skips Acknowledgements of Country, year lists, etc).
+    if meta_desc:
+        description = _first_good_sentence(meta_desc)
+
+    if not description:
         # strip Artsoz metadata prefix e.g. "Location: QLD. Medium: X. Type: Y. Tags: Z."
         # loop because there can be several segments back-to-back
         prev = None
@@ -467,8 +523,9 @@ def classify(item):
         clean = re.sub(r'^' + re.escape(title[:50]) + r'[^\w]*', '', clean, flags=re.IGNORECASE).strip()
         # strip pipe-separated site name prefix e.g. "Creative Australia | Skip..."
         clean = re.sub(r'^[^|]{0,60}\|\s*', '', clean).strip()
-        first_sent = re.split(r'(?<=[.!?])\s', clean)
-        description = first_sent[0].strip()[:180] if first_sent and len(first_sent[0].strip()) > 20 else ""
+        # take the first genuinely descriptive sentence (skips boilerplate,
+        # nav strips, and year/archive lists that aren't real prose)
+        description = _first_good_sentence(clean)
 
     return {
         "relevant":       True,
