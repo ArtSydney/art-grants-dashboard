@@ -518,7 +518,7 @@ def fetch_google_search(source):
                     "/blog/", "/press-release/", "/media-release/",
                     "instagram.com", "facebook.com", "twitter.com",
                     "/artist-opportunities/", "/funding/other-grants/", 
-                    "/sector/funding/",
+                    "/sector/funding/", "/terms-and-conditions/",
                 )
                 if any(p in url.lower() for p in skip_url_patterns):
                     continue

@@ -33,6 +33,8 @@ _DROP_TITLES = [
     "how a zoom", "super choir", "wellbeing workshop",
     "facilitation 2026",  # Workshop Facilitation 2026
     "working with the grain",  # specific workshop
+    "terms and conditions", "terms & conditions",  # T&C pages, not opportunities
+    "artist opportunities", "funding opportunities",  # generic landing pages
 ]
 
 _DROP_SOURCES = []  # currently none
