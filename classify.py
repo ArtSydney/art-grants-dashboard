@@ -159,8 +159,11 @@ def _extract_deadline(text):
         return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
 
     # closing keyword + day month year: "closes 5 October 2026"
+    # also handles "Entries close > 6pm 9th August 2026" (arrow + optional time)
     m = re.search(
-        rf'(?:clos(?:es?|ing)|deadline|due|submit(?:ted)?\s+by|applications?\s+close|open\s+until|until)[:\s]+(\d{{1,2}})\s+({_MONTHS})\s+(202\d)',
+        rf'(?:clos(?:es?|ing)|deadline|due|submit(?:ted)?\s+by|applications?\s+close|open\s+until|until)'
+        rf'[:\s>]+(?:\d{{1,2}}(?:am|pm|:\d{{2}}(?:am|pm)?)?\s+)?'
+        rf'(\d{{1,2}})(?:st|nd|rd|th)?\s+({_MONTHS})\s+(202\d)',
         text, re.IGNORECASE
     )
     if m:
@@ -369,6 +372,12 @@ def classify(item):
         "register now for free", "register to attend", "book your spot",
         "life drawing session", "weekly session", "weekly drawing",
         "drop-in session", "attend this workshop",
+        # explicitly closed calls — page still live but round has ended
+        "entries are closed", "entries are now closed",
+        "submissions are closed", "submissions are now closed",
+        "applications are closed", "applications are now closed",
+        "this prize is now closed", "prize is now closed",
+        "competition is now closed", "competition is closed",
     ]
     summary_low = summary.lower()
     if any(kw in summary_low for kw in _DROP_SUMMARY):
@@ -428,6 +437,29 @@ def classify(item):
             if any(kw in text for kw in keywords):
                 category = cat
                 break
+
+    # --- category fallback: title ends with a category word ---
+    # Catches "Archibald Prize", "Wynne Prize", "Josephine Ulrick ... Award" etc
+    # where the title alone is the signal but keyword matching on full text fails
+    # because the page is thin or archive-heavy.
+    if category == "Other":
+        _TITLE_SUFFIX_MAP = [
+            ("Prize",       ["prize", "award", "awards"]),
+            ("Fellowship",  ["fellowship", "fellowships"]),
+            ("Residency",   ["residency", "residencies"]),
+            ("Scholarship", ["scholarship", "scholarships", "bursary"]),
+            ("Grant",       ["grant", "grants", "fund", "funding"]),
+            ("Commission",  ["commission"]),
+        ]
+        import re as _re
+        title_stripped = _re.sub(r'\s+20\d\d$', '', title_low.rstrip(".")).rstrip()
+        title_words = title_stripped.split()
+        if title_words:
+            last = title_words[-1]
+            for cat, suffixes in _TITLE_SUFFIX_MAP:
+                if last in suffixes:
+                    category = cat
+                    break
 
     # --- au_eligibility ---
     if source in _AU_SOURCES or any(kw in text for kw in _AU_KEYWORDS):

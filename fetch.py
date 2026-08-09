@@ -507,6 +507,11 @@ def fetch_google_search(source):
                     "newcastleherald.com.au", "newcastleweekly.com.au",
                     "insidelocalgovernment.com.au", "ausleisure.com.au",
                     "artcollector.net.au", "artgallery.nsw.gov.au",
+                    # listicle / photography magazine sites — publish "10 best prizes"
+                    # roundups that are not themselves opportunities
+                    "digitalcameraworld.com", "petapixel.com", "dpreview.com",
+                    "photographylife.com", "fstoppers.com", "lightstalking.com",
+                    "expertphotography.com", "contrastly.com",
                 )
                 if any(d in url for d in skip_domains):
                     continue
