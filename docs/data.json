@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-10T09:28:09+10:00",
-  "count": 121,
+  "generated": "2026-08-11T05:55:26+10:00",
+  "count": 125,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -114,6 +114,31 @@
       "judge": "",
       "art_forms": [
         "Visual Arts"
+      ],
+      "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "6adf7808710433de184f9728c4dad61da578680a",
+      "source": "Artsoz prize registry",
+      "title": "Glover Prize",
+      "link": "https://www.johnglover.com.au/",
+      "summary": "Location: TAS, Australia. Medium: Landscape. Type: Landscape. Tags: landscape, major. Glover Prize | Australia's Most Prestigious Landscape Art Prize Skip to Content The John Glover Acquisitive Prize Celebrating the legacy of John Glover, The John Glover Art Prize (Glover Prize) has become one of Australia’s most significant awards for landscape painting, open to artists from anywhere in the world. More Info It is awarded annually by The John Glover Society Inc. for the work judged the best contemporary landscape painting of Tasmania. Landscape painting is defined in its broadest sense. The aim is to stimulate conversations about the meaning and possibilities expressed in the words landscape, painting and Tasmania. The winner receives $80,000 plus a bronze maquette of colonial artist John Glover, designed by Peter Corlett and valued at $5,000. The Glover Prize is acquisitive, selected from 42 works chosen by a panel of eminent judges. All other exhibited entries are eligible for the (non-acquisitive) People’s Choice Award of $3,000, the Children’s Choice Award of $500 and the Hangers' Choice Award of $500. Entry Conditions The Exhibition The exhibition of finalists’ paintings is held over the March long-weekend in the historic Falls Park Pavilion in Evandale, a village on the beautiful northern plains of Tasmania. 2027 Glover Prize Key Dates: Monday 27 July 2026 – Entries open at 10.00am (AEST) Friday 21 January 2027 – Entries close at 6.00pm (AEDT) Friday 5 February 2027 – Finalists announced online (selected artists notified by email) Wednesday 3 March 2027 – Hangers’ Choice Award winner announced Friday 5 March 2027 – Official exhibition opening & winner announced Saturday 6 March 2027 – Exhibition opens to the public at 10:00am (AEDT). Mon – Sat 10:00am – 4:00pm, Sun 9:00 am – 4:00 pm Wednesday 10 – Friday 12 March 2027 – College Students Days Sunday 14 March 2027 – People’s & Children’s Choice Awards winners announced Sunday 14 March 2027 – Exhibition closes at 4:00pm (AEDT) More Info Glover Prize Virtual Exhibition Tour Experience the Glover Prize Exhibition from right inside your web browser. Virtual Tour 2025 Finalists View Exhibition Congratulations to the Finalists from Glover Prize 2025: Bern Emmerichs Uprooted Belinda Casey Fanny, Trucanini, Lootawinni - Lunawanna Alonnah (Fanny, Trucanini & the kids - Bruny Island) Jake Walker Hobart and surrounds Admission Prices All entry prices include a printed catalogue. Adults (18+) $15.00 Children (<18) FREE ENTRY Opening Hours The Glover Prize 2027 Exhibition is open to the public Saturday 6 March through to Sunday 14 March 2027. Monday – Saturday 10 a.m. – 4 p.m. Sundays 9 a.m. – 4 p.m. Latest News Join our Glover Mailing List Close this module Newsletter Subscribe to our newsletter to keep up-to-date on all our latest news Your email Email Submit About Back About Us Key Dates 2027 Glover Prize Judges Glover Society Associate Memberships FAQ Art and its Interpretations Education Conditions of Entry Exhibitions Back Finalists Glover Prize Winners Hangers' Choice Winners People's Choice Winners Children's Choice Winners Highly Commended 2026 Finalists Virtual Exhibition Our Partners Events Back Calendar Gallery Contact Visit",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-07-27",
+      "amount": "$80,000",
+      "entry_fee": "Free",
+      "description": "The John Glover Art Prize is awarded annually to the best contemporary landscape painting of Tasmania, with an exhibition in Evandale.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting"
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": false,
@@ -506,6 +531,31 @@
         "Ceramics"
       ],
       "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "6c0c3e0bb91db151e9c2d36daaccc34813fc759a",
+      "source": "BNE Art: Opportunities",
+      "title": "Exhibition Opportunity: Grace Cossington Smith Gallery",
+      "link": "https://bneart.com/exhibition-opportunity-grace-cossington-smith-gallery/",
+      "summary": "Deadline: August 30. Exhibition Opportunity: Grace Cossington Smith Gallery – BNE ART - Brisbane Art Guide Skip to content Menu Exhibition Opportunity: Grace Cossington Smith Gallery Deadline: Deadline: August 30 The Grace Cossington Smith Gallery is calling for proposals for solo and group exhibitions in 2027 , welcoming submissions from emerging and established artists and curators. With a focus on contemporary art practices, the gallery is seeking exhibitions that explore ideas and thinking across a range of subjects, themes and media, with opportunities to create connections with learning. Exhibitions are offered over a three-week hire period , including one day for installation and one day for de-installation. Applications close: Sunday 30 August 2026 www.gcsgallery.com.au 0294737878 gcsgallery@abbotsleigh.nsw.edu.au",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-08-30",
+      "amount": "",
+      "entry_fee": "",
+      "description": "The Grace Cossington Smith Gallery is calling for proposals for solo and group exhibitions in 2027, welcoming submissions from emerging and established artists and curators.With a ",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Installation"
+      ],
+      "first_seen": "2026-08-10",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -1302,6 +1352,63 @@
         "Digital/New Media"
       ],
       "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "aaeee8b82092a297f24a49da1e4e41706ecdcbc7",
+      "source": "BNE Art: Opportunities",
+      "title": "Queensland Regional Art Awards 2026",
+      "link": "https://bneart.com/queensland-regional-art-awards-2026/",
+      "summary": "Deadline: September 18. Queensland Regional Art Awards 2026 – BNE ART - Brisbane Art Guide Skip to content Menu Queensland Regional Art Awards 2026 Deadline: Deadline: September 18 Entries are now open for the 2026 Queensland Regional Art Awards (QRAA) , Australia’s largest regional art awards program for artists living in regional, rural and remote Queensland. With a total prize pool of $326,800 , the QRAA offers cash prizes, exhibitions, residencies and professional development opportunities across a range of categories. Categories include the Queensland Regional Art Awards Overall Winner, Mervyn Moriarty Landscape Award, First Nations Artist Award, Remote Artist Award, Emerging Artist Award, Young Artist Award and People’s Choice Awards. Free professional development resources are also available to assist artists with preparing their artist statement, CV, artwork photography and submission. Entries open: Monday 10 August 2026 Entries close: Friday 18 September 2026, 3pm Finalists announced: 15 October 2026 People’s Choice opens: 16 October 2026 Finalist artworks due: 9 November 2026 People’s Choice closes: 24 November 2026 Gala Awards Night: 26 November 2026 https://flyingarts.org.au/queensland-regional-art-awards/?utm_campaign=qraa&utm_medium=button&utm_source=edm 0732161322 development@flyingarts.org.au",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-09",
+      "amount": "$326,800",
+      "entry_fee": "",
+      "description": "Entries are now open for the 2026 Queensland Regional Art Awards (QRAA), Australia’s largest regional art awards program for artists living in regional, rural and remote Queensland",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-08-10",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "656b061b1b6ad05ae133de9a3b7d490a9cb44041",
+      "source": "Google: Australian art prizes",
+      "title": "Summer Small Works Art Show & Prize 2026 - CNG GALLERY",
+      "link": "https://www.caeleneneeglen.com.au/summer-small-works-show-prize-2026-information",
+      "summary": "Summer Small Works Art Show & Prize 2026 — CNG GALLERY by Caelene nee Glen Summer Small Works Show & Prize 2026: Information Show | Prize | Calendar — summer small works show & prize 2026 — applications open 1 july 2026 THEME 2026 | ‘Emergence’ APPLY NOW SUMMER SMALL WORKS PRIze 2026 1 artwork will be awarded $1000 prize money (non-acquisitive) with artwork featured in the 2027 gallery calendar 11 artworks will each be awarded $100 prize money (non-acquisitive) with artwork featured in the 2027 gallery calendar All artworks exhibited for sale, promoting artwork gifting during holiday season 2027 calendar launched at exhibition opening $30 per one artwork $60 per two artworks $85 per three artworks $110 per four artworks $140 per five artworks Maximum of five artworks per artist entry fees Applications open: 1 July 2026 Applications close: 22 November 2026 Delivery of artworks: 1 - 29 November 2026 Opening celebration & Prize announcements: Thursday 3 December 2026 Exhibition: 3 - 23 December 2026 KEY DATES ELIGIBILITY The award is open to all artists living in Australia. The artist and applicant must be over 18 years of age. The applicant’s artwork entry must: Be an original work and must not infringe copyright. Be a size that does not exceed A5: {inches: 5.83 x 8.27 in}, {centimetres: 14.8 x 21.01 cm}; and may be presented in either horizontal or vertical format. A work may consist of multiple parts but must not exceed the overall size limits. Be a size that does not exceed, in the third dimension measurement: {inches: 5.83 in}, {centimetres: 14.8 cm}. Be presented as the artist intends either (a) without a frame as per above dimensions; or (b) including a frame that does not exceed: {inches: 7.0 x 9.05 x 7.0 in}, {centimetres: 18 x 24 x 18 cm}. Have been completed no earlier than January 2026. Be for sale and available to be published in the ‘Small Works Calendar’. APPLY NOW FAQ’s Mediums? All mediums welcome: painting, drawing, mixed media, fabric, thread, ceramic, collage, photography, printmaking, framed, unframed, paper, canvas, board, wood, metal, recycled objects…. can I list any more? If you create it to the correct size and it can safely hang on the wall in a gallery environment, then it is accepted. Call or message me if you have specific queries. What about video or film works? The gallery does not have film media presentation devices, therefore any moving image artwork must be accompanied by a presentation device with all cords and standard Australian plug-in. Audio is not included for exhibited works, so please ensure any ‘moving image artwork’ is developed for silent presentation only; and limited to 2 minutes. The size restrictions apply for the presentation device (exclusive of cords). Sculpture? Yes, the depth dimension for sculpture is {14.8cm}. Can I post it from regional / interstate? Definitely, this award is open to all Australian artists. How do I price my artworks? Please be true to your artistic career. Price to the quality, size and time put into the artworks, time includes your career development. The idea of small works is that they are more accessible for gifting and purchase leading up to the holiday ‘gifting’ season. The price must include GST and 30% commission. Gallery venue? This year, the Summer Small Works Show & Prize will be held at a new venue close to Melbourne, details to be published soon. ARTISTS APPLY NOW Email Address Sign Up We respect your privacy. Thank you!",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-22",
+      "amount": "$1000",
+      "entry_fee": "",
+      "description": "Australian artists: Enter the 2026 Summer Small Works Show & Prize, presented by Caelene nee Glen.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Sculpture",
+        "Photography",
+        "Printmaking",
+        "Ceramics",
+        "Textiles",
+        "Mixed Media"
+      ],
+      "first_seen": "2026-08-10",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -3116,7 +3223,7 @@
       "source": "Artsoz prize registry",
       "title": "Mosman Youth Art Prize",
       "link": "https://mosmanartgallery.org.au/art/mosman-youth-art-prize/",
-      "summary": "Location: NSW, Australia. Medium: Check official. Type: Youth. Tags: youth, council. Mosman Art Gallery What’s On Exhibitions Events Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Search Contact Venue Hire When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry What’s On Exhibitions Events Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Exhibitions Events Collections Education The Gallery When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry Search When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry Mosman Youth Art Prize Listen The Mosman Youth Art Prize is an annual competition organised by Mosman Council that aims to encourage the creative talents of young, aspiring and emerging artists whilst providing a showcase for their works. It was initiated in 1988 by the internationally renowned artist and local resident Ken Done AM. The Prize is open to all young people aged 12-21 years and is one of the richest youth art prizes in Australia. Online entries are now open for the 2024 Youth Art Prize – find out more . Mosman Youth Art Prize Archive: Please note that the 2020 and 2021 Mosman Youth Art Prizes were cancelled due to public health measures put in place due to COVID-19. Mosman Youth Art Prize 2023 Mosman Youth Art Prize 2022 Mosman Youth Art Prize 2019 Mosman Youth Art Prize 2018 Mosman Youth Art Prize 2017 Mosman Youth Art Prize 2016 Mosman Youth Art Prize 2015 Mosman Youth Art Prize 2014 Mosman Youth Art Prize 2013 Image: Laura Hayley, Experimental arts , 2020, ceramic installation, dimensions variable. Third Prize – Tertiary, 2019 Mosman Youth Art Prize. Mosman Art Gallery acknowledges the Borogegal and Cammeraigal people as the traditional custodians of this land. We pay our respects to Elders of the past and present and to those of the future and acknowledge their spiritual connection to Country.",
+      "summary": "Location: NSW, Australia. Medium: Check official. Type: Youth. Tags: youth, council. Mosman Art Gallery What’s On Exhibitions Events Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Search Contact Venue Hire When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry What’s On Exhibitions Events Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Exhibitions Events Collections Education The Gallery When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry Search When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry All Galleries are currently closed for exhibition change over. We will be open on Friday 21 August. Mosman Youth Art Prize Listen The Mosman Youth Art Prize is an annual competition organised by Mosman Council that aims to encourage the creative talents of young, aspiring and emerging artists whilst providing a showcase for their works. It was initiated in 1988 by the internationally renowned artist and local resident Ken Done AM. The Prize is open to all young people aged 12-21 years and is one of the richest youth art prizes in Australia. Online entries are now open for the 2024 Youth Art Prize – find out more . Mosman Youth Art Prize Archive: Please note that the 2020 and 2021 Mosman Youth Art Prizes were cancelled due to public health measures put in place due to COVID-19. Mosman Youth Art Prize 2023 Mosman Youth Art Prize 2022 Mosman Youth Art Prize 2019 Mosman Youth Art Prize 2018 Mosman Youth Art Prize 2017 Mosman Youth Art Prize 2016 Mosman Youth Art Prize 2015 Mosman Youth Art Prize 2014 Mosman Youth Art Prize 2013 Image: Laura Hayley, Experimental arts , 2020, ceramic installation, dimensions variable. Third Prize – Tertiary, 2019 Mosman Youth Art Prize. Mosman Art Gallery acknowledges the Borogegal and Cammeraigal people as the traditional custodians of this land. We pay our respects to Elders of the past and present and to those of the future and acknowledge their spiritual connection to Country.",
       "relevant": true,
       "english": true,
       "category": "Prize",
