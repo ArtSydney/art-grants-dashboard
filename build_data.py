@@ -35,27 +35,48 @@ def _sort_key(rec):
 
 
 def build(state):
-    # active records only -- status is the single source of truth
-    active = [
-        r for r in state.values()
-        if isinstance(r, dict)           # guard against __dedup_index__ sentinel
-        and r.get("status") == "active"
-        and r.get("relevant")
-        and r.get("english")
-        and not (DROP_IF_NO_ART_FORM and not r.get("art_forms"))
-    ]
+    today = _today()
+    cutoff = today.replace(year=today.year if today.month > 3 else today.year - 1)
+    # 90-day past-deadline cutoff for closed items
+    from datetime import timedelta
+    cutoff = today - timedelta(days=90)
+
+    def _include(r):
+        if not isinstance(r, dict):
+            return False
+        if not r.get("relevant") or not r.get("english"):
+            return False
+        if DROP_IF_NO_ART_FORM and not r.get("art_forms"):
+            return False
+        status = r.get("status")
+        if status == "active":
+            return True
+        if status == "closed":
+            # include recently-closed items so the frontend toggle can show them
+            dl = r.get("deadline")
+            if dl:
+                try:
+                    dl_date = datetime.strptime(dl, "%Y-%m-%d").date()
+                    return dl_date >= cutoff
+                except ValueError:
+                    pass
+        return False
+
+    candidates = [r for r in state.values() if _include(r)]
 
     # safety-net dedup for any pre-migration records or same-run refresh dupes
-    deduped, dropped = _dedup.dedup(active)
+    deduped, dropped = _dedup.dedup(candidates)
     if dropped:
         print(f"  de-duplicated {dropped} record(s) at render time")
 
     records = sorted(deduped, key=_sort_key)
+    open_count = sum(1 for r in records if r.get("status") == "active")
     disciplines = [f for f in ART_FORMS if f not in WILDCARD_FORMS]
     now_sydney = datetime.now(SYDNEY)
     payload = {
         "generated": now_sydney.isoformat(timespec="seconds"),
-        "count": len(records),
+        "count": open_count,          # open items only (shown in header)
+        "total": len(records),        # open + recently closed (for reference)
         "disciplines": disciplines,
         "wildcards": WILDCARD_FORMS,
         "items": records,

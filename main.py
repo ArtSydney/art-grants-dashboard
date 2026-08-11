@@ -152,6 +152,28 @@ def run():
         print(f"  + {item['title'][:55]}  ->  "
               f"{result.get('category')} / {result.get('au_eligibility')} / {status_label}")
 
+    # --- deadline sweep: flip active records whose deadline has passed to closed ---
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    today = datetime.now(ZoneInfo("Australia/Sydney")).date()
+    swept = 0
+    for rec in state.values():
+        if not isinstance(rec, dict):
+            continue
+        if rec.get("status") != "active":
+            continue
+        dl = rec.get("deadline")
+        if not dl:
+            continue
+        try:
+            if datetime.strptime(dl, "%Y-%m-%d").date() < today:
+                rec["status"] = "closed"
+                swept += 1
+        except ValueError:
+            pass
+    if swept:
+        print(f"  swept {swept} record(s) to closed")
+
     print("3. Notifications")
     send_digest(new_records)
 

@@ -17,7 +17,8 @@ const FALLBACK_DISCIPLINES = ["Painting", "Drawing", "Sculpture", "Photography",
 let WILDCARDS = ["Visual Arts", "Multidisciplinary"];
 
 const state = {
-  items: [], search: "", eligibility: "all", location: "all", soonOnly: false, freeOnly: false,
+  items: [], search: "", eligibility: "all", location: "all",
+  soonOnly: false, freeOnly: false, showClosed: false,
   cats: new Set(),        // opportunity-type chips
   forms: new Set(),       // discipline chips
 };
@@ -86,6 +87,7 @@ function wireControls() {
   $("#eligibility").addEventListener("change", (e) => { state.eligibility = e.target.value; render(); });
   $("#closing-soon").addEventListener("change", (e) => { state.soonOnly = e.target.checked; render(); });
   $("#free-only").addEventListener("change", (e) => { state.freeOnly = e.target.checked; render(); });
+  $("#show-closed").addEventListener("change", (e) => { state.showClosed = e.target.checked; render(); });
 }
 
 function daysLeft(deadline) {
@@ -113,7 +115,19 @@ function matchesForms(item) {
   return forms.some((f) => state.forms.has(f));
 }
 
+function isClosed(item) {
+  const n = daysLeft(item.deadline);
+  // has a deadline and it has passed
+  return item.deadline && n !== null && n < 0;
+}
+
 function passes(item) {
+  // show-closed: when ticked show only closed, when unticked hide all closed
+  if (state.showClosed) {
+    if (!isClosed(item)) return false;
+  } else {
+    if (isClosed(item)) return false;
+  }
   if (state.cats.size && !state.cats.has(item.category)) return false;
   if (!matchesForms(item)) return false;
   if (state.location !== "all" && item.location_scope !== state.location) return false;
