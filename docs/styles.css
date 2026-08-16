@@ -632,3 +632,36 @@ h1 {
   background: var(--cocoa); color: var(--cream); border-color: var(--cocoa);
 }
 .theme-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 1px; }
+
+/* ── Exhibitions tab link ───────────────────────────────────────── */
+.tab-link {
+  text-decoration: none;
+  color: var(--muted);
+}
+.tab-link:hover {
+  color: var(--ink);
+}
+
+/* ── Mobile calendar rotation hint ──────────────────────────────── */
+.cal-rotate-hint {
+  display: none;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+  padding: 8px 0;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .cal-rotate-hint {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .cal-grid {
+    display: grid;
+  }
+  .cal-rotate-hint {
+    display: none;
+  }
+}
