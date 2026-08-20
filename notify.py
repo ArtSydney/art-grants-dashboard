@@ -1,165 +1,162 @@
-"""Discord notifications for art-openings-syd."""
+"""Discord notifications: a daily digest of new items, plus a closing-soon ping.
 
-import json
-import os
+If DISCORD_WEBHOOK_URL isn't set, everything here quietly no-ops, so local test
+runs don't spam a channel.
+"""
+from datetime import date, datetime
+
 import requests
-from datetime import datetime, timezone
 
-DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
-
-# Embed colors
-COLOR_NEW = 0x6C5B7B       # Purple - new exhibition
-COLOR_OPENING = 0xF67280   # Coral - opening tonight
-COLOR_CLOSING = 0xE74C5E   # Red - closing soon
-COLOR_DIGEST = 0x355C7D    # Navy - weekly digest
-
-_webhook_warned = False
+from config import DISCORD_WEBHOOK_URL
 
 
-def send_embed(embed):
-    """Send a single embed to Discord."""
-    global _webhook_warned
-    if not DISCORD_WEBHOOK_URL or not DISCORD_WEBHOOK_URL.startswith("https://"):
-        if not _webhook_warned:
-            print("[notify] No valid webhook URL, notifications disabled")
-            _webhook_warned = True
-        return
+def days_left(deadline):
+    """Whole days from today until the deadline, or None if there's no valid date."""
+    if not deadline:
+        return None
     try:
-        resp = requests.post(
-            DISCORD_WEBHOOK_URL,
-            json={"embeds": [embed]},
-            timeout=10,
-        )
-        resp.raise_for_status()
-    except Exception as e:
-        print(f"[notify] Error: {e}")
+        d = datetime.strptime(deadline, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+    return (d - date.today()).days
 
 
-def notify_new_exhibition(record):
-    """Send notification for a newly discovered exhibition."""
-    title = record.get("title", "Untitled")
-    venue = record.get("venue", "")
-    suburb = record.get("suburb", "")
-    start = record.get("start_date", "")
-    end = record.get("end_date", "")
-    opening = record.get("opening_date", "")
-    opening_time = record.get("opening_time", "")
-    website = record.get("website", "")
-    artist = record.get("artist", "")
-    desc = record.get("description", "")[:200]
+def _post(content):
+    if not DISCORD_WEBHOOK_URL:
+        print("  (no DISCORD_WEBHOOK_URL, skipping Discord)")
+        return
+    for chunk in _chunks(content, 1900):
+        requests.post(DISCORD_WEBHOOK_URL, json={"content": chunk}, timeout=20)
+
+
+def _post_embeds(content, embeds):
+    if not DISCORD_WEBHOOK_URL:
+        print("  (no DISCORD_WEBHOOK_URL, skipping Discord)")
+        return
+    payload = {}
+    if content:
+        payload["content"] = content
+    for i in range(0, len(embeds), 10):
+        chunk_payload = dict(payload)
+        chunk_payload["embeds"] = embeds[i:i + 10]
+        if i > 0:
+            chunk_payload.pop("content", None)
+        requests.post(DISCORD_WEBHOOK_URL, json=chunk_payload, timeout=20)
+
+
+def _chunks(text, size):
+    buf = ""
+    for line in text.split("\n"):
+        if len(buf) + len(line) + 1 > size and buf:
+            yield buf
+            buf = ""
+        buf += line + "\n"
+    if buf.strip():
+        yield buf
+
+
+def _embed_color(deadline):
+    n = days_left(deadline)
+    if n is None:
+        return 0x5865F2
+    if n < 14:
+        return 0xED4245
+    if n < 30:
+        return 0xFAA61A
+    return 0x3BA55D
+
+
+def _embed(rec):
+    n = days_left(rec.get("deadline"))
+    fields = []
+    if rec.get("amount"):
+        fields.append({"name": "Prize", "value": rec["amount"], "inline": True})
+    entry = "Free" if str(rec.get("entry_fee") or "").lower() == "free" else "Open"
+    if rec.get("deadline"):
+        if n is None:
+            days_str = ""
+        elif n < 0:
+            days_str = " · closed"
+        elif n == 0:
+            days_str = " · closes today"
+        else:
+            warning = " ⚠️" if n < 14 else ""
+            days_str = f" · {n} days left{warning}"
+        fields.append({"name": "Closes", "value": rec["deadline"] + days_str, "inline": True})
+    fields.append({"name": "Entry", "value": entry, "inline": True})
+    if rec.get("au_eligibility") == "unclear":
+        fields.append({"name": "Eligibility", "value": "Unclear", "inline": True})
+
+    _SOURCE_NAMES = {
+        "Google: Australian art prizes": "via Google search",
+        "BNE Art: Opportunities": "BNE Art",
+        "Calendar for Artists": "Calendar for Artists",
+        "Artsoz prize registry": "Artsoz",
+        "Creative Australia": "Creative Australia",
+        "Neon Marketplace": "Neon Marketplace",
+        "ArtsHub": "ArtsHub",
+    }
+    source_label = _SOURCE_NAMES.get(rec["source"], rec["source"])
+    embed = {
+        "title": rec["title"],
+        "color": _embed_color(rec.get("deadline")),
+        "fields": fields,
+        "footer": {"text": f"{rec.get('category', '?')} · Source: {source_label}"},
+    }
+    if rec.get("link"):
+        embed["url"] = rec["link"]
+    if rec.get("description"):
+        embed["description"] = rec["description"]
+    return embed
+
+
+def send_digest(new_records):
+    """One message summarising everything new this run."""
+    if not new_records:
+        print("  no new items for the digest")
+        return
+    header = f"__**New arts opportunities — {date.today():%d %b %Y}**__ ({len(new_records)} new)"
+    embeds = [_embed(r) for r in new_records]
+    _post_embeds(header, embeds)
+    print(f"  digest sent ({len(new_records)} items)")
+
+
+def send_closing_soon(rec):
+    """An urgent, per-item ping when a deadline is nearly here."""
+    n = days_left(rec.get("deadline"))
+    if n is None:
+        return
+    when = "today" if n == 0 else f"in {n} day{'s' if n != 1 else ''}"
+    days_str = "closes today" if n == 0 else f"{n} day{'s' if n != 1 else ''} left \u26a0\ufe0f"
 
     fields = []
-    if venue:
-        loc = venue
-        if suburb:
-            loc += f", {suburb}"
-        fields.append({"name": "Venue", "value": loc, "inline": True})
-    if artist:
-        fields.append({"name": "Artist", "value": artist, "inline": True})
-    if start:
-        date_str = start
-        if end:
-            date_str += f" to {end}"
-        fields.append({"name": "Dates", "value": date_str, "inline": True})
-    if opening:
-        op_str = opening
-        if opening_time:
-            op_str += f" at {opening_time}"
-        fields.append({"name": "Opening", "value": op_str, "inline": True})
+    if rec.get("amount"):
+        fields.append({"name": "Prize", "value": rec["amount"], "inline": True})
+    if rec.get("deadline"):
+        fields.append({"name": "Closes", "value": f"{rec['deadline']} \u00b7 {days_str}", "inline": True})
+    entry = "Free" if str(rec.get("entry_fee") or "").lower() == "free" else "Open"
+    fields.append({"name": "Entry", "value": entry, "inline": True})
+
+    _SOURCE_NAMES = {
+        "Google: Australian art prizes": "via Google search",
+        "BNE Art: Opportunities": "BNE Art",
+        "Calendar for Artists": "Calendar for Artists",
+        "Artsoz prize registry": "Artsoz",
+        "Creative Australia": "Creative Australia",
+        "Neon Marketplace": "Neon Marketplace",
+        "ArtsHub": "ArtsHub",
+    }
+    source_label = _SOURCE_NAMES.get(rec["source"], rec["source"])
 
     embed = {
-        "title": f"New: {title}",
-        "description": desc if desc else None,
-        "color": COLOR_NEW,
+        "title": f"\u23f0 Closing {when}",
+        "description": rec["title"],
+        "color": 0xED4245,
         "fields": fields,
-        "url": website if website else None,
-        "timestamp": datetime.now(tz=timezone.utc).isoformat(),
-        "footer": {"text": "Art Openings Sydney"},
+        "footer": {"text": f"{rec.get('category', '?')} \u00b7 Source: {source_label}"},
     }
-    embed = {k: v for k, v in embed.items() if v is not None}
-    send_embed(embed)
+    if rec.get("link"):
+        embed["url"] = rec["link"]
 
-
-def notify_opening_soon(record):
-    """Send notification for exhibition opening tonight."""
-    if record.get("opening_soon_sent"):
-        return
-
-    title = record.get("title", "Untitled")
-    venue = record.get("venue", "")
-    opening = record.get("opening_date", "")
-    opening_time = record.get("opening_time", "")
-    website = record.get("website", "")
-
-    today = datetime.now(tz=timezone.utc).date()
-    try:
-        op_date = datetime.strptime(opening, "%Y-%m-%d").date()
-    except (ValueError, TypeError):
-        return
-
-    if op_date != today:
-        return
-
-    desc = f"at {venue}" if venue else ""
-    if opening_time:
-        desc += f" | {opening_time}"
-
-    embed = {
-        "title": f"Opening TONIGHT: {title}",
-        "description": desc,
-        "color": COLOR_OPENING,
-        "url": website if website else None,
-        "timestamp": datetime.now(tz=timezone.utc).isoformat(),
-        "footer": {"text": "Art Openings Sydney"},
-    }
-    embed = {k: v for k, v in embed.items() if v is not None}
-    send_embed(embed)
-    record["opening_soon_sent"] = True
-
-
-def notify_closing_soon(record):
-    """Send notification for exhibition closing soon."""
-    if record.get("closing_soon_sent"):
-        return
-
-    title = record.get("title", "Untitled")
-    venue = record.get("venue", "")
-    end = record.get("end_date", "")
-    website = record.get("website", "")
-
-    today = datetime.now(tz=timezone.utc).date()
-    try:
-        end_date = datetime.strptime(end, "%Y-%m-%d").date()
-    except (ValueError, TypeError):
-        return
-
-    days_left = (end_date - today).days
-    if days_left < 0 or days_left > 3:
-        return
-
-    label = "LAST DAY" if days_left == 0 else f"Closing in {days_left} day(s)"
-
-    embed = {
-        "title": f"{label}: {title}",
-        "description": f"at {venue}" if venue else "",
-        "color": COLOR_CLOSING,
-        "url": website if website else None,
-        "timestamp": datetime.now(tz=timezone.utc).isoformat(),
-        "footer": {"text": "Art Openings Sydney"},
-    }
-    embed = {k: v for k, v in embed.items() if v is not None}
-    send_embed(embed)
-    record["closing_soon_sent"] = True
-
-
-def check_alerts(state):
-    """Run opening-tonight and closing-soon checks on all active records."""
-    for key, rec in state.items():
-        if key.startswith("__"):
-            continue
-        if rec.get("status") != "active":
-            continue
-        if rec.get("opening_date"):
-            notify_opening_soon(rec)
-        if rec.get("end_date"):
-            notify_closing_soon(rec)
+    _post_embeds(None, [embed])
+    print(f"  closing-soon ping: {rec['title'][:50]}")
