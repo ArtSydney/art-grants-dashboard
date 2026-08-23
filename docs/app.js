@@ -2,6 +2,7 @@
 // No framework, no build step: this file runs straight in the browser.
 
 const CATS = ["Grant", "Scholarship", "Prize", "Award", "Residency", "Fellowship", "Commission", "Other"];
+const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 const CAT_COLOUR = {
   Grant: "var(--c-grant)", Scholarship: "var(--c-scholarship)", Prize: "var(--c-prize)",
   Award: "var(--c-award)", Residency: "var(--c-residency)", Fellowship: "var(--c-fellowship)",
@@ -407,7 +408,7 @@ function renderCalendarList() {
         ${String(item.entry_fee || "").toLowerCase() === "free" ? `<span class="cal-list-fee free">Free entry</span>` : ""}
         <div class="cal-list-actions">
           ${item.link ? `<a class="view" style="padding:8px 12px;font-size:.7rem" href="${safeLink(item.link)}" target="_blank" rel="noopener">View →</a>` : ""}
-          <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" target="_blank" rel="noopener">+ Google Cal</a>
+          <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" ${IS_IOS ? '' : 'target="_blank" rel="noopener"'}>+ Google Cal</a>
           <button class="cal-ics-btn">.ics</button>
         </div>
       `;
@@ -456,7 +457,7 @@ function openPopup(dateStr, events) {
       <div class="popup-links">
         ${item.link ? `<a href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
         <button class="cal-ics-btn">Download .ics</button>
-        <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" target="_blank" rel="noopener">+ Google Calendar</a>
+        <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" ${IS_IOS ? '' : 'target="_blank" rel="noopener"'}>+ Google Calendar</a>
       </div>
     `;
     div.querySelector(".cal-ics-btn").addEventListener("click", () => downloadSingleIcs(item));
@@ -502,7 +503,9 @@ function buildGoogleCalUrl(item) {
     .filter(Boolean).join(" | ");
   // Build manually so the slash in dates= is not percent-encoded — Google
   // Calendar's frontend rejects %2F and gets stuck loading.
-  const base = "https://calendar.google.com/calendar/render?action=TEMPLATE";
+  const base = IS_IOS
+    ? "comgooglecalendar://calendar/render?action=TEMPLATE"
+    : "https://calendar.google.com/calendar/render?action=TEMPLATE";
   const parts = [
     `text=${encodeURIComponent("DEADLINE: " + item.title)}`,
     `dates=${date}/${nextDay}`,
