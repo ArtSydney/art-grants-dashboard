@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-28T18:18:57+10:00",
-  "count": 117,
+  "generated": "2026-08-29T08:06:59+10:00",
+  "count": 116,
   "total": 137,
   "disciplines": [
     "Painting",
@@ -558,7 +558,7 @@
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "6c0c3e0bb91db151e9c2d36daaccc34813fc759a",
