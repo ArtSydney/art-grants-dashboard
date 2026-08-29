@@ -5270,7 +5270,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-08-09",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "7927ce17102bc4d95874eacb9c7cd68584050ad4": {
@@ -6358,7 +6358,7 @@
       "Installation"
     ],
     "first_seen": "2026-08-22",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "9e46a0e18cf17e6719d5a774fad89073724a1ac1": {
