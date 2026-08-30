@@ -5,7 +5,9 @@ to care where an item came from:
     {id, source, title, link, summary}
 """
 import json
+import re
 import hashlib
+import time
 from urllib.parse import urljoin
 
 import requests
@@ -778,6 +780,268 @@ def fetch_artshub_opportunities(source, max_pages=5):
     return items
 
 
+def fetch_artprizes_com(source):
+    """Single-page scrape of art-prizes.com homepage for currently-calling prizes.
+
+    Detail pages are JS-rendered and rate-limited, but homepage listing cards
+    contain all data in an ancestor div: title, open/close dates, prize money,
+    location, eligibility, genre. One HTTP request, zero detail fetches.
+
+    Filters out the "10 most popular prizes" sidebar by detecting "(XX views)"
+    in titles and tracking container element identity.
+    """
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    })
+
+    resp = session.get("https://www.art-prizes.com/", timeout=REQUEST_TIMEOUT)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    items = []
+    seen_urls = set()
+    seen_containers = set()
+
+    for a in soup.find_all("a", href=True):
+        href = a.get("href", "")
+        if "/ArtPrize/" not in href:
+            continue
+        full = urljoin("https://www.art-prizes.com/", href).split("?")[0]
+        if full in seen_urls:
+            continue
+
+        title = a.get("title", "").strip() or a.get_text(strip=True)
+        if not title or len(title) < 5 or title.lower() == "load more":
+            continue
+        if re.search(r'\(\d+\s+views?\)', title):
+            continue
+
+        # Walk up to find card container (div with currency + Location:)
+        el = a
+        card_text = ""
+        container_el = None
+        for _ in range(6):
+            el = el.parent
+            if el is None:
+                break
+            text = el.get_text(" ", strip=True)
+            has_currency = any(c in text for c in ("AUD", "USD", "EUR", "GBP", "NZD"))
+            if has_currency and "Location:" in text:
+                card_text = text
+                container_el = el
+                break
+
+        if not card_text or "days to go" not in card_text.lower():
+            continue
+
+        cid = id(container_el)
+        if cid in seen_containers:
+            continue
+        seen_containers.add(cid)
+        seen_urls.add(full)
+
+        fields = {}
+
+        m = re.search(r'Open\s+From\s+(\d{1,2}/\d{1,2}/\d{4})\s+to\s+(\d{1,2}/\d{1,2}/\d{4})', card_text)
+        if m:
+            fields["open_date"] = m.group(1)
+            fields["close_date"] = m.group(2)
+
+        m = re.search(r'(AUD|USD|GBP|EUR|NZD)\s+[\$\u20ac\u00a3]?([\d,]+)', card_text)
+        if m and m.group(2) != "0":
+            fields["prize_money"] = f"{m.group(1)} ${m.group(2)}"
+
+        m = re.search(r'Location:\s*(.+?)(?:\s+Genre:)', card_text)
+        if m:
+            loc_block = m.group(1).strip()
+            elig_match = re.search(r'\((.+?)\)', loc_block)
+            if elig_match:
+                fields["eligibility"] = elig_match.group(1).strip()
+                fields["location"] = loc_block[:elig_match.start()].strip().rstrip(",")
+            else:
+                fields["location"] = loc_block
+
+        m = re.search(r'Genre:\s*(.+?)(?:\s+\d{2,}|\s*$)', card_text)
+        if m:
+            fields["genre"] = m.group(1).strip()
+
+        summary_parts = []
+        if fields.get("close_date"):
+            summary_parts.append(f"Deadline: {fields['close_date']}")
+        if fields.get("open_date"):
+            summary_parts.append(f"Opens: {fields['open_date']}")
+        if fields.get("prize_money"):
+            summary_parts.append(f"Prize: {fields['prize_money']}")
+        if fields.get("location"):
+            summary_parts.append(f"Location: {fields['location']}")
+        if fields.get("eligibility"):
+            summary_parts.append(f"Eligibility: {fields['eligibility']}")
+        if fields.get("genre"):
+            summary_parts.append(f"Genre: {fields['genre']}")
+
+        items.append({
+            "id": _item_id(full, title),
+            "source": source["name"],
+            "title": title,
+            "link": full,
+            "summary": ". ".join(summary_parts),
+            "refresh": True,
+        })
+
+    return items
+
+
+def fetch_instagram_grants(source):
+    """Search Instagram hashtags for art prize/grant announcements.
+
+    Reads config from sources.json: "hashtags": [["artprize", 5], ...]
+    Each [tag, limit] pair controls per-tag API limit. High-volume global
+    tags need limit<=5 to avoid Meta 500 errors.
+
+    Requires IG_USER_ID and IG_ACCESS_TOKEN in env. Silently returns []
+    if missing so the pipeline runs without IG creds.
+    """
+    from config import IG_USER_ID, IG_ACCESS_TOKEN
+
+    if not IG_USER_ID or not IG_ACCESS_TOKEN:
+        print(f"  ! {source['name']}: IG credentials not set, skipping")
+        return []
+
+    GRAPH_BASE = "https://graph.facebook.com/v26.0"
+    hashtag_config = source.get("hashtags", [])
+
+    OPPORTUNITY_KW = [
+        "entries open", "call for entries", "call for artists", "open call",
+        "applications open", "apply now", "submit your", "submission",
+        "deadline", "closing date", "closes", "entries close",
+        "prize money", "prize pool", "acquisitive", "award",
+        "grant", "funding", "residency", "fellowship",
+        "exhibition opportunity", "art prize", "art award",
+        "eoi", "expression of interest",
+    ]
+    NEGATIVE_KW = [
+        "congratulations", "winner announced", "winners announced",
+        "finalist", "finalists announced", "proud to announce",
+        "won the", "awarded to", "recipient of",
+        "throwback", "#tbt", "last year",
+    ]
+    PERSONAL_RE = [
+        r"^i recently", r"^i just (started|applied|submitted)",
+        r"^my (experience|journey|process|story) with",
+        r"^here'?s (what|how) i", r"^tips for (applying|artists)",
+        r"^(so )?i (decided|wanted) to",
+    ]
+
+    def _is_opportunity(text):
+        low = text.lower().strip()
+        for pat in PERSONAL_RE:
+            if re.match(pat, low):
+                return False
+        for kw in NEGATIVE_KW:
+            if kw in low:
+                return False
+        for kw in OPPORTUNITY_KW:
+            if kw in low:
+                return True
+        return False
+
+    items = []
+    seen_permalinks = set()
+
+    for entry in hashtag_config:
+        tag, limit = entry[0], entry[1]
+        try:
+            r = requests.get(f"{GRAPH_BASE}/ig_hashtag_search", params={
+                "user_id": IG_USER_ID, "q": tag, "access_token": IG_ACCESS_TOKEN,
+            }, timeout=REQUEST_TIMEOUT)
+            r.raise_for_status()
+            hdata = r.json().get("data", [])
+            if not hdata:
+                continue
+            hid = hdata[0]["id"]
+
+            fields = "id,caption,media_type,permalink,timestamp"
+            params = {
+                "user_id": IG_USER_ID, "fields": fields,
+                "access_token": IG_ACCESS_TOKEN, "limit": limit,
+            }
+            posts = []
+            try:
+                r2 = requests.get(f"{GRAPH_BASE}/{hid}/recent_media",
+                                  params=params, timeout=REQUEST_TIMEOUT)
+                r2.raise_for_status()
+                posts = r2.json().get("data", [])
+            except requests.exceptions.HTTPError as e:
+                if e.response is not None and e.response.status_code == 500:
+                    try:
+                        r3 = requests.get(f"{GRAPH_BASE}/{hid}/top_media",
+                                          params=params, timeout=REQUEST_TIMEOUT)
+                        r3.raise_for_status()
+                        posts = r3.json().get("data", [])
+                    except Exception:
+                        pass
+
+            for post in posts:
+                caption = post.get("caption", "") or ""
+                permalink = post.get("permalink", "")
+
+                if permalink in seen_permalinks:
+                    continue
+                if not _is_opportunity(caption):
+                    continue
+                seen_permalinks.add(permalink)
+
+                link = permalink
+                urls = re.findall(r'https?://\S+', caption)
+                for u in urls:
+                    if "instagram.com" not in u and "facebook.com" not in u:
+                        link = u.split(")")[0].split('"')[0].rstrip(".,;:")
+                        break
+
+                title = ""
+                for line in caption.split("\n"):
+                    line = line.strip()
+                    if line and not line.startswith("#") and not line.startswith("@"):
+                        title = line[:100]
+                        break
+                if not title:
+                    title = f"Instagram #{tag} opportunity"
+
+                deadline_text = ""
+                for pat in [
+                    r'(?:closes?|deadline|entries\s+close)[:\s]+(\d{1,2}\s+\w+\s+\d{4})',
+                    r'(?:closes?|deadline|entries\s+close)[:\s]+(\d{1,2}\s+\w+)',
+                ]:
+                    dm = re.search(pat, caption, re.I)
+                    if dm:
+                        deadline_text = dm.group(1).strip()
+                        break
+
+                summary_parts = []
+                if deadline_text:
+                    summary_parts.append(f"Deadline: {deadline_text}")
+                summary_parts.append(f"Source: Instagram #{tag}")
+                summary_parts.append(caption[:1500])
+
+                items.append({
+                    "id": _item_id(permalink, title),
+                    "source": source["name"],
+                    "title": title,
+                    "link": link,
+                    "summary": "\n".join(summary_parts),
+                })
+
+            time.sleep(1)
+
+        except Exception as e:
+            msg = re.sub(r'access_token=[^&\s]+', 'access_token=***', str(e))
+            print(f"  ! #{tag}: {msg}")
+
+    return items
+
+
 # Sources with "parser": "<name>" in the config route here instead of the
 # generic rss/html fetchers. Add an entry when a site needs bespoke handling.
 CUSTOM_PARSERS = {
@@ -788,6 +1052,8 @@ CUSTOM_PARSERS = {
     "artshub_opportunities": fetch_artshub_opportunities,
     "google_search": fetch_google_search,
     "bneart": fetch_bneart,
+    "artprizes_com": fetch_artprizes_com,
+    "instagram_grants": fetch_instagram_grants,
 }
 
 

@@ -15,6 +15,8 @@ DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
 
 # Secrets (read from the environment, never hard-coded)
 SERPER_API_KEY    = os.environ.get("SERPER_API_KEY", "").strip()
+IG_USER_ID        = os.environ.get("IG_USER_ID", "").strip()
+IG_ACCESS_TOKEN   = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 
 # Fetch behaviour
 USER_AGENT = "art-grants-dashboard/1.0"

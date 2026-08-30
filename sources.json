@@ -29,7 +29,7 @@
     "parser": "artsoz_prizes",
     "url": "https://artsoz.com.au/art-prizes.json",
     "enabled": true,
-    "note": "Reads Artsoz's structured list of major Australian prizes (official URLs + state/medium metadata) and scrapes each official site for live dates. Heaviest source; grows as Artsoz adds prizes. URL overrides applied for Kangaroo Valley (real site is artsinthevalley.net.au) and Churchie (real entry site is churchie.com.au).",
+    "note": "Reads Artsoz's structured list of major Australian prizes (official URLs + state/medium metadata) and scrapes each official site for live dates. Heaviest source; grows as Artsoz adds prizes.",
     "url_overrides": {
       "Kangaroo Valley Art Prize": "https://www.artsinthevalley.net.au/visualarts2026",
       "Churchie Emerging Art Prize": "https://www.churchie.com.au/community/the-churchie-emerging-art-prize/"
@@ -61,5 +61,43 @@
       "Australian art prize 2026 acquisitive OR portrait OR landscape OR photography \"entries open\" OR \"open for entries\" site:.au -artshub.com.au"
     ],
     "note": "Daily Google search via Serper API (free at serper.dev, 2500 free searches). Three targeted queries: general prizes, sculpture-specific, and acquisitive prizes by medium. Aggregator domains excluded."
+  },
+  {
+    "name": "Neon Marketplace",
+    "type": "html",
+    "parser": "neon_marketplace",
+    "url": "https://www.neonmarketplace.nsw.gov.au/opportunity",
+    "enabled": true,
+    "note": "NSW Government creative sector marketplace. Server-rendered, no Cloudflare. Covers NSW arts commissions, residencies, and funded opportunities."
+  },
+  {
+    "name": "ArtsHub: Opportunities",
+    "type": "html",
+    "parser": "artshub_opportunities",
+    "url": "https://www.artshub.com.au/opportunity/",
+    "enabled": true,
+    "note": "ArtsHub opportunity listings. Cloudflare intermittently blocks; parser handles it gracefully (0 items, no crash). Covers prizes, residencies, commissions, grants across all Australian arts."
+  },
+  {
+    "name": "art-prizes.com",
+    "type": "html",
+    "parser": "artprizes_com",
+    "url": "https://www.art-prizes.com/",
+    "enabled": true,
+    "note": "art-prizes.com Australian/international prize directory. Single-page card scrape, no detail fetches. Structured: deadlines, prize money, location, eligibility, genre. Site may be sold soon."
+  },
+  {
+    "name": "Instagram: art grants",
+    "type": "html",
+    "parser": "instagram_grants",
+    "url": "https://graph.facebook.com/",
+    "enabled": true,
+    "hashtags": [
+      ["artprize", 5],
+      ["australianartprize", 15],
+      ["artopencall", 15],
+      ["artgrant", 15]
+    ],
+    "note": "Instagram hashtag search via Graph API. Requires IG_USER_ID + IG_ACCESS_TOKEN in env. Uses 4 of 30/week hashtag quota. High-volume tags use reduced limit to avoid Meta 500s. Silently skipped if no IG credentials."
   }
 ]
