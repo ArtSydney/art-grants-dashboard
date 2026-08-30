@@ -70,6 +70,15 @@ def build(state):
         print(f"  de-duplicated {dropped} record(s) at render time")
 
     records = sorted(deduped, key=_sort_key)
+
+    # Safety cap: truncate fields that should never be long so bad data from
+    # older runs or scraped junk can't break the frontend card layout.
+    for r in records:
+        if len(r.get("amount", "")) > 30:
+            r["amount"] = r["amount"][:30].rstrip()
+        if len(r.get("description", "")) > 300:
+            r["description"] = r["description"][:297].rstrip() + "..."
+
     open_count = sum(1 for r in records if r.get("status") == "active")
     disciplines = [f for f in ART_FORMS if f not in WILDCARD_FORMS]
     now_sydney = datetime.now(SYDNEY)
