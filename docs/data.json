@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-01T06:14:40+10:00",
-  "count": 155,
-  "total": 185,
+  "generated": "2026-09-02T06:21:18+10:00",
+  "count": 159,
+  "total": 195,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -814,7 +814,7 @@
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -839,7 +839,7 @@
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "27aa91c7585c0c06fe213ca2a31e9f1adb7f55f3",
@@ -870,7 +870,7 @@
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "9223087c49160dfb90da963ed7e5f9c8f2583729",
@@ -895,7 +895,7 @@
       ],
       "first_seen": "2026-08-30",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "ea129ad3ddba1b5877fb8f8f09308b54bad272ad",
@@ -920,7 +920,7 @@
       ],
       "first_seen": "2026-08-30",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "614b9cc79be34b218399c6aa8d8f0f1c01d24ea6",
@@ -945,7 +945,7 @@
       ],
       "first_seen": "2026-08-30",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "1441b2daac353c01da6af1c33048e48e69146fba",
@@ -1069,7 +1069,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-08-30",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1094,7 +1094,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-08-30",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1579,6 +1579,31 @@
       "status": "active"
     },
     {
+      "id": "746b953e1be34e76432878262d40cd40a56dd66a",
+      "source": "Instagram: art grants",
+      "title": "International Photography Contest: Solo Exhibition October 2026",
+      "link": "https://www.instagram.com/p/DcvLrR2oGF6/",
+      "summary": "Source: Instagram #artgrant\nInternational Photography Contest: Solo Exhibition October 2026\r\n\r\nDeadline: Sep 22, 2026\r\nEligibility: \r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: Jose Manuel Esp / Unsplash",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-09-22",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nInternational Photography Contest: Solo Exhibition October 2026 Deadline: Sep 22, 2026 Eligibility: Full details at deadlinecalls.com 🔗 #opencall #callf",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-01",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "618dba4fa937bf30989235bc0d6905c15f234dec",
       "source": "Instagram: art grants",
       "title": "PHOTOVOGUE’S REGIONAL OPEN CALL: MENA Panorama",
@@ -1651,6 +1676,31 @@
         "Photography"
       ],
       "first_seen": "2026-08-31",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "1afdcea6672e680125b5536b22c580ed08bc21df",
+      "source": "Instagram: art grants",
+      "title": "Unlimited Partner Awards 2026/27",
+      "link": "https://www.instagram.com/p/DcwCm2EFGzP/",
+      "summary": "Source: Instagram #artgrant\nUnlimited Partner Awards 2026/27\r\n\r\nDeadline: Sep 28, 2026\r\nEligibility: United Kingdom\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-09-28",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nUnlimited Partner Awards 2026/27 Deadline: Sep 28, 2026 Eligibility: United Kingdom Full details at deadlinecalls.com 🔗 #opencall #callforartists #artop",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-01",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -1776,6 +1826,56 @@
         "Visual Arts"
       ],
       "first_seen": "2026-08-21",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "afc373de60c1f827baf47dd2696bc04d55506a0a",
+      "source": "Instagram: art grants",
+      "title": "🎨✨ ARTIST OPEN CALL – TURN YOUR VIBE INTO ART! ✨🎨",
+      "link": "https://forms.gle/KWrNvBL83w5pXsHAA",
+      "summary": "Source: Instagram #artopencall\n🎨✨ ARTIST OPEN CALL – TURN YOUR VIBE INTO ART! ✨🎨\n\nArtists • Art Students • Art Groups — this one is for you! 🙌\n\nThe Powai Art Society (TPAS), in collaboration with IIT Bombay, invites creative minds to submit their unique artistic concepts and become part of an exciting art experience! 🌈\n\n🖌️ WHO CAN PARTICIPATE?\nArtists • Art Students • Art Groups\n\n📌 HOW TO PARTICIPATE:\n1️⃣ Fill in your details through the Google Form.\n2️⃣ Share your social media handle or upload pictures of your previous artistic work (optional and voluntary).\n3️⃣ Submit your concept note, artwork sketch, medium and size for review and selection.\n\n📅 Submission Deadline: 1st October 2026\n📍 Venue: IIT Bombay\n📞 For details: +91 98197 18322\n\n🔗 Register now: https://forms.gle/KWrNvBL83w5pXsHAA\nRegistration Form⁠￼\n\n💬 Tag an artist, art student or art group who should participate!\n❤️\n\n#ArtOpenCall #OpenCallForArtists #ArtistOpenCall #ArtStudent #ArtGroups ArtMumbai MumbaiArt MumbaiArtists ArtMaharashtra Maharashtra iitbombay.moodi",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-10-01",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\n🎨✨ ARTIST OPEN CALL – TURN YOUR VIBE INTO ART!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-01",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "4b055f357f6a7002398f73e88985bed162467496",
+      "source": "Instagram: art grants",
+      "title": "*OPEN CALL* Textiel Biënnale 2027 | Koloniale patronen",
+      "link": "https://www.instagram.com/p/DcvWrK3Naiq/",
+      "summary": "Source: Instagram #artopencall\n*OPEN CALL* Textiel Biënnale 2027 | Koloniale patronen \r\n\r\nKoloniale patronen zijn overal om ons heen; zichtbaar in de kleding die we dragen, de materialen en stoffen die we gebruiken en de handelsroutes die onze wereld hebben gevormd. In motieven, tradities en productieprocessen, maar ook in machtsverhoudingen, herinneringen en identiteiten. \r\n\r\nVoor de Textiel Biënnale 2027 nodigen we (inter)nationale kunstenaars uit om vanuit hun eigen praktijk en perspectief te reflecteren op het thema Koloniale patronen. Je kunt tot 1 oktober 2026, 12.00 uur een voorstel indienen via museumrijswijk.nl. \r\n\r\nDe Textiel Biënnale 2027 | Koloniale patronen vindt plaats van 8 juli tot en met 21 november 2027. \r\n\r\n*OPEN CALL* Textile Biennial 2027 | Colonial patterns\r\n\r\nColonial patterns are all around us; visible in the clothing we wear, the materials and fabrics we use, and the trade routes that have shaped our world. In motifs, traditions, and production processes, but also in power relations, memories, and identities.\r\n\r\nFor the Textile Biennial 2027, we invite (inter)national artists to reflect on the theme of Colonial patterns from the perspective of their own practice and perspective. You can submit a proposal via museumrijswijk.nl until October 1st, 2026, at 12:00 PM.\r\n\r\nThe Textile Biennial 2027 | Colonial patterns takes place from July 8 to November 21, 2027.\r\n\r\n#opencall #callforartists #contemporaryart #artopencall",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-10-01",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\n*OPEN CALL* Textiel Biënnale 2027 | Koloniale patronen Koloniale patronen zijn overal om ons heen; zichtbaar in de kleding die we dragen, de material",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Textiles"
+      ],
+      "first_seen": "2026-09-01",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -2399,6 +2499,31 @@
         "Photography"
       ],
       "first_seen": "2026-08-30",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "107e0122e78883884de6099b7ac2a2d37207468a",
+      "source": "Neon Marketplace",
+      "title": "Neon Marketplace | Easy Outreach To Creatives Within Your Precinct",
+      "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/easy-outreach-to-creatives-within-your-precinct",
+      "summary": "Neon Marketplace | Easy Outreach To Creatives Within Your Precinct Opportunity Easy Outreach To Creatives Within Your Precinct LINK UP : Connecting Sydneyâs Entertainment Industryâ - with an open free directory! Opportunity closes 01 Aug 2030 Connect with Link Up Luke Halpin Co-Founder Get in touch Connect with Link Up Luke Halpin Co-Founder Get in touch Connect with Link Up Luke Halpin Co-Founder Get in touch An opportunity for you to find creatives in your area. LINK UP Details LINK UP is a grassroots, volunteer-led initiative connecting people across Sydneyâs entertainment industry whoâve long felt left out of the cityâs formal creative ecosystem. Weâve built the largest open-access database of Sydney-based artists, venues, and promotersânow with over 1,000 members and growing. Itâs free to join and free to access. If you're running events and activations, we are offering the opportunity to help you connect to the 1000+ contacts already within the database. How to get involved If you are part of the entertainment industry, then simply head over to the landing page www.taplink.cc/linkup and add yourself to the database in order to access the database. If you are not part of the entertainment industry, then let's talk sydneylinkup@gmail.com Share Categories Entertainment Exhibition Festival Food & drink Grant and sponsorship Learning Market Service provider Venue and space Other Tags Art & Design Comedy Crafts Dance Film LGBTIQA+ Music Networking Nightlife Theatre Published: 27 Mar 2026 You might also like Discover more opportunities See all Opportunities Posted by Neon Marketplace Express your interest for performance opportunities EOI for musicians, bands and performance artists to be part of the City of Wollongong's community events. EOI for musicians, bands and performance artists to be part of the City of Wollongong's community events. Opportunity closes 31 Dec 2026 Posted by Sound NSW First Nations Music Industry Development grants Supporting ",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-12-31",
+      "amount": "",
+      "entry_fee": "",
+      "description": "in Your Precinct Opportunity Easy Outreach To Creatives Within Your Precinct LINK UP : Connecting Sydneyâs Entertainment Industryâ - with an open free directory!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-01",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -4286,7 +4411,7 @@
       "source": "Artsoz prize registry",
       "title": "Wynne Prize",
       "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
+      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -4296,7 +4421,7 @@
       "deadline": "",
       "amount": "",
       "entry_fee": "",
-      "description": "",
+      "description": "Client Challenge A required part of this site couldn’t load.",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -4363,7 +4488,7 @@
       "source": "Artsoz prize registry",
       "title": "Churchie Emerging Art Prize",
       "link": "https://www.churchie.com.au/community/the-churchie-emerging-art-prize/",
-      "summary": "Location: QLD, Australia. Medium: Contemporary. Type: Emerging artist. Tags: emerging, contemporary. the churchie emerging art prize - Churchie My Churchie Login myChurchie Make a payment Term dates Careers Churchie Shop Campus map Subscribe to Enrolments News About Headmaster's welcome Our mission Our people Our campus and facilities Our history Careers Employee benefits Emerging Teacher Grant Governance Policies and reporting Anglican Schools in Queensland Enrolments Visit Churchie Scholarships International students Getting to Churchie Churchie Shop Enrolments News School fees Academic Academic results Prep School curriculum Senior School curriculum Years 7 to 10 curriculum Years 11 and 12 curriculum Gifted and talented Learning support Libraries Churchie Research Centre Study skills programme Cocurricular Student Care and Growth Prep School pastoral care Prep School personal growth Senior School pastoral care House structure Leadership development Coeducational learning Outdoor Education Boarding Boarding facilities Boarding financial assistance Boarding on the road Boarding virtual tour Boarding FAQ Community Parents Old Boys Roll of Honour Churchie Foundation Bequests Membership Foundation Board Overseas study scholarships Bursaries Chapel services Oaklands Child Care Outside school hours care the churchie emerging art prize News and events News Events Term dates Newsletters Eagles’ Wings magazine Social media myChurchie the churchie emerging art prize About ‘the churchie’ the churchie emerging art prize offers an inspiring glimpse into the future of the Australian contemporary art scene. Established in 1987, the churchie emerging art prize is Australia’s longest running award for emerging artists. ‘the churchie’ is dedicated to promoting innovation and excellence across art encompassing all mediums and subjects. Artists from all Australian states and territories are selected as finalists for the exhibition in a professional public gallery space, with the overall winner rewarded a $30,000 cash prize donated by long time sponsors BSPN Architecture. The prize offers professional development opportunities for emerging artists by showcasing their practice to peers, collectors, critics, museum curators, the media and the community at large. Finalists receive curatorial advice, networking and promotional opportunities, along with vital exposure on both a local and national stage. Previous winners include Nadia Hernandez, Caroline Gasteen, Pierre Mukeba, Sarah Morawetz, Michaela Gleave and more. The prize is judged by leading gallery directors and curators. Visit the churchie emerging art prize website for more information. visit ‘the churchie’ Follow ‘the churchie’: Facebook Instagram",
+      "summary": "Location: QLD, Australia. Medium: Contemporary. Type: Emerging artist. Tags: emerging, contemporary. the churchie emerging art prize - Churchie My Churchie Login myChurchie Make a payment Term dates Careers Churchie Shop Campus map Subscribe to Enrolments News About Headmaster's welcome Our mission Our people Our campus and facilities Our history Careers Employee benefits Emerging Teacher Grant Governance Policies and reporting Anglican Schools in Queensland Enrolments Visit Churchie Scholarships International students Getting to Churchie Churchie Shop Enrolments News School fees Academic Academic results Prep School curriculum Senior School curriculum Years 7 to 10 curriculum Years 11 and 12 curriculum Gifted and talented Learning support Libraries Churchie Research Centre Study skills programme Cocurricular Student Care and Growth Prep School pastoral care Prep School personal growth Senior School pastoral care House structure Leadership development Coeducational learning Outdoor Education Boarding Boarding facilities Boarding financial assistance Boarding on the road Boarding virtual tour Boarding FAQ Community Parents Old Boys Roll of Honour Churchie Foundation Bequests Membership Foundation Board Overseas study scholarships Bursaries Chapel services Oaklands Child Care Outside school hours care the churchie emerging art prize News and events News Events Term dates Newsletters Eagles’ Wings magazine Social media myChurchie the churchie emerging art prize About ‘the churchie’ the churchie emerging art prize offers an inspiring glimpse into the future of the Australian contemporary art scene. Established in 1987, the churchie emerging art prize is Australia’s longest running award for emerging artists. ‘the churchie’ is dedicated to promoting innovation and excellence across art encompassing all mediums and subjects. Artists from all Australian states and territories are selected as finalists for the exhibition in a professional public gallery space, with the overall winner rewarded a $40,000 cash prize donated by long time sponsors BSPN Architecture. The prize offers professional development opportunities for emerging artists by showcasing their practice to peers, collectors, critics, museum curators, the media and the community at large. Finalists receive curatorial advice, networking and promotional opportunities, along with vital exposure on both a local and national stage. Previous winners include Nadia Hernandez, Caroline Gasteen, Pierre Mukeba, Sarah Morawetz, Michaela Gleave and more. The prize is judged by leading gallery directors and curators. Visit the churchie emerging art prize website for more information. visit ‘the churchie’ website Follow ‘the churchie’: Facebook Instagram",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -4371,7 +4496,7 @@
       "location_scope": "Australia",
       "eligibility_note": "",
       "deadline": "",
-      "amount": "$30,000",
+      "amount": "$40,000",
       "entry_fee": "",
       "description": "the churchie emerging art prize offers an inspiring glimpse into the future of the Australian contemporary art scene.",
       "curator": "",
@@ -4780,6 +4905,131 @@
         "Visual Arts"
       ],
       "first_seen": "2026-08-31",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "70cbd05fe4fbbee2dfef538a1d8e7ff137868aac",
+      "source": "Instagram: art grants",
+      "title": "\"Fear is the only darkness.\" 👁️🖤",
+      "link": "https://www.instagram.com/p/DcwIh1xDSot/",
+      "summary": "Source: Instagram #artprize\n\"Fear is the only darkness.\" 👁️🖤\n\nHonored and incredibly excited to share that my artwork has been longlisted for The Almenara Art Prize 2026 in the Drawing and Young Artist categories.\n\nThis piece means a lot to me, and seeing it recognized alongside so many incredible international artists is a dream coming true. Thank you for keeping the dream alive! almenaracollection \n\nThe full online exhibition is officially live till the 30th of November, please go check it out on The Almenara Collection official website, link their bio.\n\n#thealmenaracollection #thealmenaraartprize #longlisted #artprize #ktd",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artprize\n\"Fear is the only darkness.\" 👁️🖤 Honored and incredibly excited to share that my artwork has been longlisted for The Almenara Art Prize 2026 in the Draw",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Drawing"
+      ],
+      "first_seen": "2026-09-01",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "4e697fdb1dcbb599b27ee0228cf6a82bdd8fdf0a",
+      "source": "Instagram: art grants",
+      "title": "Transverse Grant",
+      "link": "https://www.instagram.com/p/DcwXNl1o9Em/",
+      "summary": "Source: Instagram #artopencall\nTransverse Grant\n\nThe Transverse Grant offers financial support for a duo of artists and their publisher. The grant totals €12,000, with €7,000 allocated to the two artists and €5,000 to the publisher.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Grant",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nTransverse Grant The Transverse Grant offers financial support for a duo of artists and their publisher.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-01",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "5fcd256d50412c60631086f462a77328d40538c4",
+      "source": "Instagram: art grants",
+      "title": "Open Call: Inspiration Bénin – In the Heart of African Worlds",
+      "link": "https://www.instagram.com/p/DcvuAzOIF_d/",
+      "summary": "Source: Instagram #artopencall\nOpen Call: Inspiration Bénin – In the Heart of African Worlds\n\nThe French Embassy in Benin, in collaboration with MansA-Maison des Mondes Africains in Paris and the Beninese Ministry of Tourism, Culture and Arts, is launching the 3rd edition of the \"Inspiration Bénin – In the Heart of African Worlds\" residency program.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nOpen Call: Inspiration Bénin – In the Heart of African Worlds The French Embassy in Benin, in collaboration with MansA-Maison des Mondes Africains in",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-01",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "c21a1d7f3af91d239ca6eafdb30425451dbebea0",
+      "source": "Instagram: art grants",
+      "title": "Lightning Fund Artist Grants",
+      "link": "https://www.instagram.com/p/DcvE_PfHM5V/",
+      "summary": "Source: Instagram #artopencall\nLightning Fund Artist Grants\n\nThe LACE Lightning Fund, made possible by The Andy Warhol Foundation for the Visual Arts, offers annual grants for artists and artist-driven organizations, projects, and publications. This year, LACE will award 10 artist project grants of $6,000 each.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Grant",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "$6,000",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nLightning Fund Artist Grants The LACE Lightning Fund, made possible by The Andy Warhol Foundation for the Visual Arts, offers annual grants for artis",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-01",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "1e69fcac2d7daa45aa40f9d3c021f8b9db35f1f4",
+      "source": "Instagram: art grants",
+      "title": "Wozu noch malen, fragen sie. Alle fragen dich nach dem Sinn. Einer fragt nach der Summe.",
+      "link": "https://www.instagram.com/reel/DcwJuQDnB3_/",
+      "summary": "Source: Instagram #artgrant\nWozu noch malen, fragen sie. Alle fragen dich nach dem Sinn. Einer fragt nach der Summe.\n\nHunderte echte Förderungen für Künstler:innen — sortiert, aktuell, kostenlos: kunst-stipendium.de (Link in Bio)\n\nTeil's in deine Story — irgendwer da draußen wartet genau darauf.\n\n#kunststipendium #künstlerförderung #stipendium #kunstförderung #förderung #künstlerleben #kunsthumor #atelierleben #kreativität #artlife #callforartists #opencall #artistopportunity #residency #grants #freischaffend #kulturförderung #artgrant",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nWozu noch malen, fragen sie.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-01",
       "closing_soon_sent": false,
       "status": "active"
     }
