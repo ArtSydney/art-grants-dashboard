@@ -17,6 +17,11 @@ const CAT_COLOUR = {
 const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
                (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 const SOON_DAYS = 7;
+
+// 660px, not 760: an iPhone SE in landscape is 667px wide, so a higher
+// threshold would leave the rotate hint telling people to turn a phone that
+// then shows the same agenda. At 660px the grid gets ~94px per column.
+const CAL_GRID_QUERY = "(min-width:660px)";
 const BATCH = 24;
 const FALLBACK_DISCIPLINES = ["Painting","Drawing","Sculpture","Photography","Printmaking",
   "Ceramics","Textiles","Illustration","Digital/New Media","Installation","Mixed Media"];
@@ -271,7 +276,7 @@ function wire(){
   toTop.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
   window.addEventListener("scroll", () => { toTop.hidden = window.scrollY < 700; }, {passive:true});
 
-  matchMedia("(min-width:760px)").addEventListener("change", () => {
+  matchMedia(CAL_GRID_QUERY).addEventListener("change", () => {
     if(!$("#panel-calendar").hidden) renderCalendar();
   });
 }
@@ -342,7 +347,7 @@ function deadlineIndex(){
 }
 
 function renderCalendar(){
-  const wide = matchMedia("(min-width:760px)").matches;
+  const wide = matchMedia(CAL_GRID_QUERY).matches;
   $("#cal-toolbar").querySelectorAll(".cal-nav, .cal-month-label").forEach((el) => { el.hidden = !wide; });
   wide ? renderMonthGrid() : renderAgenda();
 }

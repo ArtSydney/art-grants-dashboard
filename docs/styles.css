@@ -295,9 +295,27 @@ a{color:inherit}
   .tab{min-height:52px; flex-direction:row; gap:8px; padding:0 22px; font-size:12px}
   body{padding-bottom:0}
   .to-top{bottom:22px}
+}
+@media (min-width:660px){
   .cal-export{width:auto; padding:0 20px; margin:0}
   .cal-month-label{flex:0 1 auto; min-width:170px}
 }
+
+/* ── rotate hint ────────────────────────────────────────────────────────
+   Only shown where it is actually true: narrow portrait, where the calendar
+   falls back to the agenda list. Turning the phone crosses the 660px grid
+   breakpoint, so the hint disappears exactly when the grid appears. */
+.cal-rotate-hint{display:none}
+@media (max-width:659.98px) and (orientation:portrait){
+  .cal-rotate-hint{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    margin:14px 0 0; padding:11px 14px;
+    background:var(--card); border:1.5px solid var(--hairline); border-radius:14px;
+    font-family:var(--f-mono); font-size:11.5px; font-weight:500; color:var(--muted);
+  }
+  .cal-rotate-hint::before{content:"⟳"; font-size:15px; color:var(--coral)}
+}
+
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.01ms !important; transition-duration:.01ms !important}
 }
