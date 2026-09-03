@@ -1,629 +1,580 @@
-// Open Calls dashboard. Loads data.json, renders cards, and filters live.
+// Open Calls dashboard. Loads data.json, renders cards in batches, filters live.
 // No framework, no build step: this file runs straight in the browser.
+//
+// Two things differ from the pre-mobile version and are load-bearing:
+//   · the calendar builds its date index from the FILTERED set, so filters set
+//     on the list carry across to the calendar tab
+//   · JSZip is fetched on demand rather than on every page load
 
-const CATS = ["Grant", "Scholarship", "Prize", "Award", "Residency", "Fellowship", "Commission", "Other"];
-const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+/* ══ OPTION A logic. Self-contained: nothing here touches app.js. ═════════ */
+
+const CATS = ["Grant","Scholarship","Prize","Award","Residency","Fellowship","Commission","Other"];
 const CAT_COLOUR = {
-  Grant: "var(--c-grant)", Scholarship: "var(--c-scholarship)", Prize: "var(--c-prize)",
-  Award: "var(--c-award)", Residency: "var(--c-residency)", Fellowship: "var(--c-fellowship)",
-  Commission: "var(--c-commission)", Other: "var(--c-other)",
+  Grant:"var(--c-grant)", Scholarship:"var(--c-scholarship)", Prize:"var(--c-prize)",
+  Award:"var(--c-award)", Residency:"var(--c-residency)", Fellowship:"var(--c-fellowship)",
+  Commission:"var(--c-commission)", Other:"var(--c-other)",
 };
+const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+               (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 const SOON_DAYS = 7;
-
-// Fallback discipline list if the data file doesn't carry one (older data.json).
-const FALLBACK_DISCIPLINES = ["Painting", "Drawing", "Sculpture", "Photography",
-  "Printmaking", "Ceramics", "Textiles", "Illustration", "Digital/New Media",
-  "Installation", "Mixed Media"];
-// Tags that match every discipline filter (a painter can apply to these too).
-let WILDCARDS = ["Visual Arts", "Multidisciplinary"];
+const BATCH = 24;
+const FALLBACK_DISCIPLINES = ["Painting","Drawing","Sculpture","Photography","Printmaking",
+  "Ceramics","Textiles","Illustration","Digital/New Media","Installation","Mixed Media"];
+let WILDCARDS = ["Visual Arts","Multidisciplinary"];
 
 const state = {
-  items: [], search: "", eligibility: "all", location: "all",
-  soonOnly: false, freeOnly: false, showClosed: false,
-  cats: new Set(),        // opportunity-type chips
-  forms: new Set(),       // discipline chips
+  items:[], filtered:[], rendered:0,
+  search:"", eligibility:"all", location:"all", sort:"deadline",
+  soonOnly:false, freeOnly:false, showClosed:false,
+  cats:new Set(), forms:new Set(),
 };
 
-const $ = (sel) => document.querySelector(sel);
+const $ = (s) => document.querySelector(s);
 const grid = $("#grid");
-const emptyEl = $("#empty");
 
+/* ── boot ─────────────────────────────────────────────────────────────── */
 init();
 
-async function init() {
-  wireControls();
+async function init(){
+  wire();
   let disciplines = FALLBACK_DISCIPLINES;
-  try {
-    const res = await fetch("data.json", { cache: "no-store" });
-    if (!res.ok) throw new Error(res.status);
+  try{
+    // Default cache, not no-store: GitHub Pages sends an ETag, so repeat
+    // visits cost a 304 rather than re-downloading ~490KB every time.
+    const res = await fetch("data.json");
+    if(!res.ok) throw new Error(res.status);
     const data = await res.json();
     state.items = data.items || [];
-    if (Array.isArray(data.disciplines) && data.disciplines.length) disciplines = data.disciplines;
-    if (Array.isArray(data.wildcards)) WILDCARDS = data.wildcards;
+    if(Array.isArray(data.disciplines) && data.disciplines.length) disciplines = data.disciplines;
+    if(Array.isArray(data.wildcards)) WILDCARDS = data.wildcards;
     $("#meta").textContent = metaLine(data);
-  } catch (e) {
-    $("#meta").textContent = "Couldn't load data.json. Run the pipeline, or serve this folder over http rather than opening the file directly.";
+  }catch(e){
+    $("#meta").textContent = "Couldn't load the latest run. Reload, or try again shortly.";
   }
-  buildCategoryChips();
-  buildDisciplineChips(disciplines);
+  buildChips("#category-chips", CATS, state.cats);
+  buildChips("#discipline-chips", disciplines, state.forms);
   render();
 }
 
-function metaLine(data) {
+function metaLine(data){
   const when = data.generated ? new Date(data.generated) : null;
-  const stamp = when ? when.toLocaleString("en-AU", {
-    timeZone: "Australia/Sydney",
-    dateStyle: "medium",
-    timeStyle: "short"
-  }) : "unknown";
-  return `${data.count ?? state.items.length} open opportunities · last updated ${stamp} AEST`;
+  const stamp = when ? when.toLocaleString("en-AU",{timeZone:"Australia/Sydney",dateStyle:"medium",timeStyle:"short"}) : "unknown";
+  return "Last updated " + stamp + " AEST";
 }
 
-function makeChip(label, selectedSet, container) {
-  const b = document.createElement("button");
-  b.className = "chip";
-  b.textContent = label;
-  b.setAttribute("aria-pressed", "false");
-  b.addEventListener("click", () => {
-    selectedSet.has(label) ? selectedSet.delete(label) : selectedSet.add(label);
-    b.setAttribute("aria-pressed", selectedSet.has(label));
-    render();
+/* ── filtering ────────────────────────────────────────────────────────── */
+function daysLeft(deadline){
+  if(!deadline) return null;
+  const d = new Date(deadline + "T00:00:00");
+  if(isNaN(d)) return null;
+  const today = new Date(); today.setHours(0,0,0,0);
+  return Math.round((d - today) / 86400000);
+}
+function countdownLabel(n){
+  if(n === null) return {text:"No deadline", cls:"none"};
+  if(n < 0)      return {text:"Closed", cls:"none"};
+  if(n === 0)    return {text:"Closes today", cls:"soon"};
+  if(n === 1)    return {text:"1 day left", cls:"soon"};
+  return {text:n + " days left", cls: n <= SOON_DAYS ? "soon" : ""};
+}
+function isClosed(item){
+  const n = daysLeft(item.deadline);
+  return !!item.deadline && n !== null && n < 0;
+}
+function matchesForms(item){
+  if(!state.forms.size) return true;
+  const forms = item.art_forms || [];
+  if(forms.some((f) => WILDCARDS.includes(f))) return true;
+  return forms.some((f) => state.forms.has(f));
+}
+function passes(item){
+  if(state.showClosed){ if(!isClosed(item)) return false; }
+  else { if(isClosed(item)) return false; }
+  if(state.cats.size && !state.cats.has(item.category)) return false;
+  if(!matchesForms(item)) return false;
+  if(state.location !== "all" && item.location_scope !== state.location) return false;
+  if(state.eligibility !== "all" && item.au_eligibility !== state.eligibility) return false;
+  if(state.soonOnly){
+    const n = daysLeft(item.deadline);
+    if(n === null || n > SOON_DAYS || n < 0) return false;
+  }
+  if(state.freeOnly && String(item.entry_fee || "").toLowerCase() !== "free") return false;
+  if(state.search){
+    const hay = (item.title + " " + item.source + " " + (item.description || item.summary || "")).toLowerCase();
+    if(!hay.includes(state.search)) return false;
+  }
+  return true;
+}
+function amountValue(item){
+  const m = String(item.amount || "").replace(/,/g,"").match(/\d+/g);
+  return m ? Math.max.apply(null, m.map(Number)) : -1;
+}
+function sortItems(list){
+  const s = state.sort;
+  return list.slice().sort((a,b) => {
+    if(s === "newest") return String(b.first_seen || "").localeCompare(String(a.first_seen || ""));
+    if(s === "amount") return amountValue(b) - amountValue(a);
+    if(s === "title")  return String(a.title || "").localeCompare(String(b.title || ""));
+    const da = a.deadline || "9999-12-31", db = b.deadline || "9999-12-31";
+    return da.localeCompare(db);
   });
-  container.appendChild(b);
 }
 
-function buildCategoryChips() {
-  const box = $("#category-chips");
-  CATS.forEach((cat) => makeChip(cat, state.cats, box));
+/* ── rendering, in batches ────────────────────────────────────────────── */
+function render(){
+  state.filtered = sortItems(state.items.filter(passes));
+  state.rendered = 0;
+  grid.innerHTML = "";
+  $("#empty").hidden = state.filtered.length > 0;
+  const n = state.filtered.length;
+  $("#result-count").textContent = n + (n === 1 ? " open call" : " open calls");
+  renderMore();
+  updateFilterCount();
+}
+function renderMore(){
+  const slice = state.filtered.slice(state.rendered, state.rendered + BATCH);
+  const frag = document.createDocumentFragment();
+  slice.forEach((item) => frag.appendChild(card(item)));
+  grid.appendChild(frag);
+  state.rendered += slice.length;
+}
+new IntersectionObserver((entries) => {
+  if(entries[0].isIntersecting && state.rendered < state.filtered.length) renderMore();
+}, {rootMargin:"600px"}).observe($("#sentinel"));
+
+function blurb(item){
+  if(item.description) return item.description;
+  const s = String(item.summary || "").trim();
+  if(!s) return "";
+  return s.length <= 180 ? s : s.slice(0,180).replace(/\s+\S*$/,"") + "…";
 }
 
-function buildDisciplineChips(disciplines) {
-  const box = $("#discipline-chips");
-  disciplines.forEach((form) => makeChip(form, state.forms, box));
+function card(item){
+  const n = daysLeft(item.deadline);
+  const cd = countdownLabel(n);
+  const el = document.createElement(item.link ? "a" : "article");
+  el.className = "card" + (cd.cls === "soon" ? " urgent" : "");
+  if(item.link){ el.href = safeLink(item.link); el.target = "_blank"; el.rel = "noopener"; }
+
+  const cat = CATS.includes(item.category) ? item.category : "Other";
+  const elig = item.au_eligibility === "eligible" ? "eligible"
+             : item.au_eligibility === "unclear" ? "unclear" : null;
+  const forms = item.art_forms || [];
+  const shown = forms.slice(0,3);
+  const extra = forms.length - shown.length;
+
+  el.innerHTML =
+    '<div class="card-top">' +
+      '<span class="cat" style="background:' + CAT_COLOUR[cat] + '">' + cat + '</span>' +
+      '<span class="count ' + cd.cls + '">' + cd.text + '</span>' +
+    '</div>' +
+    '<h2>' + esc(item.title) + '</h2>' +
+    '<p class="source">' + esc(item.source) + '</p>' +
+    (blurb(item) ? '<p class="desc">' + esc(blurb(item)) + '</p>' : "") +
+    (shown.length ? '<div class="forms">' +
+        shown.map((f) => '<span class="form-tag">' + esc(f) + '</span>').join("") +
+        (extra > 0 ? '<span class="form-tag">+' + extra + '</span>' : "") +
+      '</div>' : "") +
+    '<div class="card-foot">' +
+      '<span class="foot-left">' +
+        (item.amount ? '<span class="amount">' + esc(item.amount) + '</span>' : "") +
+        (String(item.entry_fee || "").toLowerCase() === "free" ? '<span class="fee free">Free entry</span>' : "") +
+        (elig ? '<span class="elig ' + elig + '">' + (elig === "eligible" ? "AU eligible" : "eligibility unclear") + '</span>' : "") +
+      '</span>' +
+      (item.link ? '<span class="go">Open listing</span>' : "") +
+    '</div>';
+  return el;
 }
 
-function wireControls() {
-  $("#search").addEventListener("input", (e) => { state.search = e.target.value.toLowerCase().trim(); render(); });
+function esc(s){
+  return String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
+    ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function safeLink(url){
+  try{ const u = new URL(url); return (u.protocol === "https:" || u.protocol === "http:") ? url : "#"; }
+  catch(e){ return "#"; }
+}
+
+/* ── chips + controls ─────────────────────────────────────────────────── */
+function buildChips(sel, labels, set){
+  const box = $(sel);
+  box.innerHTML = "";
+  labels.forEach((label) => {
+    const b = document.createElement("button");
+    b.className = "chip"; b.type = "button"; b.textContent = label;
+    b.dataset.value = label;
+    b.setAttribute("aria-pressed", set.has(label));
+    b.addEventListener("click", () => {
+      set.has(label) ? set.delete(label) : set.add(label);
+      b.setAttribute("aria-pressed", set.has(label));
+      render();
+    });
+    box.appendChild(b);
+  });
+}
+
+function activeFilterCount(){
+  let n = state.cats.size + state.forms.size;
+  if(state.location !== "all") n++;
+  if(state.eligibility !== "all") n++;
+  if(state.soonOnly) n++;
+  if(state.freeOnly) n++;
+  if(state.showClosed) n++;
+  return n;
+}
+function updateFilterCount(){
+  const n = activeFilterCount();
+  const badge = $("#filter-count");
+  badge.hidden = n === 0;
+  badge.textContent = n;
+  $("#sheet-apply").textContent = "Show " + state.filtered.length + " result" + (state.filtered.length === 1 ? "" : "s");
+}
+
+let searchTimer;
+function wire(){
+  $("#search").addEventListener("input", (e) => {
+    clearTimeout(searchTimer);
+    const v = e.target.value.toLowerCase().trim();
+    searchTimer = setTimeout(() => { state.search = v; render(); }, 140);
+  });
+  $("#sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
   $("#location").addEventListener("change", (e) => { state.location = e.target.value; render(); });
   $("#eligibility").addEventListener("change", (e) => { state.eligibility = e.target.value; render(); });
   $("#closing-soon").addEventListener("change", (e) => { state.soonOnly = e.target.checked; render(); });
   $("#free-only").addEventListener("change", (e) => { state.freeOnly = e.target.checked; render(); });
   $("#show-closed").addEventListener("change", (e) => { state.showClosed = e.target.checked; render(); });
+
+  $("#open-filters").addEventListener("click", openSheet);
+  $("#sheet-close").addEventListener("click", closeSheet);
+  $("#sheet-apply").addEventListener("click", closeSheet);
+  $("#sheet-backdrop").addEventListener("click", closeSheet);
+  $("#sheet-clear").addEventListener("click", clearAll);
+  $("#empty-clear").addEventListener("click", clearAll);
+
+  document.addEventListener("keydown", (e) => {
+    if(e.key !== "Escape") return;
+    if(!$("#sheet").hidden) closeSheet();
+    if(!$("#cal-overlay").hidden) closePopup();
+  });
+
+  document.querySelectorAll(".tab[data-tab]").forEach((btn) => {
+    btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+  });
+
+  $("#cal-prev").addEventListener("click", () => { stepMonth(-1); });
+  $("#cal-next").addEventListener("click", () => { stepMonth(1); });
+  $("#cal-download").addEventListener("click", downloadAllIcs);
+  $("#cal-popup-close").addEventListener("click", closePopup);
+  $("#cal-overlay").addEventListener("click", (e) => { if(e.target === $("#cal-overlay")) closePopup(); });
+
+  const toTop = $("#to-top");
+  toTop.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
+  window.addEventListener("scroll", () => { toTop.hidden = window.scrollY < 700; }, {passive:true});
+
+  matchMedia("(min-width:760px)").addEventListener("change", () => {
+    if(!$("#panel-calendar").hidden) renderCalendar();
+  });
 }
 
-function daysLeft(deadline) {
-  if (!deadline) return null;
-  const d = new Date(deadline + "T00:00:00");
-  if (isNaN(d)) return null;
-  const today = new Date(); today.setHours(0, 0, 0, 0);
-  return Math.round((d - today) / 86400000);
+function clearAll(){
+  state.cats.clear(); state.forms.clear();
+  state.location = "all"; state.eligibility = "all";
+  state.soonOnly = false; state.freeOnly = false; state.showClosed = false;
+  state.search = ""; 
+  $("#search").value = "";
+  $("#location").value = "all"; $("#eligibility").value = "all";
+  $("#closing-soon").checked = false; $("#free-only").checked = false; $("#show-closed").checked = false;
+  document.querySelectorAll(".chip[data-value]").forEach((c) => c.setAttribute("aria-pressed","false"));
+  render();
 }
 
-function countdownLabel(n) {
-  if (n === null) return { text: "No deadline", cls: "none" };
-  if (n < 0) return { text: "Closed", cls: "none" };
-  if (n === 0) return { text: "Closes today", cls: "soon" };
-  return { text: `${n}d left`, cls: n <= SOON_DAYS ? "soon" : "" };
+let scrollLock = 0;
+function lockScroll(){ scrollLock = window.scrollY; document.body.style.position = "fixed";
+  document.body.style.top = -scrollLock + "px"; document.body.style.width = "100%"; }
+function unlockScroll(){ document.body.style.position = ""; document.body.style.top = "";
+  document.body.style.width = ""; window.scrollTo(0, scrollLock); }
+
+function openSheet(){
+  updateFilterCount();
+  $("#sheet-backdrop").hidden = false;
+  $("#sheet").hidden = false;
+  lockScroll();
+}
+function closeSheet(){
+  $("#sheet").hidden = true;
+  $("#sheet-backdrop").hidden = true;
+  unlockScroll();
 }
 
-// A discipline filter matches an item if the item shares a selected discipline,
-// OR the item carries a wildcard tag (open to all / general visual), since a
-// specialist can apply to those too.
-function matchesForms(item) {
-  if (!state.forms.size) return true;
-  const forms = item.art_forms || [];
-  if (forms.some((f) => WILDCARDS.includes(f))) return true;
-  return forms.some((f) => state.forms.has(f));
-}
-
-function isClosed(item) {
-  const n = daysLeft(item.deadline);
-  // has a deadline and it has passed
-  return item.deadline && n !== null && n < 0;
-}
-
-function passes(item) {
-  // show-closed: when ticked show only closed, when unticked hide all closed
-  if (state.showClosed) {
-    if (!isClosed(item)) return false;
-  } else {
-    if (isClosed(item)) return false;
-  }
-  if (state.cats.size && !state.cats.has(item.category)) return false;
-  if (!matchesForms(item)) return false;
-  if (state.location !== "all" && item.location_scope !== state.location) return false;
-  if (state.eligibility !== "all" && item.au_eligibility !== state.eligibility) return false;
-  if (state.soonOnly) {
-    const n = daysLeft(item.deadline);
-    if (n === null || n > SOON_DAYS || n < 0) return false;
-  }
-  if (state.freeOnly && String(item.entry_fee || "").toLowerCase() !== "free") return false;
-  if (state.search) {
-    const hay = `${item.title} ${item.source} ${item.description || item.summary || ""}`.toLowerCase();
-    if (!hay.includes(state.search)) return false;
-  }
-  return true;
-}
-
-function render() {
-  const shown = state.items.filter(passes);
-  grid.innerHTML = "";
-  emptyEl.hidden = shown.length > 0;
-  shown.forEach((item) => grid.appendChild(card(item)));
-}
-
-// Card/popup blurb: prefer the clean classifier description; if only the raw
-// scraped summary exists (older records), truncate it so it never spills as a
-// wall of text on the card.
-function blurb(item) {
-  if (item.description) return item.description;
-  const s = String(item.summary || "").trim();
-  if (!s) return "";
-  if (s.length <= 180) return s;
-  return s.slice(0, 180).replace(/\s+\S*$/, "") + "…";
-}
-
-function card(item) {
-  const n = daysLeft(item.deadline);
-  const cd = countdownLabel(n);
-  const el = document.createElement("article");
-  el.className = "card" + (cd.cls === "soon" ? " urgent" : "");
-
-  const cat = item.category && CATS.includes(item.category) ? item.category : "Other";
-  const elig = item.au_eligibility === "eligible" ? "eligible"
-             : item.au_eligibility === "unclear" ? "unclear" : null;
-  const forms = (item.art_forms || []);
-
-  el.innerHTML = `
-    <div class="card-top">
-      <span class="cat" style="background:${CAT_COLOUR[cat]}">${cat}</span>
-      <span class="count ${cd.cls}">${cd.text}</span>
-    </div>
-    <h2>${escapeHtml(item.title)}</h2>
-    <p class="source">${escapeHtml(item.source)}</p>
-    ${blurb(item) ? `<p class="desc">${escapeHtml(blurb(item))}</p>` : ""}
-    ${forms.length ? `<div class="forms">${forms.map((f) => `<span class="form-tag">${escapeHtml(f)}</span>`).join("")}</div>` : ""}
-    <div class="card-foot">
-      <span class="foot-left">
-        <span class="amount">${item.amount ? escapeHtml(item.amount) : ""}</span>
-        ${String(item.entry_fee || "").toLowerCase() === "free" ? `<span class="fee free">Free entry</span>` : ""}
-      </span>
-      ${elig ? `<span class="elig ${elig}">${elig === "eligible" ? "AU eligible" : "eligibility unclear"}</span>` : ""}
-    </div>
-    ${item.link ? `<a class="view" href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
-  `;
-  return el;
-}
-
-function escapeHtml(s) {
-  return String(s).replace(/[&<>"']/g, (c) => (
-    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
-  ));
-}
-
-// Reject any link whose scheme is not http or https, guarding against
-// javascript: or data: URLs that could appear in scraped content.
-function safeLink(url) {
-  try {
-    const u = new URL(url);
-    return (u.protocol === "https:" || u.protocol === "http:") ? url : "#";
-  } catch { return "#"; }
-}
-
-// ── Tab switching ────────────────────────────────────────────────────────────
-document.getElementById("tab-list").addEventListener("click", () => switchTab("list"));
-document.getElementById("tab-calendar").addEventListener("click", () => switchTab("calendar"));
-
-function switchTab(tab) {
+/* ── tabs ─────────────────────────────────────────────────────────────── */
+function switchTab(tab){
   const isCal = tab === "calendar";
-  document.getElementById("panel-list").hidden = isCal;
-  document.getElementById("panel-calendar").hidden = !isCal;
-  document.getElementById("tab-list").classList.toggle("active", !isCal);
-  document.getElementById("tab-calendar").classList.toggle("active", isCal);
-  document.getElementById("tab-list").setAttribute("aria-selected", !isCal);
-  document.getElementById("tab-calendar").setAttribute("aria-selected", isCal);
-  if (isCal) renderCalendar();
+  $("#panel-list").hidden = isCal;
+  $("#panel-calendar").hidden = !isCal;
+  document.querySelectorAll(".tab[data-tab]").forEach((b) => {
+    b.setAttribute("aria-selected", b.dataset.tab === tab);
+  });
+  window.scrollTo(0,0);
+  if(isCal) renderCalendar();
 }
 
-// ── Calendar state ───────────────────────────────────────────────────────────
-const calState = {
-  year: new Date().getFullYear(),
-  month: new Date().getMonth(), // 0-indexed
-};
+/* ── calendar ─────────────────────────────────────────────────────────── */
+const calState = {year:new Date().getFullYear(), month:new Date().getMonth()};
+const DOW = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
 
-document.getElementById("cal-prev").addEventListener("click", () => {
-  calState.month--;
-  if (calState.month < 0) { calState.month = 11; calState.year--; }
+function stepMonth(delta){
+  calState.month += delta;
+  if(calState.month < 0){ calState.month = 11; calState.year--; }
+  if(calState.month > 11){ calState.month = 0; calState.year++; }
   renderCalendar();
-});
-document.getElementById("cal-next").addEventListener("click", () => {
-  calState.month++;
-  if (calState.month > 11) { calState.month = 0; calState.year++; }
-  renderCalendar();
-});
-document.getElementById("cal-download").addEventListener("click", downloadAllIcs);
-document.getElementById("cal-popup-close").addEventListener("click", closePopup);
-document.getElementById("cal-overlay").addEventListener("click", (e) => {
-  if (e.target === document.getElementById("cal-overlay")) closePopup();
-});
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closePopup();
-});
+}
 
-// ── Build deadline index: "YYYY-MM-DD" -> [item, ...] ────────────────────────
-function deadlineIndex() {
+// Deadline index built from the FILTERED set, so filters chosen on the list
+// carry through to the calendar. Production builds this from all items, which
+// makes the two tabs disagree.
+function deadlineIndex(){
   const idx = {};
-  for (const item of state.items) {
-    if (!item.deadline) continue;
-    if (!idx[item.deadline]) idx[item.deadline] = [];
-    idx[item.deadline].push(item);
+  for(const item of state.filtered){
+    if(!item.deadline) continue;
+    (idx[item.deadline] = idx[item.deadline] || []).push(item);
   }
   return idx;
 }
 
-// ── Render calendar: grid on desktop, list on mobile ────────────────────────
-const DOW_LABELS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-
-function renderCalendar() {
-  if (window.innerWidth <= 600) { renderCalendarList(); return; }
-  // ensure grid class and toolbar are restored after a mobile→desktop resize
-  document.getElementById("cal-grid").className = "cal-grid";
-  document.querySelector(".cal-toolbar").hidden = false;
-  const { year, month } = calState;
-  const idx = deadlineIndex();
-
-  // label
-  const label = new Date(year, month, 1).toLocaleString("en-AU", {
-    month: "long", year: "numeric", timeZone: "Australia/Sydney"
-  });
-  document.getElementById("cal-month-label").textContent = label;
-
-  const grid = document.getElementById("cal-grid");
-  grid.innerHTML = "";
-
-  // day-of-week headers (Mon first)
-  DOW_LABELS.forEach((d) => {
-    const h = document.createElement("div");
-    h.className = "cal-dow";
-    h.textContent = d;
-    grid.appendChild(h);
-  });
-
-  // first day of month (0=Sun … 6=Sat), shift to Mon-first
-  const firstDow = new Date(year, month, 1).getDay(); // 0=Sun
-  const startOffset = (firstDow + 6) % 7; // Mon=0 … Sun=6
-  const daysInMonth = new Date(year, month + 1, 0).getDate();
-  const daysInPrev = new Date(year, month, 0).getDate();
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const todayStr = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,"0")}-${String(today.getDate()).padStart(2,"0")}`;
-
-  // total cells: fill to complete weeks
-  const totalCells = Math.ceil((startOffset + daysInMonth) / 7) * 7;
-
-  for (let i = 0; i < totalCells; i++) {
-    const cell = document.createElement("div");
-    cell.className = "cal-cell";
-
-    let dayNum, cellYear, cellMonth, isOther = false;
-    if (i < startOffset) {
-      dayNum = daysInPrev - startOffset + i + 1;
-      cellYear = month === 0 ? year - 1 : year;
-      cellMonth = month === 0 ? 11 : month - 1;
-      isOther = true;
-    } else if (i >= startOffset + daysInMonth) {
-      dayNum = i - startOffset - daysInMonth + 1;
-      cellYear = month === 11 ? year + 1 : year;
-      cellMonth = month === 11 ? 0 : month + 1;
-      isOther = true;
-    } else {
-      dayNum = i - startOffset + 1;
-      cellYear = year;
-      cellMonth = month;
-    }
-
-    const dateStr = `${cellYear}-${String(cellMonth+1).padStart(2,"0")}-${String(dayNum).padStart(2,"0")}`;
-    if (isOther) cell.classList.add("other-month");
-    if (dateStr === todayStr) cell.classList.add("today");
-
-    const numEl = document.createElement("div");
-    numEl.className = "cal-day-num";
-    numEl.textContent = dayNum;
-    cell.appendChild(numEl);
-
-    const events = idx[dateStr] || [];
-    if (events.length) {
-      cell.classList.add("has-events");
-      const MAX_DOTS = 3;
-      events.slice(0, MAX_DOTS).forEach((item) => {
-        const dot = document.createElement("span");
-        dot.className = "cal-dot";
-        const cat = item.category && CATS.includes(item.category) ? item.category : "Other";
-        dot.style.background = CAT_COLOUR[cat];
-        dot.textContent = item.title;
-        dot.title = item.title;
-        cell.appendChild(dot);
-      });
-      if (events.length > MAX_DOTS) {
-        const more = document.createElement("span");
-        more.className = "cal-more";
-        more.textContent = `+${events.length - MAX_DOTS} more`;
-        cell.appendChild(more);
-      }
-      cell.addEventListener("click", () => openPopup(dateStr, events));
-    }
-
-    grid.appendChild(cell);
-  }
+function renderCalendar(){
+  const wide = matchMedia("(min-width:760px)").matches;
+  $("#cal-toolbar").querySelectorAll(".cal-nav, .cal-month-label").forEach((el) => { el.hidden = !wide; });
+  wide ? renderMonthGrid() : renderAgenda();
 }
 
-// ── Mobile calendar list ─────────────────────────────────────────────────────
-// On narrow screens the month grid cells are too small to show any text.
-// Instead we render a scrollable list of deadline dates, grouped by date,
-// with the same "Add to calendar" action available inline.
-function renderCalendarList() {
+function renderMonthGrid(){
+  const body = $("#cal-body");
   const idx = deadlineIndex();
-  const grid = document.getElementById("cal-grid");
-  grid.innerHTML = "";
-  grid.className = "cal-list"; // swap CSS class so list styles apply
+  const first = new Date(calState.year, calState.month, 1);
+  const label = first.toLocaleDateString("en-AU",{month:"long", year:"numeric"});
+  $("#cal-month-label").textContent = label;
 
-  // hide the month-nav toolbar — not needed for the list view
-  document.querySelector(".cal-toolbar").hidden = true;
+  const startDow = (first.getDay() + 6) % 7;         // Monday-first
+  const daysInMonth = new Date(calState.year, calState.month+1, 0).getDate();
+  const todayStr = ymd(new Date());
 
-  // collect all future (or today) deadline dates, sorted ascending
+  let html = '<div class="cal-grid">';
+  DOW.forEach((d) => { html += '<div class="cal-dow">' + d + '</div>'; });
+  const cells = Math.ceil((startDow + daysInMonth) / 7) * 7;
+  for(let i = 0; i < cells; i++){
+    const dayNum = i - startDow + 1;
+    const inMonth = dayNum >= 1 && dayNum <= daysInMonth;
+    const d = new Date(calState.year, calState.month, dayNum);
+    const key = ymd(d);
+    const events = idx[key] || [];
+    html += '<div class="cal-cell' + (inMonth ? "" : " other-month") +
+            (key === todayStr ? " today" : "") +
+            (events.length ? " has-events" : "") + '" data-date="' + key + '">' +
+            '<div class="cal-day-num">' + d.getDate() + '</div>';
+    events.slice(0,2).forEach((it) => {
+      const cat = CATS.includes(it.category) ? it.category : "Other";
+      html += '<span class="cal-dot" style="background:' + CAT_COLOUR[cat] + '">' + esc(it.title) + '</span>';
+    });
+    if(events.length > 2) html += '<span class="cal-more">+' + (events.length - 2) + ' more</span>';
+    html += '</div>';
+  }
+  html += '</div>';
+  body.innerHTML = html;
+
+  body.querySelectorAll(".cal-cell.has-events").forEach((cell) => {
+    cell.addEventListener("click", () => openPopup(cell.dataset.date, idx[cell.dataset.date]));
+  });
+}
+
+function ymd(d){
+  return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
+}
+
+function renderAgenda(){
+  const idx = deadlineIndex();
+  const body = $("#cal-body");
   const today = new Date(); today.setHours(0,0,0,0);
-  const dates = Object.keys(idx)
-    .filter((d) => new Date(d + "T00:00:00") >= today)
-    .sort();
+  const dates = Object.keys(idx).filter((d) => new Date(d + "T00:00:00") >= today).sort();
 
-  if (!dates.length) {
-    grid.innerHTML = "<p class='cal-list-empty'>No upcoming deadlines.</p>";
+  if(!dates.length){
+    body.innerHTML = '<div class="empty"><p>No upcoming deadlines match your filters.</p>' +
+                     '<p class="empty-sub">Clear a filter to see the full run.</p></div>';
     return;
   }
 
+  let html = '<div class="agenda">';
   dates.forEach((dateStr) => {
-    const items = idx[dateStr];
     const d = new Date(dateStr + "T00:00:00");
-    const n = daysLeft(dateStr);
-    const cd = countdownLabel(n);
-
-    // date heading
-    const heading = document.createElement("div");
-    heading.className = "cal-list-heading";
-    heading.innerHTML = `
-      <span class="cal-list-date">${d.toLocaleDateString("en-AU", { weekday:"short", day:"numeric", month:"short", year:"numeric" })}</span>
-      <span class="count ${cd.cls}" style="font-size:.75rem">${cd.text}</span>
-    `;
-    grid.appendChild(heading);
-
-    // one row per item
-    items.forEach((item) => {
-      const cat = item.category && CATS.includes(item.category) ? item.category : "Other";
-      const row = document.createElement("div");
-      row.className = "cal-list-row";
-      row.innerHTML = `
-        <span class="cat" style="background:${CAT_COLOUR[cat]};font-size:.65rem;padding:3px 8px">${escapeHtml(cat)}</span>
-        <span class="cal-list-title">${escapeHtml(item.title)}</span>
-        ${item.amount ? `<span class="cal-list-amount">${escapeHtml(item.amount)}</span>` : ""}
-        ${String(item.entry_fee || "").toLowerCase() === "free" ? `<span class="cal-list-fee free">Free entry</span>` : ""}
-        <div class="cal-list-actions">
-          ${item.link ? `<a class="view" style="padding:8px 12px;font-size:.7rem" href="${safeLink(item.link)}" target="_blank" rel="noopener">View →</a>` : ""}
-          <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" ${IS_IOS ? '' : 'target="_blank" rel="noopener"'}>+ Google Cal</a>
-          <button class="cal-ics-btn">.ics</button>
-        </div>
-      `;
-      row.querySelector(".cal-ics-btn").addEventListener("click", () => downloadSingleIcs(item));
-      grid.appendChild(row);
+    const cd = countdownLabel(daysLeft(dateStr));
+    html += '<div class="agenda-head">' +
+      '<span class="agenda-date">' + d.toLocaleDateString("en-AU",{weekday:"short",day:"numeric",month:"short"}) + '</span>' +
+      '<span class="count ' + cd.cls + '">' + cd.text + '</span></div>';
+    idx[dateStr].forEach((item, i) => {
+      const cat = CATS.includes(item.category) ? item.category : "Other";
+      html += '<div class="agenda-row" data-date="' + dateStr + '" data-i="' + i + '">' +
+        '<span class="cat" style="background:' + CAT_COLOUR[cat] + '">' + cat + '</span>' +
+        '<div class="agenda-title">' + esc(item.title) + '</div>' +
+        '<div class="source">' + esc(item.source) +
+          (item.amount ? ' · <span class="amount">' + esc(item.amount) + '</span>' : "") + '</div>' +
+        '<div class="agenda-acts">' +
+          (item.link ? '<a class="act primary" href="' + safeLink(item.link) + '" target="_blank" rel="noopener">Open listing</a>' : "") +
+          '<a class="act" href="' + buildGoogleCalUrl(item) + '"' + (IS_IOS ? "" : ' target="_blank" rel="noopener"') + '>Google Calendar</a>' +
+          '<button class="act" data-ics>Save .ics</button>' +
+        '</div></div>';
     });
   });
+  html += '</div>';
+  body.innerHTML = html;
+
+  body.querySelectorAll("[data-ics]").forEach((btn) => {
+    const row = btn.closest(".agenda-row");
+    const item = idx[row.dataset.date][Number(row.dataset.i)];
+    btn.addEventListener("click", () => downloadSingleIcs(item));
+  });
 }
 
-// Re-render when crossing the 600px breakpoint (e.g. rotating device)
-let _lastMobile = window.innerWidth <= 600;
-window.addEventListener("resize", () => {
-  const nowMobile = window.innerWidth <= 600;
-  if (nowMobile !== _lastMobile) {
-    _lastMobile = nowMobile;
-    // restore toolbar visibility before re-render so grid mode can show it
-    document.querySelector(".cal-toolbar").hidden = false;
-    const calPanel = document.getElementById("panel-calendar");
-    if (!calPanel.hidden) {
-      document.getElementById("cal-grid").className = "cal-grid";
-      renderCalendar();
-    }
-  }
-});
-
-// ── Popup ────────────────────────────────────────────────────────────────────
-function openPopup(dateStr, events) {
+function openPopup(dateStr, events){
   const d = new Date(dateStr + "T00:00:00");
-  const formatted = d.toLocaleDateString("en-AU", {
-    weekday: "long", day: "numeric", month: "long", year: "numeric"
-  });
-  document.getElementById("cal-popup-title").textContent = `Closing ${formatted}`;
-
-  const body = document.getElementById("cal-popup-body");
+  $("#cal-popup-title").textContent = "Closing " +
+    d.toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  const body = $("#cal-popup-body");
   body.innerHTML = "";
   events.forEach((item) => {
+    const cat = CATS.includes(item.category) ? item.category : "Other";
     const div = document.createElement("div");
-    div.className = "cal-popup-item";
-    const cat = item.category && CATS.includes(item.category) ? item.category : "Other";
-    div.innerHTML = `
-      <h4>${escapeHtml(item.title)}</h4>
-      <p class="popup-meta">${escapeHtml(item.source)} &middot; <span style="background:${CAT_COLOUR[cat]};color:#fff;border-radius:4px;padding:1px 6px;font-size:.7rem">${escapeHtml(cat)}</span></p>
-      ${item.amount ? `<div class="popup-amount">${escapeHtml(item.amount)}</div>` : ""}
-      ${String(item.entry_fee || "").toLowerCase() === "free" ? `<div class="popup-fee free">Free entry</div>` : ""}
-      ${blurb(item) ? `<p style="font-size:.82rem;color:var(--c-muted);margin:6px 0 0">${escapeHtml(blurb(item))}</p>` : ""}
-      <div class="popup-links">
-        ${item.link ? `<a href="${safeLink(item.link)}" target="_blank" rel="noopener">View opening →</a>` : ""}
-        <button class="cal-ics-btn">Download .ics</button>
-        <a class="cal-gcal-btn" href="${buildGoogleCalUrl(item)}" ${IS_IOS ? '' : 'target="_blank" rel="noopener"'}>+ Google Calendar</a>
-      </div>
-    `;
-    div.querySelector(".cal-ics-btn").addEventListener("click", () => downloadSingleIcs(item));
+    div.className = "pop-item";
+    div.innerHTML =
+      '<h4>' + esc(item.title) + '</h4>' +
+      '<p class="source">' + esc(item.source) + ' · <span class="cat" style="background:' + CAT_COLOUR[cat] + '">' + cat + '</span></p>' +
+      (item.amount ? '<div class="amount">' + esc(item.amount) + '</div>' : "") +
+      (blurb(item) ? '<p class="desc">' + esc(blurb(item)) + '</p>' : "") +
+      '<div class="agenda-acts">' +
+        (item.link ? '<a class="act primary" href="' + safeLink(item.link) + '" target="_blank" rel="noopener">Open listing</a>' : "") +
+        '<a class="act" href="' + buildGoogleCalUrl(item) + '"' + (IS_IOS ? "" : ' target="_blank" rel="noopener"') + '>Google Calendar</a>' +
+        '<button class="act" data-ics>Save .ics</button>' +
+      '</div>';
+    div.querySelector("[data-ics]").addEventListener("click", () => downloadSingleIcs(item));
     body.appendChild(div);
   });
-
-  document.getElementById("cal-overlay").hidden = false;
-  document.body.style.overflow = "hidden";
+  $("#cal-overlay").hidden = false;
+  lockScroll();
 }
+function closePopup(){ $("#cal-overlay").hidden = true; unlockScroll(); }
 
-function closePopup() {
-  document.getElementById("cal-overlay").hidden = true;
-  document.body.style.overflow = "";
+/* ── calendar export ──────────────────────────────────────────────────── */
+function icsTimestamp(){ return new Date().toISOString().replace(/[-:]/g,"").split(".")[0] + "Z"; }
+function icsEscape(s){
+  return String(s || "").replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\n/g,"\\n");
 }
+function slugify(s){ return String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").slice(0,50); }
 
-// ── .ics generation ──────────────────────────────────────────────────────────
-function icsTimestamp() {
-  return new Date().toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
-}
-
-function icsDate(dateStr) {
-  // YYYYMMDD for all-day events
-  return dateStr.replace(/-/g, "");
-}
-
-function icsEscape(s) {
-  return String(s || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
-}
-
-// ── Google Calendar URL ───────────────────────────────────────────────────────
-// Opens Google Calendar in the browser and pre-fills the event. Works on iOS
-// where .ics files can't be opened directly by Google Calendar.
-function buildGoogleCalUrl(item) {
-  const date = (item.deadline || "").replace(/-/g, "");
-  // Parse parts directly to avoid local-timezone drift when converting back
-  // via toISOString() (which is always UTC). E.g. midnight Sydney is 2pm UTC
-  // the day before, so adding 86400000ms and calling toISOString() can return
-  // the same date rather than the next one.
-  const [y, m, d] = (item.deadline || "").split("-").map(Number);
-  const next = new Date(Date.UTC(y, m - 1, d + 1));
-  const nextDay = `${next.getUTCFullYear()}${String(next.getUTCMonth()+1).padStart(2,"0")}${String(next.getUTCDate()).padStart(2,"0")}`;
-  const details = [item.source, item.category, item.amount, item.link]
-    .filter(Boolean).join(" | ");
-  // Build manually so the slash in dates= is not percent-encoded — Google
-  // Calendar's frontend rejects %2F and gets stuck loading.
-  const base = IS_IOS
-    ? "comgooglecalendar://calendar/render?action=TEMPLATE"
-    : "https://calendar.google.com/calendar/render?action=TEMPLATE";
+// Manual string build: percent-encoding the slash in dates= makes Google
+// Calendar's frontend hang on a loading spinner.
+function buildGoogleCalUrl(item){
+  const date = String(item.deadline || "").replace(/-/g,"");
+  const p = String(item.deadline || "").split("-").map(Number);
+  const next = new Date(Date.UTC(p[0], p[1]-1, p[2]+1));
+  const nextDay = next.getUTCFullYear() + String(next.getUTCMonth()+1).padStart(2,"0") + String(next.getUTCDate()).padStart(2,"0");
+  const details = [item.source, item.category, item.amount, item.link].filter(Boolean).join(" | ");
+  const base = IS_IOS ? "comgooglecalendar://calendar/render?action=TEMPLATE"
+                      : "https://calendar.google.com/calendar/render?action=TEMPLATE";
   const parts = [
-    `text=${encodeURIComponent("DEADLINE: " + item.title)}`,
-    `dates=${date}/${nextDay}`,
-    `details=${encodeURIComponent(details)}`,
-    item.link ? `location=${encodeURIComponent(item.link)}` : null,
-  ].filter(Boolean);
-  return `${base}&${parts.join("&")}`;
+    "text=" + encodeURIComponent("DEADLINE: " + item.title),
+    "dates=" + date + "/" + nextDay,
+    "details=" + encodeURIComponent(details),
+  ];
+  if(item.link) parts.push("location=" + encodeURIComponent(item.link));
+  return base + "&" + parts.join("&");
 }
 
-function buildIcs(item) {
-  const uid = `opencalls-${item.id || Math.random().toString(36).slice(2)}@artsgrants.au`;
-  const now = icsTimestamp();
-  const date = icsDate(item.deadline);
-  // DTEND is the day after for all-day events in iCal
-  const dateEnd = icsDate(
-    new Date(new Date(item.deadline + "T00:00:00").getTime() + 86400000)
-      .toISOString().slice(0, 10)
-  );
+function buildIcs(item){
+  const uid = "opencalls-" + (item.id || Math.random().toString(36).slice(2)) + "@artsgrants.au";
+  const date = String(item.deadline).replace(/-/g,"");
+  const end = new Date(new Date(item.deadline + "T00:00:00").getTime() + 86400000).toISOString().slice(0,10).replace(/-/g,"");
   const lines = [
-    "BEGIN:VCALENDAR",
-    "VERSION:2.0",
-    "PRODID:-//Open Calls//Arts Grants AU//EN",
-    "CALSCALE:GREGORIAN",
-    "METHOD:PUBLISH",
-    "BEGIN:VEVENT",
-    `UID:${uid}`,
-    `DTSTAMP:${now}`,
-    `DTSTART;VALUE=DATE:${date}`,
-    `DTEND;VALUE=DATE:${dateEnd}`,
-    `SUMMARY:DEADLINE: ${icsEscape(item.title)}`,
-    `DESCRIPTION:${icsEscape([
-      item.source,
-      item.category,
-      item.amount,
-      item.summary,
-      item.link,
-    ].filter(Boolean).join(" | "))}`,
-    item.link ? `URL:${icsEscape(item.link)}` : null,
-    "BEGIN:VALARM",
-    "TRIGGER:-P7D",
-    "ACTION:DISPLAY",
-    `DESCRIPTION:Deadline in 7 days: ${icsEscape(item.title)}`,
-    "END:VALARM",
-    "END:VEVENT",
-    "END:VCALENDAR",
+    "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Open Calls//Arts Grants AU//EN",
+    "CALSCALE:GREGORIAN","METHOD:PUBLISH","BEGIN:VEVENT",
+    "UID:" + uid, "DTSTAMP:" + icsTimestamp(),
+    "DTSTART;VALUE=DATE:" + date, "DTEND;VALUE=DATE:" + end,
+    "SUMMARY:DEADLINE: " + icsEscape(item.title),
+    "DESCRIPTION:" + icsEscape([item.source,item.category,item.amount,item.summary,item.link].filter(Boolean).join(" | ")),
+    item.link ? "URL:" + icsEscape(item.link) : null,
+    "BEGIN:VALARM","TRIGGER:-P7D","ACTION:DISPLAY",
+    "DESCRIPTION:Deadline in 7 days: " + icsEscape(item.title),
+    "END:VALARM","END:VEVENT","END:VCALENDAR",
   ].filter((l) => l !== null);
   return lines.join("\r\n");
 }
 
-function slugify(s) {
-  return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 50);
+// iOS ignores the download attribute, so navigate to the blob and let the
+// system calendar sheet take over.
+function downloadSingleIcs(item){
+  const blob = new Blob([buildIcs(item)], {type:"text/calendar;charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  if(IS_IOS){ window.location.href = url; }
+  else{
+    const a = document.createElement("a");
+    a.href = url; a.download = item.deadline + "-" + slugify(item.title) + ".ics"; a.click();
+  }
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
 }
 
-function downloadSingleIcs(item) {
-  const content = buildIcs(item);
-  const blob = new Blob([content], { type: "text/calendar;charset=utf-8" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = `${item.deadline}-${slugify(item.title)}.ics`;
-  a.click();
-  URL.revokeObjectURL(a.href);
+// JSZip is ~95KB and only needed if someone taps export, so load it then.
+function loadJSZip(){
+  if(window.JSZip) return Promise.resolve();
+  return new Promise((res, rej) => {
+    const s = document.createElement("script");
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js";
+    s.onload = res; s.onerror = rej;
+    document.head.appendChild(s);
+  });
 }
 
-async function downloadAllIcs() {
-  const withDeadline = state.items.filter((i) => i.deadline);
-  if (!withDeadline.length) { alert("No items with deadlines to export."); return; }
-
-  const btn = document.getElementById("cal-download");
-  btn.textContent = "Building…";
-  btn.disabled = true;
-
-  try {
+async function downloadAllIcs(){
+  const withDeadline = state.filtered.filter((i) => i.deadline);
+  const btn = $("#cal-download");
+  if(!withDeadline.length){ btn.textContent = "Nothing to export yet"; setTimeout(resetBtn, 2200); return; }
+  btn.disabled = true; btn.textContent = "Building " + withDeadline.length + " events…";
+  try{
+    await loadJSZip();
     const zip = new JSZip();
     withDeadline.forEach((item) => {
-      const content = buildIcs(item);
-      const filename = `${item.deadline}-${slugify(item.title)}.ics`;
-      zip.file(filename, content);
+      zip.file(item.deadline + "-" + slugify(item.title) + ".ics", buildIcs(item));
     });
-    const blob = await zip.generateAsync({ type: "blob" });
+    const blob = await zip.generateAsync({type:"blob"});
+    const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = "open-calls-deadlines.zip";
-    a.click();
-    URL.revokeObjectURL(a.href);
-  } finally {
-    btn.textContent = "Download .ics (zip)";
-    btn.disabled = false;
+    a.href = url; a.download = "open-calls-deadlines.zip"; a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
+  }catch(e){
+    btn.textContent = "Export failed. Check your connection and try again.";
+    setTimeout(resetBtn, 3000); btn.disabled = false; return;
   }
+  btn.disabled = false; resetBtn();
 }
+function resetBtn(){ $("#cal-download").textContent = "Add every deadline to your calendar"; }
 
-
-// ── Theme switcher ───────────────────────────────────────────────────────────
-// Footer buttons flip data-theme on <html> and remember the choice. A tiny
-// inline script in <head> applies the saved theme before paint to avoid a flash.
-// Bloom is the default when nothing is saved.
-(function themeSwitcher() {
+/* ── theme ────────────────────────────────────────────────────────────── */
+(function theme(){
   const KEY = "oc-theme";
   const root = document.documentElement;
   const btns = document.querySelectorAll(".theme-btn");
-
-  function apply(name) {
-    if (name && name !== "default") root.setAttribute("data-theme", name);
+  function apply(name){
+    if(name && name !== "default") root.setAttribute("data-theme", name);
     else root.removeAttribute("data-theme");
-    btns.forEach((b) => {
-      const active = (b.dataset.theme || "default") === (name || "default");
-      b.setAttribute("aria-pressed", active);
-    });
+    btns.forEach((b) => b.setAttribute("aria-pressed", (b.dataset.theme || "default") === (name || "default")));
   }
-
-  btns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const name = btn.dataset.theme || "default";
-      apply(name);
-      try { localStorage.setItem(KEY, name); } catch (e) {}
-    });
+  btns.forEach((b) => b.addEventListener("click", () => {
+    const name = b.dataset.theme || "default";
+    apply(name);
+    try{ localStorage.setItem(KEY, name); }catch(e){}
+  }));
+  $("#theme-toggle").addEventListener("click", () => {
+    const next = root.getAttribute("data-theme") === "bloom" ? "default" : "bloom";
+    apply(next);
+    try{ localStorage.setItem(KEY, next); }catch(e){}
   });
-
   let saved = "bloom";
-  try { saved = localStorage.getItem(KEY) || "bloom"; } catch (e) {}
+  try{ saved = localStorage.getItem(KEY) || "bloom"; }catch(e){}
   apply(saved);
 })();

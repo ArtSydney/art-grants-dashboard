@@ -2,101 +2,134 @@
 <html lang="en-AU">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Open Calls · arts funding for Australian artists</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=9" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=10" />
 <script>try{var t=localStorage.getItem('oc-theme')||'bloom';if(t!=='default')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-<header class="site">
+
+<nav class="tabbar" role="tablist" id="tabbar">
+  <button class="tab" data-tab="list" role="tab" aria-selected="true"><span class="ti">☰</span>Open calls</button>
+  <button class="tab" data-tab="calendar" role="tab" aria-selected="false"><span class="ti">▦</span>Deadlines</button>
+  <a class="tab" href="https://artsydney.github.io/art-openings-syd/" target="_blank" rel="noopener"><span class="ti">◇</span>Exhibitions</a>
+</nav>
+
+<header class="band">
   <div class="wrap">
-    <div class="brandline">
+    <div class="band-top">
       <span class="mark">◷</span>
-      <span class="kicker">Arts funding, Australia</span>
+      <h1>Open Calls</h1>
+      <button class="icon-btn" id="theme-toggle" aria-label="Switch colour theme">◐</button>
     </div>
-    <h1>Open Calls</h1>
     <p class="tagline">Grants, prizes, residencies and fellowships worth applying for, sorted by what closes next.</p>
     <p class="meta" id="meta">Loading the latest run…</p>
-    <nav class="tab-nav" role="tablist">
-      <button class="tab-btn active" id="tab-list" role="tab" aria-selected="true" aria-controls="panel-list">List</button>
-      <button class="tab-btn" id="tab-calendar" role="tab" aria-selected="false" aria-controls="panel-calendar">Calendar</button>
-      <a class="tab-btn tab-link" href="https://artsydney.github.io/art-openings-syd/" target="_blank" rel="noopener">Exhibitions</a>
-    </nav>
   </div>
 </header>
 
-<!-- LIST VIEW -->
-<div id="panel-list" role="tabpanel">
-  <div class="controls">
-    <div class="wrap controls-inner">
-      <input id="search" type="search" placeholder="Search titles and sources" aria-label="Search" />
-      <div class="chip-group">
-        <span class="chip-label">Type</span>
-        <div class="chips" id="category-chips" role="group" aria-label="Filter by opportunity type"></div>
-      </div>
-      <div class="chip-group">
-        <span class="chip-label">Discipline</span>
-        <div class="chips" id="discipline-chips" role="group" aria-label="Filter by discipline"></div>
-      </div>
-      <div class="selects">
-        <label class="field">
-          <span>Location</span>
-          <select id="location">
-            <option value="all">All</option>
-            <option value="Australia">Australia only</option>
-            <option value="International">International only</option>
-          </select>
-        </label>
-        <label class="field">
-          <span>Eligibility</span>
-          <select id="eligibility">
-            <option value="all">All</option>
-            <option value="eligible">Australians eligible</option>
-            <option value="unclear">Unclear</option>
-          </select>
-        </label>
-        <label class="field toggle">
-          <input type="checkbox" id="closing-soon" />
-          <span>Closing within 7 days</span>
-        </label>
-        <label class="field toggle">
-          <input type="checkbox" id="free-only" />
-          <span>Free entry</span>
-        </label>
-        <label class="field toggle">
-          <input type="checkbox" id="show-closed" />
-          <span>Show closed</span>
-        </label>
-      </div>
+<!-- ══ LIST ══ -->
+<div id="panel-list">
+  <div class="filterbar">
+    <div class="wrap filterbar-inner">
+      <input id="search" type="search" placeholder="Search opportunities" aria-label="Search opportunities" />
+      <button class="filter-btn" id="open-filters">Filters<span class="badge" id="filter-count" hidden>0</span></button>
     </div>
+  </div>
+  <div class="wrap resultbar">
+    <span id="result-count"></span>
+    <select id="sort" aria-label="Sort opportunities">
+      <option value="deadline">Closing soonest</option>
+      <option value="newest">Recently added</option>
+      <option value="amount">Largest amount</option>
+      <option value="title">A to Z</option>
+    </select>
   </div>
   <main class="wrap">
     <div id="grid" class="grid"></div>
+    <div id="sentinel" style="height:1px"></div>
     <div id="empty" class="empty" hidden>
-      <p>Nothing matches those filters right now.</p>
-      <p class="empty-sub">Clear a filter, or check back after the next run.</p>
+      <p>No open calls match those filters.</p>
+      <p class="empty-sub">Loosen a filter, or check back after the next run.</p>
+      <div class="btn-line"><button class="btn-ghost" id="empty-clear">Clear all filters</button></div>
     </div>
   </main>
 </div>
 
-<!-- CALENDAR VIEW -->
-<div id="panel-calendar" role="tabpanel" hidden>
-  <div class="cal-toolbar wrap">
-    <button class="cal-nav" id="cal-prev" aria-label="Previous month">&#8249;</button>
-    <h2 class="cal-month-label" id="cal-month-label"></h2>
-    <button class="cal-nav" id="cal-next" aria-label="Next month">&#8250;</button>
-    <button class="cal-download-btn" id="cal-download">Download .ics (zip)</button>
-  </div>
-  <div class="wrap" style="overflow-x:auto">
-    <p class="cal-rotate-hint">Rotate your phone for the full calendar view</p>
-    <div class="cal-grid" id="cal-grid"></div>
+<!-- ══ CALENDAR ══ -->
+<div id="panel-calendar" hidden>
+  <div class="wrap">
+    <div class="cal-toolbar" id="cal-toolbar">
+      <button class="cal-nav" id="cal-prev" aria-label="Previous month">&#8249;</button>
+      <h2 class="cal-month-label" id="cal-month-label"></h2>
+      <button class="cal-nav" id="cal-next" aria-label="Next month">&#8250;</button>
+      <button class="cal-export" id="cal-download">Add every deadline to your calendar</button>
+    </div>
+    <div id="cal-body"></div>
   </div>
 </div>
 
-<!-- DAY POPUP -->
+<button class="to-top" id="to-top" aria-label="Back to top" hidden>↑</button>
+
+<!-- ══ FILTER SHEET ══ -->
+<div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Filters" hidden>
+  <div class="sheet-grip"></div>
+  <div class="sheet-head">
+    <h2>Filters</h2>
+    <button class="icon-btn" id="sheet-close" style="background:var(--card);border-color:var(--hairline);color:var(--ink)" aria-label="Close filters">&#10005;</button>
+  </div>
+  <div class="sheet-body">
+    <div class="fgroup">
+      <h3>Opportunity type</h3>
+      <div class="chips" id="category-chips"></div>
+    </div>
+    <div class="fgroup">
+      <h3>Discipline</h3>
+      <p class="fsublabel">Open-to-all listings always show, whatever you pick here.</p>
+      <div class="chips" id="discipline-chips"></div>
+    </div>
+    <div class="fgroup">
+      <h3>Where it's based</h3>
+      <select class="fselect" id="location">
+        <option value="all">Anywhere</option>
+        <option value="Australia">Australia only</option>
+        <option value="International">International only</option>
+      </select>
+    </div>
+    <div class="fgroup">
+      <h3>Eligibility</h3>
+      <select class="fselect" id="eligibility">
+        <option value="all">Any</option>
+        <option value="eligible">Australians eligible</option>
+        <option value="unclear">Unclear</option>
+      </select>
+    </div>
+    <div class="fgroup">
+      <label class="rowtoggle"><span>Closing within 7 days</span><input type="checkbox" id="closing-soon" /></label>
+      <label class="rowtoggle"><span>Free to enter</span><input type="checkbox" id="free-only" /></label>
+      <label class="rowtoggle"><span>Show closed instead</span><input type="checkbox" id="show-closed" /></label>
+    </div>
+    <div class="fgroup">
+      <h3>Colour</h3>
+      <div class="chips">
+        <button class="chip theme-btn" data-theme="default" aria-pressed="false">Chocolate</button>
+        <button class="chip theme-btn" data-theme="bloom" aria-pressed="true">Bloom</button>
+      </div>
+    </div>
+    <div class="fgroup">
+      <p class="fsublabel" style="margin:0">Assembled from public feeds and pages. Always confirm eligibility, amounts and deadlines on the original listing before you apply.</p>
+    </div>
+  </div>
+  <div class="sheet-foot">
+    <button class="btn-ghost" id="sheet-clear">Clear all</button>
+    <button class="btn-primary" id="sheet-apply">Show results</button>
+  </div>
+</aside>
+
+<!-- ══ DAY POPUP ══ -->
 <div class="cal-popup-overlay" id="cal-overlay" hidden>
   <div class="cal-popup" role="dialog" aria-modal="true" aria-labelledby="cal-popup-title">
     <button class="cal-popup-close" id="cal-popup-close" aria-label="Close">&#10005;</button>
@@ -105,17 +138,7 @@
   </div>
 </div>
 
-<footer class="wrap foot">
-  <p>Assembled from public feeds and pages. Always confirm eligibility, amounts and deadlines on the original listing before you apply.</p>
-  <div class="theme-switch" role="group" aria-label="Colour theme">
-    <span class="theme-switch-label">Theme</span>
-    <button class="theme-btn" data-theme="default" aria-pressed="false">Chocolate</button>
-    <button class="theme-btn" data-theme="bloom" aria-pressed="true">Bloom</button>
-  </div>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="app.js?v=14"></script>
-<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "18444fb485864c2382080888e3701b44"}'></script>
+<script src="app.js?v=15"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "18444fb485864c2382080888e3701b44"}'></script>
 </body>
 </html>
