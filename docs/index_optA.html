@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Open Calls · arts funding for Australian artists</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<script>try{var t=localStorage.getItem('oc-theme')||'bloom';if(t!=='default')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<style>
+/* ══ OPTION A — "Compressed" ══════════════════════════════════════════════════
+   Same visual language as production (Bloom palette, Space Grotesk / Inter /
+   JetBrains Mono, chunky cards). Rebuilt around a phone:
+     · hero collapses to a scroll-away band instead of eating 360px
+     · one 56px sticky row holds search + a Filters button
+     · every filter moves into a bottom sheet, nothing hidden in a scroller
+     · persistent bottom tab bar so nav is always a thumb away
+     · 16px inputs (no iOS zoom), 44px minimum tap targets
+     · cards render in batches of 24, JSZip loads only on demand
+   ═════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --paper:#F3E7D2; --cocoa:#241511; --ink:#241511; --cream:#F7EFE1; --card:#FFFFFF;
+  --muted:#8B7A67; --muted-cream:#C9B69C; --hairline:#E4D5BC;
+  --coral:#FF5A3C; --marigold:#F4B01F; --urgent:#DE3A1E;
+  --lavender:#6A3FB0; --ochre:#241511;
+  --c-grant:#1F7A57; --c-scholarship:#2E5AAC; --c-prize:#C42B6E; --c-award:#E07A17;
+  --c-residency:#6A3FB0; --c-fellowship:#B2368A; --c-commission:#A56E1C; --c-other:#6B5A48;
+  --radius:20px;
+  --shadow:0 2px 3px rgba(36,21,17,.05), 0 12px 26px rgba(36,21,17,.08);
+  --f-head:"Space Grotesk",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,monospace;
+  --tap:44px;
+  --bar:56px;
+  --dock:calc(60px + env(safe-area-inset-bottom));
+}
+:root[data-theme="bloom"] {
+  --paper:#F8EDEF; --cocoa:#382038; --ink:#2C1E2E; --cream:#FBEFEA;
+  --muted:#927285; --muted-cream:#C8A6B4; --hairline:#EEDBE0;
+  --coral:#EC4C3C; --marigold:#FCD9DF; --urgent:#D8372A;
+  --lavender:#AE76B3; --ochre:#A9751E;
+  --shadow:0 2px 3px rgba(44,30,46,.05), 0 12px 26px rgba(44,30,46,.09);
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--f-body); line-height:1.5; -webkit-font-smoothing:antialiased;
+  padding-bottom:var(--dock);
+  overscroll-behavior-y:none;
+}
+.wrap{width:min(1180px,100%); padding-inline:clamp(14px,4vw,48px); margin-inline:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--coral); outline-offset:2px; border-radius:6px}
+
+/* ── scroll-away identity band ─────────────────────────────────────────── */
+.band{background:var(--cocoa); color:var(--cream); padding:14px 0 20px;
+      border-bottom-left-radius:22px; border-bottom-right-radius:22px}
+.band-top{display:flex; align-items:center; gap:10px}
+.mark{font-size:16px; color:var(--cocoa); background:var(--marigold); border-radius:50%;
+      width:32px; height:32px; display:grid; place-items:center; font-weight:700; flex:0 0 auto}
+:root[data-theme="bloom"] .mark{background:var(--lavender); color:var(--cream)}
+.band h1{font-family:var(--f-head); font-weight:700; font-size:clamp(24px,6.2vw,40px);
+         letter-spacing:-.02em; line-height:1; margin:0; flex:1}
+.icon-btn{
+  width:var(--tap); height:var(--tap); min-width:var(--tap); border-radius:50%;
+  background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22);
+  color:var(--cream); cursor:pointer; font-size:16px; display:grid; place-items:center;
+}
+.tagline{font-size:14px; color:var(--cream); opacity:.8; max-width:44ch; margin:12px 0 6px}
+.meta{font-family:var(--f-mono); font-size:11px; color:var(--muted-cream); margin:0}
+
+/* ── the only sticky chrome: 56px ──────────────────────────────────────── */
+.filterbar{
+  position:sticky; top:0; z-index:30;
+  background:color-mix(in srgb, var(--paper) 94%, transparent);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--hairline);
+}
+.filterbar-inner{display:flex; gap:8px; align-items:center; height:var(--bar)}
+#search{
+  flex:1; min-width:0; height:40px; padding:0 14px;
+  font-size:16px;                      /* 16px stops iOS Safari zooming on focus */
+  font-family:inherit; background:var(--card); color:var(--ink);
+  border:1.5px solid var(--hairline); border-radius:999px;
+}
+#search::placeholder{color:var(--muted)}
+.filter-btn{
+  height:40px; min-height:40px; padding:0 14px; flex:0 0 auto;
+  display:inline-flex; align-items:center; gap:7px;
+  font-family:var(--f-mono); font-size:12px; font-weight:700;
+  background:var(--cocoa); color:var(--cream); border:none; border-radius:999px; cursor:pointer;
+}
+.badge{background:var(--coral); color:#fff; border-radius:999px; min-width:18px; height:18px;
+       display:grid; place-items:center; font-size:10.5px; padding:0 5px}
+
+/* ── result count + sort ───────────────────────────────────────────────── */
+.resultbar{display:flex; align-items:center; justify-content:space-between; gap:10px;
+           padding:14px 0 2px}
+#result-count{font-family:var(--f-mono); font-size:11.5px; color:var(--muted)}
+#sort{
+  font-family:var(--f-mono); font-size:12px; height:36px; padding:0 30px 0 12px;
+  border:1.5px solid var(--hairline); border-radius:999px;
+  background:var(--card) ; color:var(--ink); appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-position:calc(100% - 15px) 15px, calc(100% - 11px) 15px;
+  background-size:4px 4px, 4px 4px; background-repeat:no-repeat;
+}
+
+/* ── cards ─────────────────────────────────────────────────────────────── */
+.grid{display:grid; gap:14px; padding:14px 0 8px;
+      grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.card{
+  display:block; text-decoration:none; color:inherit;
+  background:var(--card); border:1.5px solid var(--hairline); border-radius:var(--radius);
+  padding:14px 15px 15px; box-shadow:var(--shadow);
+  content-visibility:auto; contain-intrinsic-size:auto 220px;
+}
+.card:active{transform:scale(.99)}
+.card.urgent{border-color:color-mix(in srgb, var(--urgent) 55%, var(--hairline))}
+.card-top{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:9px}
+.cat{font-family:var(--f-mono); font-size:10px; font-weight:700; letter-spacing:.06em;
+     text-transform:uppercase; padding:4px 9px; border-radius:999px; color:#fff; white-space:nowrap}
+.count{font-family:var(--f-mono); font-weight:700; font-size:12px; color:var(--muted); white-space:nowrap}
+.count.soon{color:#fff; background:var(--urgent); padding:4px 9px; border-radius:999px}
+.count.none{color:var(--muted-cream)}
+.card h2{font-family:var(--f-head); font-weight:700; font-size:17px; line-height:1.24;
+         margin:0 0 3px; letter-spacing:-.01em;
+         display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.source{font-size:11.5px; color:var(--muted); margin:0 0 8px; font-weight:500}
+.desc{font-size:13px; color:color-mix(in srgb, var(--ink) 78%, var(--paper)); margin:0 0 10px;
+      display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.forms{display:flex; flex-wrap:wrap; gap:5px; margin-bottom:10px}
+.form-tag{font-family:var(--f-mono); font-size:9.5px; font-weight:500;
+          color:var(--cocoa); background:var(--marigold); padding:3px 7px; border-radius:999px}
+.card-foot{display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;
+           padding-top:9px; border-top:1px solid var(--hairline)}
+.foot-left{display:flex; align-items:center; gap:7px; flex-wrap:wrap; min-width:0}
+.amount{font-family:var(--f-mono); font-size:12.5px; font-weight:700; color:var(--ochre)}
+.fee,.elig{font-size:10px; font-weight:600; padding:3px 8px; border-radius:999px; font-family:var(--f-mono)}
+.fee.free{color:#fff; background:var(--c-grant)}
+.elig.eligible{color:#fff; background:var(--c-grant)}
+.elig.unclear{color:var(--cocoa); background:color-mix(in srgb, var(--marigold) 70%, var(--paper))}
+.go{font-family:var(--f-mono); font-size:11.5px; font-weight:700; color:var(--coral)}
+
+/* ── empty state ───────────────────────────────────────────────────────── */
+.empty{text-align:center; padding:56px 0; color:var(--muted)}
+.empty p{margin:0 0 4px; font-size:16px}
+.empty-sub{font-size:13px}
+.btn-line{margin-top:16px}
+.btn-ghost{
+  min-height:var(--tap); padding:0 20px; border-radius:999px; cursor:pointer;
+  font-family:var(--f-mono); font-size:12px; font-weight:700;
+  background:var(--card); color:var(--ink); border:1.5px solid var(--hairline);
+}
+
+/* ── bottom sheet ──────────────────────────────────────────────────────── */
+.sheet-backdrop{position:fixed; inset:0; background:rgba(0,0,0,.42); z-index:60}
+.sheet{
+  position:fixed; left:0; right:0; bottom:0; z-index:61;
+  background:var(--paper); border-top-left-radius:22px; border-top-right-radius:22px;
+  max-height:88dvh; display:flex; flex-direction:column;
+  box-shadow:0 -8px 40px rgba(0,0,0,.22);
+  animation:rise .22s cubic-bezier(.32,.72,0,1);
+}
+@keyframes rise{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet-grip{width:38px; height:4px; border-radius:999px; background:var(--hairline);
+            margin:10px auto 2px; flex:0 0 auto}
+.sheet-head{display:flex; align-items:center; justify-content:space-between;
+            padding:6px 18px 10px; flex:0 0 auto}
+.sheet-head h2{font-family:var(--f-head); font-size:18px; margin:0}
+.sheet-body{overflow-y:auto; -webkit-overflow-scrolling:touch; padding:0 18px 14px; flex:1 1 auto}
+.sheet-foot{
+  display:flex; gap:10px; padding:12px 18px calc(12px + env(safe-area-inset-bottom));
+  border-top:1px solid var(--hairline); background:var(--paper); flex:0 0 auto;
+}
+.fgroup{padding:14px 0; border-bottom:1px solid var(--hairline)}
+.fgroup:last-child{border-bottom:none}
+.fgroup > h3{font-family:var(--f-head); font-size:13.5px; font-weight:600; margin:0 0 10px}
+.chips{display:flex; flex-wrap:wrap; gap:7px}   /* wrap, never a hidden scroller */
+.chip{
+  min-height:36px; padding:0 13px; display:inline-flex; align-items:center;
+  font-family:var(--f-mono); font-size:12px; font-weight:500;
+  border-radius:999px; cursor:pointer; white-space:nowrap;
+  background:var(--card); color:var(--muted); border:1.5px solid var(--hairline);
+}
+.chip[aria-pressed="true"]{background:var(--cocoa); color:var(--cream); border-color:var(--cocoa)}
+.rowtoggle{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  min-height:var(--tap); cursor:pointer; font-size:14.5px;
+}
+.rowtoggle input{width:22px; height:22px; accent-color:var(--coral); flex:0 0 auto}
+.fselect{
+  width:100%; min-height:var(--tap); font-size:16px; font-family:inherit; padding:0 14px;
+  border:1.5px solid var(--hairline); border-radius:12px; background:var(--card); color:var(--ink);
+}
+.fsublabel{font-size:12px; color:var(--muted); margin:0 0 6px}
+.btn-primary{
+  flex:1; min-height:var(--tap); border:none; border-radius:999px; cursor:pointer;
+  font-family:var(--f-mono); font-size:13px; font-weight:700;
+  background:var(--coral); color:#fff;
+}
+
+/* ── bottom tab bar ────────────────────────────────────────────────────── */
+.tabbar{
+  position:fixed; left:0; right:0; bottom:0; z-index:40;
+  display:grid; grid-template-columns:repeat(3,1fr);
+  background:color-mix(in srgb, var(--paper) 96%, transparent);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  border-top:1px solid var(--hairline);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.tab{
+  min-height:60px; background:none; border:none; cursor:pointer; text-decoration:none;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px;
+  font-family:var(--f-mono); font-size:10px; font-weight:700; letter-spacing:.04em;
+  color:var(--muted); padding:0;
+}
+.tab .ti{font-size:17px; line-height:1}
+.tab[aria-selected="true"]{color:var(--coral)}
+
+/* ── back to top ───────────────────────────────────────────────────────── */
+.to-top{
+  position:fixed; right:14px; bottom:calc(var(--dock) + 12px); z-index:35;
+  width:var(--tap); height:var(--tap); border-radius:50%; cursor:pointer;
+  background:var(--cocoa); color:var(--cream); border:none; font-size:17px;
+  box-shadow:var(--shadow);
+}
+
+/* ── calendar ──────────────────────────────────────────────────────────── */
+.cal-toolbar{display:flex; align-items:center; gap:10px; padding:16px 0 10px; flex-wrap:wrap}
+.cal-month-label{font-family:var(--f-head); font-size:17px; font-weight:700; margin:0;
+                 flex:1; text-align:center}
+.cal-nav{min-width:var(--tap); min-height:var(--tap); background:var(--cocoa); color:var(--cream);
+         border:none; border-radius:12px; cursor:pointer; font-size:18px}
+.cal-export{
+  width:100%; min-height:var(--tap); margin-bottom:4px; border:none; border-radius:999px;
+  background:var(--cocoa); color:var(--cream); cursor:pointer;
+  font-family:var(--f-mono); font-size:12px; font-weight:700;
+}
+.cal-grid{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:1px;
+          background:var(--hairline); border:1px solid var(--hairline);
+          border-radius:12px; overflow:hidden; margin-bottom:24px}
+.cal-dow{background:var(--cocoa); color:var(--cream); font-family:var(--f-head);
+         font-size:10.5px; font-weight:700; padding:7px 4px; text-align:center}
+.cal-cell{background:var(--card); min-height:82px; padding:5px; position:relative}
+.cal-cell.other-month{opacity:.45}
+.cal-cell.has-events{cursor:pointer}
+.cal-day-num{font-family:var(--f-mono); font-size:11px; font-weight:700; color:var(--muted)}
+.cal-cell.today .cal-day-num{background:var(--coral); color:#fff; border-radius:50%;
+  width:20px; height:20px; display:inline-grid; place-items:center; font-size:10px}
+.cal-dot{display:block; color:#fff; border-radius:4px; font-size:9.5px; font-weight:600;
+         padding:2px 4px; margin-top:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.cal-more{font-size:9.5px; color:var(--muted); font-style:italic}
+
+.agenda{padding:4px 0 24px}
+.agenda-head{display:flex; align-items:center; justify-content:space-between; gap:10px;
+             padding:16px 0 8px; border-top:2px solid var(--hairline); margin-top:6px}
+.agenda-head:first-child{border-top:none; margin-top:0}
+.agenda-date{font-family:var(--f-head); font-weight:700; font-size:14px}
+.agenda-row{background:var(--card); border:1.5px solid var(--hairline); border-radius:14px;
+            padding:12px 13px; margin-bottom:8px}
+.agenda-title{font-family:var(--f-head); font-weight:600; font-size:14px; line-height:1.3; margin:7px 0 5px}
+.agenda-acts{display:flex; gap:7px; flex-wrap:wrap; margin-top:9px}
+.act{
+  min-height:38px; padding:0 13px; display:inline-flex; align-items:center;
+  border-radius:999px; border:1.5px solid var(--hairline); background:var(--card);
+  color:var(--ink); cursor:pointer; text-decoration:none;
+  font-family:var(--f-mono); font-size:11px; font-weight:700;
+}
+.act.primary{background:var(--coral); color:#fff; border-color:var(--coral)}
+
+/* ── day popup (calendar grid) ─────────────────────────────────────────── */
+.cal-popup-overlay{position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:70;
+                   display:flex; align-items:flex-end; justify-content:center}
+.cal-popup{background:var(--paper); border-top-left-radius:22px; border-top-right-radius:22px;
+           max-height:82dvh; overflow-y:auto; padding:20px 18px calc(20px + env(safe-area-inset-bottom));
+           width:100%; max-width:560px; position:relative}
+.cal-popup h3{font-family:var(--f-head); font-size:16px; margin:0 0 14px; padding-right:40px}
+.cal-popup-close{position:absolute; right:12px; top:12px; width:var(--tap); height:var(--tap);
+                 border-radius:50%; border:none; background:var(--card); color:var(--ink);
+                 cursor:pointer; font-size:15px}
+.pop-item{border-bottom:1px solid var(--hairline); padding:12px 0}
+.pop-item:last-child{border-bottom:none}
+.pop-item h4{font-family:var(--f-head); font-size:14px; margin:0 0 4px}
+
+@media (min-width:760px){
+  .band{padding:28px 0 30px}
+  .band h1{font-size:46px}
+  .filterbar-inner{height:64px}
+  .tabbar{position:sticky; top:0; grid-template-columns:repeat(3,max-content);
+          border-top:none; border-bottom:1px solid var(--hairline); z-index:41}
+  .tab{min-height:52px; flex-direction:row; gap:8px; padding:0 22px; font-size:12px}
+  body{padding-bottom:0}
+  .to-top{bottom:22px}
+  .cal-export{width:auto; padding:0 20px; margin:0}
+  .cal-month-label{flex:0 1 auto; min-width:170px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms !important; transition-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+
+<nav class="tabbar" role="tablist" id="tabbar">
+  <button class="tab" data-tab="list" role="tab" aria-selected="true"><span class="ti">☰</span>Open calls</button>
+  <button class="tab" data-tab="calendar" role="tab" aria-selected="false"><span class="ti">▦</span>Deadlines</button>
+  <a class="tab" href="https://artsydney.github.io/art-openings-syd/" target="_blank" rel="noopener"><span class="ti">◇</span>Exhibitions</a>
+</nav>
+
+<header class="band">
+  <div class="wrap">
+    <div class="band-top">
+      <span class="mark">◷</span>
+      <h1>Open Calls</h1>
+      <button class="icon-btn" id="theme-toggle" aria-label="Switch colour theme">◐</button>
+    </div>
+    <p class="tagline">Grants, prizes, residencies and fellowships worth applying for, sorted by what closes next.</p>
+    <p class="meta" id="meta">Loading the latest run…</p>
+  </div>
+</header>
+
+<!-- ══ LIST ══ -->
+<div id="panel-list">
+  <div class="filterbar">
+    <div class="wrap filterbar-inner">
+      <input id="search" type="search" placeholder="Search opportunities" aria-label="Search opportunities" />
+      <button class="filter-btn" id="open-filters">Filters<span class="badge" id="filter-count" hidden>0</span></button>
+    </div>
+  </div>
+  <div class="wrap resultbar">
+    <span id="result-count"></span>
+    <select id="sort" aria-label="Sort opportunities">
+      <option value="deadline">Closing soonest</option>
+      <option value="newest">Recently added</option>
+      <option value="amount">Largest amount</option>
+      <option value="title">A to Z</option>
+    </select>
+  </div>
+  <main class="wrap">
+    <div id="grid" class="grid"></div>
+    <div id="sentinel" style="height:1px"></div>
+    <div id="empty" class="empty" hidden>
+      <p>No open calls match those filters.</p>
+      <p class="empty-sub">Loosen a filter, or check back after the next run.</p>
+      <div class="btn-line"><button class="btn-ghost" id="empty-clear">Clear all filters</button></div>
+    </div>
+  </main>
+</div>
+
+<!-- ══ CALENDAR ══ -->
+<div id="panel-calendar" hidden>
+  <div class="wrap">
+    <div class="cal-toolbar" id="cal-toolbar">
+      <button class="cal-nav" id="cal-prev" aria-label="Previous month">&#8249;</button>
+      <h2 class="cal-month-label" id="cal-month-label"></h2>
+      <button class="cal-nav" id="cal-next" aria-label="Next month">&#8250;</button>
+      <button class="cal-export" id="cal-download">Add every deadline to your calendar</button>
+    </div>
+    <div id="cal-body"></div>
+  </div>
+</div>
+
+<button class="to-top" id="to-top" aria-label="Back to top" hidden>↑</button>
+
+<!-- ══ FILTER SHEET ══ -->
+<div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Filters" hidden>
+  <div class="sheet-grip"></div>
+  <div class="sheet-head">
+    <h2>Filters</h2>
+    <button class="icon-btn" id="sheet-close" style="background:var(--card);border-color:var(--hairline);color:var(--ink)" aria-label="Close filters">&#10005;</button>
+  </div>
+  <div class="sheet-body">
+    <div class="fgroup">
+      <h3>Opportunity type</h3>
+      <div class="chips" id="category-chips"></div>
+    </div>
+    <div class="fgroup">
+      <h3>Discipline</h3>
+      <p class="fsublabel">Open-to-all listings always show, whatever you pick here.</p>
+      <div class="chips" id="discipline-chips"></div>
+    </div>
+    <div class="fgroup">
+      <h3>Where it's based</h3>
+      <select class="fselect" id="location">
+        <option value="all">Anywhere</option>
+        <option value="Australia">Australia only</option>
+        <option value="International">International only</option>
+      </select>
+    </div>
+    <div class="fgroup">
+      <h3>Eligibility</h3>
+      <select class="fselect" id="eligibility">
+        <option value="all">Any</option>
+        <option value="eligible">Australians eligible</option>
+        <option value="unclear">Unclear</option>
+      </select>
+    </div>
+    <div class="fgroup">
+      <label class="rowtoggle"><span>Closing within 7 days</span><input type="checkbox" id="closing-soon" /></label>
+      <label class="rowtoggle"><span>Free to enter</span><input type="checkbox" id="free-only" /></label>
+      <label class="rowtoggle"><span>Show closed instead</span><input type="checkbox" id="show-closed" /></label>
+    </div>
+    <div class="fgroup">
+      <h3>Colour</h3>
+      <div class="chips">
+        <button class="chip theme-btn" data-theme="default" aria-pressed="false">Chocolate</button>
+        <button class="chip theme-btn" data-theme="bloom" aria-pressed="true">Bloom</button>
+      </div>
+    </div>
+    <div class="fgroup">
+      <p class="fsublabel" style="margin:0">Assembled from public feeds and pages. Always confirm eligibility, amounts and deadlines on the original listing before you apply.</p>
+    </div>
+  </div>
+  <div class="sheet-foot">
+    <button class="btn-ghost" id="sheet-clear">Clear all</button>
+    <button class="btn-primary" id="sheet-apply">Show results</button>
+  </div>
+</aside>
+
+<!-- ══ DAY POPUP ══ -->
+<div class="cal-popup-overlay" id="cal-overlay" hidden>
+  <div class="cal-popup" role="dialog" aria-modal="true" aria-labelledby="cal-popup-title">
+    <button class="cal-popup-close" id="cal-popup-close" aria-label="Close">&#10005;</button>
+    <h3 id="cal-popup-title"></h3>
+    <div id="cal-popup-body"></div>
+  </div>
+</div>
+
+<script>
+/* ══ OPTION A logic. Self-contained: nothing here touches app.js. ═════════ */
+
+const CATS = ["Grant","Scholarship","Prize","Award","Residency","Fellowship","Commission","Other"];
+const CAT_COLOUR = {
+  Grant:"var(--c-grant)", Scholarship:"var(--c-scholarship)", Prize:"var(--c-prize)",
+  Award:"var(--c-award)", Residency:"var(--c-residency)", Fellowship:"var(--c-fellowship)",
+  Commission:"var(--c-commission)", Other:"var(--c-other)",
+};
+const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+               (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+const SOON_DAYS = 7;
+const BATCH = 24;
+const FALLBACK_DISCIPLINES = ["Painting","Drawing","Sculpture","Photography","Printmaking",
+  "Ceramics","Textiles","Illustration","Digital/New Media","Installation","Mixed Media"];
+let WILDCARDS = ["Visual Arts","Multidisciplinary"];
+
+const state = {
+  items:[], filtered:[], rendered:0,
+  search:"", eligibility:"all", location:"all", sort:"deadline",
+  soonOnly:false, freeOnly:false, showClosed:false,
+  cats:new Set(), forms:new Set(),
+};
+
+const $ = (s) => document.querySelector(s);
+const grid = $("#grid");
+
+/* ── boot ─────────────────────────────────────────────────────────────── */
+init();
+
+async function init(){
+  wire();
+  let disciplines = FALLBACK_DISCIPLINES;
+  try{
+    // Default cache, not no-store: GitHub Pages sends an ETag, so repeat
+    // visits cost a 304 rather than re-downloading ~490KB every time.
+    const res = await fetch("data.json");
+    if(!res.ok) throw new Error(res.status);
+    const data = await res.json();
+    state.items = data.items || [];
+    if(Array.isArray(data.disciplines) && data.disciplines.length) disciplines = data.disciplines;
+    if(Array.isArray(data.wildcards)) WILDCARDS = data.wildcards;
+    $("#meta").textContent = metaLine(data);
+  }catch(e){
+    $("#meta").textContent = "Couldn't load the latest run. Reload, or try again shortly.";
+  }
+  buildChips("#category-chips", CATS, state.cats);
+  buildChips("#discipline-chips", disciplines, state.forms);
+  render();
+}
+
+function metaLine(data){
+  const when = data.generated ? new Date(data.generated) : null;
+  const stamp = when ? when.toLocaleString("en-AU",{timeZone:"Australia/Sydney",dateStyle:"medium",timeStyle:"short"}) : "unknown";
+  return "Last updated " + stamp + " AEST";
+}
+
+/* ── filtering ────────────────────────────────────────────────────────── */
+function daysLeft(deadline){
+  if(!deadline) return null;
+  const d = new Date(deadline + "T00:00:00");
+  if(isNaN(d)) return null;
+  const today = new Date(); today.setHours(0,0,0,0);
+  return Math.round((d - today) / 86400000);
+}
+function countdownLabel(n){
+  if(n === null) return {text:"No deadline", cls:"none"};
+  if(n < 0)      return {text:"Closed", cls:"none"};
+  if(n === 0)    return {text:"Closes today", cls:"soon"};
+  if(n === 1)    return {text:"1 day left", cls:"soon"};
+  return {text:n + " days left", cls: n <= SOON_DAYS ? "soon" : ""};
+}
+function isClosed(item){
+  const n = daysLeft(item.deadline);
+  return !!item.deadline && n !== null && n < 0;
+}
+function matchesForms(item){
+  if(!state.forms.size) return true;
+  const forms = item.art_forms || [];
+  if(forms.some((f) => WILDCARDS.includes(f))) return true;
+  return forms.some((f) => state.forms.has(f));
+}
+function passes(item){
+  if(state.showClosed){ if(!isClosed(item)) return false; }
+  else { if(isClosed(item)) return false; }
+  if(state.cats.size && !state.cats.has(item.category)) return false;
+  if(!matchesForms(item)) return false;
+  if(state.location !== "all" && item.location_scope !== state.location) return false;
+  if(state.eligibility !== "all" && item.au_eligibility !== state.eligibility) return false;
+  if(state.soonOnly){
+    const n = daysLeft(item.deadline);
+    if(n === null || n > SOON_DAYS || n < 0) return false;
+  }
+  if(state.freeOnly && String(item.entry_fee || "").toLowerCase() !== "free") return false;
+  if(state.search){
+    const hay = (item.title + " " + item.source + " " + (item.description || item.summary || "")).toLowerCase();
+    if(!hay.includes(state.search)) return false;
+  }
+  return true;
+}
+function amountValue(item){
+  const m = String(item.amount || "").replace(/,/g,"").match(/\d+/g);
+  return m ? Math.max.apply(null, m.map(Number)) : -1;
+}
+function sortItems(list){
+  const s = state.sort;
+  return list.slice().sort((a,b) => {
+    if(s === "newest") return String(b.first_seen || "").localeCompare(String(a.first_seen || ""));
+    if(s === "amount") return amountValue(b) - amountValue(a);
+    if(s === "title")  return String(a.title || "").localeCompare(String(b.title || ""));
+    const da = a.deadline || "9999-12-31", db = b.deadline || "9999-12-31";
+    return da.localeCompare(db);
+  });
+}
+
+/* ── rendering, in batches ────────────────────────────────────────────── */
+function render(){
+  state.filtered = sortItems(state.items.filter(passes));
+  state.rendered = 0;
+  grid.innerHTML = "";
+  $("#empty").hidden = state.filtered.length > 0;
+  const n = state.filtered.length;
+  $("#result-count").textContent = n + (n === 1 ? " open call" : " open calls");
+  renderMore();
+  updateFilterCount();
+}
+function renderMore(){
+  const slice = state.filtered.slice(state.rendered, state.rendered + BATCH);
+  const frag = document.createDocumentFragment();
+  slice.forEach((item) => frag.appendChild(card(item)));
+  grid.appendChild(frag);
+  state.rendered += slice.length;
+}
+new IntersectionObserver((entries) => {
+  if(entries[0].isIntersecting && state.rendered < state.filtered.length) renderMore();
+}, {rootMargin:"600px"}).observe($("#sentinel"));
+
+function blurb(item){
+  if(item.description) return item.description;
+  const s = String(item.summary || "").trim();
+  if(!s) return "";
+  return s.length <= 180 ? s : s.slice(0,180).replace(/\s+\S*$/,"") + "…";
+}
+
+function card(item){
+  const n = daysLeft(item.deadline);
+  const cd = countdownLabel(n);
+  const el = document.createElement(item.link ? "a" : "article");
+  el.className = "card" + (cd.cls === "soon" ? " urgent" : "");
+  if(item.link){ el.href = safeLink(item.link); el.target = "_blank"; el.rel = "noopener"; }
+
+  const cat = CATS.includes(item.category) ? item.category : "Other";
+  const elig = item.au_eligibility === "eligible" ? "eligible"
+             : item.au_eligibility === "unclear" ? "unclear" : null;
+  const forms = item.art_forms || [];
+  const shown = forms.slice(0,3);
+  const extra = forms.length - shown.length;
+
+  el.innerHTML =
+    '<div class="card-top">' +
+      '<span class="cat" style="background:' + CAT_COLOUR[cat] + '">' + cat + '</span>' +
+      '<span class="count ' + cd.cls + '">' + cd.text + '</span>' +
+    '</div>' +
+    '<h2>' + esc(item.title) + '</h2>' +
+    '<p class="source">' + esc(item.source) + '</p>' +
+    (blurb(item) ? '<p class="desc">' + esc(blurb(item)) + '</p>' : "") +
+    (shown.length ? '<div class="forms">' +
+        shown.map((f) => '<span class="form-tag">' + esc(f) + '</span>').join("") +
+        (extra > 0 ? '<span class="form-tag">+' + extra + '</span>' : "") +
+      '</div>' : "") +
+    '<div class="card-foot">' +
+      '<span class="foot-left">' +
+        (item.amount ? '<span class="amount">' + esc(item.amount) + '</span>' : "") +
+        (String(item.entry_fee || "").toLowerCase() === "free" ? '<span class="fee free">Free entry</span>' : "") +
+        (elig ? '<span class="elig ' + elig + '">' + (elig === "eligible" ? "AU eligible" : "eligibility unclear") + '</span>' : "") +
+      '</span>' +
+      (item.link ? '<span class="go">Open listing</span>' : "") +
+    '</div>';
+  return el;
+}
+
+function esc(s){
+  return String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
+    ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function safeLink(url){
+  try{ const u = new URL(url); return (u.protocol === "https:" || u.protocol === "http:") ? url : "#"; }
+  catch(e){ return "#"; }
+}
+
+/* ── chips + controls ─────────────────────────────────────────────────── */
+function buildChips(sel, labels, set){
+  const box = $(sel);
+  box.innerHTML = "";
+  labels.forEach((label) => {
+    const b = document.createElement("button");
+    b.className = "chip"; b.type = "button"; b.textContent = label;
+    b.dataset.value = label;
+    b.setAttribute("aria-pressed", set.has(label));
+    b.addEventListener("click", () => {
+      set.has(label) ? set.delete(label) : set.add(label);
+      b.setAttribute("aria-pressed", set.has(label));
+      render();
+    });
+    box.appendChild(b);
+  });
+}
+
+function activeFilterCount(){
+  let n = state.cats.size + state.forms.size;
+  if(state.location !== "all") n++;
+  if(state.eligibility !== "all") n++;
+  if(state.soonOnly) n++;
+  if(state.freeOnly) n++;
+  if(state.showClosed) n++;
+  return n;
+}
+function updateFilterCount(){
+  const n = activeFilterCount();
+  const badge = $("#filter-count");
+  badge.hidden = n === 0;
+  badge.textContent = n;
+  $("#sheet-apply").textContent = "Show " + state.filtered.length + " result" + (state.filtered.length === 1 ? "" : "s");
+}
+
+let searchTimer;
+function wire(){
+  $("#search").addEventListener("input", (e) => {
+    clearTimeout(searchTimer);
+    const v = e.target.value.toLowerCase().trim();
+    searchTimer = setTimeout(() => { state.search = v; render(); }, 140);
+  });
+  $("#sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+  $("#location").addEventListener("change", (e) => { state.location = e.target.value; render(); });
+  $("#eligibility").addEventListener("change", (e) => { state.eligibility = e.target.value; render(); });
+  $("#closing-soon").addEventListener("change", (e) => { state.soonOnly = e.target.checked; render(); });
+  $("#free-only").addEventListener("change", (e) => { state.freeOnly = e.target.checked; render(); });
+  $("#show-closed").addEventListener("change", (e) => { state.showClosed = e.target.checked; render(); });
+
+  $("#open-filters").addEventListener("click", openSheet);
+  $("#sheet-close").addEventListener("click", closeSheet);
+  $("#sheet-apply").addEventListener("click", closeSheet);
+  $("#sheet-backdrop").addEventListener("click", closeSheet);
+  $("#sheet-clear").addEventListener("click", clearAll);
+  $("#empty-clear").addEventListener("click", clearAll);
+
+  document.addEventListener("keydown", (e) => {
+    if(e.key !== "Escape") return;
+    if(!$("#sheet").hidden) closeSheet();
+    if(!$("#cal-overlay").hidden) closePopup();
+  });
+
+  document.querySelectorAll(".tab[data-tab]").forEach((btn) => {
+    btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+  });
+
+  $("#cal-prev").addEventListener("click", () => { stepMonth(-1); });
+  $("#cal-next").addEventListener("click", () => { stepMonth(1); });
+  $("#cal-download").addEventListener("click", downloadAllIcs);
+  $("#cal-popup-close").addEventListener("click", closePopup);
+  $("#cal-overlay").addEventListener("click", (e) => { if(e.target === $("#cal-overlay")) closePopup(); });
+
+  const toTop = $("#to-top");
+  toTop.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
+  window.addEventListener("scroll", () => { toTop.hidden = window.scrollY < 700; }, {passive:true});
+
+  matchMedia("(min-width:760px)").addEventListener("change", () => {
+    if(!$("#panel-calendar").hidden) renderCalendar();
+  });
+}
+
+function clearAll(){
+  state.cats.clear(); state.forms.clear();
+  state.location = "all"; state.eligibility = "all";
+  state.soonOnly = false; state.freeOnly = false; state.showClosed = false;
+  state.search = ""; 
+  $("#search").value = "";
+  $("#location").value = "all"; $("#eligibility").value = "all";
+  $("#closing-soon").checked = false; $("#free-only").checked = false; $("#show-closed").checked = false;
+  document.querySelectorAll(".chip[data-value]").forEach((c) => c.setAttribute("aria-pressed","false"));
+  render();
+}
+
+let scrollLock = 0;
+function lockScroll(){ scrollLock = window.scrollY; document.body.style.position = "fixed";
+  document.body.style.top = -scrollLock + "px"; document.body.style.width = "100%"; }
+function unlockScroll(){ document.body.style.position = ""; document.body.style.top = "";
+  document.body.style.width = ""; window.scrollTo(0, scrollLock); }
+
+function openSheet(){
+  updateFilterCount();
+  $("#sheet-backdrop").hidden = false;
+  $("#sheet").hidden = false;
+  lockScroll();
+}
+function closeSheet(){
+  $("#sheet").hidden = true;
+  $("#sheet-backdrop").hidden = true;
+  unlockScroll();
+}
+
+/* ── tabs ─────────────────────────────────────────────────────────────── */
+function switchTab(tab){
+  const isCal = tab === "calendar";
+  $("#panel-list").hidden = isCal;
+  $("#panel-calendar").hidden = !isCal;
+  document.querySelectorAll(".tab[data-tab]").forEach((b) => {
+    b.setAttribute("aria-selected", b.dataset.tab === tab);
+  });
+  window.scrollTo(0,0);
+  if(isCal) renderCalendar();
+}
+
+/* ── calendar ─────────────────────────────────────────────────────────── */
+const calState = {year:new Date().getFullYear(), month:new Date().getMonth()};
+const DOW = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+
+function stepMonth(delta){
+  calState.month += delta;
+  if(calState.month < 0){ calState.month = 11; calState.year--; }
+  if(calState.month > 11){ calState.month = 0; calState.year++; }
+  renderCalendar();
+}
+
+// Deadline index built from the FILTERED set, so filters chosen on the list
+// carry through to the calendar. Production builds this from all items, which
+// makes the two tabs disagree.
+function deadlineIndex(){
+  const idx = {};
+  for(const item of state.filtered){
+    if(!item.deadline) continue;
+    (idx[item.deadline] = idx[item.deadline] || []).push(item);
+  }
+  return idx;
+}
+
+function renderCalendar(){
+  const wide = matchMedia("(min-width:760px)").matches;
+  $("#cal-toolbar").querySelectorAll(".cal-nav, .cal-month-label").forEach((el) => { el.hidden = !wide; });
+  wide ? renderMonthGrid() : renderAgenda();
+}
+
+function renderMonthGrid(){
+  const body = $("#cal-body");
+  const idx = deadlineIndex();
+  const first = new Date(calState.year, calState.month, 1);
+  const label = first.toLocaleDateString("en-AU",{month:"long", year:"numeric"});
+  $("#cal-month-label").textContent = label;
+
+  const startDow = (first.getDay() + 6) % 7;         // Monday-first
+  const daysInMonth = new Date(calState.year, calState.month+1, 0).getDate();
+  const todayStr = ymd(new Date());
+
+  let html = '<div class="cal-grid">';
+  DOW.forEach((d) => { html += '<div class="cal-dow">' + d + '</div>'; });
+  const cells = Math.ceil((startDow + daysInMonth) / 7) * 7;
+  for(let i = 0; i < cells; i++){
+    const dayNum = i - startDow + 1;
+    const inMonth = dayNum >= 1 && dayNum <= daysInMonth;
+    const d = new Date(calState.year, calState.month, dayNum);
+    const key = ymd(d);
+    const events = idx[key] || [];
+    html += '<div class="cal-cell' + (inMonth ? "" : " other-month") +
+            (key === todayStr ? " today" : "") +
+            (events.length ? " has-events" : "") + '" data-date="' + key + '">' +
+            '<div class="cal-day-num">' + d.getDate() + '</div>';
+    events.slice(0,2).forEach((it) => {
+      const cat = CATS.includes(it.category) ? it.category : "Other";
+      html += '<span class="cal-dot" style="background:' + CAT_COLOUR[cat] + '">' + esc(it.title) + '</span>';
+    });
+    if(events.length > 2) html += '<span class="cal-more">+' + (events.length - 2) + ' more</span>';
+    html += '</div>';
+  }
+  html += '</div>';
+  body.innerHTML = html;
+
+  body.querySelectorAll(".cal-cell.has-events").forEach((cell) => {
+    cell.addEventListener("click", () => openPopup(cell.dataset.date, idx[cell.dataset.date]));
+  });
+}
+
+function ymd(d){
+  return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
+}
+
+function renderAgenda(){
+  const idx = deadlineIndex();
+  const body = $("#cal-body");
+  const today = new Date(); today.setHours(0,0,0,0);
+  const dates = Object.keys(idx).filter((d) => new Date(d + "T00:00:00") >= today).sort();
+
+  if(!dates.length){
+    body.innerHTML = '<div class="empty"><p>No upcoming deadlines match your filters.</p>' +
+                     '<p class="empty-sub">Clear a filter to see the full run.</p></div>';
+    return;
+  }
+
+  let html = '<div class="agenda">';
+  dates.forEach((dateStr) => {
+    const d = new Date(dateStr + "T00:00:00");
+    const cd = countdownLabel(daysLeft(dateStr));
+    html += '<div class="agenda-head">' +
+      '<span class="agenda-date">' + d.toLocaleDateString("en-AU",{weekday:"short",day:"numeric",month:"short"}) + '</span>' +
+      '<span class="count ' + cd.cls + '">' + cd.text + '</span></div>';
+    idx[dateStr].forEach((item, i) => {
+      const cat = CATS.includes(item.category) ? item.category : "Other";
+      html += '<div class="agenda-row" data-date="' + dateStr + '" data-i="' + i + '">' +
+        '<span class="cat" style="background:' + CAT_COLOUR[cat] + '">' + cat + '</span>' +
+        '<div class="agenda-title">' + esc(item.title) + '</div>' +
+        '<div class="source">' + esc(item.source) +
+          (item.amount ? ' · <span class="amount">' + esc(item.amount) + '</span>' : "") + '</div>' +
+        '<div class="agenda-acts">' +
+          (item.link ? '<a class="act primary" href="' + safeLink(item.link) + '" target="_blank" rel="noopener">Open listing</a>' : "") +
+          '<a class="act" href="' + buildGoogleCalUrl(item) + '"' + (IS_IOS ? "" : ' target="_blank" rel="noopener"') + '>Google Calendar</a>' +
+          '<button class="act" data-ics>Save .ics</button>' +
+        '</div></div>';
+    });
+  });
+  html += '</div>';
+  body.innerHTML = html;
+
+  body.querySelectorAll("[data-ics]").forEach((btn) => {
+    const row = btn.closest(".agenda-row");
+    const item = idx[row.dataset.date][Number(row.dataset.i)];
+    btn.addEventListener("click", () => downloadSingleIcs(item));
+  });
+}
+
+function openPopup(dateStr, events){
+  const d = new Date(dateStr + "T00:00:00");
+  $("#cal-popup-title").textContent = "Closing " +
+    d.toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  const body = $("#cal-popup-body");
+  body.innerHTML = "";
+  events.forEach((item) => {
+    const cat = CATS.includes(item.category) ? item.category : "Other";
+    const div = document.createElement("div");
+    div.className = "pop-item";
+    div.innerHTML =
+      '<h4>' + esc(item.title) + '</h4>' +
+      '<p class="source">' + esc(item.source) + ' · <span class="cat" style="background:' + CAT_COLOUR[cat] + '">' + cat + '</span></p>' +
+      (item.amount ? '<div class="amount">' + esc(item.amount) + '</div>' : "") +
+      (blurb(item) ? '<p class="desc">' + esc(blurb(item)) + '</p>' : "") +
+      '<div class="agenda-acts">' +
+        (item.link ? '<a class="act primary" href="' + safeLink(item.link) + '" target="_blank" rel="noopener">Open listing</a>' : "") +
+        '<a class="act" href="' + buildGoogleCalUrl(item) + '"' + (IS_IOS ? "" : ' target="_blank" rel="noopener"') + '>Google Calendar</a>' +
+        '<button class="act" data-ics>Save .ics</button>' +
+      '</div>';
+    div.querySelector("[data-ics]").addEventListener("click", () => downloadSingleIcs(item));
+    body.appendChild(div);
+  });
+  $("#cal-overlay").hidden = false;
+  lockScroll();
+}
+function closePopup(){ $("#cal-overlay").hidden = true; unlockScroll(); }
+
+/* ── calendar export ──────────────────────────────────────────────────── */
+function icsTimestamp(){ return new Date().toISOString().replace(/[-:]/g,"").split(".")[0] + "Z"; }
+function icsEscape(s){
+  return String(s || "").replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\n/g,"\\n");
+}
+function slugify(s){ return String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").slice(0,50); }
+
+// Manual string build: percent-encoding the slash in dates= makes Google
+// Calendar's frontend hang on a loading spinner.
+function buildGoogleCalUrl(item){
+  const date = String(item.deadline || "").replace(/-/g,"");
+  const p = String(item.deadline || "").split("-").map(Number);
+  const next = new Date(Date.UTC(p[0], p[1]-1, p[2]+1));
+  const nextDay = next.getUTCFullYear() + String(next.getUTCMonth()+1).padStart(2,"0") + String(next.getUTCDate()).padStart(2,"0");
+  const details = [item.source, item.category, item.amount, item.link].filter(Boolean).join(" | ");
+  const base = IS_IOS ? "comgooglecalendar://calendar/render?action=TEMPLATE"
+                      : "https://calendar.google.com/calendar/render?action=TEMPLATE";
+  const parts = [
+    "text=" + encodeURIComponent("DEADLINE: " + item.title),
+    "dates=" + date + "/" + nextDay,
+    "details=" + encodeURIComponent(details),
+  ];
+  if(item.link) parts.push("location=" + encodeURIComponent(item.link));
+  return base + "&" + parts.join("&");
+}
+
+function buildIcs(item){
+  const uid = "opencalls-" + (item.id || Math.random().toString(36).slice(2)) + "@artsgrants.au";
+  const date = String(item.deadline).replace(/-/g,"");
+  const end = new Date(new Date(item.deadline + "T00:00:00").getTime() + 86400000).toISOString().slice(0,10).replace(/-/g,"");
+  const lines = [
+    "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Open Calls//Arts Grants AU//EN",
+    "CALSCALE:GREGORIAN","METHOD:PUBLISH","BEGIN:VEVENT",
+    "UID:" + uid, "DTSTAMP:" + icsTimestamp(),
+    "DTSTART;VALUE=DATE:" + date, "DTEND;VALUE=DATE:" + end,
+    "SUMMARY:DEADLINE: " + icsEscape(item.title),
+    "DESCRIPTION:" + icsEscape([item.source,item.category,item.amount,item.summary,item.link].filter(Boolean).join(" | ")),
+    item.link ? "URL:" + icsEscape(item.link) : null,
+    "BEGIN:VALARM","TRIGGER:-P7D","ACTION:DISPLAY",
+    "DESCRIPTION:Deadline in 7 days: " + icsEscape(item.title),
+    "END:VALARM","END:VEVENT","END:VCALENDAR",
+  ].filter((l) => l !== null);
+  return lines.join("\r\n");
+}
+
+// iOS ignores the download attribute, so navigate to the blob and let the
+// system calendar sheet take over.
+function downloadSingleIcs(item){
+  const blob = new Blob([buildIcs(item)], {type:"text/calendar;charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  if(IS_IOS){ window.location.href = url; }
+  else{
+    const a = document.createElement("a");
+    a.href = url; a.download = item.deadline + "-" + slugify(item.title) + ".ics"; a.click();
+  }
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
+}
+
+// JSZip is ~95KB and only needed if someone taps export, so load it then.
+function loadJSZip(){
+  if(window.JSZip) return Promise.resolve();
+  return new Promise((res, rej) => {
+    const s = document.createElement("script");
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js";
+    s.onload = res; s.onerror = rej;
+    document.head.appendChild(s);
+  });
+}
+
+async function downloadAllIcs(){
+  const withDeadline = state.filtered.filter((i) => i.deadline);
+  const btn = $("#cal-download");
+  if(!withDeadline.length){ btn.textContent = "Nothing to export yet"; setTimeout(resetBtn, 2200); return; }
+  btn.disabled = true; btn.textContent = "Building " + withDeadline.length + " events…";
+  try{
+    await loadJSZip();
+    const zip = new JSZip();
+    withDeadline.forEach((item) => {
+      zip.file(item.deadline + "-" + slugify(item.title) + ".ics", buildIcs(item));
+    });
+    const blob = await zip.generateAsync({type:"blob"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = "open-calls-deadlines.zip"; a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
+  }catch(e){
+    btn.textContent = "Export failed. Check your connection and try again.";
+    setTimeout(resetBtn, 3000); btn.disabled = false; return;
+  }
+  btn.disabled = false; resetBtn();
+}
+function resetBtn(){ $("#cal-download").textContent = "Add every deadline to your calendar"; }
+
+/* ── theme ────────────────────────────────────────────────────────────── */
+(function theme(){
+  const KEY = "oc-theme";
+  const root = document.documentElement;
+  const btns = document.querySelectorAll(".theme-btn");
+  function apply(name){
+    if(name && name !== "default") root.setAttribute("data-theme", name);
+    else root.removeAttribute("data-theme");
+    btns.forEach((b) => b.setAttribute("aria-pressed", (b.dataset.theme || "default") === (name || "default")));
+  }
+  btns.forEach((b) => b.addEventListener("click", () => {
+    const name = b.dataset.theme || "default";
+    apply(name);
+    try{ localStorage.setItem(KEY, name); }catch(e){}
+  }));
+  $("#theme-toggle").addEventListener("click", () => {
+    const next = root.getAttribute("data-theme") === "bloom" ? "default" : "bloom";
+    apply(next);
+    try{ localStorage.setItem(KEY, next); }catch(e){}
+  });
+  let saved = "bloom";
+  try{ saved = localStorage.getItem(KEY) || "bloom"; }catch(e){}
+  apply(saved);
+})();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "18444fb485864c2382080888e3701b44"}'></script>
+</body>
+</html>
