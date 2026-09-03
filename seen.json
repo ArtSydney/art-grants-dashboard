@@ -1031,7 +1031,7 @@
     ],
     "first_seen": "2026-08-09",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "closed"
   },
   "0711a3e771343a10d7dce82a39d589c65b5301f4": {
     "id": "0711a3e771343a10d7dce82a39d589c65b5301f4",
@@ -3593,7 +3593,7 @@
     "location_scope": "Australia",
     "eligibility_note": "",
     "deadline": "2027-06-07",
-    "amount": "",
+    "amount": "travel to and from Delhi, a per diem, and a production budget",
     "entry_fee": "",
     "description": "Khoj International Artists' Association has announced the open call for its International Residency, taking place from 3 August to 16 September 2026 at Khoj Studios in New Delhi, I",
     "curator": "",
@@ -4041,7 +4041,7 @@
     "location_scope": "Australia",
     "eligibility_note": "",
     "deadline": "2027-04-27",
-    "amount": "",
+    "amount": "artist fee (NAVA standard)",
     "entry_fee": "",
     "description": "artisan invites applications for UNLEASHED+ 2026, its flagship biennial exhibition supporting emerging craft and design practitioners across Queensland.A nationally recognised prog",
     "curator": "",
@@ -4354,7 +4354,7 @@
     "location_scope": "Australia",
     "eligibility_note": "",
     "deadline": "2027-05-31",
-    "amount": "$1000",
+    "amount": "$1,000",
     "entry_fee": "Free",
     "description": "Dark Pony Studio + Gallery is seeking submissions for Flip Through Art Fair, a one-day artist market taking place in South Brisbane.",
     "curator": "",
@@ -4459,7 +4459,7 @@
     "location_scope": "Australia",
     "eligibility_note": "",
     "deadline": "2027-05-15",
-    "amount": "",
+    "amount": "fully funded",
     "entry_fee": "",
     "description": "This fully funded international residency invites 40 visual artists to take part in a two-week immersive program in Georgia, a region positioned at the crossroads of Europe and Asi",
     "curator": "",
@@ -4911,7 +4911,7 @@
     "location_scope": "Australia",
     "eligibility_note": "",
     "deadline": "2027-05-07",
-    "amount": "€3000",
+    "amount": "€3,000",
     "entry_fee": "",
     "description": "YICCA 2026 is an international contemporary art competition open to artists and groups from around the world, spanning a wide range of disciplines including painting, sculpture, ph",
     "curator": "",
@@ -6065,7 +6065,8 @@
     ],
     "first_seen": "2026-08-09",
     "closing_soon_sent": false,
-    "status": "needs_review"
+    "status": "suppressed",
+    "suppressed_reason": "The entry references a past residency program from 2011 rather than an active funding opportunity."
   },
   "903d928e86fc356346406fc8bd73eee625f7c611": {
     "id": "903d928e86fc356346406fc8bd73eee625f7c611",
@@ -6237,7 +6238,7 @@
     "location_scope": "Australia",
     "eligibility_note": "",
     "deadline": "2026-11-22",
-    "amount": "$1000",
+    "amount": "$1,000",
     "entry_fee": "",
     "description": "Australian artists: Enter the 2026 Summer Small Works Show & Prize, presented by Caelene nee Glen.",
     "curator": "",
@@ -6318,7 +6319,7 @@
     "location_scope": "Unknown",
     "eligibility_note": "",
     "deadline": "2026-10-02",
-    "amount": "$1000",
+    "amount": "$1,000",
     "entry_fee": "$15 for a single entry, additional entries are $10 each",
     "description": "Out of Our Hands Gallery in Dade City, FL invites submissions from artists across Florida for a juried art exhibition, November 6 to December 30, 2026. The exhibition seeks all mediums and styles and subjects within the measurements of 12\"x12\"x12\".",
     "curator": "",
@@ -6494,7 +6495,7 @@
     ],
     "first_seen": "2026-08-17",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "closed"
   },
   "bf03320d189a192674b6bf0c2ec79ee28830436d": {
     "id": "bf03320d189a192674b6bf0c2ec79ee28830436d",
@@ -7209,7 +7210,7 @@
     "link": "https://regionalarts.smartygrants.com.au/",
     "relevant": true,
     "english": true,
-    "status": "needs_review",
+    "status": "closed",
     "closing_soon_sent": false,
     "first_seen": "2026-08-28",
     "curator": "",
@@ -7338,7 +7339,7 @@
     ],
     "first_seen": "2026-08-28",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "closed"
   },
   "338b11a0189ed03f20e6095a43cd220ed388486c": {
     "id": "338b11a0189ed03f20e6095a43cd220ed388486c",
@@ -7697,7 +7698,8 @@
     ],
     "first_seen": "2026-08-30",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "suppressed",
+    "suppressed_reason": "title looks like a caption, not a grant name: Neon Marketplace | Host applications for paid arti"
   },
   "f9f374035e1f23765b5d305f33285b6541986ad5": {
     "id": "f9f374035e1f23765b5d305f33285b6541986ad5",
@@ -7722,7 +7724,8 @@
     ],
     "first_seen": "2026-08-30",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "suppressed",
+    "suppressed_reason": "title looks like a caption, not a grant name: Neon Marketplace | Intern applications for paid ar"
   },
   "ffc3bee919e7723ea63989950cdbd9e22c2fba23": {
     "id": "ffc3bee919e7723ea63989950cdbd9e22c2fba23",
@@ -8376,7 +8379,8 @@
     ],
     "first_seen": "2026-08-30",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "suppressed",
+    "suppressed_reason": "title looks like a caption, not a grant name: Neon Marketplace | Call-out for sponsors to help r"
   },
   "aa547b94e7463e35d8284b6db193f125a864c001": {
     "id": "aa547b94e7463e35d8284b6db193f125a864c001",
@@ -8953,7 +8957,7 @@
     "location_scope": "Australia",
     "eligibility_note": "",
     "deadline": "2027-03-31",
-    "amount": "",
+    "amount": "free",
     "entry_fee": "free",
     "description": "What's On Opportunity Promote your events for free on What's On Create a beautiful event listing in minutes and showcase your event on one of Sydneyâs most trusted event destinat",
     "curator": "",
@@ -8988,7 +8992,8 @@
     ],
     "first_seen": "2026-08-30",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "suppressed",
+    "suppressed_reason": "title looks like a caption, not a grant name: Neon Marketplace | Cultural infrastructure funding"
   },
   "b6c38984986dba59ef5d96fb782f3fe76c90cbda": {
     "id": "b6c38984986dba59ef5d96fb782f3fe76c90cbda",
@@ -9481,10 +9486,10 @@
     "au_eligibility": "eligible",
     "location_scope": "Australia",
     "eligibility_note": "",
-    "deadline": "",
+    "deadline": "2026-11-08",
     "amount": "$30,000",
     "entry_fee": "",
-    "description": "",
+    "description": "The Elaine Bermingham National Watercolour Prize in Landscape Painting is a unique triennial art prize that aims to celebrate excellence and innovation in the watercolour medium. This non-acquisitive prize is open to all Australian artists and selected finalists will be exhibited in the Webb Gallery, located within Griffith University’s Queensland College of Art at South Bank, Brisbane.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -9598,10 +9603,10 @@
     "au_eligibility": "eligible",
     "location_scope": "Australia",
     "eligibility_note": "",
-    "deadline": "",
+    "deadline": "2026-09-18",
     "amount": "$100,000",
     "entry_fee": "",
-    "description": "",
+    "description": "The Banksia Prize is an acquisitive painting prize that recognises outstanding paintings capturing the beauty, character, and spirit of Australian life.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -9781,7 +9786,7 @@
     "summary": "Source: Instagram #artopencall\nWork Grants for Visual Arts\n\nAnnually, ten work grants for visual arts are awarded by the Behörde für Medien und Kultur Hamburg for the duration of one calendar year.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
     "relevant": true,
     "english": true,
-    "category": "Other",
+    "category": "Grant",
     "au_eligibility": "unclear",
     "location_scope": "Unknown",
     "eligibility_note": "",
@@ -9969,7 +9974,8 @@
     ],
     "first_seen": "2026-08-30",
     "closing_soon_sent": false,
-    "status": "needs_review"
+    "status": "suppressed",
+    "suppressed_reason": "The entry appears to be a social media post promoting an art grant but lacks specific details about a real funding opportunity."
   },
   "618dba4fa937bf30989235bc0d6905c15f234dec": {
     "id": "618dba4fa937bf30989235bc0d6905c15f234dec",
@@ -10322,7 +10328,7 @@
     "summary": "Source: Instagram #artopencall\nTokyo Biennale Open Call\n\nThe Tokyo Biennale invites proposals for \"Social Dive 2027,\" an art project where creators immerse themselves in Tokyo's neighborhoods to explore local traditions and emerging values. The program aims to foster cross-border encounters and dialogue under the theme \"From ‘Me’ to ‘Us’.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
     "relevant": true,
     "english": true,
-    "category": "Other",
+    "category": "Residency",
     "au_eligibility": "unclear",
     "location_scope": "Unknown",
     "eligibility_note": "",
@@ -11446,7 +11452,7 @@
     "summary": "Source: Instagram #artopencall\nSIXI AiR OPEN CALL 2027 SPRING & AUTUMN\n\nThe Sixi International Artist-in-Residence Project, launched in 2024 by the Sixi Museum in Nanjing, China, supports emerging artists and facilitates cultural exchange.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
     "relevant": true,
     "english": true,
-    "category": "Other",
+    "category": "Residency",
     "au_eligibility": "unclear",
     "location_scope": "International",
     "eligibility_note": "",
