@@ -8,7 +8,7 @@ import json
 import re
 import hashlib
 import time
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 import requests
 import feedparser
@@ -21,6 +21,101 @@ def _item_id(link, title):
     """Stable id so the same listing is never processed twice, even across runs."""
     basis = (link or title or "").strip().lower()
     return hashlib.sha1(basis.encode("utf-8")).hexdigest()
+
+
+# Characters sites use to join their own name onto a page title.
+# NOTE: "-" is escaped because this string is dropped into a regex character class.
+_TITLE_SEPARATORS = r"|\uff5c\u2013\u2014\-:\u00b7\u00bb\u00ab"
+
+# Cheap signal that a string is UTF-8 that was decoded as latin-1.
+_MOJIBAKE_MARKERS = ("\u00c3", "\u00e2", "\u00c2", "\u00f0")
+
+
+def fix_mojibake(text):
+    """Repair UTF-8 text that was decoded as latin-1 ("2029\u00e2\u20ac\u201c32" for "2029\u201332").
+
+    Some sites serve UTF-8 with no charset in the Content-Type header. requests
+    then falls back to ISO-8859-1 (RFC 2616) and every non-ASCII character
+    arrives mangled. Parsers below set the encoding explicitly so this stops at
+    the source, but records already written to seen.json need repairing too.
+
+    Guarded both ways: a string with no mojibake markers is returned untouched,
+    and text that is genuinely latin-1 (real accented characters) fails the
+    round-trip and is returned untouched as well.
+    """
+    if not text or not any(m in text for m in _MOJIBAKE_MARKERS):
+        return text
+    # latin-1 is what requests actually falls back to, so try it first. cp1252
+    # covers the same damage done by a tool that mapped the 0x80-0x9F range to
+    # printable characters ("2029\u00e2\u20ac\u201c32" rather than "2029\u00e2\x80\x9332").
+    for codec in ("latin-1", "cp1252"):
+        try:
+            return text.encode(codec).decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            continue
+    return text
+
+
+def decode_utf8(resp):
+    """Force a correct decode on responses that ship no charset header.
+
+    requests only falls back to ISO-8859-1 when the header is missing or already
+    says so, which is exactly when apparent_encoding (chardet's sniff of the
+    actual bytes) is worth trusting. Call this before touching resp.text.
+    """
+    if not resp.encoding or resp.encoding.lower() in ("iso-8859-1", "latin-1"):
+        resp.encoding = resp.apparent_encoding or "utf-8"
+    return resp
+
+
+def _site_names(source):
+    """Names a source's own pages are likely to stamp onto their <title>.
+
+    Built from the source's configured name, its hostname, and the bare brand in
+    front of that hostname, so a new source gets this for free. Add awkward ones
+    (a brand that matches neither) to "title_strip" in sources.json.
+    """
+    names = [source.get("name", "")]
+    names += source.get("title_strip", []) or []
+    host = re.sub(r"^www\.", "", urlparse(source.get("url", "")).netloc.lower())
+    if host:
+        names += [host, host.split(".")[0]]
+    # de-duplicate, keep the longest first so "artshow.com" beats "artshow"
+    uniq = [n.strip() for n in dict.fromkeys(names) if n and len(n.strip()) > 3]
+    return sorted(uniq, key=len, reverse=True)
+
+
+def clean_title(title, source=None):
+    """Normalise a scraped title.
+
+    Scrapers frequently end up holding the raw <title>, which most sites brand
+    with their own name ("Neon Marketplace | Real Title", "Real Title - Site").
+    The site is already shown on the card via the record's `source` field, so
+    repeating it in all 100+ titles from that source is pure noise.
+
+    The site name is only stripped when it sits hard against a separator at the
+    start or end of the title, so a title that genuinely contains those words
+    ("Head On Photo Awards - Sydney, Australia") is left alone. If stripping
+    would empty the title, the original is kept.
+    """
+    t = fix_mojibake(title or "")
+    t = t.replace("\u200b", "").replace("\ufeff", "")   # zero-width junk
+    t = " ".join(t.split())
+    if not t:
+        return t
+
+    original = t
+    for name in _site_names(source or {}):
+        esc = re.escape(name)
+        for _ in range(3):        # handles a name stamped on both ends
+            before = t
+            t = re.sub(rf"^{esc}\s*[{_TITLE_SEPARATORS}]\s*", "", t, flags=re.I)
+            t = re.sub(rf"\s*[{_TITLE_SEPARATORS}]\s*{esc}$", "", t, flags=re.I)
+            t = t.strip()
+            if t == before:
+                break
+
+    return t or original
 
 
 def _meta_description(soup):
@@ -597,7 +692,7 @@ def fetch_neon_marketplace(source, max_pages=8):
             print(f"  ! Neon Marketplace page {page_num}: {e}")
             break
 
-        soup = BeautifulSoup(resp.text, "html.parser")
+        soup = BeautifulSoup(decode_utf8(resp).text, "html.parser")
         new_on_page = 0
 
         for a in soup.find_all("a", href=True):
@@ -615,15 +710,27 @@ def fetch_neon_marketplace(source, max_pages=8):
             try:
                 dr = requests.get(full, headers=headers, timeout=REQUEST_TIMEOUT)
                 dr.raise_for_status()
-                dsoup = BeautifulSoup(dr.text, "html.parser")
+                # Neon serves UTF-8 with no charset header, so requests would
+                # otherwise decode it as latin-1 and mangle every dash and accent.
+                dsoup = BeautifulSoup(decode_utf8(dr).text, "html.parser")
+
+                # Read the title BEFORE the decompose below, in case a reskin
+                # ever moves the h1 inside <header>.
+                #
+                # h1 first: it carries the opportunity name on its own. <title>
+                # is brand-stamped ("Neon Marketplace | Real Title") and is only
+                # a fallback -- clean_title in fetch_all strips the brand from
+                # either form, so both paths end up clean.
+                h1 = dsoup.find("h1")
+                page_title = h1.get_text(" ", strip=True) if h1 else ""
+                if not page_title and dsoup.title and dsoup.title.string:
+                    page_title = dsoup.title.string.strip()
+                if page_title:
+                    title = page_title
+
                 for t in dsoup(["script", "style", "nav", "footer", "header", "noscript", "img", "svg"]):
                     t.decompose()
                 page_text = " ".join(dsoup.get_text(" ", strip=True).split())
-                # title from the page is cleaner than the link text
-                if dsoup.title and dsoup.title.string:
-                    page_title = dsoup.title.string.replace("| Neon Marketplace", "").strip()
-                    if page_title:
-                        title = page_title
                 summary = page_text[:2000]
             except Exception as e:
                 print(f"  ! Neon detail fetch failed ({e}): {full}")
@@ -1078,6 +1185,14 @@ def fetch_all():
             else:
                 print(f"  ! {source['name']}: unknown type '{source['type']}'")
                 continue
+            # One choke point for title hygiene: strips the site's own name off
+            # its page titles and repairs any mojibake, whatever the parser did.
+            # Runs after id assignment on purpose -- ids hash the link, so a
+            # title change never re-keys a record or re-fires its notification.
+            for it in got:
+                it["title"] = clean_title(it.get("title"), source)
+            got = [it for it in got if it.get("title")]
+
             print(f"  {source['name']}: {len(got)} items")
             raw.extend(got)
         except Exception as e:
