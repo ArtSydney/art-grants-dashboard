@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-05T06:22:09+10:00",
-  "count": 171,
-  "total": 209,
+  "generated": "2026-09-06T06:17:00+10:00",
+  "count": 177,
+  "total": 217,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -970,7 +970,7 @@
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "76b1efbe455b9ddd6b0e1d37715243614777f108",
@@ -995,7 +995,7 @@
       ],
       "first_seen": "2026-08-22",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "5b04447fa6962e1a4704532df607cf338090659e",
@@ -1679,6 +1679,31 @@
       "status": "active"
     },
     {
+      "id": "39846d93fead7fe60de0e8e03f64f4a333935d49",
+      "source": "Instagram: art grants",
+      "title": "Apply to the 2026 Foundwork Artist Prize — $10K for one winner, $1K each for three shortlisted artis",
+      "link": "https://www.instagram.com/p/Dc6drkYiUTO/",
+      "summary": "Source: Instagram #artprize\nApply to the 2026 Foundwork Artist Prize — $10K for one winner, $1K each for three shortlisted artists. Deadline Sep 25, 2026. Visit profile link for more info.\n\n#ArtistPrize #OpenCall #ArtPrize #CallForArtists #ArtGrants",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-09-25",
+      "amount": "$10K",
+      "entry_fee": "",
+      "description": "Source: Instagram #artprize\nApply to the 2026 Foundwork Artist Prize — $10K for one winner, $1K each for three shortlisted artists.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-05",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "7b5787630978210a991b32933dbc45d290606726",
       "source": "Instagram: art grants",
       "title": "Anonymous Drawings 2027",
@@ -1775,6 +1800,31 @@
         "Multidisciplinary"
       ],
       "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "ada3357b4d4e349063e6ec02f66f2f758006d46d",
+      "source": "Instagram: art grants",
+      "title": "AAP Magazine Street 2026: International Photography Contest",
+      "link": "https://www.instagram.com/p/Dc5e20IIA1v/",
+      "summary": "Source: Instagram #artgrant\nAAP Magazine Street 2026: International Photography Contest\r\n\r\nDeadline: Sep 29, 2026\r\nEligibility: International\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-09-29",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nAAP Magazine Street 2026: International Photography Contest Deadline: Sep 29, 2026 Eligibility: International Full details at deadlinecalls.com 🔗 #openc",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-05",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -5321,6 +5371,160 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-04",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "1189d6a4deccfe4501119ebdf6e20cc72aaeec9d",
+      "source": "Instagram: art grants",
+      "title": "Is Formal Education Important?",
+      "link": "https://www.instagram.com/reel/Dc6t06HMmAH/",
+      "summary": "Source: Instagram #artprize\nIs Formal Education Important?\n\nWhat is formal education when it comes to art?\nWho sets the educational programs?\nWhy?\nWho is benefiting?\nWhat is the benifit?\nWhat gain is it for the fresh artists in a struggling market?\nWhy do they study past artists who did not study?\nWhy are some educated artists like those prof. try to award ME a prize THAT I PAY FOR, at a museum they rented, (see my previous reel about it, they have the last name Dr. Russo) only when I just started recently and am relevantly small compared to other? Oh yes, I know why... it is because they make me pay for it.... But what does that say about their art education? Or should I just blindly trust them because they have it?\n....\n\n#kunst #artphilosophy #arteducation #artistsofinstagram #artprize",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artprize\nIs Formal Education Important?",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-05",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "449094fd3cc3aae559bb32bfd0dc2692ef3d5093",
+      "source": "Instagram: art grants",
+      "title": "One-year Studio and Work Grant",
+      "link": "https://www.instagram.com/p/Dc6qY21jgKF/",
+      "summary": "Source: Instagram #artopencall\nOne-year Studio and Work Grant\n\nThe Senator for Culture is offering a twelve-month studio grant for 2027, including a monthly financial allowance for artistic work, to visual artists living and working in Bremen.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Grant",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nOne-year Studio and Work Grant The Senator for Culture is offering a twelve-month studio grant for 2027, including a monthly financial allowance for ",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-05",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "cca6b2021528dc9c4d1f4ff86d2bf0af96b003c0",
+      "source": "Instagram: art grants",
+      "title": "OPEN CALL: SensoryScapes 2026",
+      "link": "https://www.instagram.com/p/Dc6BMWfgB6c/",
+      "summary": "Source: Instagram #artopencall\nOPEN CALL: SensoryScapes 2026\n\nStudio 88 Artist Residency invites artists, designers, and interdisciplinary creatives to SensoryScapes 2026, a four-to-six-week residency in Chiang Mai, Thailand. The program, themed “Local Roar • Global Resonance,” explores how local stories and traditions can inspire global artistic expression.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nOPEN CALL: SensoryScapes 2026 Studio 88 Artist Residency invites artists, designers, and interdisciplinary creatives to SensoryScapes 2026, a four-to",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-05",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "f3baa25ae66d4afdc93503dcba19e35bc7de25ea",
+      "source": "Instagram: art grants",
+      "title": "This Year’s Art Riddler Show will have live performances from joyfrostmusic bringing you back to the",
+      "link": "https://www.instagram.com/p/Dc5_j5Yjq_c/",
+      "summary": "Source: Instagram #artopencall\nThis Year’s Art Riddler Show will have live performances from joyfrostmusic bringing you back to the roaring 1920s Speakeasy world! This event will bring beautiful art and the feel of the prohibition era together! This will be a unique few days (5th-8th November). To be involved in this exhibition submissions open via my website only from 1st-11th October. No commission taken on any sales. More Speakeasy fun surprises to follow!! Secret location! #artopencall #speakeasybar #artgallery #dublingalleryweekend #immersiveart",
+      "relevant": true,
+      "english": true,
+      "category": "Commission",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nThis Year’s Art Riddler Show will have live performances from joyfrostmusic bringing you back to the roaring 1920s Speakeasy world!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Installation"
+      ],
+      "first_seen": "2026-09-05",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "64ff192246d67aa3e6f5e014f2bcefb986406282",
+      "source": "Instagram: art grants",
+      "title": "Open Call | What Remains? International Juried Exhibition",
+      "link": "https://www.instagram.com/p/Dc4hC8VFgvP/",
+      "summary": "Source: Instagram #artopencall\nOpen Call | What Remains? International Juried Exhibition \n\nAsian Art Contemporary™ invites submissions for the virtual exhibition What Remains?, a showcase exploring what persists after moments, places, relationships, and ways of life have changed or disappeared. Artists Jennifer Ling Datchuk jenniferlingdatchuk, Kazuhito Kawai kazuhitokawai, and Yeonsu Ju yeonsuju, together with Ben Hsiao s1101_km, Co-Founder and Director of Artemin Gallery artemin.gallery, have been invited as jurors for this open call. Bringing perspectives across artistic and institutional practices, their selections will reflect the exhibition’s interest in diverse approaches to memory, transformation, and the traces that endure over time. What Remains seeks works that consider remnants not simply as evidence of what has been lost, but as active forms through which experiences can be revisited, reinterpreted, and given new meaning.\n\nWho Can Apply\n▪️Open to Asian artists worldwide, at all career stages.\n▪️All traditional and digital media are welcome, including painting, sculpture, photography, video, mixed media, and more.\n▪️Submitted work must be original, and artists are responsible for copyright compliance.\n\nSelected Artist Benefits\n▪️Virtual Exhibition: Work presented in a curated online exhibition.\n▪️Artist Interview: Complimentary interview highlighting each artist’s practice and story.\n▪️Social Media Promotion: Promotion through our official Instagram account.\n\nJury\n▪️Jennifer Ling Datchuk | Arti",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "International Juried Exhibition Asian Art Contemporary™ invites submissions for the virtual exhibition What Remains?, a showcase exploring what persists after moments, places, rela",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Sculpture",
+        "Photography",
+        "Digital/New Media",
+        "Mixed Media"
+      ],
+      "first_seen": "2026-09-05",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "9a0bd87045f30d051393d91dcadaba812a09e464",
+      "source": "Instagram: art grants",
+      "title": "Antragsberechtigt sind natürliche Personen. Amtsdeutsch ist keine Sprache. Es ist ein Türsteher.",
+      "link": "https://www.instagram.com/reel/Dc6dFXfCFhs/",
+      "summary": "Source: Instagram #artgrant\nAntragsberechtigt sind natürliche Personen. Amtsdeutsch ist keine Sprache. Es ist ein Türsteher.\n\nHunderte echte Förderungen für Künstler:innen — sortiert, aktuell, kostenlos: kunst-stipendium.de (Link in Bio)\n\nMarkier deine Atelier-Mitbewohnung.\n\n#kunststipendium #künstlerförderung #stipendium #kunstförderung #förderung #künstlerleben #kunsthumor #atelierleben #artistopportunity #residency #grants #freischaffend #kulturförderung #artgrant #kunstwelt #kunst #art #artist",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nAntragsberechtigt sind natürliche Personen.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-05",
       "closing_soon_sent": false,
       "status": "active"
     },
