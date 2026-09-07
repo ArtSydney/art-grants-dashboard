@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-07T06:20:23+10:00",
-  "count": 186,
-  "total": 227,
+  "generated": "2026-09-08T06:21:51+10:00",
+  "count": 193,
+  "total": 234,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -1172,7 +1172,7 @@
         "Drawing"
       ],
       "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1200,7 +1200,7 @@
         "Installation"
       ],
       "first_seen": "2026-08-22",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1734,6 +1734,31 @@
       "status": "active"
     },
     {
+      "id": "aa1ac96de024d3a76dc95a431369462d0e689586",
+      "source": "Instagram: art grants",
+      "title": "What if the traditional art exhibition was just the beginning of a work's impact?",
+      "link": "https://www.instagram.com/reel/Dc_nw3dCnex/",
+      "summary": "Source: Instagram #artgrant\nWhat if the traditional art exhibition was just the beginning of a work's impact?\n\nWe are thrilled to announce that applications for the Emerging Artists for Impact Award 2026 are officially open.\n\nAt the IAP Foundation, we are bringing talented emerging artists together, distributing $32,000 in awards, and showcasing their work on a global stage during Miami Art Week.\n\nBut our ambition goes much further. We are building a model where art generates both professional opportunity for the creator and measurable change for communities:\n\n20 artists. 20 artworks. Our goal: 20 impact projects.\nWe are working to connect each selected artwork to tangible initiatives across five key areas: 💧 Clean Water 👥 Children & Youth 📖 Education Access 📈 Economic Empowerment 🌱 Environmental & Community Restoration\n\nTurn art into lasting impact. The jury judges the art. Then the art goes to work.\n\nHow you can help: If you are an arts educator, curator, or industry professional, please share this opportunity with your network. Sometimes an opportunity only matters if the right person hears about it.\n\nEligible applicants include current BFA/MFA students and recent graduates (within two years) from accredited U.S. institutions.\n\n🗓️ Applications close: September 25, 2026, at 11:59 PM ET.\n\nKnow someone who should see this? Send this post to them or tag them below. 👇\n\n🔗 Apply / learn more: internationalartproject.submittable.com/submit\n\n#ArtCall #EmergingArtist #MiamiArtWeek #ArtGrant #IAPFoundation #Soc",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-09-25",
+      "amount": "$32,000",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nWhat if the traditional art exhibition was just the beginning of a work's impact?",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-07",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "7b5787630978210a991b32933dbc45d290606726",
       "source": "Instagram: art grants",
       "title": "Anonymous Drawings 2027",
@@ -1755,6 +1780,31 @@
         "Photography"
       ],
       "first_seen": "2026-08-31",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "6bdd81e1c118d8cb72c22a6794d891672e950eef",
+      "source": "Instagram: art grants",
+      "title": "TOSCANA ART PRIZE",
+      "link": "https://www.instagram.com/p/Dc_ftC5IHIQ/",
+      "summary": "Source: Instagram #artprize\nTOSCANA ART PRIZE\n25-27 September 2026 l LUCCA - ITALY\n\nLAST DAY!\nRegistration by 8 September 2026\n\nwww.ufofabrik.co.uk\nufofabrik@gmail.com\n\nUfofabrik Contemporary Art Gallery has announced an Art award, with the formula of the competition for artists, with the aim of promoting Contemporary Art Fair events.\nThe competition involves the selection of an artist to be inserted in exhibition project.\n\nLUCCA ART FAIR 25-27 September 2026\nReal Collegio, Lucca - Italy\nufofabrik\nlucca_art_fair\n\n#ufofabrik #LuccaArtFair #LetsGetLost #LuccaArtFair2026 #ContemporaryArt #ArtFair #RealCollegioLucca #Lucca\n#MostraMercato #exhibition #artgallery #eventialucca #artecontemporanea #visittrentino #trentino #visititaly #valdifassa #dolomiti #visitvaldifassa #artlover #trentinodavivere #instadolomiti #artfair #exhibition #artprize #artistatwork",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-09-27",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artprize\nTOSCANA ART PRIZE\n25-27 September 2026 l LUCCA - ITALY LAST DAY!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-07",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -5785,6 +5835,131 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "71882ecab62396533ea592ceb6ce49091d82336d",
+      "source": "Instagram: art grants",
+      "title": "Installation, “Coexistence”, Mural by Eugene Clark, Art Prize 2026, Special thanks to Eddie Tadlock,",
+      "link": "https://www.instagram.com/reel/Dc_7E8Jp9PI/",
+      "summary": "Source: Instagram #artprize\nInstallation, “Coexistence”, Mural by Eugene Clark, Art Prize 2026, Special thanks to Eddie Tadlock, Xavier, & Max for all of your help #eugeneclarkartist #artprize #grandrapids #mural",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artprize\nInstallation, “Coexistence”, Mural by Eugene Clark, Art Prize 2026, Special thanks to Eddie Tadlock, Xavier, & Max for all of your help #eugeneclarkarti",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Installation"
+      ],
+      "first_seen": "2026-09-07",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "06ac66575b760a42aa7f4a3df95f1abead52f61e",
+      "source": "Instagram: art grants",
+      "title": "In Situ Multidisciplinary Residency Programme",
+      "link": "https://www.instagram.com/p/Dc_K3U4ES0Y/",
+      "summary": "Source: Instagram #artopencall\nIn Situ Multidisciplinary Residency Programme\n\nIn Situ is a multidisciplinary residency program for artists committed to a world in transformation, focusing on ecological conditions of existence. It brings together ten artists for six months in Paris, fostering collective work and individual research.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nIn Situ Multidisciplinary Residency Programme In Situ is a multidisciplinary residency program for artists committed to a world in transformation, fo",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Multidisciplinary"
+      ],
+      "first_seen": "2026-09-07",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "28f27ac8bd32460ca2e6abd74f15f599841b7d26",
+      "source": "Instagram: art grants",
+      "title": "Photography Residency Prize from the Fondation des Treilles",
+      "link": "https://www.instagram.com/p/Dc-hq2LnOGq/",
+      "summary": "Source: Instagram #artopencall\nPhotography Residency Prize from the Fondation des Treilles\n\nThe Fondation des Treilles offers a photography residency prize. The award includes a monthly allowance of €2,650, an individual housing for a residency of one month or more, full coverage of living expenses, and access to a digital studio and/or darkroom.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nPhotography Residency Prize from the Fondation des Treilles The Fondation des Treilles offers a photography residency prize.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-07",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "8c67aa1204c5fcac39d0a6781f63e42cabda1f59",
+      "source": "Instagram: art grants",
+      "title": "Sie trauen dir ein Jahr Kunst zu. Nur nicht den Kassenbon.",
+      "link": "https://www.instagram.com/reel/Dc_mxxViNeI/",
+      "summary": "Source: Instagram #artgrant\nSie trauen dir ein Jahr Kunst zu. Nur nicht den Kassenbon.\n\nDas Geld liegt bereit. Den Bon heben wir gemeinsam auf.\n\nAlle offenen Fristen, geprüft: Link in Bio.\n\nTeil's in deine Story — irgendwer da draußen wartet genau darauf.\n\n#kunststipendium #künstlerförderung #stipendium #kunstförderung #förderung #künstlerleben #kunsthumor #atelierleben #grants #freischaffend #kulturförderung #artgrant #kunstwelt #kunst #art #artist #künstler #künstlerin",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nSie trauen dir ein Jahr Kunst zu.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-07",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "bd893d6f1520874378002bb23067f2a32b983b60",
+      "source": "Instagram: art grants",
+      "title": "tag an artist!! they deserve to know about my newest opportunity-packed newsletter 😝 #artgrant #arte",
+      "link": "https://www.instagram.com/p/Dc_ESjam3jn/",
+      "summary": "Source: Instagram #artgrant\ntag an artist!! they deserve to know about my newest opportunity-packed newsletter 😝 #artgrant #artevent #artresidency #artistcall #artistsoninstagram",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\ntag an artist!!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-07",
       "closing_soon_sent": false,
       "status": "active"
     },
