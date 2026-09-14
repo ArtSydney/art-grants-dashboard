@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-14T06:21:06+10:00",
-  "count": 238,
-  "total": 284,
+  "generated": "2026-09-15T06:21:57+10:00",
+  "count": 246,
+  "total": 294,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -1173,7 +1173,7 @@
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "9e46a0e18cf17e6719d5a774fad89073724a1ac1",
@@ -1201,7 +1201,7 @@
       ],
       "first_seen": "2026-08-22",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "3015b4ebf40d9a4e9c593534a4bd3c7828f5151b",
@@ -1530,7 +1530,7 @@
         "Painting"
       ],
       "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1555,7 +1555,7 @@
         "Photography"
       ],
       "first_seen": "2026-08-31",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1580,7 +1580,7 @@
         "Photography"
       ],
       "first_seen": "2026-08-31",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1605,7 +1605,7 @@
         "Photography"
       ],
       "first_seen": "2026-08-31",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1630,7 +1630,7 @@
         "Photography"
       ],
       "first_seen": "2026-08-31",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1655,7 +1655,7 @@
         "Ceramics"
       ],
       "first_seen": "2026-09-12",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1705,6 +1705,31 @@
         "Photography"
       ],
       "first_seen": "2026-08-30",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "4c4c8dfdc2f318337ef88a6e51d9af2a0d070d17",
+      "source": "Instagram: art grants",
+      "title": "Open call: Berlendis Venice Art Prize 2027 | Second Edition",
+      "link": "https://www.instagram.com/p/DdPbdMGjCKd/",
+      "summary": "Deadline: 24 Sep 2026\nSource: Instagram #artgrant\nOpen call: Berlendis Venice Art Prize 2027 | Second Edition\nEligibility: Visual Artists & Filmmakers worldwide\nFee: Free\nPrize: Display your work at an Arts Exhibition\nApply: Reply “ARTIST1” & we will send you the application link for free\nDeadline: 24 Sep 2026\n\n#OpenCall #ArtGrant #ArtResidency",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-09-24",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Deadline: 24 Sep 2026\nSource: Instagram #artgrant\nOpen call: Berlendis Venice Art Prize 2027 | Second Edition\nEligibility: Visual Artists & Filmmakers worldwide\nFee: Free\nPrize: Di",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-14",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -3048,6 +3073,31 @@
       "status": "active"
     },
     {
+      "id": "fb774ce08ad292b1ae5d0de32974d626638ef3ee",
+      "source": "Artshow.com Competitions",
+      "title": "12th Regional Juried Photography Exhibition - Rehoboth Beach, DE",
+      "link": "https://artshow.com/juriedshows/Northeast.html#639159976044357100",
+      "summary": "$900 in awards. Deadline: Nov 16, 2026",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-11-16",
+      "amount": "$900",
+      "entry_fee": "",
+      "description": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-14",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "c623f11127f4327db08d1f915d3372fe13e711ec",
       "source": "BNE Art: Opportunities",
       "title": "John Ruskin Prize: Not for Present Delight",
@@ -3217,6 +3267,31 @@
         "Installation"
       ],
       "first_seen": "2026-09-04",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "75aafee7ef4768dd5ef336bedc5ab3b2c15ef5f8",
+      "source": "Instagram: art grants",
+      "title": "Open Call: Kunsthalle Wien Artists‘ Market",
+      "link": "https://www.instagram.com/p/DdRUTxDqzrS/",
+      "summary": "Source: Instagram #artopencall\nOpen Call: Kunsthalle Wien Artists‘ Market \n\nKunsthalle Wien invites proposals from artists for its second Artists’ Market on Sunday 6 December 2026. Hosted in the Kunsthalle Wien Museumsquartier, the market is a one-off, single-day event devoted to artists’ books, editions and multiples. Artists are invited to apply for stalls to sell affordable artworks including drawings, prints, editions, multiples, books, zines or other (art)works specially-conceived for the event. Kunsthalle Wien encourages innovative proposals and projects. We welcome applications from individuals, groups and artist-led off-spaces. \n\nRead more via link in bio and apply by 11 October. \n\n#OpenCall #ArtOpenCall #ArtistMarket #KunsthalleWien #MQWien",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-12-06",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nOpen Call: Kunsthalle Wien Artists‘ Market Kunsthalle Wien invites proposals from artists for its second Artists’ Market on Sunday 6 December 2026.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Drawing"
+      ],
+      "first_seen": "2026-09-14",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -3450,6 +3525,31 @@
         "Painting"
       ],
       "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "af54817396878e138915b6c652ea8e7fbdc3ef88",
+      "source": "Google: Australian art prizes",
+      "title": "The Landscape Awards - The Landscape Awards",
+      "link": "https://www.thelandscapeawards.com.au/",
+      "summary": "The Landscape Awards - The Landscape Awards Now in its fifth year The Landscape Awards, presented by Western Digital, is looking for Australia’s and New Zealand’s best landscape photographers. Winners and Runners-up will share in a prize pool valued at more than $20,000, plus the Top 20 entries in each category will be showcased in Australian Photography magazine and at www.australianphotography.com Fundraising: $2 from each entry will go to The Wilderness Society to help them protect, promote and restore wilderness areas across Australia. Since 2023 The Landscape Awards has raised over $25,000 for environmental charities. We look forward to seeing your images here on this website. Finalists will be published in Australian Photography magazine in May 2026. Winners and Runners-Up will also be published at australianphotography.com . E ntries open 1 October 2026 and close 27 February 2027. You can learn more about the competition , check out the terms and conditions , and see the Top 20 images from last year's Awards here . Any questions, feel free to drop us an email at [email protected] SEE THE WINNERS, RUNNERS-UP AND TOP 20 ENTRIES FROM LAST YEAR'S LANDSCAPE AWARDS",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2027-02-27",
+      "amount": "$20,000",
+      "entry_fee": "",
+      "description": "The Landscape Awards is Australia & NZ's premier landscape photography competition, with Landscape, Seascape, Aerial & Urban categories and over $20,000 in prizes.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-14",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -4426,6 +4526,32 @@
         "Photography"
       ],
       "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "1b62c47a2e6c799e737aa4660a7275a8aab5b562",
+      "source": "Google: Australian art prizes",
+      "title": "Australian Photography Awards",
+      "link": "https://submit.australianphotographyawards.com.au/",
+      "summary": "Australian Photography Awards FAQ Australian photography awards 2026 ENTER NOW Image by Aletheia Casey ENTRIES OPEN Until June 15th, 2026 PRIZE POOL A$17,000 prize pool from Nikon Australia, HC Pro, Tecart, and The Brownbill Effect + Exhibition Opportunities Read More ENTRY FEE $30AUD per submission Now in its TENTH edition, APA 2026 is CELEBRATING A DECADE of AustraliaN photography The Australian Photography Awards returns for its 10th edition in 2026, celebrating the strength and diversity of photographic practice across the country. This year, the awards move to a single Open Category, inviting photographers to submit work across all genres from portraiture and landscape to documentary, wildlife, experimental, and contemporary practices. Rather than dividing photography into separate categories, the awards recognise that today’s image-making often moves fluidly across styles and disciplines. The judging committee will select five winning images from the pool of entries that best represent where Australian photography is at in 2026. Students currently enrolled in a recognised course may also opt into a Student Category at no additional cost when submitting a paid entry. The awards remain committed to photography grounded in original image capture. While digital editing is permitted, AI-generated imagery is not accepted, and any AI-assisted editing must be disclosed during the entry process. APA Exhibition & Event Program Finalists and shortlisted artists will be exhibited through print and projection as part of an exhibition program. Taking place in Naarm/Melbourne during July 2026. The APA Exhibition & Event Program will bring together artists and photographers from across Australia to share their work, make connections and celebrate photography. Introducing the 2026 Committee This year we’ve refined our approach, bringing together a focused committee to guide the award’s direction. With one category and multiple prizes, this group will work collaboratively to recognise the most compelling work submitted, drawing on the insight of leading Australian image makers, curators and educators who will consider this year’s entrants and champion standout photography. Lisa Sorgini Dr Alan Hill Dr Ayooluwatomiwa Oloruntoba Harriet Tarbuck Rikki-Paul Bunder Tom Goldner Angus Scott With thanks to our major partners APA 2026 PARTNERS Home Terms Submit Close Successful! Account has been successfully registered! Close Submit",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2027-06-15",
+      "amount": "$17,000",
+      "entry_fee": "",
+      "description": "FAQ Australian photography awards 2026 ENTER NOW Image by Aletheia Casey ENTRIES OPEN Until June 15th, 2026 PRIZE POOL A$17,000 prize pool from Nikon Australia, HC Pro, Tecart, and",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Drawing",
+        "Photography"
+      ],
+      "first_seen": "2026-09-14",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -5417,7 +5543,7 @@
       "source": "Artsoz prize registry",
       "title": "Sulman Prize",
       "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-      "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
+      "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -5427,7 +5553,7 @@
       "deadline": "",
       "amount": "",
       "entry_fee": "",
-      "description": "Client Challenge A required part of this site couldn’t load.",
+      "description": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -6877,31 +7003,6 @@
       "status": "active"
     },
     {
-      "id": "1ef2e71a1e83228ea1138b0dfab258111cea3a95",
-      "source": "Instagram: art grants",
-      "title": "Steve Buccellato, Principal Art Commissioning Lead at Riot Games / Riftbound, has chosen the winners",
-      "link": "https://www.instagram.com/p/DdKHMSCCMAq/",
-      "summary": "Source: Instagram #artprize\nSteve Buccellato, Principal Art Commissioning Lead at Riot Games / Riftbound, has chosen the winners of this year's art prize, and first we're sharing all the work Steve felt deserved a special acknowledgement.\n\nOur next shout out goes to Jessica Liu jessichenliu , congrats Jessica! Steve says, \"Jessica Liu is almost tied for 3rd place, in my opinion. Her 8 pieces were all excellent and she already has what it takes to be a very successful concept artist.\"\n\n#artprize #illustration #narrativeart #figurativeart #fantasyart #bookillustration",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "unclear",
-      "location_scope": "Unknown",
-      "eligibility_note": "",
-      "deadline": "",
-      "amount": "",
-      "entry_fee": "",
-      "description": "Our next shout out goes to Jessica Liu jessichenliu , congrats Jessica!",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Illustration"
-      ],
-      "first_seen": "2026-09-11",
-      "closing_soon_sent": false,
-      "status": "active"
-    },
-    {
       "id": "0c620076dab501041f19f7209f05915366430037",
       "source": "Instagram: art grants",
       "title": "If you know, you know. Art Prize installation day. All the fish lined up to represent peace and heal",
@@ -7207,6 +7308,156 @@
         "Ceramics"
       ],
       "first_seen": "2026-09-13",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "154c8a0d9e8fa54ea1b358b295514fc2b77a4cda",
+      "source": "Instagram: art grants",
+      "title": "Steve Buccellato, Principal Art Commissioning Lead at Riot Games / Riftbound, has chosen the winners",
+      "link": "https://www.instagram.com/p/DdRz9bdmiKv/",
+      "summary": "Source: Instagram #artprize\nSteve Buccellato, Principal Art Commissioning Lead at Riot Games / Riftbound, has chosen the winners of this year's art prize, and today we're announcing the third place winner:\n\n“Crysalis” by Sam Hogg thewhalergirl \n\nSteve says: \"Sam Hogg’s haunting dreamscapes contained more than one piece I felt could be in the top 3.\"\n\nCongrats Sam!\n\n#artprize #illustration #narrativeart #figurativeart #fantasyart #bookillustration",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artprize\nSteve Buccellato, Principal Art Commissioning Lead at Riot Games / Riftbound, has chosen the winners of this year's art prize, and today we're announcin",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Illustration"
+      ],
+      "first_seen": "2026-09-11",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "aac2a95b3439b6c358f90f3070c93547612bbd76",
+      "source": "Instagram: art grants",
+      "title": "Amazing news! (For the selected artists)",
+      "link": "https://www.instagram.com/p/DdRl7FwiP8t/",
+      "summary": "Source: Instagram #artprize\nAmazing news! (For the selected artists)\n\nThe judges of the British Art Prize clearly took one look at my submission and thought, “No, this is simply too profound, too avant-garde, and frankly, too good for our walls. It would instantly emasculate every other piece in the gallery.”\n\nIt’s ok. I understand. I guess I’m just too good.\n\n#artaward #artprize #britishartprize",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artprize\nAmazing news!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-14",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "4dfd3d19115789a9e251f415d907bb2af9022aa0",
+      "source": "Instagram: art grants",
+      "title": "Hanns-Lilje-Stiftungspreis 2027 on the theme \"The formative power of art and culture\"",
+      "link": "https://www.instagram.com/p/DdR1oYvFLKB/",
+      "summary": "Source: Instagram #artopencall\nHanns-Lilje-Stiftungspreis 2027 on the theme \"The formative power of art and culture\"\n\nThe Hanns-Lilje-Stiftung is awarding its 2027 prize on the theme \"The formative power of art and culture.\" The prize is divided into two categories: a Science Prize for outstanding academic work (doctorates and habilitations) and an Initiative Prize for successful initiatives and projects of.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nHanns-Lilje-Stiftungspreis 2027 on the theme \"The formative power of art and culture\" The Hanns-Lilje-Stiftung is awarding its 2027 prize on the them",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-14",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "9908f52b423edcf11514fc49ce2a77d822362e31",
+      "source": "Instagram: art grants",
+      "title": "Open call: Asian Cultural Council’s 2027 global funding cycle",
+      "link": "https://www.instagram.com/p/DdRNAa5oM7h/",
+      "summary": "Source: Instagram #artopencall\nOpen call: Asian Cultural Council’s 2027 global funding cycle\n\nThe Asian Cultural Council (ACC) has launched its 2027 global funding cycle, offering four distinct grant categories: New York Fellowship, Individual Fellowship, Graduate Fellowship, and Organization Grant. These opportunities are designed to support cultural exchange between the U.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Fellowship",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nOpen call: Asian Cultural Council’s 2027 global funding cycle The Asian Cultural Council (ACC) has launched its 2027 global funding cycle, offering f",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-14",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "ee3cc398c8903bcb7c1b1f35021d6b00c497051f",
+      "source": "Instagram: art grants",
+      "title": "Open Call for Artists: FOCUS & FOCUS compact",
+      "link": "https://www.instagram.com/p/DdQuX4jiiur/",
+      "summary": "Source: Instagram #artopencall\nOpen Call for Artists: FOCUS & FOCUS compact\n\nSubmissions are now open for Issue 4 of VERMEER Magazine.\n\nFor every issue, our FOCUS section introduces selected contemporary realist artists through one outstanding work. Artists can be selected for one of two formats: FOCUS, a two-page feature dedicated to one artist with an artwork and editorial texts about the work and artist, or FOCUS compact, where several selected artists are presented together across two pages with one artwork and a concise accompanying text each. Both formats are selected through the same open call.\n\nTo apply, send 3–5 high-resolution images of different works to editorial@vermeer-magazine.com. Please include captions for each work (title, year, size and technique), your full name and contact details, website, a text about the submitted artwork (max. 200 words) and a text about yourself as an artist (max. 200 words). One artwork will be selected for publication.\n\nThe submission fee is 25 CHF (approx. 24 GBP / 27 EUR / 32 USD; the daily exchange rate applies) and can be paid via PayPal to lichtschlag@freiheitsfunken.info. The fee covers the editorial review and participation in the selection process. Please note that submission does not guarantee publication and the fee is non-refundable.\n\nSelected artists will be featured in the printed Issue 4 of VERMEER Magazine, on our official website and across our Instagram and Facebook channels. All submissions are reviewed by the VERMEER editorial team and select",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nOpen Call for Artists: FOCUS & FOCUS compact Submissions are now open for Issue 4 of VERMEER Magazine.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-14",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "47b0dbc63218adcf2f492e83feff4cebb5435b4d",
+      "source": "Instagram: art grants",
+      "title": "Visual Arts Fellowships",
+      "link": "https://www.instagram.com/p/DdQjPmEAARZ/",
+      "summary": "Source: Instagram #artopencall\nVisual Arts Fellowships\n\nThe Virginia Museum of Fine Arts (VMFA) Visual Arts Fellowship Program provides vital funding for visual arts and art history in Virginia. The program supports professional artists and art students who demonstrate exceptional creative ability.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Fellowship",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nVisual Arts Fellowships The Virginia Museum of Fine Arts (VMFA) Visual Arts Fellowship Program provides vital funding for visual arts and art history",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-14",
       "closing_soon_sent": false,
       "status": "active"
     },
