@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-18T06:20:46+10:00",
-  "count": 263,
-  "total": 321,
+  "generated": "2026-09-19T06:14:48+10:00",
+  "count": 273,
+  "total": 333,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -948,6 +948,35 @@
       "status": "closed"
     },
     {
+      "id": "ff0d1ee31baccddc17f49c7a88ba288a145b5858",
+      "source": "Google: Australian art prizes",
+      "title": "2026 sculpture prize entry form | Art Farm Birchs Bay",
+      "link": "https://www.artfarmbirchsbay.org.au/2026sculptureprize",
+      "summary": "2026 sculpture prize entry form | Art Farm Birchs Bay top of page 2025 winner Alice RG, Play Wariors 2026 SCULPTURE PRIZE This year, in our twentieth year, we are waiving the entry fee as our birthday gift to you!​ ​ Entries close 1 September 2026 at midnight ​ ​ Prizes: $4,000 Major Sculpture Prize $3,000 Kingborough Council Acquisition Prize $3,000 Art Farm Birchs Bay & Five Bob Acquisition Prize $500 People's Choice Award ​ 2026 Guidelines 2026 judges Patrick Hall With an art practice now spanning several decades, Patrick has firmly established a reputation for uniquely intricate and idiosyncratic works. Patrick's ability to cross and often combine seemingly disparate art genres sees a distinct and elegant collision of beautifully fabricated imaginings with prose poetry, cabinetry, lighting and sound recordings. These often emotive pieces are rich in story-telling, sometimes autobiographical, sometimes not. Patrick is represented in public and private collections including the Tasmanian Museum and Art Gallery, Hobart; the Museum of Old and New Art [MONA], Berriedale; the Power House Museum, Sydney and the National Gallery of Australia, Canberra. Bob Brown Bob Brown is an Australian former politician, medical doctor, artist, writer, and environmentalist. Bob's most recent book is Defiance. Bob is also an avid photographer and has held numerous solo exhibitions throughout Tasmania and on the mainland. After Bob left the Senate in 2012 he set up the Bob Brown Foundation to take peaceful direct action to stop environmental vandalism, to protect Tasmania’s Takayna rainforest, wildlife and Aboriginal heritage and to end native forest logging nationwide. From leading the seven-year campaign to save Tasmania's wild Franklin River from damming, through fifty-years of finding alternatives to humanity's rapid destruction of life on Earth, Bob Brown's credo has always been 'one person, one vote, one value, one planet'. Peter Johnson Peter Johnson’s ceramic works reflect memory and experience of the Australian landscape visible in the remnants of our industrial, suburban and maritime places, memories of daily living on the land and the expansiveness of the rural environment. For over 35 years Peter has maintained an active studio practice including the Jam Factory, Jamboree Clay Workshop and currently at Gaff Studio, Port Adelaide. For many years he lectured in Ceramics and Visual Arts at TAFE Adelaide College of Arts, O’Halloran Hill and Adelaide campuses. He has had artistic residencies in Barcelona, Spain with the Australia Council and Jingdezhen, China with the Helpmann Academy. Peter’s ceramic work has been shown locally, interstate and internationally. Enter this year's prize Complete the online entry form below or the chat version. ​ For assistance entering or other ways of entering please contact Amy on info@artfarmbirchsbay.org.au or phone 0438 128 134 Chat Version of the Entry Form Entries Open 1 June 2026 Entries Close 1 September 2026 Finalists Notified 28 September 2026 ​ Opening 15 November 2026 Art Farm Birchs Bay Annual Sculpture Prize Entry Form We welcome sculptures, varying in mediums, modes and size. All entries will be considered in relation to: · Range of mediums and concepts – AFBB aims to exhibit diverse work, ranging in mediums, concepts and form. · Concept development and execution – AFBB aims to maintain a standard of work while encouraging emerging artist to apply. · Durability – Designed to withstand the weather (sun, extreme winds, rain) and the possibility of playful children. AFBB recognises some sculptures are designed to be impermanent. Art works are viewed during daylight, light sculptures may not be appropriate but sculptures with light elements will be considered. · Safety – Sculptures must be structurally safe with adequate installation fixtures and safe for the potential of general public to engage with. Please view the Safety Guidelines on our website. · Originality of Work – The submitted sculptu",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-09-01",
+      "amount": "$4,000",
+      "entry_fee": "",
+      "description": "Bay top of page 2025 winner Alice RG, Play Wariors 2026 SCULPTURE PRIZE This year, in our twentieth year, we are waiving the entry fee as our birthday gift to you!​ ​ Entries close",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Sculpture",
+        "Photography",
+        "Ceramics",
+        "Textiles",
+        "Installation"
+      ],
+      "first_seen": "2026-09-18",
+      "closing_soon_sent": false,
+      "status": "closed"
+    },
+    {
       "id": "1441b2daac353c01da6af1c33048e48e69146fba",
       "source": "Artshow.com International",
       "title": "93rd Annual International Exhibition of Fine Art in Miniature - Rockville, MD",
@@ -1481,7 +1510,7 @@
       ],
       "first_seen": "2026-09-06",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "eb99e23987c0263a7f14451c8beb4529125b57e0",
@@ -1805,7 +1834,7 @@
         "Painting"
       ],
       "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1830,7 +1859,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-05",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1855,7 +1884,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-07",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1880,7 +1909,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-08",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -1905,7 +1934,7 @@
         "Photography"
       ],
       "first_seen": "2026-09-08",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -2490,6 +2519,31 @@
       "status": "active"
     },
     {
+      "id": "7ba3f6dea11b548654602b3a558dc3fc562da7b0",
+      "source": "Instagram: art grants",
+      "title": "Open call: Camargo Fellowship 2027–2028",
+      "link": "https://www.instagram.com/p/DdaD4YqjMSI/",
+      "summary": "Deadline: 1 Oct 2026\nSource: Instagram #artgrant\nOpen call: Camargo Fellowship 2027–2028\nEligibility: Visual Artists worldwide\nFee: Free\nPrize: Residency in France + €3,500 stipend + more\nApply: Reply “ARTIST” & we will send you the application link for free \nDeadline: 1 Oct 2026\n\n#OpenCall #ArtGrant #ArtResidency",
+      "relevant": true,
+      "english": true,
+      "category": "Fellowship",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-10-01",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Deadline: 1 Oct 2026\nSource: Instagram #artgrant\nOpen call: Camargo Fellowship 2027–2028\nEligibility: Visual Artists worldwide\nFee: Free\nPrize: Residency in France + €3,500 stipend",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-18",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "14131b9bb178eac979f90d05961bf4379e219c22",
       "source": "Instagram: art grants",
       "title": "OPEN CALL FOR ARTISTS",
@@ -2746,6 +2800,31 @@
       "status": "active"
     },
     {
+      "id": "785888caf617f322afac834cf6ced3178e156a72",
+      "source": "Neon Marketplace",
+      "title": "Transurban Community Grants Program",
+      "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/transurban-community-grants-program",
+      "summary": "Neon Marketplace | Transurban Community Grants Program Opportunity Transurban Community Grants Program Offering grants of up to $10,000 for projects bringing road safety, financial inclusion and environmental benefits to the communities near Transurban’s roads. Opportunity closes 09 Oct 2026 Connect with Neon Marketplace Transurban Community Grants program Enquiries Get in touch Connect with Neon Marketplace Transurban Community Grants program Enquiries Get in touch Connect with Neon Marketplace Transurban Community Grants program Enquiries Get in touch Photo by Avesta on Unsplash Details Transurban's Community Grants Program offers grants of up to $10,000 for projects bringing road safety, financial inclusion and environmental benefits to the communities in Greater Melbourne, Sydney or Brisbane near Transurban’s roads. Grants are open to a wide range of organisations and initiatives, and they encourage inclusion, diversity of thought and innovation. Transurban Community Grants 2025 recipients include: The Fix it Sisters Shed Sydney Writers’ Festival Rock 'N' Wool (Wrap With Love Inc.) City North Men's Shed Ladies Like To Lunch Grant recipients, eligibility and requirements New grant recipients First Nations: As part of a commitment to reconciliation, at least one grant in each eligible state will be awarded to a First Nations organisation or initiative. Australian Charities and Not-for-profits Commission (ACNC) Registered Charity: Your organisation must have Deductible Gift Recipient (DGR) status or be an ACNC registered charity to be eligible for a grant. How to get involved Find out more and apply via the website . Share Categories Grant and sponsorship Tags Community Published: 18 Sep 2026 You might also like See all Opportunities Posted by Sound NSW Sound NSW Domestic Travel and International Professional Development grants Quick response funding program designed for NSW contemporary music artists, acts and music industry professionals. Quick response funding p",
+      "relevant": true,
+      "english": true,
+      "category": "Commission",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-10-09",
+      "amount": "$10,000",
+      "entry_fee": "",
+      "description": "Transurban Community Grants Program Opportunity Transurban Community Grants Program Offering grants of up to $10,000 for projects bringing road safety, financial inclusion and envi",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-18",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "bd97ddadc195115bbb40331b80b18078e730a60c",
       "source": "Artshow.com International",
       "title": "Aviation Week Photo Contest - Online",
@@ -2967,6 +3046,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-10",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "21ea7e1377740a202484022202e9c303580531d0",
+      "source": "Instagram: art grants",
+      "title": "Open call: LOEWE Foundation Craft Prize 2027",
+      "link": "https://www.instagram.com/p/DdaGOpyDJU3/",
+      "summary": "Deadline: 15 Oct 2026\nSource: Instagram #artgrant\nOpen call: LOEWE Foundation Craft Prize 2027\nEligibility: Visual Artists worldwide\nFee: Free\nPrize: Up to €50,000 + international exhibition + more\nApply: Reply “ARTIST” & we will send you the application link for free\nDeadline: 15 Oct 2026\n\n#OpenCall #ArtGrant #ArtResidency",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-10-15",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Deadline: 15 Oct 2026\nSource: Instagram #artgrant\nOpen call: LOEWE Foundation Craft Prize 2027\nEligibility: Visual Artists worldwide\nFee: Free\nPrize: Up to €50,000 + international ",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-18",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -3394,6 +3498,31 @@
       "status": "active"
     },
     {
+      "id": "cb091a9a875b424737b6f19360192f59700828fd",
+      "source": "Instagram: art grants",
+      "title": "2026 New York Photography Awards",
+      "link": "https://www.instagram.com/p/Ddb0H5HlvvB/",
+      "summary": "Source: Instagram #artgrant\n2026 New York Photography Awards\r\n\r\nDeadline: Nov 25, 2026\r\nEligibility: International\nLocation: New York, United States\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-11-25",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\n2026 New York Photography Awards Deadline: Nov 25, 2026 Eligibility: International\nLocation: New York, United States Full details at deadlinecalls.com 🔗",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-18",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "25165e077aeaf1b9d58419e3f9d91619a331ed1f",
       "source": "Calendar for Artists",
       "title": "Sony World Photography Awards 2027",
@@ -3705,6 +3834,35 @@
       "status": "active"
     },
     {
+      "id": "e71e261e0e9313a5a3fc89a6b7d2a2a6e7811cc3",
+      "source": "Instagram: art grants",
+      "title": "REPOST thegalleryatgreenandstone SUBMISSIONS ARE NOW OPEN | WORKS ON PAPER 2027",
+      "link": "https://www.instagram.com/reel/DdaFxQjzz_Q/",
+      "summary": "Deadline: 12 noon\nSource: Instagram #artopencall\nREPOST thegalleryatgreenandstone SUBMISSIONS ARE NOW OPEN | WORKS ON PAPER 2027\n\nGreen & Stone is delighted to announce the sixth edition of Works on Paper, our annual international open call and exhibition celebrating work made on, or with, paper.\nWorks on Paper 2027 will be particularly special. Opening in January, it will be the first exhibition of Green & Stone’s centenary year, beginning our celebration of 100 years since Green & Stone was founded in Chelsea in 1927.\n\nWe are inviting artists to submit work across drawing, watercolour, printmaking, collage, illustration, book arts, mixed media and experimental approaches to paper. We welcome submissions from artists at every stage of their practice, from emerging artists to established names.\n\nSelected works will be exhibited at The Gallery at Green & Stone in London from 11 January – 3 February 2027, alongside a programme of events celebrating paper, materials and making.\n\nKey dates\nSubmissions close: 12 noon, Wednesday 25 November 2026 Results announced: Wednesday 2 December 2026 Exhibition: 11 January – 3 February 2027 Private View: Tuesday 12 January 2027\n\nFull submission details, eligibility, entry fees and terms can be found via the link in our bio.\n\nJoin us for this very special anniversary exhibition. We cannot wait to see what you have been making.\n\nArtwork hollyfrean \n\n#WorksOnPaper2027 #OpenCallForArtists #ArtOpenCall #WorksOnPaper #ContemporaryDrawing Printmaking Watercolour PaperArt LondonArt EmergingArtists ",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2027-02-03",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Deadline: 12 noon\nSource: Instagram #artopencall\nREPOST thegalleryatgreenandstone SUBMISSIONS ARE NOW OPEN | WORKS ON PAPER 2027 Green & Stone is delighted to announce the sixth ed",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Printmaking",
+        "Illustration",
+        "Mixed Media"
+      ],
+      "first_seen": "2026-09-18",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "ef658814181ab48846427e35efe5d0c8d48bf590",
       "source": "Google: Australian art prizes",
       "title": "Rutherglen Tastes of Art Prize",
@@ -3859,6 +4017,31 @@
         "Photography"
       ],
       "first_seen": "2026-08-30",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "02fda9b866150d8b42f5d3699961fc236ad529fb",
+      "source": "Instagram: art grants",
+      "title": "Wistikles | The Alberta Foundation for the Arts is inviting eligible professional Alberta artists to",
+      "link": "https://www.instagram.com/p/DdbmgSfCRTW/",
+      "summary": "Source: Instagram #artgrant\nWistikles | The Alberta Foundation for the Arts is inviting eligible professional Alberta artists to apply to have their artwork considered for acquisition into the AFA Art Collection. Up to five artworks can be included in one application. Deadline: April 1, 2027.\n\n#wistikles #trendingtoday #laughsninsights #laughs #insight #laugh #laughing #instagram #canada #India #Alberta #Artists #ArtFunding #ArtGrant #ArtistOpportunities #ArtOpportunities #VisualArtists #CanadianArtists #AFA",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2027-04-01",
+      "amount": "",
+      "entry_fee": "",
+      "description": "The Alberta Foundation for the Arts is inviting eligible professional Alberta artists to apply to have their artwork considered for acquisition into the AFA Art Collection.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-18",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -8118,6 +8301,131 @@
         "Photography"
       ],
       "first_seen": "2026-09-17",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "5aeb742d8fac993cc4f6dd4fa1080f2af61c3b1b",
+      "source": "Instagram: art grants",
+      "title": "Cultural Funding Film",
+      "link": "https://www.instagram.com/p/DdcI0AMl4Js/",
+      "summary": "Source: Instagram #artopencall\nCultural Funding Film\n\nThis cultural funding supports non-commercial film projects by Hamburg creatives, covering up to 50% of the project costs. Applications are accepted annually by March 31 or September 30.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nCultural Funding Film This cultural funding supports non-commercial film projects by Hamburg creatives, covering up to 50% of the project costs.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-18",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "daba4c86aa603c83ab3eb9c457e104d4423277e2",
+      "source": "Instagram: art grants",
+      "title": "2027 Brooklyn Arts Fund",
+      "link": "https://www.instagram.com/p/DdbfnG9F0NW/",
+      "summary": "Source: Instagram #artopencall\n2027 Brooklyn Arts Fund\n\nThe 2027 Brooklyn Arts Fund offers grants of $5,000 or $7,500 to Brooklyn-based individual artists, collectives, and nonprofit organizations. This funding supports publicly accessible arts projects across all disciplines, genres, and styles, which must occur within the calendar year 2027.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Grant",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "$5,000",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\n2027 Brooklyn Arts Fund The 2027 Brooklyn Arts Fund offers grants of $5,000 or $7,500 to Brooklyn-based individual artists, collectives, and nonprofi",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Multidisciplinary"
+      ],
+      "first_seen": "2026-09-18",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "236b0772d37cddaf809d364fae63cc525daff7fb",
+      "source": "Instagram: art grants",
+      "title": "Cultural Office Funding 2027: Cultural Funding in Challenging Times",
+      "link": "https://www.instagram.com/p/Dda2aZrFyqx/",
+      "summary": "Source: Instagram #artopencall\nCultural Office Funding 2027: Cultural Funding in Challenging Times\n\nThe Cultural Office of the City of Leipzig is accepting applications for funding for independent art and culture projects in 2027. Over eleven million Euros are available for this purpose.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artopencall\nCultural Office Funding 2027: Cultural Funding in Challenging Times The Cultural Office of the City of Leipzig is accepting applications for funding ",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-18",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "91757888aecc03d0d50b5dcb9ad79cef0d17cb5b",
+      "source": "Instagram: art grants",
+      "title": "🎤 thorn.haze is a multi-instrument singer/songwriter known for blending indie, rock, alternative and",
+      "link": "https://www.instagram.com/p/DcyTX9pDpDc/",
+      "summary": "Source: Instagram #artgrant\n🎤 thorn.haze is a multi-instrument singer/songwriter known for blending indie, rock, alternative and blues. \n\nHis breakthrough came in 2023, when he launched a year-long project to write and record a new song every day in remote locations. Thorn received a Koch Cultural Trust grant in 2026 and is using it to expand his opportunities to share his music by going on tour. “I expected a no, but here I am going on tour,” he said. “If it could happen to me, it could happen to you.” \n\nIf you’re an aspiring Kansas musician or artist, apply for a Koch Cultural Trust grant before October 1 and get help jumpstarting your next great idea. Visit the link in our bio for eligibility details and to apply.\n\n#kansasartist #wichitaks #wichitaartist #artgrant",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\n🎤 thorn.haze is a multi-instrument singer/songwriter known for blending indie, rock, alternative and blues.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-18",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "c883fca4f024cda06fd08886093a46ef7e052334",
+      "source": "Instagram: art grants",
+      "title": "Die Begründung fehlt immer. Die nächste Frist nie — wir führen Buch über beide: Link in Bio.",
+      "link": "https://www.instagram.com/p/Dda4B-biiRa/",
+      "summary": "Source: Instagram #artgrant\nDie Begründung fehlt immer. Die nächste Frist nie — wir führen Buch über beide: Link in Bio.\n\nKanntest du den Topf? Ehrlich antworten.\n\n#kunststipendium #künstlerförderung #stipendium #kunstförderung #förderung #artlife #callforartists #opencall #artistopportunity #residency #grants #freischaffend #kulturförderung #artgrant #kunstwelt #kunst #art #artist",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nDie Begründung fehlt immer.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-18",
       "closing_soon_sent": false,
       "status": "active"
     },
