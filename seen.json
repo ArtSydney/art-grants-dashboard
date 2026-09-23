@@ -1214,7 +1214,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-08-09",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "bf3c82a83075496239ae3d279dcef72c765c8028": {
@@ -1286,7 +1286,7 @@
       "Drawing"
     ],
     "first_seen": "2026-08-09",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "624f9e486302be3a52d95d1002234a8e49421492": {
@@ -6536,7 +6536,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-08-22",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "697b413fdc06a2521b00453521acdc829b58d167": {
@@ -11800,7 +11800,8 @@
     ],
     "first_seen": "2026-09-04",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "suppressed",
+    "superseded_by": "3b34ba6eb79ce826bfa10d2bed55f94db24913bc"
   },
   "19e6360001bcf74428d2af2dec0687a37d75229a": {
     "id": "19e6360001bcf74428d2af2dec0687a37d75229a",
@@ -13288,7 +13289,7 @@
       "Photography"
     ],
     "first_seen": "2026-09-08",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "b9ebe70cba6c9c293a37ee342a026a6717fd25ff": {
@@ -14624,7 +14625,7 @@
       "Photography"
     ],
     "first_seen": "2026-09-11",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "2f933428c876926e6beb0a4ef4b9a8b886c378ac": {
@@ -14916,7 +14917,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-13",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "d8186a7a0b5ececa227b582945a4654c4460f831": {
@@ -15755,7 +15756,7 @@
       "Mixed Media"
     ],
     "first_seen": "2026-09-15",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "527d90899f0bac45a93582feebf70f5cf0a8d868": {
@@ -15830,7 +15831,7 @@
       "Photography"
     ],
     "first_seen": "2026-09-15",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "5b2c7169760b1fd5f64792d1aafb6915e108e913": {
@@ -18967,6 +18968,246 @@
     "closing_soon_sent": false,
     "status": "active"
   },
+  "65b705cc9ecd3af72ea74576c6dc02bfc0517ccb": {
+    "id": "65b705cc9ecd3af72ea74576c6dc02bfc0517ccb",
+    "source": "Artshow.com Competitions",
+    "title": "Faces of Feeling | 14th Portrait Art Competition - Online",
+    "link": "https://artshow.com/juriedshows/NA.html#639254007578348543",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-23",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "a99f08c3f89e719a5b0a173bbd636e625c8dfd40": {
+    "id": "a99f08c3f89e719a5b0a173bbd636e625c8dfd40",
+    "source": "Neon Marketplace",
+    "title": "Stallholder and food truck EOIs",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/stallholder-and-food-truck-eois",
+    "summary": "Dropped: title matches noise keyword.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-23",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "d4e9d03ea671e78a95c222f46abdc8ad3ffa57d2": {
+    "id": "d4e9d03ea671e78a95c222f46abdc8ad3ffa57d2",
+    "source": "Neon Marketplace",
+    "title": "Inclusion Festival 2026 EOI",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/inclusion-festival-2026-eoi",
+    "summary": "Neon Marketplace | Inclusion Festival 2026 EOI Opportunity Inclusion Festival 2026 EOI Looking for disability-led ideas including creative events, programs and activations that celebrate International Day of People with Disability. Opportunity closes 05 Oct 2026 Connect with Inner West Council Inclusion Festival 2026 EOI Enquiries Get in touch Connect with Inner West Council Inclusion Festival 2026 EOI Enquiries Get in touch Connect with Inner West Council Inclusion Festival 2026 EOI Enquiries Get in touch date Proposed events or programs should be held during the Inclusion Festival period (21 November and 12 December 2026) or at any time up to 30 June 2027 location Inner West LGA Details Inclusion Festival is Inner West Council’s flagship celebration for the International Day of People with Disability. Council proudly raises the Disability Pride Flag annually on 3 December to mark IDPwD celebrations. This year, Inclusion Festival is celebrating 10 years of disability leadership through the arts, and Inner West Council wants you to be part of it. Council is seeking opportunities to support creative events, programs and activations that celebrate International Day of People with Disability across the Inner West. Up to $5,000 (GST inclusive) is available to support accessible, disability-led program ideas, including: Art workshops and creative skills-building Talks, discussions and networking Exhibitions and performances Creative social and community events Inclusive and accessible arts activations Other disability-led creative projects. How to get involved Find out more and apply via the website . Submit your EOI by Monday 5 October 2026 at 5pm. Share Categories Grant and sponsorship Exhibition Entertainment Tags Art & Design Community Crafts Wellness Published: 23 Sep 2026 You might also like See all Opportunities Posted by City of Sydney Accommodation grants - Glebe and Millers Point Affordable access to buildings we own for organisations and individuals focused on",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-10-05",
+    "amount": "$5,000",
+    "entry_fee": "",
+    "description": "Inclusion Festival 2026 EOI Opportunity Inclusion Festival 2026 EOI Looking for disability-led ideas including creative events, programs and activations that celebrate Internationa",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-23",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "36e3ef33963a2da068fd573aab12d33ce3d85ef5": {
+    "id": "36e3ef33963a2da068fd573aab12d33ce3d85ef5",
+    "source": "Neon Marketplace",
+    "title": "Northern Beaches affordable studio spaces for hire",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/northern-beaches-affordable-studio-spaces-for-hire",
+    "summary": "Neon Marketplace | Northern Beaches affordable studio spaces for hire Opportunity Northern Beaches affordable studio spaces for hire Perfect for artists, designers and creatives of all types to grow their practice and connect with the creative community. Opportunity closes 11 Oct 2026 Connect with Northern Beaches Council Northern Beaches Creative Enquiries Get in touch Connect with Northern Beaches Council Northern Beaches Creative Enquiries Get in touch Connect with Northern Beaches Council Northern Beaches Creative Enquiries Get in touch date Submissions close at midnight (end of day) 11 October 2026 (AEDT) Details Looking for a space to create, experiment and showcase? Affordable studios, galleries and workshop spaces are available in Avalon, Curl Curl and Mona Vale . These venues are perfect for artists, makers and creatives pushing boundaries. The Northern Beaches Studios program offers local creatives affordable studio spaces for hire. Perfect for artists, designers and creatives of all types to grow their practice and connect with the creative community. The studios are suitable for: Graphic designers Fashion businesses Design consultancies Start ups Emerging creative businesses Visual artists How to get involved Find out more and apply via the website . Share Categories Venue and space Published: 23 Sep 2026 You might also like See all Opportunities Posted by City of Sydney Accommodation grants - Glebe and Millers Point Affordable access to buildings we own for organisations and individuals focused on community, cultural, economic and sustainability outcomes. Affordable access to buildings we own for organisations and individuals focused on community, cultural, economic and sustainability outcomes. Opportunity closes 20 Oct 2026 Posted by Brightside Music Need live music for your venue or event? Brightside Music will provide live music solutions for your venue, event and more! Brightside Music will provide live music solutions for your venue, event and more",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-10-11",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Northern Beaches affordable studio spaces for hire Opportunity Northern Beaches affordable studio spaces for hire Perfect for artists, designers and creatives of all types to grow ",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-23",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "6a33c59d9647fb6d52772397de8cbe9d535df28b": {
+    "id": "6a33c59d9647fb6d52772397de8cbe9d535df28b",
+    "source": "Neon Marketplace",
+    "title": "Stallholder EOIs open: Esplanade Night Market, Terrigal",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/stallholder-eois-open-esplanade-night-market-terrigal",
+    "summary": "Dropped: title matches noise keyword.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-23",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "3b34ba6eb79ce826bfa10d2bed55f94db24913bc": {
+    "id": "3b34ba6eb79ce826bfa10d2bed55f94db24913bc",
+    "source": "Instagram: art grants",
+    "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/residency",
+    "link": "https://www.instagram.com/p/DdpNhucANcj/",
+    "summary": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/residency\n.\nskowheganart\nApplications are now open for Skowhegan’s 2027 Program! ✨\n\nThe 2027 Summer Program will take place from June 5–August 7, 2027. Applications will be accepted from September 1 through October 16, 2026 (11:59 PM ET).\n\nWe would love to welcome you to our ever-changing, generous, and creative community of artists next summer. Before applying, we encourage you to carefully read the information and guidelines on our website and take time to consider whether Skowhegan is the right environment for you and your practice.\n\nThe nine-week commitment is an essential part of the experience, and we take it very seriously.\n\nSubscribe to our mailing list for reminders and updates about the application process. And if you have questions, we are always happy to hear from you—please reach out anytime.\n\nWe look forward to hearing from you!\n\n#artist \n#artopencall\n#callforart\n#opencall \n#ArtistCall",
+    "relevant": true,
+    "english": true,
+    "category": "Residency",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2027-08-07",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/residency\n.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-04",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "cf5ffe6312551b71e9dad3898b7403b3069cdd17": {
+    "id": "cf5ffe6312551b71e9dad3898b7403b3069cdd17",
+    "source": "Instagram: art grants",
+    "title": "Check out the details of this open call and discover many other art opportunities on our website!",
+    "link": "https://www.instagram.com/p/Ddon8Z_sOMC/",
+    "summary": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!\n\nwww.artenda.net\n\n#artopencall #artopencalls #opencallforartists #callforartists",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-23",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "d7bbe885e39b68f9d1d4a952ac6a43b23ffb92db"
+  },
+  "5cc6a819a02acd18622ae4be9b2c3c529e7e88e2": {
+    "id": "5cc6a819a02acd18622ae4be9b2c3c529e7e88e2",
+    "source": "Instagram: art grants",
+    "title": "Access Arts Support Grants",
+    "link": "https://www.instagram.com/p/DdosGMrDQEi/",
+    "summary": "Source: Instagram #artgrant\nAccess Arts Support Grants\r\n\r\nDeadline: Dec 31, 2026\r\nEligibility: International\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall",
+    "relevant": true,
+    "english": true,
+    "category": "Grant",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "2026-12-31",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artgrant\nAccess Arts Support Grants Deadline: Dec 31, 2026 Eligibility: International Full details at deadlinecalls.com 🔗 #opencall #callforartists #artopportuni",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-23",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "c07bcd8f34bce8b2cc84b742cab6e61622611dff": {
+    "id": "c07bcd8f34bce8b2cc84b742cab6e61622611dff",
+    "source": "Instagram: art grants",
+    "title": "Grant Opportunities 2026",
+    "link": "https://www.instagram.com/p/DdonEWbCGa2/",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-23",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "7fa8360a4bdbca76af4dc0f3c101f2d4518e427f": {
+    "id": "7fa8360a4bdbca76af4dc0f3c101f2d4518e427f",
+    "source": "Instagram: art grants",
+    "title": "LOEWE FOUNDATION Craft Prize 2027",
+    "link": "https://www.instagram.com/p/Ddn1KogoNma/",
+    "summary": "Source: Instagram #artgrant\nLOEWE FOUNDATION Craft Prize 2027\r\n\r\nDeadline: Oct 15, 2026\r\nEligibility: International\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: Sean C Davis / Unsplash",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "2026-10-15",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artgrant\nLOEWE FOUNDATION Craft Prize 2027 Deadline: Oct 15, 2026 Eligibility: International Full details at deadlinecalls.com 🔗 #opencall #callforartists #artop",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Photography"
+    ],
+    "first_seen": "2026-09-23",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "21ea7e1377740a202484022202e9c303580531d0"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -19415,7 +19656,7 @@
     "catering|easter|opportunities|royal|show|sydney": "427b71de04da2b742ee6bd8fe753a3cbdaff3903",
     "easter|exhibitor|opportunities|royal|show|sydney": "5dc63b6974c37b64e4ae8ade0bd7e72f98f029cb",
     "submissions|twelfth": "fa5eca640ffb1640963a1e5ff774d163b473dd8d",
-    "apply|applyforart|com|find|residency|this|through|to|www": "c7a901785b10f2485455de36d94bfd237ab5527b",
+    "apply|applyforart|com|find|residency|this|through|to|www": "3b34ba6eb79ce826bfa10d2bed55f94db24913bc",
     "bringing|group|inaugural|our|re|together|we": "19e6360001bcf74428d2af2dec0687a37d75229a",
     "living|places": "ef97798de36e1e73182eeaa0167e2fdbb0d51bc8",
     "edikula|gallery": "c3e4fa62b935da761c721cdb5fece42a430a9eb5",
@@ -19650,6 +19891,13 @@
     "are|at|city|delighted|invite|li|lives|place|second|special|submissions|taking|to|we": "fe4d9320c9f796dd7b7cf0d794467336b9fb4fd0",
     "european|media|platform|residency": "bdebf985d6606e9bcb9fdc7a6e2d5d88498e4ebb",
     "announce|are|delighted|grant|jury|kirloskar|to|we": "eacb24006920712ba200c74ef5da86d0c8231e17",
-    "african|delfina|foundation|from|natio|portugal|portuguese|residency|speaking|visual": "dd2eb796c86b3171bce387f4c00b545bc1583c66"
+    "african|delfina|foundation|from|natio|portugal|portuguese|residency|speaking|visual": "dd2eb796c86b3171bce387f4c00b545bc1583c66",
+    "14th|faces|feeling|online|portrait": "65b705cc9ecd3af72ea74576c6dc02bfc0517ccb",
+    "eois|food|stallholder|truck": "a99f08c3f89e719a5b0a173bbd636e625c8dfd40",
+    "eoi|festival|inclusion": "d4e9d03ea671e78a95c222f46abdc8ad3ffa57d2",
+    "affordable|beaches|hire|northern|spaces|studio": "36e3ef33963a2da068fd573aab12d33ce3d85ef5",
+    "eois|esplanade|market|night|stallholder|terrigal": "6a33c59d9647fb6d52772397de8cbe9d535df28b",
+    "access|grants|support": "5cc6a819a02acd18622ae4be9b2c3c529e7e88e2",
+    "grant|opportunities": "c07bcd8f34bce8b2cc84b742cab6e61622611dff"
   }
 }
