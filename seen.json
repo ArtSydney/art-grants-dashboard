@@ -6314,7 +6314,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-08-21",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "42edfea63346da1db0d699060ec88dc67fa48ae8": {
@@ -9571,7 +9571,7 @@
     ],
     "first_seen": "2026-08-30",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "a4818cd2be1a20b78f2ba66326bfbaac472bbdd9": {
     "id": "a4818cd2be1a20b78f2ba66326bfbaac472bbdd9",
@@ -10290,7 +10290,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-01",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "4b055f357f6a7002398f73e88985bed162467496": {
@@ -10315,7 +10315,7 @@
       "Textiles"
     ],
     "first_seen": "2026-09-01",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "c21a1d7f3af91d239ca6eafdb30425451dbebea0": {
@@ -11087,7 +11087,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-02",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "c63726b1ad04a038e2a5aa5550157dc5c81d98ed": {
@@ -11474,7 +11474,7 @@
       "Textiles"
     ],
     "first_seen": "2026-09-03",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "ff8198d349d97b06209abd1a830b41804ac05805": {
@@ -12543,7 +12543,7 @@
       "Textiles"
     ],
     "first_seen": "2026-09-06",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "3fc96bbd5a1a84c8f5d1dab818d2773cbab8950b": {
@@ -15558,7 +15558,7 @@
     ],
     "first_seen": "2026-09-14",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "710ebffe295b68bd914949e8a7066c3ceea262d4": {
     "id": "710ebffe295b68bd914949e8a7066c3ceea262d4",
@@ -15931,7 +15931,7 @@
       "Textiles"
     ],
     "first_seen": "2026-08-30",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "9028a05c05939f22db1e723d06f25cbedb28917d": {
@@ -16202,7 +16202,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-16",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "a58df4b084e55eaeee99a24bd79855863667bc32": {
@@ -16493,7 +16493,7 @@
     ],
     "first_seen": "2026-09-17",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "998c67cbb78b702212ab37f3612073b42e85d524": {
     "id": "998c67cbb78b702212ab37f3612073b42e85d524",
@@ -17105,7 +17105,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-18",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "74c5dcc6675b4cf732e40c003d6e991c4e7beab7": {
@@ -17649,7 +17649,7 @@
       "Photography"
     ],
     "first_seen": "2026-09-19",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "3db48387ade4e79a060513b96b9cc902ff0d5315": {
@@ -17724,7 +17724,7 @@
       "Photography"
     ],
     "first_seen": "2026-09-19",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "9f5090ab95ea816eb3764208ca173b98574d30d6": {
@@ -17799,7 +17799,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-19",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "b5793bdb34ad772bd3009a17231dc06143a18fe4": {
@@ -18233,7 +18233,7 @@
       "Digital/New Media"
     ],
     "first_seen": "2026-09-21",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "3a1ac3872f72fd8bee72910f96e6293e20ed28be": {
@@ -19208,6 +19208,433 @@
     "status": "suppressed",
     "superseded_by": "21ea7e1377740a202484022202e9c303580531d0"
   },
+  "2433605ff23e946fad2e3f8cece6d0c2a32fc1e6": {
+    "id": "2433605ff23e946fad2e3f8cece6d0c2a32fc1e6",
+    "source": "Google: Australian art prizes",
+    "title": "Entries are now open for the 2026 Queensland Regional Art Awards",
+    "link": "https://flyingarts.org.au/media-release-entries-are-now-open-for-the-2026-queensland-regional-art-awards/",
+    "summary": "Deadline passed.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "9767c532815157de6df87d56d4427fbba39a437d": {
+    "id": "9767c532815157de6df87d56d4427fbba39a437d",
+    "source": "Google: Australian art prizes",
+    "title": "Willoughby Emerging Art Prize | Visit Chatswood",
+    "link": "https://www.visitchatswood.com.au/Events/Willoughby-Emerging-Art-Prize",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "a972f5e0e2a1f72c165472809127a283f8eea7b1": {
+    "id": "a972f5e0e2a1f72c165472809127a283f8eea7b1",
+    "source": "Google: Australian art prizes",
+    "title": "Entry Information | 2026 Fisher's Ghost Art Award",
+    "link": "https://www.campbelltownartscentre.com.au/Whats-On/Exhibitions/Entry-Information-2026-Fishers-Ghost-Art-Award",
+    "summary": "Deadline passed.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "6a4c83d3b11791d2b8d64d9a40c182ac6c9d0bc3": {
+    "id": "6a4c83d3b11791d2b8d64d9a40c182ac6c9d0bc3",
+    "source": "Google: Australian art prizes",
+    "title": "Exhibition - UMSU",
+    "link": "https://umsu.unimelb.edu.au/gallery/exhibition/loaders/configure/iframe-message-handler",
+    "summary": "Exhibition Sorry, there was a problem The article URL is not valid. Return to previous page Reload the page You may be interested in... Unstable Ground Zachary Beven, Moira Burke, Shannon Costa, Nicholas Currie, Freja Innes-Ker, Dylan Marriott, Kate Murrell, Jya-Ruby Nation, Perin, Ella Rizzi, curated by Mi-Chieh Chen, Olivia McRae and Daphne Papas. 2026 UMSU Art Prize Exhibition 18 September - 9 October Our Friends Aidan Doyle and Amanda Negrin Sadka 18 September – 30 October, 2026 Back to Exhibitions",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Exhibition Sorry, there was a problem The article URL is not valid.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "needs_review"
+  },
+  "fb4a6259ef3f7259c7cf73aa535a0d26e5699bb2": {
+    "id": "fb4a6259ef3f7259c7cf73aa535a0d26e5699bb2",
+    "source": "Google: Australian art prizes",
+    "title": "Bugs in My Backyard Week 2026: Student bug art competition",
+    "link": "https://bughunt.org.au/event/bugs-in-my-backyard-week-2026-student-bug-art-competition/",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "9f64732e1e9146e3471230cd393066dfbd87913a": {
+    "id": "9f64732e1e9146e3471230cd393066dfbd87913a",
+    "source": "Google: Australian art prizes",
+    "title": "Entries open for Meroogal Women's Art Prize (Australia) Archives ...",
+    "link": "https://camd.org.au/tag/entries-open-for-meroogal-womens-art-prize-australia/",
+    "summary": "Deadline passed.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "98a917ead52507670e5caf0d1e573099bbc6eb9b": {
+    "id": "98a917ead52507670e5caf0d1e573099bbc6eb9b",
+    "source": "Google: Australian art prizes",
+    "title": "To Name the World: 2026 Arts & Culture Film Festival - UMSU",
+    "link": "https://umsu.unimelb.edu.au/gallery/event/10559/",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "f7d70ace4207cffb64380a00743fbf2670e9a653": {
+    "id": "f7d70ace4207cffb64380a00743fbf2670e9a653",
+    "source": "Google: Australian art prizes",
+    "title": "ArtsNational Philanthropic Fund Terms and Conditions - ArtsNational",
+    "link": "https://www.artsnational.au/apf-terms-and-conditions/",
+    "summary": "Dropped: title matches noise keyword.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "93ba60a17e404c144b4de8fdb1459cb8b19a5128": {
+    "id": "93ba60a17e404c144b4de8fdb1459cb8b19a5128",
+    "source": "Google: Australian art prizes",
+    "title": "The Competition — International Steampunk Art Prize 2026",
+    "link": "https://steampunk.au/competition/index.php",
+    "summary": "The Competition — International Steampunk Art Prize 2026 Entries close in 66 Days 13 Hours 53 Minutes 53 Seconds 30 November 2026 · 11:59pm Sydney International Steampunk Art Competition $2,000 AUD in cash prizes Free entry · Open worldwide · No AI Enter now View the gallery Entries close 30 November 2026 The panel Judged by 4 extraordinary people Four worlds · Four judges · One grand prize Professor Elemental International Steampunk Artist & Performer Meet the judge → Dr Kathryn Spurling Historian, Author & Art Collector Meet the judge → Lisa McGuigan Wine Maverick & Creative Entrepreneur Meet the judge → G.D. Falksen Award-Winning Author & Screenwriter Meet the judge → Read the full bios ↓ Two titles $2,000 in cash prizes Decided by the panel Judges’ Grand Prize $1,500 CASH Decided by the public People’s Choice $500 CASH One artist can win both. International Steampunk Artist of the Year 2026 A permanent featured artist page, for as long as the site operates An interview on Steampunk Radio and up to 12 months of promotion A digital winner’s seal, and the winning artwork as the face of the 2027 competition World Steampunk People’s Choice Winner 2026 A featured artist page and a digital winner’s seal Up to three months of promotion through Steampunk Australia and Steampunk Radio Up to 20 finalists join the online exhibition What can I enter? If you made it, we want to see it. Painting ⚙ Drawing ⚙ Sculpture ⚙ Photography ⚙ Digital Art ⚙ Mixed Media ⚙ Costume ⚙ Leatherwork ⚙ Contraptions ⚙ More Any original artwork with a meaningful connection to steampunk is welcome. No AI-generated or AI-assisted artwork. Your imagination. Your hands. Your steampunk. Create something extraordinary. Three entries · Free · Open worldwide 67 Days to enter $2,000 Prize pool 20 Finalists 3 Free entries Important dates Five dates that matter. 16 Jul 2026 Entries open 30 Nov 2026 Entries close 7 Dec – 24 Jan Public voting 1 Feb 2027 Finalists 8 Feb 2027 Winners All times are Australia/Sydney. Entrants overseas should convert the closing time into their local time. How judging works One hundred points, four measures. Every entry is judged by real humans. Each judge scores independently against the published criteria before the panel confers. Judges and their immediate families may not enter. 30 Originality & imagination 30 Craftsmanship & execution 25 Interpretation of the theme 15 Artistic impact & presentation The panel in full Four worlds. Art. Culture. Storytelling. History. Professor Elemental International Steampunk Artist & Performer Professor Elemental is a steam powered rapper, host and writer from the UK. He is a great lover of art and an artful lover. Along with his prolific Hip Hop career, worldwide tours and accolades — he enjoys judging art competitions and has a gallery of forbidden art which he keeps under lock and key in his manor house. He also has several hats, a punishing addiction to strong tea and a baby orangutan called Geoffrey. He hopes that each entrant has as much fun as possible in creating their own Steampunk creations and is very grateful for the opportunity to see whatever they come up with. The ‘gallery of the damned’, as it has become known, is rumoured to contain a taxidermied cat which is over 300 years old but somehow still alive, a watercolour which shows one’s demise in garish, shifting red paint, and several sketches of daffodils rumoured to have been drawn by Genghis Khan when he was having an unusually whimsical day. Full profile → Dr Kathryn Spurling Historian, Author & Art Collector Dr Spurling is well known for her books and documentaries exploring Australian military history and military cover-ups , bringing a meticulous eye for detail, research and storytelling to everything she creates. Having partnered in an art gallery and being an art collector, Dr Spurling also brings valuable experience in evaluating artistic merit, originality and craftsmanship. Full profile → Lisa McGuigan Wine Maverick & Creative ",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-11-30",
+    "amount": "$2,000",
+    "entry_fee": "Free",
+    "description": "Free to enter, open worldwide.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting",
+      "Drawing",
+      "Sculpture",
+      "Photography",
+      "Digital/New Media",
+      "Mixed Media"
+    ],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "9c668b68fb54dc3845b1e011468e68d1d433871f": {
+    "id": "9c668b68fb54dc3845b1e011468e68d1d433871f",
+    "source": "Google: Australian art prizes",
+    "title": "[PDF] The Urbach: 2026 Guidelines The Theodore Urbach Landscape ...",
+    "link": "https://sheppartonartmuseum.com.au/wp-content/uploads/2025/09/Downloadable-The-Urbach-2026-Application-Guidelines.pdf",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "ce6ede37ffd9f32eb085f968b9bd0aab1056a811": {
+    "id": "ce6ede37ffd9f32eb085f968b9bd0aab1056a811",
+    "source": "Google: Australian art prizes",
+    "title": "Craving an artistic getaway? Bundanon opens doors for free 2026 ...",
+    "link": "https://beat.com.au/craving-an-artistic-getaway-bundanon-opens-doors-for-free-2026-artist-residency-program/",
+    "summary": "Craving an artistic getaway? Bundanon opens doors for free 2026 artist residency program Arts News 11.04.2025 Craving an artistic getaway? Bundanon opens doors for free 2026 artist residency program words by staff writer Australia's largest artist retreat calls for new batch of creative minds to inhabit its bushland paradise. The legendary Bundanon artist retreat is calling for creatives of all stripes to apply for its 2026 Artists in Residence program, offering the rare chance to develop work in a secluded bush paradise overlooking the Shoalhaven River. Established in 1997, the program has grown into Australia’s largest creative residency, now hosting over 250 artists annually through partnerships with leading arts organisations and cultural agencies. Bundanon 2026 Artists in Residence Applications Open: Friday, 11 April 2025 Online Information Session: Thursday, 17 April 2025 Applications Close: Friday, 23 May 2025 at Midnight Check out our gig guide , our stage guide , our festival guide, our live music venue guide and our nightclub guide . Follow us on Instagram here. View this post on Instagram A post shared by Bundanon (@bundanontrust) The program spans all creative disciplines – visual arts, literature, dance, music, moving image, even jewellery and silversmithing – plus it welcomes ecological and scientific research projects. Best of all? There are zero costs to artists selected for the program. Bundanon CEO Rachel Kent explains the philosophy behind the initiative: “It is critically important in this new organisational chapter that we create access for our artists and remove cost barriers. Bundanon’s residency program upholds our core commitment to support cultural production across all disciplines and career stages; and importantly, to give practitioners the space for uninterrupted reflection and testing of new ideas.” The residency program provides artists with purpose-built studios and rehearsal spaces on the organisation’s secluded Homestead site, designed to foster critical thinking and creative production away from the distractions of everyday life. Bundanon itself represents one of the most significant acts of philanthropy in Australian arts history. The 1,000-hectare property was gifted to the Australian people by Arthur and Yvonne Boyd in 1993, guided by their vision of “a place for the community to enjoy the bush and the river, and a place to be used as a forum where those from every facet from the arts and sciences could get together.” Today, that vision continues to expand. Beyond the residency program, Bundanon houses an impressive collection featuring 1,448 works by Arthur Boyd alongside pieces by contemporaries including Sidney Nolan, Joy Hester and Charles Blackman. The property also hosts learning programs welcoming around 5,000 school students annually. The 2026 program partners with an impressive roster of organisations including Accessible Arts, Australian Plays Transform, Australian Theatre for Young People, British Council, Critical Path, JamFactory and the Jewellers and Metalsmiths Group of Australia – NSW. Artists, groups and organisations from around the world are encouraged to apply for this career-defining opportunity to create in one of Australia’s most inspiring natural environments. For application information and to register for the online information session, head here . READ NEXT Politics and punchlines propel Peter Josip to the RAW Comedy 2025 title Recommended The award-winning debut Collarts documentary giving women's fear a voice You can watch 80s classics in Footscray for 1980s ticket prices Kevin Bridges is coming to Melbourne with his brand-new stand-up tour La Mama's Fringe lineup has puppets, parasocial love and a rewritten fairytale Lasers, cell cultures and a communal sex talk: the shows anchoring Now or Never 2026 A Beautiful Noise: The Neil Diamond Musical hits all the right notes",
+    "relevant": true,
+    "english": true,
+    "category": "Residency",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "The legendary Bundanon artist retreat is calling for creatives of all stripes to apply for its 2026 Artists in Residence program.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Multidisciplinary"
+    ],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "needs_review"
+  },
+  "d23e2751fa1bb9fb633ee89ff73ebc16f7016de5": {
+    "id": "d23e2751fa1bb9fb633ee89ff73ebc16f7016de5",
+    "source": "Neon Marketplace",
+    "title": "Register your event for Mardi Gras+ 2027",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/register-your-event-for-mardi-gras-2027",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "931fe70fade6cc66981cb2abbab0892bc36bb912": {
+    "id": "931fe70fade6cc66981cb2abbab0892bc36bb912",
+    "source": "Instagram: art grants",
+    "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/video-and-film",
+    "link": "https://www.instagram.com/p/DdrzR0VgFMd/",
+    "summary": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/video-and-film\n.\nvimeostaffpicks\nStart spreading the news: The Vimeo Short Film Grant is back! And we’re doubling the cash award to $60,000 per film.\n\nLaunched in 2025, the Vimeo Short Film Grant supports the production of five artistically driven short films by awarding emerging filmmakers with money, mentorship, and access to gear for the production of their next short film projects.\n\nSubmissions open September 21st. Enter by October 16th for a chance to win! \nThe grant is made possible thanks to generous support from panavisionofficial, poweredbyowc, ajavideo, and shotdeck\n\n#opencall\n#callforartists\n#artist\n#artopencall\n#callforart",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "$60,000",
+    "entry_fee": "",
+    "description": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/video-and-film\n.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "27f4c23c71375ae2b71353c0f1ab4e8463aa4b4f": {
+    "id": "27f4c23c71375ae2b71353c0f1ab4e8463aa4b4f",
+    "source": "Instagram: art grants",
+    "title": "Check out the details of this open call and discover many other art opportunities on our website!",
+    "link": "https://www.instagram.com/p/DdrJSM2MUCd/",
+    "summary": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!\n\nwww.artenda.net\n\n#artopencall #artopencalls #opencallforartists #callforartists",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "d7bbe885e39b68f9d1d4a952ac6a43b23ffb92db"
+  },
+  "86ff840796da0de2a14ae19a335a0a2d730fa390": {
+    "id": "86ff840796da0de2a14ae19a335a0a2d730fa390",
+    "source": "Instagram: art grants",
+    "title": "Thank you for all the queries!",
+    "link": "https://www.instagram.com/p/Ddq7Sb3kS_G/",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "a5bf41193857325f141a00bdc05f2aa540f2eaa6": {
+    "id": "a5bf41193857325f141a00bdc05f2aa540f2eaa6",
+    "source": "Instagram: art grants",
+    "title": "🕯️ OPEN CALL: REST 🕯️",
+    "link": "https://www.instagram.com/p/Ddps_dZFilF/",
+    "summary": "Source: Instagram #artopencall\n🕯️ OPEN CALL: REST 🕯️ \n\nWhat does rest mean to you?\n\nWe’re inviting submissions of art, poetry, writing, photography, and other creative work exploring rest, stillness, exhaustion, recovery, or the absence of rest.\n\nAnd importantly: your work does not need to be new. We especially welcome older, forgotten, unfinished, or previously unseen works from your personal archive.\n\nSubmissions can be up to 5 pages total.\n\nHave a piece sitting around that’s been waiting to be seen? This might be its moment. 💤\n\nSUBMISSION LINK IN BIO!\n\n#ArtOpenCall #OpenCallForArtists #ArtistOpportunities #ContemporaryArt #CreativeCommunity",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artopencall\n🕯️ OPEN CALL: REST 🕯️ What does rest mean to you?",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Photography"
+    ],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "0c530ddfcb2058eccc55d96eed91d5bab0c86e95": {
+    "id": "0c530ddfcb2058eccc55d96eed91d5bab0c86e95",
+    "source": "Instagram: art grants",
+    "title": "Beatrice M. Haggerty Gallery Open Call for Exhibition Proposals",
+    "link": "https://www.instagram.com/p/DdrQ5DJDIaC/",
+    "summary": "Source: Instagram #artgrant\nBeatrice M. Haggerty Gallery Open Call for Exhibition Proposals\r\n\r\nDeadline: Jan 22, 2027\r\nEligibility: International\nLocation: Irving, Texas, United States\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: Maksim Zinchenko / Unsplash",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "2027-01-22",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artgrant\nBeatrice M.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Photography"
+    ],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "c85af35814de2092bf0c57dbb0e5b7f585e64d12": {
+    "id": "c85af35814de2092bf0c57dbb0e5b7f585e64d12",
+    "source": "Instagram: art grants",
+    "title": "The Earth Partner Prize 2026",
+    "link": "https://www.instagram.com/p/DdqZ9k7oFF_/",
+    "summary": "Source: Instagram #artgrant\nThe Earth Partner Prize 2026\r\n\r\nDeadline: Oct 7, 2026\r\nEligibility: International\nLocation: London, UK\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "2026-10-07",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artgrant\nThe Earth Partner Prize 2026 Deadline: Oct 7, 2026 Eligibility: International\nLocation: London, UK Full details at deadlinecalls.com 🔗 #opencall #callfo",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "a35ba28518d9962d1a077b6b8af5dafe5510c598"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -19898,6 +20325,22 @@
     "affordable|beaches|hire|northern|spaces|studio": "36e3ef33963a2da068fd573aab12d33ce3d85ef5",
     "eois|esplanade|market|night|stallholder|terrigal": "6a33c59d9647fb6d52772397de8cbe9d535df28b",
     "access|grants|support": "5cc6a819a02acd18622ae4be9b2c3c529e7e88e2",
-    "grant|opportunities": "c07bcd8f34bce8b2cc84b742cab6e61622611dff"
+    "grant|opportunities": "c07bcd8f34bce8b2cc84b742cab6e61622611dff",
+    "are|now|queensland|regional": "2433605ff23e946fad2e3f8cece6d0c2a32fc1e6",
+    "chatswood|visit|willoughby": "9767c532815157de6df87d56d4427fbba39a437d",
+    "entry|fisher|ghost|information|s": "a972f5e0e2a1f72c165472809127a283f8eea7b1",
+    "umsu": "6a4c83d3b11791d2b8d64d9a40c182ac6c9d0bc3",
+    "backyard|bug|bugs|in|my|student|week": "fb4a6259ef3f7259c7cf73aa535a0d26e5699bb2",
+    "archives|meroogal|s|women": "9f64732e1e9146e3471230cd393066dfbd87913a",
+    "culture|festival|film|name|to|umsu|world": "98a917ead52507670e5caf0d1e573099bbc6eb9b",
+    "artsnational|conditions|fund|philanthropic|terms": "f7d70ace4207cffb64380a00743fbf2670e9a653",
+    "steampunk": "93ba60a17e404c144b4de8fdb1459cb8b19a5128",
+    "guidelines|landscape|pdf|theodore|urbach": "9c668b68fb54dc3845b1e011468e68d1d433871f",
+    "artistic|bundanon|craving|doors|free|getaway|opens": "ce6ede37ffd9f32eb085f968b9bd0aab1056a811",
+    "event|gras|mardi|register|your": "d23e2751fa1bb9fb633ee89ff73ebc16f7016de5",
+    "apply|applyforart|com|film|find|this|through|to|video|www": "931fe70fade6cc66981cb2abbab0892bc36bb912",
+    "all|queries|thank|you": "86ff840796da0de2a14ae19a335a0a2d730fa390",
+    "rest": "a5bf41193857325f141a00bdc05f2aa540f2eaa6",
+    "beatrice|gallery|haggerty|m|proposals": "0c530ddfcb2058eccc55d96eed91d5bab0c86e95"
   }
 }
