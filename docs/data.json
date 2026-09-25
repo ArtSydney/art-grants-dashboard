@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-25T09:11:41+10:00",
-  "count": 314,
-  "total": 386,
+  "generated": "2026-09-26T09:08:07+10:00",
+  "count": 316,
+  "total": 393,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -1835,7 +1835,7 @@
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "39846d93fead7fe60de0e8e03f64f4a333935d49",
@@ -1860,7 +1860,7 @@
       ],
       "first_seen": "2026-09-05",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "aa1ac96de024d3a76dc95a431369462d0e689586",
@@ -1885,7 +1885,7 @@
       ],
       "first_seen": "2026-09-07",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "103eb5018f93b0bc5cd092d8da2564f7fec0151e",
@@ -1910,7 +1910,7 @@
       ],
       "first_seen": "2026-09-08",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "2e995dd0e3d9f8f13b71cc1fb03fb7ebbb6c752d",
@@ -1935,7 +1935,7 @@
       ],
       "first_seen": "2026-09-08",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "7b5787630978210a991b32933dbc45d290606726",
@@ -2695,6 +2695,31 @@
       "status": "active"
     },
     {
+      "id": "a0e73263928a1a1f00e1fb111ba821e6b9e34a23",
+      "source": "Instagram: art grants",
+      "title": "🧵 It took Malissa Long nearly a decade to find other fiber artists in Kansas. Now, she’s helping bui",
+      "link": "https://www.instagram.com/reel/DdtsNdrOeNd/",
+      "summary": "Source: Instagram #artgrant\n🧵 It took Malissa Long nearly a decade to find other fiber artists in Kansas. Now, she’s helping build a community where creativity can flourish.\nInspired by generations of makers in her own family, Malissa uses fiber arts to express her unique perspective while creating opportunities for others to learn and grow. Her Koch Cultural Trust grant helped fund sewing machines for classes and equipment that allows her to take her work outside the traditional studio setting.\n \nApplications for the Koch Cultural Trust grant close October 1. Visit the link in our bio to learn more and apply!\n\n#wichitakansas #kansasartist #artgrant #fiberart #fiberartist",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-10-01",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\n🧵 It took Malissa Long nearly a decade to find other fiber artists in Kansas.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Textiles"
+      ],
+      "first_seen": "2026-09-25",
+      "closing_soon_sent": true,
+      "status": "active"
+    },
+    {
       "id": "14131b9bb178eac979f90d05961bf4379e219c22",
       "source": "Instagram: art grants",
       "title": "OPEN CALL FOR ARTISTS",
@@ -2741,7 +2766,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-08-13",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -2766,7 +2791,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-19",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -2791,7 +2816,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-21",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3226,6 +3251,32 @@
       "status": "active"
     },
     {
+      "id": "44d5aa1f681dee7e59d6ab4e5ab237a8e793d54f",
+      "source": "Neon Marketplace",
+      "title": "Waverley Artist Studios",
+      "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/waverley-artist-studios-2027-28",
+      "summary": "Neon Marketplace | Waverley Artist Studios Opportunity Waverley Artist Studios Fully subsidised studio space for 12 months and paid professional development opportunities. Opportunity closes 11 Oct 2026 Connect with Waverley Council Waverley Artist Studios Enquiries Get in touch Connect with Waverley Council Waverley Artist Studios Enquiries Get in touch Connect with Waverley Council Waverley Artist Studios Enquiries Get in touch Waverley Artist Studio Credit: Silversalt Photography date Applications close on Sunday 11 October for the studio residency period of March 2027 – February 2028. location School of Arts, 138 Bondi Road, Bondi Details Waverley Artist Studios are for emerging, mid-career and professional artists interested in working within Bondi and the greater Eastern Suburbs area. Studios are offered in year-long residencies. Artists in the studios benefit from: A fully subsidised studio space for 12 months to develop new work; and Paid professional development opportunities including workshops, artist's talks, public art projects and live art opportunities. Successful applicants participate in a compulsory open studio event in the second last month of their occupancy. The open studio event is aimed to showcase works being produced during artists’ residencies to curators, artists, funding bodies and the community. How to get involved Find out more and apply via the website . Share Categories Venue and space Grant and sponsorship Tags Art & Design Published: 25 Sep 2026 You might also like See all Opportunities Posted by Sound NSW Local Audience Development Grants - Contemporary Music Festivals This funding program supports local contemporary music festivals that build new audiences and supports local music collaboration. This funding program supports local contemporary music festivals that build new audiences and supports local music collaboration. Opportunity closes 09 Nov 2026 Posted by Northern Beaches Council Northern Beaches affordable studio spaces f",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-10-11",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Waverley Artist Studios Opportunity Waverley Artist Studios Fully subsidised studio space for 12 months and paid professional development opportunities.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Sculpture",
+        "Photography"
+      ],
+      "first_seen": "2026-09-25",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "bd97ddadc195115bbb40331b80b18078e730a60c",
       "source": "Artshow.com International",
       "title": "Aviation Week Photo Contest - Online",
@@ -3654,6 +3705,31 @@
       "status": "active"
     },
     {
+      "id": "f18be779b6178bbe95471d1a8371c42dc20a2661",
+      "source": "Instagram: art grants",
+      "title": "America in 250: The Future of Transportation",
+      "link": "https://www.instagram.com/p/Dds-wSGjvxK/",
+      "summary": "Source: Instagram #artgrant\nAmerica in 250: The Future of Transportation\r\n\r\nDeadline: Oct 20, 2026\r\nEligibility: National\nLocation: Wood Dale, IL, USA\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-10-20",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nAmerica in 250: The Future of Transportation Deadline: Oct 20, 2026 Eligibility: National\nLocation: Wood Dale, IL, USA Full details at deadlinecalls.com",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-25",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "57e1550e26209299daab560a497721f032d5a064",
       "source": "Neon Marketplace",
       "title": "Four Year Investment for Organisations 2029–32",
@@ -3781,6 +3857,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-04",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "d9aa54900fadaf67d49650b613da09d03bcfd638",
+      "source": "Instagram: art grants",
+      "title": "Anthology Cover Art Competition",
+      "link": "https://www.instagram.com/p/Ddt1r-Pl6yr/",
+      "summary": "Source: Instagram #artgrant\nAnthology Cover Art Competition\r\n\r\nDeadline: Oct 31, 2026\r\nEligibility: International\nLocation: Dublin, County Dublin, Ireland\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: Shahabudin Ibragimov / Unsplash",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-10-31",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nAnthology Cover Art Competition Deadline: Oct 31, 2026 Eligibility: International\nLocation: Dublin, County Dublin, Ireland Full details at deadlinecalls",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-25",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -3983,6 +4084,56 @@
         "Photography"
       ],
       "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "7c3999c80ba75125d27da478e74575a5d862bd7e",
+      "source": "Neon Marketplace",
+      "title": "Local Audience Development Grants - All-Ages Live Music Programming",
+      "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/local-audience-development-grants-all-ages-live-music-programming",
+      "summary": "Neon Marketplace | Local Audience Development Grants - All-Ages Live Music Programming Opportunity Local Audience Development Grants - All-Ages Live Music Programming This funding program supports all-ages contemporary music events that build new audiences and include the participation of young people. Opportunity closes 09 Nov 2026 Connect with Sound NSW Sound NSW Enquiries Get in touch Connect with Sound NSW Sound NSW Enquiries Get in touch Connect with Sound NSW Sound NSW Enquiries Get in touch Coastal Grown all-ages event at Hoey Moey in Coffs Harbour Photo supplied to Sound NSW by Hoey Moey date Applications close 9 November 2026, 2:00 pm Details This funding program supports industry professionals and music businesses with a track record of delivering all-ages contemporary music events, and a commitment to collaborating with young people to program a series of events (minimum 4) that build new audiences. Key information Grant amount: Up to $100,000 (ex GST) to deliver a series of all-ages events (minimum 4) Applications open: 28 September 2026 Applications close: 9 November 2026, 2:00 pm The funding aims to: build new live music audiences in NSW increase the number and diversity of all-ages live music events across NSW create performance opportunities for emerging and established NSW artists build participation pathways for young people in live music programming and production deliver safe, accessible, and compliant events strengthen community participation particularly in Western Sydney and regional NSW contribute to the development of a sustainable, youth-inclusive live music ecosystem. How to get involved Find out more and apply on the website from Monday 28 September. Explore more opportunities Related Opportunities Sound NSW Posted by Sound NSW Local Audience Development Grants - Contemporary Music Festivals This funding program supports local contemporary music festivals that build new audiences and supports local music collaboration. This funding progra",
+      "relevant": true,
+      "english": true,
+      "category": "Grant",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-09",
+      "amount": "$100,000",
+      "entry_fee": "",
+      "description": "Local Audience Development Grants - All-Ages Live Music Programming Opportunity Local Audience Development Grants - All-Ages Live Music Programming This funding program supports al",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-25",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "97260ce4bc1d775317c82bf9a693392fc2d590c8",
+      "source": "Neon Marketplace",
+      "title": "Local Audience Development Grants - Contemporary Music Festivals",
+      "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/local-audience-development-grants-contemporary-music-festivals",
+      "summary": "Neon Marketplace | Local Audience Development Grants - Contemporary Music Festivals Opportunity Local Audience Development Grants - Contemporary Music Festivals This funding program supports local contemporary music festivals that build new audiences and supports local music collaboration. Opportunity closes 09 Nov 2026 Connect with Sound NSW Sound NSW Enquiries Get in touch Connect with Sound NSW Sound NSW Enquiries Get in touch Connect with Sound NSW Sound NSW Enquiries Get in touch Doley/Greening/Stuart/Mason performing at the Milton Folk Jazz & Blues Festival Photo by Bryce Gage date Applications close 9 November 2026, 2:00 pm Details This funding program supports local contemporary music festivals that builds audiences, promotes NSW music, supports local music collaboration and provides opportunities for community connection through music. Key information Grant amount: Up to $100,000 for festivals with up to 12,000 capacity and up to $250,000 for festivals over 12,000 capacity Applications open: 28 September 2026 Applications close: 9 November 2026, 2:00 pm The funding aims to: build audiences and promote NSW music increase local artist engagement with their local music scene or community increase opportunities for all ages music event programming strengthen community participation particularly in Western Sydney and regional NSW amplify the work of priority communities to build a diverse contemporary music sector. How to get involved Find out more and apply on the website from Monday 28 September. Explore more opportunities Related Opportunities Sound NSW Posted by Sound NSW Local Audience Development Grants - All-Ages Live Music Programming This funding program supports all-ages contemporary music events that build new audiences and include the participation of young people. This funding program supports all-ages contemporary music events that build new audiences and include the participation of young people. Opportunity closes 09 Nov 2026 Share Categories Gra",
+      "relevant": true,
+      "english": true,
+      "category": "Grant",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-09",
+      "amount": "$100,000",
+      "entry_fee": "",
+      "description": "Local Audience Development Grants - Contemporary Music Festivals Opportunity Local Audience Development Grants - Contemporary Music Festivals This funding program supports local co",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-25",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -4257,6 +4408,31 @@
         "Mixed Media"
       ],
       "first_seen": "2026-09-24",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "b435a0c30656abda23c4cf8be493ced5d320a922",
+      "source": "Instagram: art grants",
+      "title": "OPEN CALL: 2027 Curatorial Research Fellowship at Les Rencontres d’Arles (rencontresarles) in Arles,",
+      "link": "https://www.instagram.com/p/DdtTvIdG88-/",
+      "summary": "Deadline: 30 November 2026\nSource: Instagram #artopencall\nOPEN CALL: 2027 Curatorial Research Fellowship at Les Rencontres d’Arles (rencontresarles) in Arles, France \n\nRead the full listing on our website - link in bio 🔗\n\n💸 Stipend: €5,000 gross + production budget of up to €15,000\n🗓 Duration: 6 months\n📧 Application deadline: 30 November 2026\n\nLes Rencontres d’Arles invites exhibition curators to propose an original project relating to images or photography for its 2027 Curatorial Research Fellowship. Supported by Jean-François Dubos, the fellowship gives the selected curator six months to research and develop an exhibition proposal.\n\nThe opportunity has two phases. The selected curator receives €5,000 gross for the research and preliminary work, including the associated assignment of copyright. At the end of the research period, they present their proposal to the artistic team. If Les Rencontres d’Arles approves the project for exhibition, it may then receive a production budget of up to €15,000, managed by the organisation. Exhibition production is therefore conditional; the €15,000 is not a payment to the curator.\n\nApplication must be in French or English, ideally both.\n\n✨ Would you like to gain access to more open calls like this? Become a CFC Member and get exclusive jobs, residencies & grants every week — try it free for 7 days, then just €3.50/month! #CFCMembership\n\n#CallForCurators #CuratorialFellowship #CuratorialResearch #PhotographyCurator #PhotographyExhibition #LesRencontresdArles #ArtOpenCall #CFCMembership",
+      "relevant": true,
+      "english": true,
+      "category": "Fellowship",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-11-30",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Deadline: 30 November 2026\nSource: Instagram #artopencall\nOPEN CALL: 2027 Curatorial Research Fellowship at Les Rencontres d’Arles (rencontresarles) in Arles, France Read the full ",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-25",
       "closing_soon_sent": false,
       "status": "active"
     },
