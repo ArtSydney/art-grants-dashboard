@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-26T09:08:07+10:00",
-  "count": 316,
-  "total": 393,
+  "generated": "2026-09-27T08:31:41+10:00",
+  "count": 318,
+  "total": 395,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -3653,6 +3653,31 @@
       "status": "active"
     },
     {
+      "id": "15af787aefbb23393de11be93ea667c7a16bab7f",
+      "source": "Instagram: art grants",
+      "title": "NYC4PA: Monochrome",
+      "link": "https://www.instagram.com/p/DdvjjFYl5ws/",
+      "summary": "Source: Instagram #artgrant\nNYC4PA: Monochrome\r\n\r\nDeadline: Oct 18, 2026\r\nEligibility: International\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: Leng Chan / Unsplash",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-10-18",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nNYC4PA: Monochrome Deadline: Oct 18, 2026 Eligibility: International Full details at deadlinecalls.com 🔗 #opencall #callforartists #artopportunity #artg",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-26",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "f31afdfe8db1aa2c4a143c36427e9b8994ded8be",
       "source": "Creative Australia",
       "title": "ACF Boost 2027",
@@ -4538,6 +4563,31 @@
         "Drawing"
       ],
       "first_seen": "2026-09-14",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "58d737b1ddf50c491a13926c4ba6d413dfba850b",
+      "source": "Instagram: art grants",
+      "title": "AAN Environmental Artist Residency",
+      "link": "https://www.instagram.com/p/Ddwae1bDq-M/",
+      "summary": "Source: Instagram #artgrant\nAAN Environmental Artist Residency\r\n\r\nDeadline: Dec 7, 2026\r\nEligibility: National\nLocation: Nantucket, Massachusetts, USA\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: John Cameron / Unsplash",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-12-07",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nAAN Environmental Artist Residency Deadline: Dec 7, 2026 Eligibility: National\nLocation: Nantucket, Massachusetts, USA Full details at deadlinecalls.com",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-26",
       "closing_soon_sent": false,
       "status": "active"
     },

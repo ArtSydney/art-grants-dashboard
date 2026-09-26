@@ -19973,6 +19973,82 @@
     "closing_soon_sent": false,
     "status": "active"
   },
+  "4b022feaa618d07b57e4e5de9f0dc0971938b2ad": {
+    "id": "4b022feaa618d07b57e4e5de9f0dc0971938b2ad",
+    "source": "Instagram: art grants",
+    "title": "Check out the details of this open call and discover many other art opportunities on our website!",
+    "link": "https://www.instagram.com/p/DdwNICJMLSE/",
+    "summary": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!\n\nwww.artenda.net\n\n#artopencall #artopencalls #opencallforartists #callforartists",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-26",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "d7bbe885e39b68f9d1d4a952ac6a43b23ffb92db"
+  },
+  "58d737b1ddf50c491a13926c4ba6d413dfba850b": {
+    "id": "58d737b1ddf50c491a13926c4ba6d413dfba850b",
+    "source": "Instagram: art grants",
+    "title": "AAN Environmental Artist Residency",
+    "link": "https://www.instagram.com/p/Ddwae1bDq-M/",
+    "summary": "Source: Instagram #artgrant\nAAN Environmental Artist Residency\r\n\r\nDeadline: Dec 7, 2026\r\nEligibility: National\nLocation: Nantucket, Massachusetts, USA\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: John Cameron / Unsplash",
+    "relevant": true,
+    "english": true,
+    "category": "Residency",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2026-12-07",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artgrant\nAAN Environmental Artist Residency Deadline: Dec 7, 2026 Eligibility: National\nLocation: Nantucket, Massachusetts, USA Full details at deadlinecalls.com",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Photography"
+    ],
+    "first_seen": "2026-09-26",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "15af787aefbb23393de11be93ea667c7a16bab7f": {
+    "id": "15af787aefbb23393de11be93ea667c7a16bab7f",
+    "source": "Instagram: art grants",
+    "title": "NYC4PA: Monochrome",
+    "link": "https://www.instagram.com/p/DdvjjFYl5ws/",
+    "summary": "Source: Instagram #artgrant\nNYC4PA: Monochrome\r\n\r\nDeadline: Oct 18, 2026\r\nEligibility: International\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: Leng Chan / Unsplash",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "2026-10-18",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artgrant\nNYC4PA: Monochrome Deadline: Oct 18, 2026 Eligibility: International Full details at deadlinecalls.com 🔗 #opencall #callforartists #artopportunity #artg",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Photography"
+    ],
+    "first_seen": "2026-09-26",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -20691,6 +20767,8 @@
     "arles|at|curatorial|d|fellowship|in|les|rencontres|rencontresarles|research": "b435a0c30656abda23c4cf8be493ced5d320a922",
     "anthology|cover": "d9aa54900fadaf67d49650b613da09d03bcfd638",
     "bui|decade|fiber|find|helping|in|it|kansas|long|malissa|nearly|now|other|s|she|to|took": "a0e73263928a1a1f00e1fb111ba821e6b9e34a23",
-    "250|america|future|in|transportation": "f18be779b6178bbe95471d1a8371c42dc20a2661"
+    "250|america|future|in|transportation": "f18be779b6178bbe95471d1a8371c42dc20a2661",
+    "aan|environmental|residency": "58d737b1ddf50c491a13926c4ba6d413dfba850b",
+    "monochrome|nyc4pa": "15af787aefbb23393de11be93ea667c7a16bab7f"
   }
 }
