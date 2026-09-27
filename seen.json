@@ -1437,7 +1437,7 @@
       "Drawing"
     ],
     "first_seen": "2026-08-09",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "e0d66dbd79f6953c97b7bdeaf8f72a1ae75228e8": {
@@ -9939,7 +9939,7 @@
     ],
     "first_seen": "2026-08-31",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "a7b71a0d1affd3035a1995b4768ab8154d010d54": {
     "id": "a7b71a0d1affd3035a1995b4768ab8154d010d54",
@@ -12760,7 +12760,7 @@
     ],
     "first_seen": "2026-09-07",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "5fb5daf94cd26a38070058477761892711707d0d": {
     "id": "5fb5daf94cd26a38070058477761892711707d0d",
@@ -14601,7 +14601,7 @@
     ],
     "first_seen": "2026-09-11",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "925d9d6b90a81468db9b33fbc2c0991994e8ab7f": {
     "id": "925d9d6b90a81468db9b33fbc2c0991994e8ab7f",
@@ -17204,7 +17204,7 @@
       "Installation"
     ],
     "first_seen": "2026-09-19",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "ae1cb82f2bacb65bd3511c66b23e4719672fc5db": {
@@ -18089,7 +18089,7 @@
       "Photography"
     ],
     "first_seen": "2026-09-20",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "f31afdfe8db1aa2c4a143c36427e9b8994ded8be": {
@@ -18965,7 +18965,7 @@
       "Photography"
     ],
     "first_seen": "2026-09-22",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "65b705cc9ecd3af72ea74576c6dc02bfc0517ccb": {
@@ -20049,6 +20049,208 @@
     "closing_soon_sent": false,
     "status": "active"
   },
+  "2744ea985e42b5470e6c8ecf79dc7d3dc1f72dd1": {
+    "id": "2744ea985e42b5470e6c8ecf79dc7d3dc1f72dd1",
+    "source": "Google: Australian art prizes",
+    "title": "Hornsby Art Prize 2026",
+    "link": "https://www.hornsby.nsw.gov.au/Community/Arts-and-culture/Hornsby-Art-Prize-2026",
+    "summary": "Entries open: 15 June · Entries close: 5pm (AEST), 20 August · Finalists announced: 1 September · Artwork deliveries: 29-30 September · Prize announced: 16 October ...",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Entries open: 15 June · Entries close: 5pm (AEST), 20 August · Finalists announced: 1 September · Artwork deliveries: 29-30 September · Prize announced: 16 October ...",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-27",
+    "closing_soon_sent": false,
+    "status": "needs_review"
+  },
+  "7b616f8d9cfff7a33f768516803f72ca2cf857f9": {
+    "id": "7b616f8d9cfff7a33f768516803f72ca2cf857f9",
+    "source": "Neon Marketplace",
+    "title": "Sydney Street Fair - Stallholder call out",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/sydney-street-fair-stallholder-call-out",
+    "summary": "Dropped: title matches noise keyword.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-27",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "b8107f18524f6f1ad0fa4884d04ffca53974191d": {
+    "id": "b8107f18524f6f1ad0fa4884d04ffca53974191d",
+    "source": "Instagram: art grants",
+    "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/residency",
+    "link": "https://www.instagram.com/p/DdzVaZtgBXN/",
+    "summary": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/residency\n.\nstrutsgallery\nCall for Submissions\nStruts Gallery\nOpen Studio Residency Program 2027\nDeadline: October 19, 2026, 11:59 ADT \n\nStruts Gallery welcomes applications from professional visual and media artists at all stages of their careers for our annual Open Studio Residency Program. Two residency opportunities are available in 2027, each with predetermined dates. The five-week residencies will take place August 11 - September 22, 2027, and September 29 - November 3, 2027. \n \nThe program aims to develop artists’ practices by supporting experimentation without the pressure to present a resolved body of work. Artists are offered the freedom to continue their practice, develop a new project, or create site-specific work. The residency is artist-driven and independent, with staff assistance available for community outreach, technical and logistical support.   \n  \nWe ask artists to creatively engage with the community through at least one public event (artist talk, workshop, or another artist-initiated event).   \n  \nStruts Gallery is an artist-run centre located in Sackville, New Brunswick, a rural community of roughly 6000 people, built on the unceded territory of the Mi’kmaq People in Mi’kma’ki. Open Studio residents are provided with 24-hour access to a studio space (approx. 400 sq/ft) in the gallery and a private, 2-bedroom, furnished apartment with a separate entrance on the 2nd floor above the",
+    "relevant": true,
+    "english": true,
+    "category": "Residency",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-10-19",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/residency\n.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Digital/New Media",
+      "Installation"
+    ],
+    "first_seen": "2026-09-27",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "3b34ba6eb79ce826bfa10d2bed55f94db24913bc"
+  },
+  "d1070667e09efa20620511221d246c6ee626554b": {
+    "id": "d1070667e09efa20620511221d246c6ee626554b",
+    "source": "Instagram: art grants",
+    "title": "Check out the details of this open call and discover many other art opportunities on our website!",
+    "link": "https://www.instagram.com/p/Ddy62zTMdDl/",
+    "summary": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!\n\nwww.artenda.net\n\n#artopencall #artopencalls #opencallforartists #callforartists",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-27",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "d7bbe885e39b68f9d1d4a952ac6a43b23ffb92db"
+  },
+  "d2ae0a74d7384c8d7b08e975b5a4fb7cdb33ae8c": {
+    "id": "d2ae0a74d7384c8d7b08e975b5a4fb7cdb33ae8c",
+    "source": "Instagram: art grants",
+    "title": "ARTIST NIGHT OPEN CALL",
+    "link": "https://atrium-arts.com/subscription",
+    "summary": "Source: Instagram #artopencall\nARTIST NIGHT OPEN CALL\n\nBerlin artists this is your invitation. 🎨\nMeet the artists at Atrium Arts.\n\nJoin us at the gallery for an evening to connect, discover new work, and meet the artists behind it.\nDuring the night, we’ll introduce the upcoming Autumn / Winter exhibition season and announce the pre-selected artists for our next group exhibitions.\n\nA night for artists, art, conversation, and new connections. 🎨🍸\n\n✨ 4 artists selected for each group exhibition\n🎨 No assigned theme submit your own work\n💫 NO FEE for locally based artists\n🖼️ Upload 4+ artworks to your Artist Profile\n\nhow to apply? here:\n\nhttps://atrium-arts.com/subscription\n\n📍 Berlin\n📅 Thursday, 01.10\n🕖 7 PM\n\nAttendance is required for selection.\nSelected artists will be announced at the end of the evening by\nartist Code + Name.\n\n🍸 Free entry · Complimentary bites · Drinks at the gallery bar\n\nCREATE YOUR ARTIST PROFILE\n👉 atrium-arts.com\n\nCome meet the gallery, meet other artists, and present your work.\n\n#AtriumArts #ArtistNight #OpenCall #BerlinArtists #BerlinArt #ArtistsBerlin #ArtOpenCall #ContemporaryArt #EmergingArtists #BerlinArtScene",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "Free",
+    "description": "Source: Instagram #artopencall\nARTIST NIGHT OPEN CALL Berlin artists this is your invitation.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-27",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "dd6de05f6941606d63cca5708e593050fb5815f9"
+  },
+  "1e8745dcdff40910edd915b5cccb26fbef2c4256": {
+    "id": "1e8745dcdff40910edd915b5cccb26fbef2c4256",
+    "source": "Instagram: art grants",
+    "title": "Today, we introduce the captivating artwork of accomplished artist:",
+    "link": "http://margery_thomas_mueller",
+    "summary": "Source: Instagram #artopencall\nToday, we introduce the captivating artwork of accomplished artist:\n\nMargery Thomas Mueller \nReimagine, 2023 \n38\" x 60\" in (h x w) \nWatercolor on Yupo Paper \n\nDiscover more of Mueller's artwork in the current \"In Spring\" exhibition at: www.vb-contemporary.com \nPrice Upon Request \nFor inquiries, contact: infovb-contemporary.com \nVB Contemporary Website: www.vb-contemporary.com \n\nAbout the Artist: \nMargery Thomas Mueller is a practicing artist based in New Hampshire. She studied painting at CMU, the Art Students League, and the Academia di Belle Arti. For 40 years, she built a career as an interior designer. About 11 years ago, she transitioned to full-time artistic practice, and her work has since been showcased nationally and internationally. Margery has received several awards in New York and Boston, and her art has been collected in both the US and Europe. All her pieces are created on Yupo paper using a variety of mediums. [margery_thomas_mueller](http://margery_thomas_mueller)\n\n\"In Spring\" Exhibition's curation & concept is by Vian Borchert. [vianborchert](http://vianborchert) [vbcontemporary](http://vbcontemporary) \n\n*Artists, you can now submit for our next ART CALL titled \"Summer Haze\" at: https://vb-contemporary.com/art-calls.html \n\n#artistssupportingartists #artcollector #artcurator #vbcontemporary #instaabstract #floralart #artopencall #artexhibition #artgallery #nycart #watercolor #abstractart #abstractpainting #instaart #instaartist #instapainting #modernart #mixe",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artopencall\nToday, we introduce the captivating artwork of accomplished artist: Margery Thomas Mueller Reimagine, 2023 38\" x 60\" in (h x w) Watercolor on Yupo Pa",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting"
+    ],
+    "first_seen": "2026-09-27",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "a4ee67f7485e8df9f2a864defc11bbfd3188b2b2"
+  },
+  "09dd761f50d6d9ec6f208eaa25f3072237cc1653": {
+    "id": "09dd761f50d6d9ec6f208eaa25f3072237cc1653",
+    "source": "Instagram: art grants",
+    "title": "Artists Now Bursaries 2026–27",
+    "link": "https://www.instagram.com/p/Ddy_R2yGjH0/",
+    "summary": "Source: Instagram #artgrant\nArtists Now Bursaries 2026–27\r\n\r\nDeadline: Oct 15, 2026\r\nEligibility: National\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2026-10-15",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artgrant\nArtists Now Bursaries 2026–27 Deadline: Oct 15, 2026 Eligibility: National Full details at deadlinecalls.com 🔗 #opencall #callforartists #artopportunity",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-27",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "b2aa25feb5d2316691c41cb582fcef47a59d5fc9": {
+    "id": "b2aa25feb5d2316691c41cb582fcef47a59d5fc9",
+    "source": "Instagram: art grants",
+    "title": "A Celebration of Cats",
+    "link": "https://www.instagram.com/p/DdyIWHcDoGL/",
+    "summary": "Source: Instagram #artgrant\nA Celebration of Cats\r\n\r\nDeadline: Oct 15, 2026\r\nEligibility: National\nLocation: Boston, MA, USA\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: Diwei Zhu / Unsplash",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2026-10-15",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Source: Instagram #artgrant\nA Celebration of Cats Deadline: Oct 15, 2026 Eligibility: National\nLocation: Boston, MA, USA Full details at deadlinecalls.com 🔗 #opencall #callforartis",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Photography"
+    ],
+    "first_seen": "2026-09-27",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -20769,6 +20971,10 @@
     "bui|decade|fiber|find|helping|in|it|kansas|long|malissa|nearly|now|other|s|she|to|took": "a0e73263928a1a1f00e1fb111ba821e6b9e34a23",
     "250|america|future|in|transportation": "f18be779b6178bbe95471d1a8371c42dc20a2661",
     "aan|environmental|residency": "58d737b1ddf50c491a13926c4ba6d413dfba850b",
-    "monochrome|nyc4pa": "15af787aefbb23393de11be93ea667c7a16bab7f"
+    "monochrome|nyc4pa": "15af787aefbb23393de11be93ea667c7a16bab7f",
+    "hornsby": "2744ea985e42b5470e6c8ecf79dc7d3dc1f72dd1",
+    "fair|out|stallholder|street|sydney": "7b616f8d9cfff7a33f768516803f72ca2cf857f9",
+    "27|bursaries|now": "09dd761f50d6d9ec6f208eaa25f3072237cc1653",
+    "cats|celebration": "b2aa25feb5d2316691c41cb582fcef47a59d5fc9"
   }
 }

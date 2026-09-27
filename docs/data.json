@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-27T08:31:41+10:00",
-  "count": 318,
-  "total": 395,
+  "generated": "2026-09-28T08:58:30+10:00",
+  "count": 317,
+  "total": 397,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -1960,7 +1960,7 @@
       ],
       "first_seen": "2026-08-31",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "6bdd81e1c118d8cb72c22a6794d891672e950eef",
@@ -1985,7 +1985,7 @@
       ],
       "first_seen": "2026-09-07",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "110b3fc8ca9f74a8be7b1691d3d623dd44fbf9df",
@@ -2010,7 +2010,7 @@
       ],
       "first_seen": "2026-09-11",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "1afdcea6672e680125b5536b22c580ed08bc21df",
@@ -2841,7 +2841,7 @@
         "Drawing"
       ],
       "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -2866,7 +2866,7 @@
         "Installation"
       ],
       "first_seen": "2026-09-19",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -2891,7 +2891,7 @@
         "Photography"
       ],
       "first_seen": "2026-09-20",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -2916,7 +2916,7 @@
         "Photography"
       ],
       "first_seen": "2026-09-22",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3573,6 +3573,56 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-21",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "09dd761f50d6d9ec6f208eaa25f3072237cc1653",
+      "source": "Instagram: art grants",
+      "title": "Artists Now Bursaries 2026–27",
+      "link": "https://www.instagram.com/p/Ddy_R2yGjH0/",
+      "summary": "Source: Instagram #artgrant\nArtists Now Bursaries 2026–27\r\n\r\nDeadline: Oct 15, 2026\r\nEligibility: National\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-10-15",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nArtists Now Bursaries 2026–27 Deadline: Oct 15, 2026 Eligibility: National Full details at deadlinecalls.com 🔗 #opencall #callforartists #artopportunity",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-27",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "b2aa25feb5d2316691c41cb582fcef47a59d5fc9",
+      "source": "Instagram: art grants",
+      "title": "A Celebration of Cats",
+      "link": "https://www.instagram.com/p/DdyIWHcDoGL/",
+      "summary": "Source: Instagram #artgrant\nA Celebration of Cats\r\n\r\nDeadline: Oct 15, 2026\r\nEligibility: National\nLocation: Boston, MA, USA\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: Diwei Zhu / Unsplash",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-10-15",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Source: Instagram #artgrant\nA Celebration of Cats Deadline: Oct 15, 2026 Eligibility: National\nLocation: Boston, MA, USA Full details at deadlinecalls.com 🔗 #opencall #callforartis",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-09-27",
       "closing_soon_sent": false,
       "status": "active"
     },
