@@ -36,8 +36,6 @@ def _sort_key(rec):
 
 def build(state):
     today = _today()
-    cutoff = today.replace(year=today.year if today.month > 3 else today.year - 1)
-    # 90-day past-deadline cutoff for closed items
     from datetime import timedelta
     cutoff = today - timedelta(days=90)
 
@@ -93,4 +91,4 @@ def build(state):
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
-    print(f"  wrote {len(records)} active items to {DATA_FILE.name}")
+    print(f"  wrote {len(records)} items ({open_count} active) to {DATA_FILE.name}")

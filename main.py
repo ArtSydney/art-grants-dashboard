@@ -177,10 +177,11 @@ def run():
     print("3. Notifications")
     send_digest(new_records)
 
-    # closing-soon: iterate canonical active records only (dedup already done)
-    canonical_ids = set(dedup_index.values())
+    # closing-soon: check all active records that haven't been superseded
     for rec_id, rec in state.items():
-        if rec_id not in canonical_ids:
+        if not isinstance(rec, dict):
+            continue
+        if rec.get("superseded_by"):
             continue
         if rec.get("closing_soon_sent"):
             continue

@@ -83,6 +83,7 @@ function countdownLabel(n){
   return {text:n + " days left", cls: n <= SOON_DAYS ? "soon" : ""};
 }
 function isClosed(item){
+  if(item.status === "closed") return true;
   const n = daysLeft(item.deadline);
   return !!item.deadline && n !== null && n < 0;
 }
