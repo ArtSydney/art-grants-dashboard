@@ -12,6 +12,42 @@ import re
 from config import ART_FORMS, WILDCARD_FORMS, DROP_IF_NO_ART_FORM
 
 # ---------------------------------------------------------------------------
+# Language check — drop clearly non-English items
+# ---------------------------------------------------------------------------
+
+_NON_LATIN_RE = re.compile(
+    r'[　-鿿Ѐ-ӿ؀-ۿ฀-๿가-힯֐-׿]'
+)
+_ACCENTED_RE = re.compile(r'[à-äæçè-ëì-ïñò-öù-ü]')
+_NON_ENG_FUNCTION = {
+    "ist", "sind", "kein", "keine", "nicht", "auch", "wenn", "oder", "noch",
+    "nur", "über", "nach", "dass", "wird", "wurde", "haben", "werden",
+    "eine", "ein", "selten", "immer", "fehlt", "kennst", "dauert",
+    "avec", "dans", "cette", "nous", "vous", "sont", "mais", "comme",
+    "della", "nella", "sono", "questo", "questa",
+}
+
+
+def _looks_english(title):
+    """False for titles that are clearly not English (CJK, Cyrillic, or
+    accented words / non-English function words suggesting German/French/etc.)."""
+    if _NON_LATIN_RE.search(title):
+        return False
+    words = title.split()
+    if len(words) < 3:
+        return True
+    accented = sum(1 for w in words if _ACCENTED_RE.search(w.lower()))
+    if accented >= 2:
+        return False
+    func_hits = sum(1 for w in words if w.lower().strip('.,!?;:') in _NON_ENG_FUNCTION)
+    if func_hits >= 2:
+        return False
+    if accented >= 1 and func_hits >= 1:
+        return False
+    return True
+
+
+# ---------------------------------------------------------------------------
 # Drop lists — items matching any of these are not relevant
 # ---------------------------------------------------------------------------
 
@@ -45,12 +81,16 @@ _NON_VISUAL = [
     "music touring", "music residency", "sound art", "audio recording",
     "songwriting", "for musicians", "for bands", "for composers",
     "music industry", "music export", "music program",
+    "live music", "music programming", "music festival",
+    "singer", "songwriter",
     "literary", "literature award", "writing australia", "publishing fund",
     "publishing and promotion", "writers festival", "poet laureate",
     "poetry award", "book prize", "literary prize",
+    "writers grant", "writing grant", "writers program",
     "dance services", "dance residency", "theatre award", "opera grant",
     "screen australia", "film commission", "screenwriting",
     "games design", "australian publishing",
+    "photojournalist", "photojournalism",
 ]
 
 # ---------------------------------------------------------------------------
@@ -99,7 +139,8 @@ _FORM_MAP = [
     ("Painting",         ["painting", "paintings", "paint ", "oils", "watercolour", "acrylic", "portrait paint"]),
     ("Drawing",          ["drawing", "drawings", "draw ", "printmaking", "prints and drawings", "works on paper", "paper prize"]),
     ("Sculpture",        ["sculpture", "sculptures", "sculptural", "3d work", "three-dimensional", "installation art", "public art"]),
-    ("Photography",      ["photography", "photo", "photographic", "photograph", "lens-based", "portrait prize"]),
+    ("Photography",      ["photography", "photographic", "photograph", "lens-based", "portrait prize",
+                          "photo prize", "photo award", "photo competition", "photo contest"]),
     ("Printmaking",      ["printmaking", "print award", "etching", "lithograph", "screenprint"]),
     ("Ceramics",         ["ceramic", "ceramics", "pottery", "clay"]),
     ("Textiles",         ["textile", "textiles", "fabric", "weaving", "fibre", "fiber"]),
@@ -152,11 +193,6 @@ def _extract_deadline(text):
         idx = text.find(marker)
         if idx != -1:
             text = text[:idx]
-
-    # YYYYMMDD numeric — only valid if in the main article, not related posts
-    m = re.search(r'\b(202\d)(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\b', text)
-    if m:
-        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
 
     # closing keyword + day month year: "closes 5 October 2026"
     # also handles "Entries close > 6pm 9th August 2026" (arrow + optional time)
@@ -219,6 +255,12 @@ def _extract_deadline(text):
         y = m.group(3)
         if mo:
             return f"{y}-{mo}-{d}"
+
+    # YYYYMMDD numeric (e.g. BNE Art) — checked after contextual patterns so
+    # a keyword-anchored date wins over a bare 8-digit number
+    m = re.search(r'\b(202\d)(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\b', text)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
 
     # closing keyword + no-year: "closes 2 August" / "Deadline: October 5"
     m = re.search(
@@ -357,6 +399,14 @@ def classify(item):
     source  = (item.get("source") or "").strip()
     summary = (item.get("summary") or "").strip()
     text    = f"{title} {summary}".lower()
+
+    # --- language check ---
+    if not _looks_english(title):
+        return {"relevant": False, "english": False,
+                "category": "Other", "au_eligibility": "unclear",
+                "location_scope": "Unknown", "eligibility_note": "",
+                "deadline": "", "amount": "", "entry_fee": "", "summary": "Non-English.",
+                "curator": "", "judge": "", "art_forms": []}
 
     # --- 404 / empty page guard ---
     if any(s in text for s in ("page not found", "could not be found", "just a moment")):
@@ -537,10 +587,11 @@ def classify(item):
         description = _first_good_sentence(meta_desc)
 
     if not description:
+        # strip Instagram prefix lines (Deadline: ..., Source: Instagram #...)
+        clean = re.sub(r'^(?:Deadline:[^\n]*\n?|Source:\s*Instagram[^\n]*\n?)+', '', summary).strip()
         # strip Artsoz metadata prefix e.g. "Location: QLD. Medium: X. Type: Y. Tags: Z."
         # loop because there can be several segments back-to-back
         prev = None
-        clean = summary
         while prev != clean:
             prev = clean
             clean = re.sub(r'^(?:Location|Medium|Type|Tags):[^.]+\.\s*', '', clean, flags=re.IGNORECASE).strip()

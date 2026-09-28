@@ -4,10 +4,13 @@ If DISCORD_WEBHOOK_URL isn't set, everything here quietly no-ops, so local test
 runs don't spam a channel.
 """
 from datetime import date, datetime
+from zoneinfo import ZoneInfo
 
 import requests
 
 from config import DISCORD_WEBHOOK_URL
+
+SYDNEY = ZoneInfo("Australia/Sydney")
 
 
 def days_left(deadline):
@@ -18,7 +21,7 @@ def days_left(deadline):
         d = datetime.strptime(deadline, "%Y-%m-%d").date()
     except ValueError:
         return None
-    return (d - date.today()).days
+    return (d - datetime.now(SYDNEY).date()).days
 
 
 def _post(content):

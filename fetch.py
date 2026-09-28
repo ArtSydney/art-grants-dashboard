@@ -1033,12 +1033,17 @@ def fetch_instagram_grants(source):
         "finalist", "finalists announced", "proud to announce",
         "won the", "awarded to", "recipient of",
         "throwback", "#tbt", "last year",
+        "my work process", "my entry for", "my submission to",
+        "i have applied for", "i applied for",
+        "shame on you",
     ]
     PERSONAL_RE = [
         r"^i recently", r"^i just (started|applied|submitted)",
         r"^my (experience|journey|process|story) with",
-        r"^here'?s (what|how) i", r"^tips for (applying|artists)",
+        r"^here'?s (what|how|my) ", r"^tips for (applying|artists)",
         r"^(so )?i (decided|wanted) to",
+        r"^just a little bit of",
+        r"^it took .{3,30} (to find|to get|years)",
     ]
 
     def _is_opportunity(text):
