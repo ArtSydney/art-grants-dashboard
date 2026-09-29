@@ -1312,7 +1312,7 @@
       "Photography"
     ],
     "first_seen": "2026-08-09",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "9049e299088a69d735dfecad14479def1117d8b9": {
@@ -1337,7 +1337,7 @@
       "Painting"
     ],
     "first_seen": "2026-08-09",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "9a1891d823fd84107c9bad75df87164ea602e503": {
@@ -4719,7 +4719,7 @@
     "source": "Artsoz prize registry",
     "title": "Wynne Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
+    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4729,7 +4729,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -4744,7 +4744,7 @@
     "source": "Artsoz prize registry",
     "title": "Sulman Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
+    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4754,7 +4754,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -7674,7 +7674,7 @@
       "Installation"
     ],
     "first_seen": "2026-08-30",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "51954b27f55ecc2831e74212822d9fdfdfddab04": {
@@ -7721,7 +7721,7 @@
       "Sculpture"
     ],
     "first_seen": "2026-08-30",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "c5a0efca92e18ef5445fc3f63df03942a6ee29c3": {
@@ -9166,7 +9166,7 @@
     "source": "art-prizes.com",
     "title": "Banksia Art Prize",
     "link": "https://www.art-prizes.com/ArtPrize/Banksia-Art-Prize",
-    "summary": "Deadline: 18/09/2026. Opens: 31/01/2026. Prize: AUD $100,000. Location: QLD, Australia. Eligibility: National Entries. Genre: Painting",
+    "summary": "Deadline: 30/09/2026. Opens: 31/01/2026. Prize: AUD $100,000. Location: QLD, Australia. Eligibility: National Entries. Genre: Painting",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -10392,7 +10392,7 @@
     ],
     "first_seen": "2026-09-01",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "746b953e1be34e76432878262d40cd40a56dd66a": {
     "id": "746b953e1be34e76432878262d40cd40a56dd66a",
@@ -11217,7 +11217,7 @@
     ],
     "first_seen": "2026-09-03",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "9ebfef5fbc30f71d8937ce71fad02c49f01acfd8": {
     "id": "9ebfef5fbc30f71d8937ce71fad02c49f01acfd8",
@@ -11774,7 +11774,7 @@
       "Multidisciplinary"
     ],
     "first_seen": "2026-09-04",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "c7a901785b10f2485455de36d94bfd237ab5527b": {
@@ -17369,7 +17369,7 @@
     "deadline": "",
     "amount": "$4,500",
     "entry_fee": "",
-    "description": "Eligibility: National and International Entries Allowed.",
+    "description": "",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -18164,7 +18164,7 @@
     ],
     "first_seen": "2026-09-21",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "8a4c47f4e3f5f0467ace46b3e416df8372a9d9a0": {
     "id": "8a4c47f4e3f5f0467ace46b3e416df8372a9d9a0",
@@ -18628,7 +18628,7 @@
     ],
     "first_seen": "2026-09-22",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "c4dc25c5c2e7ab6498d4618aa9f522d3ac8333af": {
     "id": "c4dc25c5c2e7ab6498d4618aa9f522d3ac8333af",
@@ -18768,7 +18768,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-22",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "0c39162720d3193df9da7fb21e3820991dc6012a": {
@@ -19034,7 +19034,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-23",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "36e3ef33963a2da068fd573aab12d33ce3d85ef5": {
@@ -20251,6 +20251,346 @@
     "closing_soon_sent": false,
     "status": "active"
   },
+  "182d760b39feb97adeb2f8c0250b00d510c4c8c4": {
+    "id": "182d760b39feb97adeb2f8c0250b00d510c4c8c4",
+    "source": "Google: Australian art prizes",
+    "title": "Terms and conditions",
+    "link": "https://www.portrait.gov.au/nppp-termsandconditions.php",
+    "summary": "Dropped: title matches noise keyword.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "d45d1a06c04d75f842cd27328023366c146fe401": {
+    "id": "d45d1a06c04d75f842cd27328023366c146fe401",
+    "source": "Google: Australian art prizes",
+    "title": "Ludlow Art Prize Ludlow Tuart Forest Restoration Group",
+    "link": "https://www.ludlowtuartforest.org.au/2026-ludlow-art-prize/",
+    "summary": "Ludlow Art Prize Ludlow Tuart Forest Restoration Group Skip to main content New announcement. Learn more admin@ludlowtuartforest.org.au 2026 Ludlow Art Prize LUDLOW, WESTERN AUSTRALIA about the prize The purpose of the Ludlow Art Prize is to bring people together to shine a light on the listed, critically endangered Tuart Forest located at Ludlow, while fostering creativity and supporting artists in their artistic endeavours. The Ludlow Art Prize is managed by the Ludlow Tuart Forest Restoration Group Inc, a not-for-profit organisation founded in 2018 to help restore the last remaining tall stand Tuart Forest in the world, located at Ludlow. Register for updates Open Open now Close 25 October 2026 Award 8 November 2026 Ludlow Art Prize - Sculpture in the Forest The Ludlow Art Prize for a sculpture. The Ludlow Art Prize for a sculpture (Selected by an independent panel of judges; non-acquisitive) $5,000 cash . All entrants will be invited to attend the official opening and prize presentation. Closing date: 25 October 2026. The work must be for sale. The sales commission is 33% (GST inclusive). Entry fee: $40 Inc. GST per art work (includes entry to the official opening) Terms & Conditions Sculpture entry form SCULPTURE Ludlow Art Prize - Australian Landscape Painting The Ludlow Art Prize for a landscape painting. The Ludlow Art Prize for an Australian Landscape painting (Selected by an independent panel of judges; non-acquisitive) $5,000 cash . Maximum size 100 x 100 Centimetres (1 Metre) All entrants will be invited to attend the official opening and prize presentation. Closing date: 25 October 2026. The work must be for sale. The sales commission is 33% (GST inclusive). Entry fee: $40 Inc. GST per art work (includes entry to the official opening) Terms & Conditions Landscape entry form AUSTRALIAN LANDSCAPE PAINTING Peoples Choice Award Peoples Choice Award $1,000 cash Key dates Entries open 1 March 2026 Entries close 25 October 2026 Art delivery 31 October to 1 November 2026 10am to 2pm Award Sunday 8 November 2026 11am Art exhibition 7 November to 15 November 2026 Artwork collection To be advised Become a supporter/donor The purpose of the Ludlow Art Prize is to bring people together to shine a light on the listed, critically endangered Tuart Forest located at Ludlow, while fostering creativity and supporting artists in their artistic endeavours. Your donation will be greatly appreciated and will help us to secure the Ludlow Art Prize as a permanent event in future years. As a not-for-profit organisation with DGR status your donation is 100% tax deductible. Donation form Facebook Instagram LinkedIn Ludlow Art Prize Ludlow Settlement 21 Ludlow Road North, LUDLOW 6280 WESTERN AUSTRALIA Administration Group information Privacy policy Events calendar Committee Volunteer Code of Conduct 2025 AGM 2024 AGM 2023 AGM 2022 AGM 2021 AGM 2020 AGM 2019 AGM Strategic plan Support us Memberships Volunteer with us Donate Ludlow caretakers 2025 Ludlow Art Prize 2024 Ludlow Art Prize 2023 Ludlow Art Prize Donate to the Ludlow Prize Tuart forest Management plan Advocacy Forestry mill & settlement We want our stuff back! Ludlow heritage Settlement rehabilitation list Copyright © 2026 - dashboard - Terms & Conditions POWERED BY ROCKETSPARK Loading... This product has been added to your cart CONTINUE SHOPPING CHECKOUT",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-10-25",
+    "amount": "$5,000",
+    "entry_fee": "",
+    "description": "The Ludlow Art Prize is open to all Western Australian artists with cash prizes for Landscape paintings and sculpture.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting",
+      "Sculpture"
+    ],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "59f2696c2bbe49c3ac5509f456a549fd907c35a8": {
+    "id": "59f2696c2bbe49c3ac5509f456a549fd907c35a8",
+    "source": "Neon Marketplace",
+    "title": "Special Entertainment Precinct (SEP) Kickstart Grant Program Round 3",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/special-entertainment-precinct-sep-kickstart-grant-program-round-3",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "8f1bd11cf4376a37b58d7deb749d35e04637722c": {
+    "id": "8f1bd11cf4376a37b58d7deb749d35e04637722c",
+    "source": "Instagram: art grants",
+    "title": "I went to Art Prize this weekend. This piece is called Midnight In The Pumpkin Dragons Garden, by Je",
+    "link": "https://www.instagram.com/reel/Dd2aouygbSX/",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "6a55d0e608f5a08975c191f4b3b52923e7bb7331": {
+    "id": "6a55d0e608f5a08975c191f4b3b52923e7bb7331",
+    "source": "Instagram: art grants",
+    "title": "Open call: get your work in print during Miami Art Week 2026. Art Miami Magazine's Special Print Edi",
+    "link": "https://www.instagram.com/p/Dd1xD0mDzQ2/",
+    "summary": "Source: Instagram #artopencall\nOpen call: get your work in print during Miami Art Week 2026. Art Miami Magazine's Special Print Edition, distributed during Art Basel Miami Beach week.\n\nOpen to visual artists 18+, any nationality, emerging through established. Deadline: October 20.\n\nartmiamimag\n\n#artopencall #opencallforartists #callforartists #miamiartweek",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2026-10-20",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Art Miami Magazine's Special Print Edition, distributed during Art Basel Miami Beach week.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "a1fc1ebfff2cd48d237cdddc1f060b4fb6d466fc": {
+    "id": "a1fc1ebfff2cd48d237cdddc1f060b4fb6d466fc",
+    "source": "Instagram: art grants",
+    "title": "🔁 REPLAY? YES, PLEASE!",
+    "link": "https://www.instagram.com/p/Dd1qyfxspm8/",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "b07f6ef9aff89243548fb4b68e94bb5271e747d4": {
+    "id": "b07f6ef9aff89243548fb4b68e94bb5271e747d4",
+    "source": "Instagram: art grants",
+    "title": "Open Calls for Artists and Filmmakers",
+    "link": "https://www.instagram.com/p/Dd1jWjou9qi/",
+    "summary": "Source: Instagram #artopencall\nOpen Calls for Artists and Filmmakers\n\n“ONLY 2 DAYS LEFT\n\nVOYAGE IN TIME INTERNATIONAL FILM FESTIVAL\n\nOur New York Regular Deadline and Paris Deadlines are approaching:\n\nNEW YORK — Regular Deadline\nPARIS — Early Bird · Le Cinéma du Panthéon\nPARIS — Regular · Cinéma Le Brady\n\nSubmit your film now.\nLink in bio.” voyageintimefilmfestival",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "ONLY 2 DAYS LEFT VOYAGE IN TIME INTERNATIONAL FILM FESTIVAL Our New York Regular Deadline and Paris Deadlines are approaching: NEW YORK — Regular Deadline\nPARIS — Early Bird · Le C",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "6c165979b77ae1e63c8576e9494d2d9626527143": {
+    "id": "6c165979b77ae1e63c8576e9494d2d9626527143",
+    "source": "Instagram: art grants",
+    "title": "Check out the details of this open call and discover many other art opportunities on our website!",
+    "link": "https://www.instagram.com/p/Dd1fpSvstxO/",
+    "summary": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!\n\nwww.artenda.net\n\n#artopencall #artopencalls #opencallforartists #callforartists",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "er many other art opportunities on our website!",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "d7bbe885e39b68f9d1d4a952ac6a43b23ffb92db"
+  },
+  "2b6391401fd7a15c9eaa40f2b5c08655a5a81f46": {
+    "id": "2b6391401fd7a15c9eaa40f2b5c08655a5a81f46",
+    "source": "Instagram: art grants",
+    "title": "Open Calls for Artists and Filmmakers",
+    "link": "https://www.instagram.com/p/Dd1MpinuX3M/",
+    "summary": "Source: Instagram #artopencall\nOpen Calls for Artists and Filmmakers\n\nMicro Spells: Expanded Cinema & New Music Performance. October 9th, 19:30h - Odd Fellows, San Pablo Lodge #43, Vallejo\n\n“Micro Spells: Expanded Cinema & New Music Performance is a quarterly series of live collaborative exchanges between artists working within the areas of performance cinema and the sonic arts, curated by John Davis & Steve Polta and presented by San Francisco Cinematheque and Vallejo Experimental Arts. Each live event will offer audiences an opportunity to share in the multisensory integrations and temporal shifts unique to the juxtaposition of moving images and sound, featuring artists from California and beyond.\n\nMicro Spells, program 1: Light Waves & Sound Forms\n\nMusic In The Air by Scott Stark; sound/music performed by Mabbie Bug.\nPersistence of Vision No Longer Exists by Anna Geyer; sound/music performed by Transient.\nEROSION IS THE MASTER PLAN by Zack Parrinella; sound/music performed by Josh Wismans.”",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Micro Spells: Expanded Cinema & New Music Performance.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "b07f6ef9aff89243548fb4b68e94bb5271e747d4"
+  },
+  "b54b67dc2ce7bc2b089fbd2ae3992c2a46a56c7c": {
+    "id": "b54b67dc2ce7bc2b089fbd2ae3992c2a46a56c7c",
+    "source": "Instagram: art grants",
+    "title": "Open Calls for Artists and Filmmakers",
+    "link": "https://www.instagram.com/p/Dd1LO-oOwsH/",
+    "summary": "Source: Instagram #artopencall\nOpen Calls for Artists and Filmmakers\n\nexpcinema The Cinema Museum presents… The Hart of London on 16mm. October 18th, 14:30h – The Cinema Museum, London\n\n“The Cinema Museum is proud to present a series of avant-garde film screenings on 16mm in benefit of the Museum’s fundraiser to buy our home.\n\nOur fourth screening of the season is The Hart of London (1970), by Canadian experimental filmmaker Jack Chambers.\n\nPraised by Stan Brakhage as “one of the greatest films ever made”, The Hart of London is shown in black and white and colour, and includes found news footage from 1954, film shot by the artist years earlier in Spain, and film shot by the artist in London, Ontario. The film is preoccupied with the tensions between nature and the city of London: “It explores life and death, the sense of place and personal displacement, and the intricate aesthetics of representation. It is a personal and spiritual film, marked inevitably by Chambers’ knowledge that he had leukemia.”\n\nThe Cinema Museum is proud this screening of this rare avant-garde film on 16mm, as benefit to the Museum’s fundraiser to buy our home.” the_cinema_museum",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "expcinema The Cinema Museum presents… The Hart of London on 16mm.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "b07f6ef9aff89243548fb4b68e94bb5271e747d4"
+  },
+  "8e52d08c74f5b0c9be72db351ad621d6d2a9ce3f": {
+    "id": "8e52d08c74f5b0c9be72db351ad621d6d2a9ce3f",
+    "source": "Instagram: art grants",
+    "title": "ARTIST NIGHT OPEN CALL",
+    "link": "https://atrium-arts.com/subscription",
+    "summary": "Source: Instagram #artopencall\nARTIST NIGHT OPEN CALL\n\nBerlin artists this is your invitation. 🎨\nMeet the artists at Atrium Arts.\n\nJoin us at the gallery for an evening to connect, discover new work, and meet the artists behind it.\nDuring the night, we’ll introduce the upcoming Autumn / Winter exhibition season and announce the pre-selected artists for our next group exhibitions.\n\nA night for artists, art, conversation, and new connections. 🎨🍸\n\n✨ 4 artists selected for each group exhibition\n🎨 No assigned theme submit your own work\n💫 NO FEE for locally based artists\n🖼️ Upload 4+ artworks to your Artist Profile\n\nhow to apply? here:\n\nhttps://atrium-arts.com/subscription\n\n📍 Berlin\n📅 Thursday, 01.10\n🕖 7 PM\n\nAttendance is required for selection.\nSelected artists will be announced at the end of the evening by\nartist Code + Name.\n\n🍸 Free entry · Complimentary bites · Drinks at the gallery bar\n\nCREATE YOUR ARTIST PROFILE\n👉 atrium-arts.com\n\nCome meet the gallery, meet other artists, and present your work.\n\n#AtriumArts #ArtistNight #OpenCall #BerlinArtists #BerlinArt #ArtistsBerlin #ArtOpenCall #ContemporaryArt #EmergingArtists #BerlinArtScene",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "Free",
+    "description": "Berlin artists this is your invitation.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "dd6de05f6941606d63cca5708e593050fb5815f9"
+  },
+  "d3734c9f3fdd8a43647df0bfcedadd1ee104c344": {
+    "id": "d3734c9f3fdd8a43647df0bfcedadd1ee104c344",
+    "source": "Instagram: art grants",
+    "title": "YOU SEE THE FIT.",
+    "link": "https://www.instagram.com/reel/Dd07HW3zOsh/",
+    "summary": "Source: Instagram #artopencall\nYOU SEE THE FIT.\nNOW SHOW US THE PUNK BEHIND IT‼️\n\nPunk is more than what you wear. It’s an attitude, a sound, a statement, a community, a memory, or a story waiting to be told. Drop your punk at VISIBLE ECHOES Exhibition 2026, Telkom University collaboration with Punk Scholars Networks Indonesia.\n\nWe invite you to transform a song into a visual work and share what you see.\n2D Artwork | 3D Artwork | Video / Audiovisual\nOPEN CALL\n12 September - 20 October 2026\nSelected works will be curated and exhibited at Galeri Idealoka, Telkom University, Bandung, 23-30 November 2026.\n\nDon’t just wear it. Show us what punk means to you.\n\n#VisibleEchoes2026 #RespondToTheMusic #OpenCall #ArtOpenCall #VisualArt MusicAndArt TelkomUniversity\nIdealokaGallery PunkScholarsNetwork",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2026-10-20",
+    "amount": "",
+    "entry_fee": "",
+    "description": "NOW SHOW US THE PUNK BEHIND IT‼️ Punk is more than what you wear.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "fd33191f32b27733e6d8a8db40ae6cd0c56d11d8": {
+    "id": "fd33191f32b27733e6d8a8db40ae6cd0c56d11d8",
+    "source": "Instagram: art grants",
+    "title": "We had such an amazing time celebrating and communing with our 2026 grantees. We were so inspired by",
+    "link": "https://www.instagram.com/reel/Dd15x3TpJnS/",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "b0062fdf025eab922bc02af8045a8b17afdbb078": {
+    "id": "b0062fdf025eab922bc02af8045a8b17afdbb078",
+    "source": "Instagram: art grants",
+    "title": "💥WINNER ANNOUNCEMENT💥",
+    "link": "https://www.instagram.com/p/Dd0645_DXAH/",
+    "summary": "Source: Instagram #artgrant\n💥WINNER ANNOUNCEMENT💥 \n \nWe are excited to announce the recipients of the CONNECT&CREATE Residency 2026. \n\nConnect&Create is a two-month residency in Switzerland for spoken word artists, organised by artlink on behalf of the South Cultural Fund in partnership with woerdz – Spoken Word Festival and Neubad Lucerne.  Keep an eye out on our posts to learn more about the spoken word artists.  neubadluzern  woerdz \n \nMore info about our open calls and further grants can be found on our website. Follow the link 🔗 in our bio. \n \n#artlink #supportingartists #winnerannouncement #sudkulturfonds  #artgrant #residency",
+    "relevant": true,
+    "english": true,
+    "category": "Residency",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "We are excited to announce the recipients of the CONNECT&CREATE Residency 2026.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-29",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -20975,6 +21315,16 @@
     "hornsby": "2744ea985e42b5470e6c8ecf79dc7d3dc1f72dd1",
     "fair|out|stallholder|street|sydney": "7b616f8d9cfff7a33f768516803f72ca2cf857f9",
     "27|bursaries|now": "09dd761f50d6d9ec6f208eaa25f3072237cc1653",
-    "cats|celebration": "b2aa25feb5d2316691c41cb582fcef47a59d5fc9"
+    "cats|celebration": "b2aa25feb5d2316691c41cb582fcef47a59d5fc9",
+    "conditions|terms": "182d760b39feb97adeb2f8c0250b00d510c4c8c4",
+    "forest|group|ludlow|restoration|tuart": "d45d1a06c04d75f842cd27328023366c146fe401",
+    "3|entertainment|grant|kickstart|precinct|round|sep|special": "59f2696c2bbe49c3ac5509f456a549fd907c35a8",
+    "by|called|dragons|garden|i|in|is|je|midnight|piece|pumpkin|this|to|weekend|went": "8f1bd11cf4376a37b58d7deb749d35e04637722c",
+    "during|edi|get|in|magazine|miami|print|s|special|week|work|your": "6a55d0e608f5a08975c191f4b3b52923e7bb7331",
+    "please|replay|yes": "a1fc1ebfff2cd48d237cdddc1f060b4fb6d466fc",
+    "calls|filmmakers": "b07f6ef9aff89243548fb4b68e94bb5271e747d4",
+    "fit|see|you": "d3734c9f3fdd8a43647df0bfcedadd1ee104c344",
+    "amazing|by|celebrating|communing|grantees|had|inspired|our|so|such|time|we|were|with": "fd33191f32b27733e6d8a8db40ae6cd0c56d11d8",
+    "announcement|winner": "b0062fdf025eab922bc02af8045a8b17afdbb078"
   }
 }
