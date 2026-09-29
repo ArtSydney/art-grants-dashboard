@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-29T10:16:08+10:00",
-  "count": 318,
-  "total": 402,
+  "generated": "2026-09-30T09:35:41+10:00",
+  "count": 322,
+  "total": 408,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -2135,7 +2135,7 @@
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "ada3357b4d4e349063e6ec02f66f2f758006d46d",
@@ -2160,7 +2160,7 @@
       ],
       "first_seen": "2026-09-05",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "57f1783faf57aefccce32288a983f720e7e66a6a",
@@ -3095,7 +3095,7 @@
         "Digital/New Media"
       ],
       "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3273,6 +3273,31 @@
         "Photography"
       ],
       "first_seen": "2026-09-25",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "b6412daa2d1ac5e8878eaa72b417f12d5fb8ced7",
+      "source": "Instagram: art grants",
+      "title": "open call deadline is October 11, 2026 🩵",
+      "link": "https://www.instagram.com/p/Dd4r1ipS0YT/",
+      "summary": "Source: Instagram #artopencall\nopen call deadline is October 11, 2026 🩵\nthe show is opening in Koreatown on November 7.\n\n#artopencall #opencallforartists #artgallery #alternativeartspace #losangelesart",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-10-11",
+      "amount": "",
+      "entry_fee": "",
+      "description": "the show is opening in Koreatown on November 7.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-29",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -3623,6 +3648,31 @@
         "Photography"
       ],
       "first_seen": "2026-09-27",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "27edca791009cc0412a4893d8721d54bfd480f24",
+      "source": "BNE Art: Opportunities",
+      "title": "MAD House Creative Residency: Portugal",
+      "link": "https://bneart.com/mad-house-creative-residency-portugal/",
+      "summary": "Deadline: October 15. MAD House Creative Residency: Portugal – BNE ART - Brisbane Art Guide Skip to content Menu MAD House Creative Residency: Portugal Deadline: Deadline: October 15 MAD House is a creative residency in Porto, Portugal, offering artists, designers, makers and creative practitioners time and space to develop their work. Residents live and work from MAD House for one to three months, with a small group of 2–4 residents hosted at a time. The residency provides accommodation, access to a shared workspace, weekly dinners and support meetings. MAD House is a creative home and working residency rather than a fabrication studio. Residents are responsible for their own travel, materials, external studio or fabrication costs, meals and other personal expenses. Applications require a €10 non-refundable application fee . Residency places are confirmed once the required deposit has been received, with deposits and application fees non-refundable. Overnight guests require prior approval and incur an additional €25 per night fee, with a maximum stay of three consecutive nights. www.madporto.com Info not available hello@melanieabrantes.com",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-10-15",
+      "amount": "",
+      "entry_fee": "",
+      "description": "MAD House is a creative residency in Porto, Portugal, offering artists, designers, makers and creative practitioners time and space to develop their work.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Textiles"
+      ],
+      "first_seen": "2026-09-29",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -4372,6 +4422,31 @@
       "status": "active"
     },
     {
+      "id": "1a7a08e3e7e911fc800e8b0fe52e8a5e17252d29",
+      "source": "Instagram: art grants",
+      "title": "Open call: $4,500 unrestricted grants for artists. The Hopper Prize Fall 2026 — two $4,500 grants an",
+      "link": "https://www.instagram.com/p/Dd4Gid0DzNd/",
+      "summary": "Source: Instagram #artopencall\nOpen call: $4,500 unrestricted grants for artists. The Hopper Prize Fall 2026 — two $4,500 grants and four $1,000 grants, all visual media, all career stages. Deadline: November 17. $40 to apply.\n\nhopperprize\n\n#artopencall #opencallforartists #callforartists #artistgrant",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-11-17",
+      "amount": "$4,500",
+      "entry_fee": "",
+      "description": "The Hopper Prize Fall 2026 — two $4,500 grants and four $1,000 grants, all visual media, all career stages.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-29",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "656b061b1b6ad05ae133de9a3b7d490a9cb44041",
       "source": "Google: Australian art prizes",
       "title": "Summer Small Works Show & Prize 2026: Information",
@@ -4714,6 +4789,31 @@
         "Photography"
       ],
       "first_seen": "2026-09-26",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "c7bb8d1ab402bffbde71e6f08b8460a3cd234b8f",
+      "source": "BNE Art: Opportunities",
+      "title": "Art for Takayna Residency 2027",
+      "link": "https://bneart.com/art-for-takayna-residency-2027/",
+      "summary": "Deadline: December 7. Art for Takayna Residency 2027 – BNE ART - Brisbane Art Guide Skip to content Menu Art for Takayna Residency 2027 Deadline: Deadline: December 7 The Art for Takayna Residency is an annual artist residency hosted by the Bob Brown Foundation in the wild and ancient forests of Takayna, north-west Lutruwita/Tasmania. Over five days, artists immerse themselves in the landscape and create work inspired by its ecosystems, with the residency culminating in a fundraising exhibition supporting the campaign to protect Takayna. Artists are expected to create at least one work for exhibition and sale within 12 months of the residency. Successful applicants can purchase a place on a pay-as-you-can sliding scale of $80–$580 , which contributes towards shared residency costs, equipment, vehicle hire and 11 vegan meals. https://docs.google.com/forms/d/e/1FAIpQLSfMIwJt0Ugu3xcRPms4o4ayib0OK8EiBx7kpsQCgr5fMMFYbg/viewform 0362940620 kat@bobbrown.org.au",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-12-07",
+      "amount": "$80",
+      "entry_fee": "",
+      "description": "The Art for Takayna Residency is an annual artist residency hosted by the Bob Brown Foundation in the wild and ancient forests of Takayna, north-west Lutruwita/Tasmania.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-29",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -10108,6 +10208,56 @@
       "amount": "",
       "entry_fee": "",
       "description": "We are excited to announce the recipients of the CONNECT&CREATE Residency 2026.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-29",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "efb72c5269f03a1f1aea9873577541d7538ea9eb",
+      "source": "Instagram: art grants",
+      "title": "Alle Details und mehr als 100 weitere aktuelle Kunstpreise, Stipendien, Residenzen und Open Calls:",
+      "link": "https://www.instagram.com/p/Dd3jtcdDvLB/",
+      "summary": "Source: Instagram #artopencall\nAlle Details und mehr als 100 weitere aktuelle Kunstpreise, Stipendien, Residenzen und Open Calls:\n\nkunstpreiskalender.de\n\nDu machst Kunst. Wir zeigen dir die Chancen.\n\nExplore the full details and discover many more art prizes, grants, residencies and open calls at:\n\nkunstpreiskalender.de\n\nYou make art. We show you the opportunities\n\n#artopencall #artopencalls #opencallforartists #callforartists",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "stpreise, Stipendien, Residenzen und Open Calls: kunstpreiskalender.de Du machst Kunst.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-29",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "e5cea92ba595605eaf640350512c3dc93c5abd08",
+      "source": "Instagram: art grants",
+      "title": "Artie is so nervous that he turned into rectangle 📣 THE PRE LAUNCH PAGE IS NOW ON KICKSTARTER!!!",
+      "link": "https://www.instagram.com/reel/Dd447DbonVS/",
+      "summary": "Source: Instagram #artgrant\nArtie is so nervous that he turned into rectangle 📣 THE PRE LAUNCH PAGE IS NOW ON KICKSTARTER!!!\n\nVisit link on our profile to save it so you can get notified on launch. We're all so excited for you to see the full project 😭❤️ \n\n#kickstarter #nonprofitorganization #supporthumanartists #artgrant #artcommunity",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "THE PRE LAUNCH PAGE IS NOW ON KICKSTARTER!!!",
       "curator": "",
       "judge": "",
       "art_forms": [
