@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-02T10:03:55+10:00",
-  "count": 309,
-  "total": 418,
+  "generated": "2026-10-03T09:40:35+10:00",
+  "count": 321,
+  "total": 433,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -2767,7 +2767,7 @@
       ],
       "first_seen": "2026-08-13",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "8cb92255503202738985ea7d179a6b2b538e1ea3",
@@ -2792,7 +2792,7 @@
       ],
       "first_seen": "2026-09-19",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "3a1ac3872f72fd8bee72910f96e6293e20ed28be",
@@ -2817,7 +2817,7 @@
       ],
       "first_seen": "2026-09-21",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "90dc9f9ca90dd8cefb26737e560e9956ca2c74c2",
@@ -3226,6 +3226,31 @@
       "status": "active"
     },
     {
+      "id": "a0f8b62fd91e0863e99d4beb3f4380d5524e88a2",
+      "source": "BNE Art: Opportunities",
+      "title": "Artists Essentials: How to Write an Artist’s Statement",
+      "link": "https://bneart.com/artists-essentials-how-to-write-an-artists-statement/",
+      "summary": "Deadline: October 9. Artists Essentials: How to Write an Artist’s Statement – BNE ART - Brisbane Art Guide Skip to content Menu Artists Essentials: How to Write an Artist’s Statement Deadline: Deadline: October 9 This one-hour online workshop explores how to write an artist’s statement — a brief 100–150 word statement that communicates information about an artist’s work and can help clarify the direction of their practice. The workshop will break down, in simple terms, how participants can begin writing or refine their own artist’s statement. Artist’s statements are often required for exhibitions, grant applications and prizes. Cost: $50 Flying Arts members / $75 non-members Duration: 1 hour, including questions Delivery: Fully remote (online) Places: 30 Do by Flying Arts delivers professional development and educational programs across regional Queensland through a network of experienced facilitators. https://flyingarts.org.au/event/artists-essentials-how-to-write-an-artists-statement/ 61732161322 development@flyingarts.org.au",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-10-09",
+      "amount": "$50",
+      "entry_fee": "",
+      "description": "This one-hour online workshop explores how to write an artist’s statement — a brief 100–150 word statement that communicates information about an artist’s work and can help clarify",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": true,
+      "status": "active"
+    },
+    {
       "id": "36e3ef33963a2da068fd573aab12d33ce3d85ef5",
       "source": "Neon Marketplace",
       "title": "Northern Beaches affordable studio spaces for hire",
@@ -3473,6 +3498,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "98977d1ecb3764c4e01e8a53eaaaabdbf84a9854",
+      "source": "BNE Art: Opportunities",
+      "title": "Mustarinda Multidisciplinary Residency",
+      "link": "https://bneart.com/mustarinda-multidisciplinary-residency/",
+      "summary": "Deadline: October 13. Mustarinda Multidisciplinary Residency – BNE ART - Brisbane Art Guide Skip to content Menu Mustarinda Multidisciplinary Residency Deadline: Deadline: October 13 Mustarinda invites artists, researchers and other professionals to live and work together in its residency house in Finland for periods of 2–6 weeks as part of its 2027 multidisciplinary residency program, themed “The House as a Teacher.” The program welcomes all forms of artistic and research practices, mediums, practitioners and projects. The residency explores how living with and through the house, its seasons and its ecological context can become a site for exchange, experimentation, knowledge production and collective learning. The 2027 residency periods are: 1–26 February 2027 — Winter 1–25 March 2027 — Winter 3–28 May 2027 — Spring/Summer 1–29 June 2027 — Spring/Summer 16–30 August 2027 — Spring/Summer 6 September–15 October 2027 — Autumn 18 October–26 November 2027 — Autumn The house accommodates approximately 7–8 residents at a time. Residents contribute affordable rent depending on their room or studio and are also expected to contribute a few hours to weekly household chores. Residency costs: Studios range from €390–€540 per month , with two-week and six-week rates available. Writers’ rooms range from €330 per month . Additional charges apply for an extra person sharing a room. Mustarinda can provide confirmation letters for successful applicants seeking funding, slow-travel funding or visas. The “House as a Teacher” theme is a prompt rather than a selection criterion, and applicants do not have to directly address the theme in their proposal. Accessibility: Mustarinda is an old wooden schoolhouse in an isolated forest environment with uneven ground and significant accessibility limitations. The organisation encourages applicants with access requirements to contact them confidentially before applying. https://mustarinda.fi/en/residency/open-call-2027 Info not available info@mustarinda.fi",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-10-13",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Mustarinda invites artists, researchers and other professionals to live and work together in its residency house in Finland for periods of 2–6 weeks as part of its 2027 multidiscip",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Multidisciplinary"
+      ],
+      "first_seen": "2026-10-02",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -4414,6 +4464,37 @@
       "status": "active"
     },
     {
+      "id": "c3676ab4ec87e527fce72eb39cce3404cab29ffa",
+      "source": "BNE Art: Opportunities",
+      "title": "SMALL! 2026",
+      "link": "https://bneart.com/small-2026/",
+      "summary": "Deadline: November 9. SMALL! 2026 – BNE ART - Brisbane Art Guide Skip to content Menu SMALL! 2026 Deadline: Deadline: November 9 SMALL! 2026 is fortyfivedownstairs’ sixth annual open-call exhibition for small-scale artworks. The exhibition is open to all artists, from child artists and first-time creators through to established professionals, with every submitted artwork displayed in the gallery. All media are welcome, including painting, drawing, photography, prints, textiles and small sculptural works. Works must not exceed 20 × 20 cm , including framing, and must be suitable for wall hanging. AI-generated artwork will not be accepted. Every artwork will be priced at $160 and displayed anonymously, with the artist’s identity revealed to the buyer only after a work is sold. Prizes include Under 18, Painting, Drawing, Printmaking, Sculpture, Photography, Textile, Mixed Media and People’s Choice awards. Discounted entry fees are available for First Nations artists. Entries are limited to 1,000 submissions and entry fees are non-refundable. https://fortyfivedownstairs.com/event/small-2026-submission-form/ 0396629966 info@fortyfivedownstairs.com",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-09",
+      "amount": "$160",
+      "entry_fee": "",
+      "description": "2026 is fortyfivedownstairs’ sixth annual open-call exhibition for small-scale artworks.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Sculpture",
+        "Photography",
+        "Printmaking",
+        "Textiles",
+        "Mixed Media"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "b2b124ef3cf080aaebe1eec7fb22021028ea59db",
       "source": "Instagram: art grants",
       "title": "Open call: show your work in Philadelphia. Arch Enemy Arts' annual group exhibition for new and emer",
@@ -4485,6 +4566,31 @@
         "Photography"
       ],
       "first_seen": "2026-09-14",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "e9cd3dcc0c79955398883bd3f4506ab9fa8ebae5",
+      "source": "BNE Art: Opportunities",
+      "title": "Brisbane City Council Creative Grants 2026",
+      "link": "https://bneart.com/brisbane-city-council-creative-grants-2026/",
+      "summary": "Deadline: November 16. Brisbane City Council Creative Grants 2026 – BNE ART - Brisbane Art Guide Skip to content Menu Brisbane City Council Creative Grants 2026 Deadline: Deadline: November 16 Brisbane City Council is offering two creative funding opportunities for Brisbane-based artists and creative workers: Creative Sparks Grants and Lord Mayor’s Creative Fellowships . Applicants can apply for only one of the two programs each year. Creative Sparks Grants — up to $15,000 Supports the creation and presentation of accessible creative work for public audiences. The program is open to eligible Brisbane-based professional artists, creative workers and not-for-profit community arts, cultural and historical organisations. Projects must commence after 15 March 2027 . Applications close: 3pm, Monday 9 November 2026 Outcomes: Mid-March 2027 Lord Mayor’s Creative Fellowships — up to $10,000 Supports professional development, skills development and career progression for eligible emerging Brisbane artists and creative workers with less than 10 years of professional practice . Development opportunities must commence after 22 March 2027 . Applications close: 3pm, Monday 16 November 2026 Outcomes: Late March 2027 Free information sessions are being held at Brisbane Square Library, Chermside Library and Garden City Library during September and October. https://www.brisbane.qld.gov.au/community-support-and-safety/grants-and-sponsorship/applying-for-a-grant/creative-and-history-grants 0734038888 Info not available",
+      "relevant": true,
+      "english": true,
+      "category": "Fellowship",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-16",
+      "amount": "$15,000",
+      "entry_fee": "",
+      "description": "Brisbane City Council is offering two creative funding opportunities for Brisbane-based artists and creative workers: Creative Sparks Grants and Lord Mayor’s Creative Fellowships.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -4652,6 +4758,31 @@
         "Illustration"
       ],
       "first_seen": "2026-08-12",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "0623e41c590bf2a1f7028940aab2a734a21e09f4",
+      "source": "Artshow.com Competitions",
+      "title": "18th Annual International Drawing Discourse Exhibition - Asheville, NC",
+      "link": "https://artshow.com/juriedshows/South.html#639264445490763108",
+      "summary": "$2,000 plus a purchase award. Deadline: Nov 29, 2026",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-11-29",
+      "amount": "$2,000",
+      "entry_fee": "",
+      "description": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Drawing"
+      ],
+      "first_seen": "2026-10-02",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -4914,6 +5045,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-29",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "ade0caaa077a8fd2dd9415218647b05d9f134080",
+      "source": "BNE Art: Opportunities",
+      "title": "Collie Art Prize 2027",
+      "link": "https://bneart.com/collie-art-prize-2027/",
+      "summary": "Deadline: December 11. Collie Art Prize 2027 – BNE ART - Brisbane Art Guide Skip to content Menu Collie Art Prize 2027 Deadline: Deadline: December 11 The Collie Art Gallery presents the Collie Art Prize 2027 , a national biennial art prize inviting Australian artists to respond to the theme of Identity through contemporary visual art. The prize has attracted artists from every state and territory, presenting diverse perspectives on belonging, culture, community and the evolving Australian experience. The 2027 exhibition will feature a curated selection of finalist works chosen by an independent panel, with the major prize winner announced at the official opening. Alongside the acquisitive major award, additional category prizes and community awards will recognise artistic achievement and audience engagement. https://www.collieartgallery.org.au/art-prize-2027/ 0897342921 admin@collieartgallery.org.au",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-12-11",
+      "amount": "",
+      "entry_fee": "",
+      "description": "The Collie Art Gallery presents the Collie Art Prize 2027, a national biennial art prize inviting Australian artists to respond to the theme of Identity through contemporary visual",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -7125,6 +7281,31 @@
       "status": "active"
     },
     {
+      "id": "a58e23fe1f701e5755fca9d954c6ccf7c323f4c6",
+      "source": "BNE Art: Opportunities",
+      "title": "MiSHŌ Residency 2027",
+      "link": "https://bneart.com/misho-residency-2027/",
+      "summary": "Deadline: 29 September. MiSHŌ Residency 2027 – BNE ART - Brisbane Art Guide Skip to content Menu MiSHŌ Residency 2027 Deadline: MiSHŌ Residency is an interdisciplinary residency in Fujino, Japan, west of Tokyo, welcoming critically and socially engaged artists, creatives, researchers, writers, educators, musicians, dancers, choreographers, permaculture designers, farmers, cooks and practitioners working across disciplines. The residency encourages context-responsive creative practices through engagement with Fujino’s local community and its cultural and natural landscape. Projects can be at any stage, from open-ended research and experimentation through to developing an existing work or contemplating a new project. In 2027, MiSHŌ will host five residency programs, each running for four weeks. Longer-term engagement is also possible through the separate Creative Stay program, which provides a more flexible base for independent research, experimentation and contemplation. Fujino train station is approximately a 12-minute walk from MiSHŌ and provides direct access to central Tokyo in around 60 minutes. Application deadlines: For sessions from 29 September onwards: applications are reviewed on a rolling basis through March 2027. Applicants are asked to provide a short bio, proposal, website/social media, portfolio of recent work and preferred residency periods. Residency fees can be funded through private financial resources or grants from arts councils and foundations. MiSHŌ also offers Creative Stay periods during winter and summer, with stays from one week and longer stays potentially prioritised. Fees vary according to room type and duration. https://docs.google.com/forms/d/e/1FAIpQLSczuk41hpQdsqQqWU09XgROdpgHCbtPPfvnu9RbPWrReyTukg/viewform Info not available Info not available",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2027-09-29",
+      "amount": "",
+      "entry_fee": "",
+      "description": "MiSHŌ Residency is an interdisciplinary residency in Fujino, Japan, west of Tokyo, welcoming critically and socially engaged artists, creatives, researchers, writers, educators, mu",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "bb3add8645e727adfcb94eb15ef28ae92ca145d4",
       "source": "BNE Art: Opportunities",
       "title": "Land Street Gallery: Exhibition Applications Open",
@@ -7341,11 +7522,11 @@
       "status": "active"
     },
     {
-      "id": "f6b21ae371f07d406cc34407df2c39f9086eac5d",
+      "id": "ddb037dd4ad721dcb48c24a2f2fff9bd1952c6cc",
       "source": "Artsoz prize registry",
-      "title": "Wynne Prize",
-      "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
+      "title": "Archibald Prize",
+      "link": "https://www.artgallery.nsw.gov.au/prizes/archibald/",
+      "summary": "Location: NSW, Australia. Medium: Portrait. Type: Portrait. Tags: portrait, major, AGNSW. Archibald Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -7355,7 +7536,32 @@
       "deadline": "",
       "amount": "",
       "entry_fee": "",
-      "description": "Client Challenge A required part of this site couldn’t load.",
+      "description": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "f6b21ae371f07d406cc34407df2c39f9086eac5d",
+      "source": "Artsoz prize registry",
+      "title": "Wynne Prize",
+      "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
+      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -7395,7 +7601,7 @@
       "source": "Artsoz prize registry",
       "title": "Mosman Youth Art Prize",
       "link": "https://mosmanartgallery.org.au/art/mosman-youth-art-prize/",
-      "summary": "Location: NSW, Australia. Medium: Check official. Type: Youth. Tags: youth, council. Mosman Art Gallery What’s On Exhibitions Events Past Exhibitions Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Search Contact Venue Hire When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry What’s On Exhibitions Events Past Exhibitions Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Exhibitions Events Collections Education The Gallery When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry Search When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry Mosman Youth Art Prize Listen The Mosman Youth Art Prize is an annual competition organised by Mosman Council that aims to encourage the creative talents of young, aspiring and emerging artists whilst providing a showcase for their works. It was initiated in 1988 by the internationally renowned artist and local resident Ken Done AM. The Prize is open to all young people aged 12-21 years and is one of the richest youth art prizes in Australia. Online entries are now open for the 2024 Youth Art Prize – find out more . Mosman Youth Art Prize Archive: Please note that the 2020 and 2021 Mosman Youth Art Prizes were cancelled due to public health measures put in place due to COVID-19. Mosman Youth Art Prize 2023 Mosman Youth Art Prize 2022 Mosman Youth Art Prize 2019 Mosman Youth Art Prize 2018 Mosman Youth Art Prize 2017 Mosman Youth Art Prize 2016 Mosman Youth Art Prize 2015 Mosman Youth Art Prize 2014 Mosman Youth Art Prize 2013 Image: Laura Hayley, Experimental arts , 2020, ceramic installation, dimensions variable. Third Prize – Tertiary, 2019 Mosman Youth Art Prize. Mosman Art Gallery acknowledges the Borogegal and Cammeraigal people as the traditional custodians of this land. We pay our respects to Elders of the past and present and to those of the future and acknowledge their spiritual connection to Country.",
+      "summary": "Location: NSW, Australia. Medium: Check official. Type: Youth. Tags: youth, council. Mosman Art Gallery What’s On Exhibitions Events Past Exhibitions Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Search Contact Venue Hire When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry What’s On Exhibitions Events Past Exhibitions Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Exhibitions Events Collections Education The Gallery When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry Search When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry We are closed on Monday 5 October for the public holiday. Regular hours resume on Tuesday 6 October. Mosman Youth Art Prize Listen The Mosman Youth Art Prize is an annual competition organised by Mosman Council that aims to encourage the creative talents of young, aspiring and emerging artists whilst providing a showcase for their works. It was initiated in 1988 by the internationally renowned artist and local resident Ken Done AM. The Prize is open to all young people aged 12-21 years and is one of the richest youth art prizes in Australia. Online entries are now open for the 2024 Youth Art Prize – find out more . Mosman Youth Art Prize Archive: Please note that the 2020 and 2021 Mosman Youth Art Prizes were cancelled due to public health measures put in place due to COVID-19. Mosman Youth Art Prize 2023 Mosman Youth Art Prize 2022 Mosman Youth Art Prize 2019 Mosman Youth Art Prize 2018 Mosman Youth Art Prize 2017 Mosman Youth Art Prize 2016 Mosman Youth Art Prize 2015 Mosman Youth Art Prize 2014 Mosman Youth Art Prize 2013 Image: Laura Hayley, Experimental arts , 2020, ceramic installation, dimensions variable. Third Prize – Tertiary, 2019 Mosman Youth Art Prize. Mosman Art Gallery acknowledges the Borogegal and Cammeraigal people as the traditional custodians of this land. We pay our respects to Elders of the past and present and to those of the future and acknowledge their spiritual connection to Country.",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -10513,6 +10719,184 @@
       "judge": "",
       "art_forms": [
         "Painting"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "f35d151baf194ea1dec7e875cd5361d1124fde03",
+      "source": "BNE Art: Opportunities",
+      "title": "AGALAB Artist-in-Residence: Amsterdam",
+      "link": "https://bneart.com/agalab-artist-in-residence-amsterdam/",
+      "summary": "AGALAB Artist-in-Residence: Amsterdam – BNE ART - Brisbane Art Guide Skip to content Menu AGALAB Artist-in-Residence: Amsterdam Deadline: Four-week residencies; the residency period begins on the first Monday of the month and ends on the last Friday of the month. Applications are accepted year-round. AGALAB’s Artist-in-Residence program supports research, experimentation and the development of new work, providing artists with 24/7 access to professional printmaking facilities, technical expertise, workspace and a network of local and international artists, designers and makers. Six residency places are available: two with accommodation and four without. The program is intended primarily for artists with some experience in printmaking and print techniques, although artists with limited or no experience are also welcome to apply. Additional introductory workshops can be arranged for artists new to particular techniques. Facilities include screenprinting on paper and textiles, analogue photography, etching, Toyobo polymer plate printing, lithography, linocut, woodcut and letterpress. Residency fees are €500 without accommodation, €750 for a duo residency, or €1,450 including accommodation. A €100 materials deposit applies, while materials are charged separately. Recent graduates who completed their studies between 2024 and 2026 are eligible for a 50% discount on the residency fee, excluding accommodation. Residents are expected to present work developed during the residency in the final exhibition at De Bouwput Gallery and donate two prints made during the residency to the AGALAB archive. Applications require an application form, short motivation letter, CV and portfolio. Applications are assessed on a rolling basis, with AGALAB aiming to respond within four weeks. https://agalab.nl/artist-in-residence/ Info not available air@agalab.nl",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Four-week residencies; the residency period begins on the first Monday of the month and ends on the last Friday of the month.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Drawing",
+        "Photography",
+        "Printmaking",
+        "Textiles"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "a45e168cb2f83b8e917addc7635b27cbc0312971",
+      "source": "BNE Art: Opportunities",
+      "title": "Lagos Artists-in-Residence Programs",
+      "link": "https://bneart.com/lagos-artists-in-residence-programs/",
+      "summary": "Lagos Artists-in-Residence Programs – BNE ART - Brisbane Art Guide Skip to content Menu Lagos Artists-in-Residence Programs Deadline: The Lagos Artists-in-Residence Programs offer international residency opportunities in Berlin, Germany; Oaxaca, Mexico; and Mexico City, Mexico . The programs are designed for visual artists, curators, writers and cultural agents with emerging or established practices, with a focus on artistic development, intercultural dialogue, collaboration and professional networks. Residents receive professional and curatorial support, international visibility through Lagos digital platforms, access to local and international networks, artistically designed workspaces and opportunities to participate in talks, professional visits and other activities connected to the contemporary art scene. Applicants are required to submit an updated portfolio and artistic CV, proposed project description, motivation letter and social media details. Mexico City: Based in Anáhuac, Mexico City. Open to artists and curators working across visual, sound, digital and performance practices. The program has two modalities: International and Global South, with the latter open to artists from Mexico, Latin America, Africa, Asia and Oceania. Duration is 1–3 months, with variable monthly costs. Berlin: Based in Wedding, Berlin. The program prioritises artistic process, conceptual development and research, alongside the relationship between living and working in Berlin. Residents receive curatorial support from Lagos director Luis Carrera-Maul. Duration is 1–3 months, at €3,000 per month . Oaxaca: Based in San Pablo Etla, Oaxaca. The program focuses on the relationship between contemporary art and traditional Oaxacan knowledge. Artists can undertake individual or collaborative residencies with local artisans, with curatorial support. Duration is 1–3 months, with variable monthly costs. Artists who are or have been residents in a Lagos program or location are eligible to join lagos I Platform , which can provide opportunities for digital gallery presentation, collective exhibitions and participation in international art fairs. https://www.artelagos.mx/artist-in-residence-programs Info not available Info not available",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "The Lagos Artists-in-Residence Programs offer international residency opportunities in Berlin, Germany; Oaxaca, Mexico; and Mexico City, Mexico.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "94454d5f678e9e12c63d3d330638d5a3855f42b6",
+      "source": "Instagram: art grants",
+      "title": "La Porte Peinte: Open Call for June 2027",
+      "link": "https://www.instagram.com/p/DeAL8OGDCZv/",
+      "summary": "Source: Instagram #artopencall\nLa Porte Peinte: Open Call for June 2027\n\nLa Porte Peinte offers an international arts residency in Noyers sur Serein, France, providing artists, makers, musicians, and writers with an inspiring and supportive environment for creative exploration.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "La Porte Peinte offers an international arts residency in Noyers sur Serein, France, providing artists, makers, musicians, and writers with an inspiring and supportive environment ",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "c9c8b15e3fef1c8a435ff7d9b64a43f43b0e6421",
+      "source": "Instagram: art grants",
+      "title": "Open call: Il Teatro della Luce at the Goldoni Theatre, Livorno",
+      "link": "https://www.instagram.com/p/Dd_ivdqDPsO/",
+      "summary": "Source: Instagram #artopencall\nOpen call: Il Teatro della Luce at the Goldoni Theatre, Livorno\n\nThis international open call invites artists, collectives, and curators to create a site-specific contemporary artwork for the historic velario (vaulted canopy) of the Goldoni Theatre in Livorno, Italy.\n\n🌴👀🌴\nFull details on the site\n\nopencallradar.com\n\n#artopencall #artopencalls #opencallforartists #callforartists #art #opencallradar",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "atre, Livorno This international open call invites artists, collectives, and curators to create a site-specific contemporary artwork for the historic velario (vaulted canopy) of th",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Installation"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "4a33940e7e8484d71d5c199c8951efe16ef79d99",
+      "source": "Instagram: art grants",
+      "title": "Have You Seen What's Happening in October at EOH?! Check out all that's being offered!",
+      "link": "https://www.instagram.com/reel/DeAj_0OFcX9/",
+      "summary": "Source: Instagram #artgrant\nHave You Seen What's Happening in October at EOH?! Check out all that's being offered!\n\nearlvilleopera is located at 18 East Main Street in the quaint Village of Earlville, NY. At EOH we believe accessibility & inclusion are critical to everything we do. Our historic Opera House has been upgraded to ensure accessibility throughout the building, including a hearing loop system in our 1892 theater provided by Hamilton Hearing LLC.\n\nEOH events are made possible by the nyscouncilonthearts with the support of the Office of the Governor and the New York State Legislature, & through the generosity of EOH members.\n\nThank you to our Show Sponsors: cfscny; nbtbank; waer883; preferred.mutual; sidneyfcu; hamiltoncommunitychest; and wrvo.\n\nSpecial thanks to goldenpaints for their support of our Visual Artist Program, and our hospitality sponsors: jewettscheesehouse; Tasteful Temptations; thelocalculturecny; hamilton_harvest_winery; & Nazzitto's Wines & Liquors.\n\nThank you to Village of Earlville for supporting arts education in our community.🥰\n\n#cnyarts #arts #nonprofit #nyarts #artmatters #supportlocalartist #nyculture #chenangocounty #artgrant #earlvilleny #iloveny #upstateny #thisishamiltonny #earlvillenyevents thisishamiltonny visitmadisoncny chenangotourism radiofreehamiltonny whats.happening.315 visitcny",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Check out all that's being offered!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "c4e6c3591e6935595db8cf4871081f07e1710a65",
+      "source": "Instagram: art grants",
+      "title": "Musik machen kostet doch nichts. Applaus ist gratis. Deshalb gibt man ihn so gern.",
+      "link": "https://www.instagram.com/reel/Dd__S8QlQ-H/",
+      "summary": "Source: Instagram #artgrant\nMusik machen kostet doch nichts. Applaus ist gratis. Deshalb gibt man ihn so gern.\n\nHunderte echte Förderungen für Künstler:innen — sortiert, aktuell, kostenlos: kunst-stipendium.de (Link in Bio)\n\nKanntest du den Topf? Ehrlich antworten.\n\n#kunststipendium #künstlerförderung #stipendium #kunstförderung #förderung #künstlerleben #kunsthumor #atelierleben #residency #grants #freischaffend #kulturförderung #artgrant #kunstwelt #kunst #art #artist #künstler",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Deshalb gibt man ihn so gern.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "44b58045d13f13a870e04ccb6d416f8c6c15e9c4",
+      "source": "Instagram: art grants",
+      "title": "So many firsts this week!! Now is our first time collaborating with artist streamers on Twitch 🥺 Tha",
+      "link": "https://www.instagram.com/p/Dd_kHAVoFOh/",
+      "summary": "Source: Instagram #artgrant\nSo many firsts this week!! Now is our first time collaborating with artist streamers on Twitch 🥺 Thanks so much for helping with the arrangements darkcore2943 🙏 and thank you to all the artists for working with us!!\n\nEach artist will be streaming for 4-6 hours, please drop by and check it out if you're able to 🥰 \n\n#artcommunity #twitchartist #artgrant #kickstarter",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "ollaborating with artist streamers on Twitch 🥺 Thanks so much for helping with the arrangements darkcore2943 🙏 and thank you to all the artists for working with us!!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
       ],
       "first_seen": "2026-10-02",
       "closing_soon_sent": false,
