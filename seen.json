@@ -4672,25 +4672,22 @@
     "source": "Artsoz prize registry",
     "title": "Archibald Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/archibald/",
-    "summary": "Location: NSW, Australia. Medium: Portrait. Type: Portrait. Tags: portrait, major, AGNSW. Archibald Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921",
-    "relevant": true,
+    "summary": "No visual art form detected.",
+    "relevant": false,
     "english": true,
-    "category": "Prize",
-    "au_eligibility": "eligible",
-    "location_scope": "Australia",
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
     "eligibility_note": "",
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
     "curator": "",
     "judge": "",
-    "art_forms": [
-      "Visual Arts"
-    ],
+    "art_forms": [],
     "first_seen": "2026-08-09",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "suppressed"
   },
   "f3ca72511b30510a00932763312efb81c8ab0eb4": {
     "id": "f3ca72511b30510a00932763312efb81c8ab0eb4",
@@ -4719,7 +4716,7 @@
     "source": "Artsoz prize registry",
     "title": "Wynne Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
+    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4729,7 +4726,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -4744,7 +4741,7 @@
     "source": "Artsoz prize registry",
     "title": "Sulman Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
+    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4754,7 +4751,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -6316,7 +6313,7 @@
     ],
     "first_seen": "2026-08-21",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "42edfea63346da1db0d699060ec88dc67fa48ae8": {
     "id": "42edfea63346da1db0d699060ec88dc67fa48ae8",
@@ -10292,7 +10289,7 @@
     ],
     "first_seen": "2026-09-01",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "4b055f357f6a7002398f73e88985bed162467496": {
     "id": "4b055f357f6a7002398f73e88985bed162467496",
@@ -10317,7 +10314,7 @@
     ],
     "first_seen": "2026-09-01",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "c21a1d7f3af91d239ca6eafdb30425451dbebea0": {
     "id": "c21a1d7f3af91d239ca6eafdb30425451dbebea0",
@@ -11089,7 +11086,7 @@
     ],
     "first_seen": "2026-09-02",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "c63726b1ad04a038e2a5aa5550157dc5c81d98ed": {
     "id": "c63726b1ad04a038e2a5aa5550157dc5c81d98ed",
@@ -11192,7 +11189,7 @@
       "Mixed Media"
     ],
     "first_seen": "2026-09-03",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "146129a9aaf2b4e45fb0145b5570fcbd3914b6c2": {
@@ -11476,7 +11473,7 @@
     ],
     "first_seen": "2026-09-03",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "ff8198d349d97b06209abd1a830b41804ac05805": {
     "id": "ff8198d349d97b06209abd1a830b41804ac05805",
@@ -11776,7 +11773,7 @@
     ],
     "first_seen": "2026-09-04",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "c7a901785b10f2485455de36d94bfd237ab5527b": {
     "id": "c7a901785b10f2485455de36d94bfd237ab5527b",
@@ -12545,7 +12542,7 @@
     ],
     "first_seen": "2026-09-06",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "3fc96bbd5a1a84c8f5d1dab818d2773cbab8950b": {
     "id": "3fc96bbd5a1a84c8f5d1dab818d2773cbab8950b",
@@ -15933,7 +15930,7 @@
     ],
     "first_seen": "2026-08-30",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "9028a05c05939f22db1e723d06f25cbedb28917d": {
     "id": "9028a05c05939f22db1e723d06f25cbedb28917d",
@@ -16204,7 +16201,7 @@
     ],
     "first_seen": "2026-09-16",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "a58df4b084e55eaeee99a24bd79855863667bc32": {
     "id": "a58df4b084e55eaeee99a24bd79855863667bc32",
@@ -16688,7 +16685,7 @@
       "Photography"
     ],
     "first_seen": "2026-09-18",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "cf40fcb9967f14d420b7adeb55807b7064cd80ea": {
@@ -17107,7 +17104,7 @@
     ],
     "first_seen": "2026-09-18",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "74c5dcc6675b4cf732e40c003d6e991c4e7beab7": {
     "id": "74c5dcc6675b4cf732e40c003d6e991c4e7beab7",
@@ -17651,7 +17648,7 @@
     ],
     "first_seen": "2026-09-19",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "3db48387ade4e79a060513b96b9cc902ff0d5315": {
     "id": "3db48387ade4e79a060513b96b9cc902ff0d5315",
@@ -17726,7 +17723,7 @@
     ],
     "first_seen": "2026-09-19",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "9f5090ab95ea816eb3764208ca173b98574d30d6": {
     "id": "9f5090ab95ea816eb3764208ca173b98574d30d6",
@@ -17775,7 +17772,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-19",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "f63e100665c461017c44df1accedadd2b21afbac": {
@@ -17801,7 +17798,7 @@
     ],
     "first_seen": "2026-09-19",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "b5793bdb34ad772bd3009a17231dc06143a18fe4": {
     "id": "b5793bdb34ad772bd3009a17231dc06143a18fe4",
@@ -18235,7 +18232,7 @@
     ],
     "first_seen": "2026-09-21",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "3a1ac3872f72fd8bee72910f96e6293e20ed28be": {
     "id": "3a1ac3872f72fd8bee72910f96e6293e20ed28be",
@@ -18506,7 +18503,7 @@
       "Photography"
     ],
     "first_seen": "2026-09-21",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "4446bac1684fbfb2c24946c8c9789e9f07cdf2a4": {
@@ -19510,7 +19507,8 @@
     ],
     "first_seen": "2026-09-24",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "suppressed",
+    "superseded_by": "3660040c8a30b5cc7b78358d2d0f04abc43e40fc"
   },
   "27f4c23c71375ae2b71353c0f1ab4e8463aa4b4f": {
     "id": "27f4c23c71375ae2b71353c0f1ab4e8463aa4b4f",
@@ -19947,7 +19945,7 @@
     ],
     "first_seen": "2026-09-25",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "f18be779b6178bbe95471d1a8371c42dc20a2661": {
     "id": "f18be779b6178bbe95471d1a8371c42dc20a2661",
@@ -21265,6 +21263,176 @@
     "closing_soon_sent": false,
     "status": "active"
   },
+  "20c04be2307710a22cfc31b98a83698e48abfaf8": {
+    "id": "20c04be2307710a22cfc31b98a83698e48abfaf8",
+    "source": "Artshow.com Competitions",
+    "title": "October Salon Art Prize - Online",
+    "link": "https://artshow.com/juriedshows/NA.html#639263623951783133",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-02",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "3660040c8a30b5cc7b78358d2d0f04abc43e40fc": {
+    "id": "3660040c8a30b5cc7b78358d2d0f04abc43e40fc",
+    "source": "Instagram: art grants",
+    "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/video-and-film",
+    "link": "https://www.instagram.com/p/Dd9vqIOkRuU/",
+    "summary": "Deadline: 2 November 2026\nSource: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/video-and-film\n.\nvisionsdureel\n🎬 Call for films & projects 📢\n\nThe call for non-fiction films and projects for the 58th edition is now open for submissions. ✨\n\nOur selection committees are excited to consider bold, visionary films and projects – for both our Official Selection and VdR–Industry programme. Don’t miss the chance to showcase your work at Visions du Réel 2027!\n\n🗓 Deadlines\nEarly deadline: 2 November 2026 \nFinal deadline: 15 December 2026\n\n#VisionsduReel\n#opencall\n#callforartists\n#artist\n#artopencall",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2026-11-02",
+    "amount": "",
+    "entry_fee": "",
+    "description": "visionsdureel\n🎬 Call for films & projects 📢 The call for non-fiction films and projects for the 58th edition is now open for submissions.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-24",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "22f5a536c29cb67a2e60ef88216a2dc42f4b2c33": {
+    "id": "22f5a536c29cb67a2e60ef88216a2dc42f4b2c33",
+    "source": "Instagram: art grants",
+    "title": "Open call: nine-month career accelerator for NYC artists. The Bronx Museum's 2027 AIM Fellowship — s",
+    "link": "https://www.instagram.com/p/Dd9Rv-9DhRc/",
+    "summary": "Source: Instagram #artopencall\nOpen call: nine-month career accelerator for NYC artists. The Bronx Museum's 2027 AIM Fellowship — seminars, studio visits, portfolio reviews, biennial exhibition + catalogue. Deadline: October 25. Free to apply.\n\nbronxmuseum\n\n#artopencall #opencallforartists #callforartists #nycart",
+    "relevant": true,
+    "english": true,
+    "category": "Fellowship",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2026-10-25",
+    "amount": "",
+    "entry_fee": "Free",
+    "description": "The Bronx Museum's 2027 AIM Fellowship — seminars, studio visits, portfolio reviews, biennial exhibition + catalogue.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-02",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "7d7c667ea936ee0845c86f74162f86ecbed7ff2f": {
+    "id": "7d7c667ea936ee0845c86f74162f86ecbed7ff2f",
+    "source": "Instagram: art grants",
+    "title": "Check out the details of this open call and discover many other art opportunities on our website!",
+    "link": "https://www.instagram.com/p/Dd9QOedMFmO/",
+    "summary": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!\n\nwww.artenda.net\n\n#artopencall #artopencalls #opencallforartists #callforartists",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "er many other art opportunities on our website!",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-02",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "d7bbe885e39b68f9d1d4a952ac6a43b23ffb92db"
+  },
+  "07f4d1534a863e951e0d832efc0e8def0f5a0faa": {
+    "id": "07f4d1534a863e951e0d832efc0e8def0f5a0faa",
+    "source": "Instagram: art grants",
+    "title": "IT'S LIVE 😭 link is in our profile!!",
+    "link": "https://www.instagram.com/p/Dd83DdvIKMc/",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-02",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "f458cb0f21984bb99a7114bbf23818305185a349": {
+    "id": "f458cb0f21984bb99a7114bbf23818305185a349",
+    "source": "Instagram: art grants",
+    "title": "Sie sehen Mappen. Bewirb dich da, wo niemand nach Followern fragt: Link in Bio.",
+    "link": "https://www.instagram.com/p/Dd8VcFQkR4d/",
+    "summary": "Source: Instagram #artgrant\nSie sehen Mappen. Bewirb dich da, wo niemand nach Followern fragt: Link in Bio.\n\nMarkier deine Atelier-Mitbewohnung.\n\n#kunststipendium #künstlerförderung #stipendium #kunstförderung #förderung #artistopportunity #residency #grants #freischaffend #kulturförderung #artgrant #kunstwelt #kunst #art #artist #künstler #künstlerin #kreativität",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Followern fragt: Link in Bio.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-02",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "98764a39b9f7e905a4ca175a50a61149ecd233cf": {
+    "id": "98764a39b9f7e905a4ca175a50a61149ecd233cf",
+    "source": "Instagram: art grants",
+    "title": "I’m excited to announce that I’ve been awarded a grant by cityofmoretonbay in the Continue Creating",
+    "link": "https://www.instagram.com/p/Dd8CxigoK7_/",
+    "summary": "Source: Instagram #artgrant\nI’m excited to announce that I’ve been awarded a grant by cityofmoretonbay in the Continue Creating Grant awards. My project is called ‘Contemporary Still Life: Memory and Meaning’ and it aims to identify how contemporary object painting can transform everyday domestic iconography into symbols of memory, impermanence and connection. \nThrough the creation of a new body of original paintings, I will explore how the bold visual language of pop art—including colour, composition and repetition—can communicate emotional narratives while elevating familiar household objects beyond their functional purpose.\nWhat is it that makes domestic objects like vases, bottles and mugs so nostalgic and iconic? What is it that can connect the viewer to my art and still life as a whole? Why has still life been a popular genre for centuries?\nAll of these questions will be the focus of my research resulting in a new collection of work and an essay with my findings. Follow along for the journey!\nProud to be supported by cityofmoretonbay and a big thanks to lynetilt.art and cindywerchon_art for their support with my grant application process 🫶🏼🫶🏼🙏🏼🙏🏼\n\n#cityofmoretonbay #artgrant #artresearch #contemporarystilllife",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "rant by cityofmoretonbay in the Creating Grant awards.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting"
+    ],
+    "first_seen": "2026-10-02",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -21968,7 +22136,7 @@
     "guidelines|landscape|pdf|theodore|urbach": "9c668b68fb54dc3845b1e011468e68d1d433871f",
     "artistic|bundanon|craving|doors|free|getaway|opens": "ce6ede37ffd9f32eb085f968b9bd0aab1056a811",
     "event|gras|mardi|register|your": "d23e2751fa1bb9fb633ee89ff73ebc16f7016de5",
-    "apply|applyforart|com|film|find|this|through|to|video|www": "931fe70fade6cc66981cb2abbab0892bc36bb912",
+    "apply|applyforart|com|film|find|this|through|to|video|www": "3660040c8a30b5cc7b78358d2d0f04abc43e40fc",
     "all|queries|thank|you": "86ff840796da0de2a14ae19a335a0a2d730fa390",
     "rest": "a5bf41193857325f141a00bdc05f2aa540f2eaa6",
     "beatrice|gallery|haggerty|m|proposals": "0c530ddfcb2058eccc55d96eed91d5bab0c86e95",
@@ -22022,6 +22190,11 @@
     "arch|emer|enemy|group|in|new|philadelphia|show|work|your": "b2b124ef3cf080aaebe1eec7fb22021028ea59db",
     "be|dayglow|ever|first|invites|juried|locals|only|our|submit|to|will|work|you": "2ff088b72766aa13f17a959c5985983c9e9ee4f1",
     "can|make|remain|so|something|us|we": "64a1cf8a40320228e622cf3c1fda0ee324a79212",
-    "about|be|in|is|it|letter|might|most|nobody|patron|powerful|single|talking|world": "2c344be61eed116bc0cef36c38ca2f40237249c8"
+    "about|be|in|is|it|letter|might|most|nobody|patron|powerful|single|talking|world": "2c344be61eed116bc0cef36c38ca2f40237249c8",
+    "october|online|salon": "20c04be2307710a22cfc31b98a83698e48abfaf8",
+    "accelerator|aim|bronx|career|fellowship|month|museum|nine|nyc|s": "22f5a536c29cb67a2e60ef88216a2dc42f4b2c33",
+    "in|is|it|link|live|our|profile|s": "07f4d1534a863e951e0d832efc0e8def0f5a0faa",
+    "bewirb|bio|da|dich|followern|fragt|in|link|mappen|nach|niemand|sehen|sie|wo": "f458cb0f21984bb99a7114bbf23818305185a349",
+    "announce|awarded|been|by|cityofmoretonbay|continue|creating|excited|grant|i|in|m|that|to|ve": "98764a39b9f7e905a4ca175a50a61149ecd233cf"
   }
 }

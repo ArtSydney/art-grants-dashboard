@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-01T09:36:42+10:00",
-  "count": 322,
-  "total": 416,
+  "generated": "2026-10-02T10:03:55+10:00",
+  "count": 309,
+  "total": 418,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -2391,7 +2391,7 @@
       ],
       "first_seen": "2026-08-21",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "afc373de60c1f827baf47dd2696bc04d55506a0a",
@@ -2416,7 +2416,7 @@
       ],
       "first_seen": "2026-09-01",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "4b055f357f6a7002398f73e88985bed162467496",
@@ -2441,7 +2441,7 @@
       ],
       "first_seen": "2026-09-01",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "54e9b32829eb43924a62819b5be6ab33e84b16fb",
@@ -2466,7 +2466,7 @@
       ],
       "first_seen": "2026-09-02",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "cd15ecf468a340f3694e3b4f33a2ab866d20d255",
@@ -2491,7 +2491,7 @@
       ],
       "first_seen": "2026-09-03",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "b4d0f68b577ba538f7d944876f04a2ad096f9846",
@@ -2516,7 +2516,7 @@
       ],
       "first_seen": "2026-09-06",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "0427e2ebec40183d7da994fcb420e98af61eeb52",
@@ -2541,7 +2541,7 @@
       ],
       "first_seen": "2026-08-30",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "deceb963a852d00e29229676b5f663a155a9dae3",
@@ -2566,7 +2566,7 @@
       ],
       "first_seen": "2026-09-16",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "7ba3f6dea11b548654602b3a558dc3fc562da7b0",
@@ -2591,7 +2591,7 @@
       ],
       "first_seen": "2026-09-18",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "66e54082bb13f0cba715bd000c35fe91061d756b",
@@ -2616,7 +2616,7 @@
       ],
       "first_seen": "2026-09-19",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "f284c1179905635205de2c21276c27d649b99445",
@@ -2641,7 +2641,7 @@
       ],
       "first_seen": "2026-09-19",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "f63e100665c461017c44df1accedadd2b21afbac",
@@ -2666,7 +2666,7 @@
       ],
       "first_seen": "2026-09-19",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "87288644bc5d95a73842e33aa44be92394907a71",
@@ -2692,7 +2692,7 @@
       ],
       "first_seen": "2026-09-21",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "a0e73263928a1a1f00e1fb111ba821e6b9e34a23",
@@ -2717,7 +2717,7 @@
       ],
       "first_seen": "2026-09-25",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "14131b9bb178eac979f90d05961bf4379e219c22",
@@ -2742,7 +2742,7 @@
       ],
       "first_seen": "2026-09-04",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "2543380bfcd23aca0a530164f07a0ba51aff66a1",
@@ -3147,7 +3147,7 @@
         "Mixed Media"
       ],
       "first_seen": "2026-09-03",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3172,7 +3172,7 @@
         "Photography"
       ],
       "first_seen": "2026-09-18",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3197,7 +3197,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-19",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3222,7 +3222,7 @@
         "Photography"
       ],
       "first_seen": "2026-09-21",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3931,6 +3931,31 @@
       "status": "active"
     },
     {
+      "id": "22f5a536c29cb67a2e60ef88216a2dc42f4b2c33",
+      "source": "Instagram: art grants",
+      "title": "Open call: nine-month career accelerator for NYC artists. The Bronx Museum's 2027 AIM Fellowship — s",
+      "link": "https://www.instagram.com/p/Dd9Rv-9DhRc/",
+      "summary": "Source: Instagram #artopencall\nOpen call: nine-month career accelerator for NYC artists. The Bronx Museum's 2027 AIM Fellowship — seminars, studio visits, portfolio reviews, biennial exhibition + catalogue. Deadline: October 25. Free to apply.\n\nbronxmuseum\n\n#artopencall #opencallforartists #callforartists #nycart",
+      "relevant": true,
+      "english": true,
+      "category": "Fellowship",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-10-25",
+      "amount": "",
+      "entry_fee": "Free",
+      "description": "The Bronx Museum's 2027 AIM Fellowship — seminars, studio visits, portfolio reviews, biennial exhibition + catalogue.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "57e1550e26209299daab560a497721f032d5a064",
       "source": "Neon Marketplace",
       "title": "Four Year Investment for Organisations 2029–32",
@@ -4208,6 +4233,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-22",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "3660040c8a30b5cc7b78358d2d0f04abc43e40fc",
+      "source": "Instagram: art grants",
+      "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/video-and-film",
+      "link": "https://www.instagram.com/p/Dd9vqIOkRuU/",
+      "summary": "Deadline: 2 November 2026\nSource: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/video-and-film\n.\nvisionsdureel\n🎬 Call for films & projects 📢\n\nThe call for non-fiction films and projects for the 58th edition is now open for submissions. ✨\n\nOur selection committees are excited to consider bold, visionary films and projects – for both our Official Selection and VdR–Industry programme. Don’t miss the chance to showcase your work at Visions du Réel 2027!\n\n🗓 Deadlines\nEarly deadline: 2 November 2026 \nFinal deadline: 15 December 2026\n\n#VisionsduReel\n#opencall\n#callforartists\n#artist\n#artopencall",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-11-02",
+      "amount": "",
+      "entry_fee": "",
+      "description": "visionsdureel\n🎬 Call for films & projects 📢 The call for non-fiction films and projects for the 58th edition is now open for submissions.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-09-24",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -7291,36 +7341,11 @@
       "status": "active"
     },
     {
-      "id": "ddb037dd4ad721dcb48c24a2f2fff9bd1952c6cc",
-      "source": "Artsoz prize registry",
-      "title": "Archibald Prize",
-      "link": "https://www.artgallery.nsw.gov.au/prizes/archibald/",
-      "summary": "Location: NSW, Australia. Medium: Portrait. Type: Portrait. Tags: portrait, major, AGNSW. Archibald Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "",
-      "amount": "",
-      "entry_fee": "",
-      "description": "",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Visual Arts"
-      ],
-      "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
-      "status": "active"
-    },
-    {
       "id": "f6b21ae371f07d406cc34407df2c39f9086eac5d",
       "source": "Artsoz prize registry",
       "title": "Wynne Prize",
       "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
+      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -7330,7 +7355,7 @@
       "deadline": "",
       "amount": "",
       "entry_fee": "",
-      "description": "",
+      "description": "Client Challenge A required part of this site couldn’t load.",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -7345,7 +7370,7 @@
       "source": "Artsoz prize registry",
       "title": "Sulman Prize",
       "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-      "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
+      "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -7355,7 +7380,7 @@
       "deadline": "",
       "amount": "",
       "entry_fee": "",
-      "description": "",
+      "description": "Client Challenge A required part of this site couldn’t load.",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -10169,31 +10194,6 @@
       "status": "active"
     },
     {
-      "id": "931fe70fade6cc66981cb2abbab0892bc36bb912",
-      "source": "Instagram: art grants",
-      "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/video-and-film",
-      "link": "https://www.instagram.com/p/DdrzR0VgFMd/",
-      "summary": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/video-and-film\n.\nvimeostaffpicks\nStart spreading the news: The Vimeo Short Film Grant is back! And we’re doubling the cash award to $60,000 per film.\n\nLaunched in 2025, the Vimeo Short Film Grant supports the production of five artistically driven short films by awarding emerging filmmakers with money, mentorship, and access to gear for the production of their next short film projects.\n\nSubmissions open September 21st. Enter by October 16th for a chance to win! \nThe grant is made possible thanks to generous support from panavisionofficial, poweredbyowc, ajavideo, and shotdeck\n\n#opencall\n#callforartists\n#artist\n#artopencall\n#callforart",
-      "relevant": true,
-      "english": true,
-      "category": "Other",
-      "au_eligibility": "unclear",
-      "location_scope": "Unknown",
-      "eligibility_note": "",
-      "deadline": "",
-      "amount": "$60,000",
-      "entry_fee": "",
-      "description": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/video-and-film\n.",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Visual Arts"
-      ],
-      "first_seen": "2026-09-24",
-      "closing_soon_sent": false,
-      "status": "active"
-    },
-    {
       "id": "a5bf41193857325f141a00bdc05f2aa540f2eaa6",
       "source": "Instagram: art grants",
       "title": "🕯️ OPEN CALL: REST 🕯️",
@@ -10465,6 +10465,56 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-30",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "f458cb0f21984bb99a7114bbf23818305185a349",
+      "source": "Instagram: art grants",
+      "title": "Sie sehen Mappen. Bewirb dich da, wo niemand nach Followern fragt: Link in Bio.",
+      "link": "https://www.instagram.com/p/Dd8VcFQkR4d/",
+      "summary": "Source: Instagram #artgrant\nSie sehen Mappen. Bewirb dich da, wo niemand nach Followern fragt: Link in Bio.\n\nMarkier deine Atelier-Mitbewohnung.\n\n#kunststipendium #künstlerförderung #stipendium #kunstförderung #förderung #artistopportunity #residency #grants #freischaffend #kulturförderung #artgrant #kunstwelt #kunst #art #artist #künstler #künstlerin #kreativität",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Followern fragt: Link in Bio.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-02",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "98764a39b9f7e905a4ca175a50a61149ecd233cf",
+      "source": "Instagram: art grants",
+      "title": "I’m excited to announce that I’ve been awarded a grant by cityofmoretonbay in the Continue Creating",
+      "link": "https://www.instagram.com/p/Dd8CxigoK7_/",
+      "summary": "Source: Instagram #artgrant\nI’m excited to announce that I’ve been awarded a grant by cityofmoretonbay in the Continue Creating Grant awards. My project is called ‘Contemporary Still Life: Memory and Meaning’ and it aims to identify how contemporary object painting can transform everyday domestic iconography into symbols of memory, impermanence and connection. \nThrough the creation of a new body of original paintings, I will explore how the bold visual language of pop art—including colour, composition and repetition—can communicate emotional narratives while elevating familiar household objects beyond their functional purpose.\nWhat is it that makes domestic objects like vases, bottles and mugs so nostalgic and iconic? What is it that can connect the viewer to my art and still life as a whole? Why has still life been a popular genre for centuries?\nAll of these questions will be the focus of my research resulting in a new collection of work and an essay with my findings. Follow along for the journey!\nProud to be supported by cityofmoretonbay and a big thanks to lynetilt.art and cindywerchon_art for their support with my grant application process 🫶🏼🫶🏼🙏🏼🙏🏼\n\n#cityofmoretonbay #artgrant #artresearch #contemporarystilllife",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "rant by cityofmoretonbay in the Creating Grant awards.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting"
+      ],
+      "first_seen": "2026-10-02",
       "closing_soon_sent": false,
       "status": "active"
     },
