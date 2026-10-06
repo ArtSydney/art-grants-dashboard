@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-05T09:22:20+11:00",
-  "count": 340,
-  "total": 456,
+  "generated": "2026-10-06T11:46:31+11:00",
+  "count": 349,
+  "total": 468,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -2942,7 +2942,7 @@
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "d4e9d03ea671e78a95c222f46abdc8ad3ffa57d2",
@@ -2967,7 +2967,7 @@
       ],
       "first_seen": "2026-09-23",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "0b42cad97226074400bbee493fe8216c7566a682",
@@ -2993,7 +2993,7 @@
       ],
       "first_seen": "2026-10-03",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "624f9e486302be3a52d95d1002234a8e49421492",
@@ -3500,7 +3500,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-04",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3525,7 +3525,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-08",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3550,7 +3550,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-09",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3575,7 +3575,7 @@
         "Multidisciplinary"
       ],
       "first_seen": "2026-10-02",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3851,6 +3851,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-21",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "aafc04539610871ee056922f83e80097282f9cbb",
+      "source": "Instagram: art grants",
+      "title": "**OPEN CALL 01 : IN BETWEEN**",
+      "link": "https://www.instagram.com/p/DeHjS9_FhZI/",
+      "summary": "Deadline: 16 October 2026\nSource: Instagram #artopencall\n**OPEN CALL 01 : IN BETWEEN**\n\nFor the things that exist between one place and another.\n\nBetween leaving and arriving.\nBetween who we were and who we're becoming.\nBetween certainty and possibility.\n\nWe are looking for artists exploring transition, identity, desire, transformation, uncertainty and the spaces in between.\n\nOne artwork.\nAny medium.\nArtists worldwide.\n\n**€2 to submit.**\n\nApplications close 16 October 2026.\n\nSelected artists will be featured in the first ESPERA online exhibition.\n\nLink in bio.\n\nart open call\ncontemporary art\nemerging artist\n\n#opencall #emergingartists #artopencall",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-10-16",
+      "amount": "",
+      "entry_fee": "",
+      "description": "For the things that exist between one place and another.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Mixed Media"
+      ],
+      "first_seen": "2026-10-06",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -4498,6 +4523,56 @@
       "status": "active"
     },
     {
+      "id": "0648a16b757b7ab484dbe2cfc65545ac0f6ee498",
+      "source": "Instagram: art grants",
+      "title": "OPEN CALL: AGENCY RESIDENCY ▇",
+      "link": "https://www.instagram.com/p/DeIJvZ1jEeX/",
+      "summary": "Source: Instagram #artopencall\nOPEN CALL: AGENCY RESIDENCY ▇\n\nThis year at Eyebeam, the theme of AGENCY will guide a shared research agenda for our artists, staff, audiences, and collaborators.\n\nWe’re inviting artists to explore questions of agency at a moment when AI systems are increasingly acting, making decisions, and carrying out tasks on our behalf. How do we preserve human agency as these systems become more capable of shaping human behavior? How do we assert agency in imagining and building the societies we inhabit? And how might our understanding change if we think about agency as collective, relational, entangled, and more-than-human?\n\nProjects might engage AI directly, but they don’t have to. We welcome critical and creative approaches to questions of power, autonomy, technological systems, collective action, human and nonhuman relationships, and the social and material structures through which agency is exercised.\n\n▇ ▇ ▇\n\nVIRTUAL RESIDENCY — FALL 2026\nOpen to US-based artists outside New York City. Six artists · $2,000 stipend · mentorship and access to tools and technical expertise through Eyebeam’s network.\nInfo session: Mon, Sept 28, 1 PM ET\nDeadline: Sun, Oct 11, 11:59 PM ET\nResidency: Nov 4, 2026 – Feb 12, 2027\n\nNYC RESIDENCY — SPRING 2027\nOpen to New York City-based artists. Six artists · $5,000 stipend · mentorship and access to tools and technical expertise through Eyebeam’s network.\nInfo session: Mon, Oct 19, 1 PM ET\nDeadline: Sun, Nov 15, 11:59 PM ET\nResidency: Mar 15 – June 11, 2027\n",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-11-04",
+      "amount": "$2,000",
+      "entry_fee": "",
+      "description": "This year at Eyebeam, the theme of AGENCY will guide a shared research agenda for our artists, staff, audiences, and collaborators.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "6d363f153f7e6ffc8453385bbfd5c2bc93fd7ff1",
+      "source": "Instagram: art grants",
+      "title": "OPEN CALL: ANIMAL MUSE",
+      "link": "https://www.instagram.com/p/DeIM2J6jS9T/",
+      "summary": "Deadline: 5 November 2026\nSource: Instagram #artopencall\nOPEN CALL: ANIMAL MUSE\n\nFrom Louise Bourgeois’s spiders to Paula Rego’s Dog Woman series, Picasso’s Bull’s Head to Leonora Carrington’s Cat Without Boots, artists have long looked to animals for more than representation.\n\nAnimal Muse invites artists to take the animal as a point of departure. We are looking for work with a strong point of view: work that pushes the boundaries of its medium and stretches the limits of the theme.\n\nThe animal may be present, implied, embodied, symbolic or entirely reimagined.\n\nAll mediums | International | Free entry\nSubmission deadline: 5 November 2026\n\nArtists may submit up to three works.\n\nSelected work will be exhibited and available for sale through Aperio Gallery from 18 November – 31 December 2026.\n\nA €15 participation fee per selected artwork applies only after selection. This is to help cover advertising and administration costs.\n\nApply via the link in bio.\n\n#animalmuse #opencall #opencallforartists #artistopencall #contemporaryart #aperiogallery\n#artopencall #internationalopencall #emergingartists #contemporaryartists",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-11-05",
+      "amount": "",
+      "entry_fee": "Free",
+      "description": "From Louise Bourgeois’s spiders to Paula Rego’s Dog Woman series, Picasso’s Bull’s Head to Leonora Carrington’s Cat Without Boots, artists have long looked to animals for more than",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Multidisciplinary"
+      ],
+      "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "bdebf985d6606e9bcb9fdc7a6e2d5d88498e4ebb",
       "source": "Instagram: art grants",
       "title": "European Media Art Platform Residency Programme 2027",
@@ -4835,6 +4910,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-29",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "a6d69650639098acdfa35683c5d0ae4f6faf68df",
+      "source": "Instagram: art grants",
+      "title": "📢 CALL FOR ARTISTS",
+      "link": "https://www.instagram.com/p/DeILxCss6Rm/",
+      "summary": "Source: Instagram #artopencall\n📢 CALL FOR ARTISTS\nCREACTION | The 2nd Edition 2026\n\n🗓 December 12–19, 2026\n📍 Matera, Casa Cava\n⏳ DEADLINE: November 20, 2026 (11.59 PM your local time)\n\nI am opening submissions for the International Art Exhibition CREACTION | The 2nd Edition 2026. \n\n“Every piece of art is the fruit of human expression and the creativity of the individual artist.”\n\nCreativity can be defined as the result of complementarities, between deduction and intuition, between reason and imagination, between emotion and reflection, between divergent thinking (producing many different possible ideas and solutions) and convergent thinking (reaching a single, correct answer to a problem). \n\nCreativity arises above all from the physical and mental action that the artist performs during the artistic process. Every artist creates his or her works by following emotions, moods and life experiences, and through the application of techniques, shapes, colours, lights, words and sounds, manages to convey an emotional message that can be understood and interpreted directly or indirectly by the observer. This emotional connection can arouse a range of emotions and feelings involving those who relate to art.\n\nArtists are invited to reflect on the idea of creativity, based on the relationship between the external world and their own inner world, allowing themselves to be inspired by a dualism made up of differences and assonances that create the action necessary to realise new possible horizons.\n\nThe submission propos",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-20",
+      "amount": "",
+      "entry_fee": "",
+      "description": "The 2nd Edition 2026 🗓 December 12–19, 2026\n📍 Matera, Casa Cava\n⏳ DEADLINE: November 20, 2026 (11.59 PM your local time) I am opening submissions for the International Art Exhibiti",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-06",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -5651,6 +5751,35 @@
         "Mixed Media"
       ],
       "first_seen": "2026-09-12",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "e41eafee03893be60fd8bd7352b2bcb7046b7898",
+      "source": "Instagram: art grants",
+      "title": "New open call dedicated to Flowers and Related Theme, interpreted in the broadest and most original",
+      "link": "https://www.instagram.com/p/DeHYDVBgEbn/",
+      "summary": "Source: Instagram #artopencall\nNew open call dedicated to Flowers and Related Theme, interpreted in the broadest and most original way possible. Flowers can be photographed in their natural context, such as a garden or a living room; they can be fresh-picked or withered. They may appear painted or printed on a dress, take the form of a flower-shaped vase, or be suggested by a chair whose shape evokes a blossom. They may be held by a person, or appear in a scene where a cat plays in a flower-filled meadow.\n\nAny approach is welcome, as long as it relates to the theme. The examples above are intended purely as inspiration and should not be read as a list of subjects to follow literally.\n\nWe are aware that flowers have long been associated with femininity, but for this project we would like to move beyond that convention and explore the theme from as many perspectives as possible.\n\nWe welcome submissions not only in photography, but also in other artistic disciplines, including sculpture, video, collage, embroidery, and more.\n\nDeadline February 15th, 2027\n\nPrepare the following materials: \n\n● Applications must be submitted via the submission form available on our website and through the link in bio.\n\n● Theme: We welcome projects exploring any theme related to flowers, whether they are the main subject of your work or not. In addition to photography, you may submit drawings, paintings, performances, sculptures, collages, design works, ceramics, fashion projects, theatre works, patchwork, and other artistic medi",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2027-02-15",
+      "amount": "",
+      "entry_fee": "",
+      "description": "New open call dedicated to Flowers and Related Theme, interpreted in the broadest and most original way possible.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Sculpture",
+        "Photography",
+        "Ceramics"
+      ],
+      "first_seen": "2026-10-06",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -6859,6 +6988,31 @@
       "status": "active"
     },
     {
+      "id": "438546561ae4fc1937fdc92b079794b64a03b249",
+      "source": "Instagram: art grants",
+      "title": "ERA Foundation is proud to support this fully funded residency at Gasworks (gasworkslondon) develope",
+      "link": "https://www.instagram.com/p/DeHYW0UgaBt/",
+      "summary": "Source: Instagram #artopencall\nERA Foundation is proud to support this fully funded residency at Gasworks (gasworkslondon) developed in partnership with URRA (proyectourra), for an artist based in Argentina.\n\nThe eleven-week residency will take place at Gasworks in London from 7 April to 22 June 2027.\n\nThrough this partnership, ERA Foundation is committed to expanding opportunities for Latin American artists, fostering international dialogue, artistic development and long-term institutional connections.\n\nApplications are now open and close at 23:59 GMT on Monday, 16 November 2026.\n\nFind out more and apply via Gasworks’ website.\n\nImage credit: Julia Padilla (julia.padi), Gasworks Summer Open Studios, London, 2026.\n\nESP \n\nFundación ERA se enorgullece de apoyar esta residencia totalmente financiada en Gasworks (gasworkslondon), desarrollada en colaboración con URRA (proyectourra), destinada a un/a artista con base en Argentina.\n\nLa residencia tendrá una duración de once semanas y se llevará a cabo en Gasworks, Londres, del 7 de abril al 22 de junio de 2027.\n\nA través de esta colaboración, Fundación ERA reafirma su compromiso con la ampliación de oportunidades para artistas latinoamericanos, promoviendo el diálogo internacional, el desarrollo artístico y la creación de vínculos institucionales a largo plazo.\n\nLas postulaciones ya están abiertas y cierran a las 23:59 GMT del lunes 16 de noviembre de 2026.\n\nMás información y postulaciones a través del sitio web de Gasworks.\n\nCrédito de imagen: Julia Padilla (jul",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2027-06-22",
+      "amount": "",
+      "entry_fee": "",
+      "description": "ed residency at Gasworks (gasworkslondon) developed in partnership with URRA (proyectourra), for an artist based in Argentina.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "c2391703e94fb3f5e29f1de29d704ae8a04e4b58",
       "source": "BNE Art: Opportunities",
       "title": "R & M McGivern Prize for Painting",
@@ -7820,7 +7974,7 @@
       "source": "Artsoz prize registry",
       "title": "Wynne Prize",
       "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
+      "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -7830,7 +7984,7 @@
       "deadline": "",
       "amount": "",
       "entry_fee": "",
-      "description": "Client Challenge A required part of this site couldn’t load.",
+      "description": "",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -7845,7 +7999,7 @@
       "source": "Artsoz prize registry",
       "title": "Sulman Prize",
       "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-      "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
+      "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -7855,7 +8009,7 @@
       "deadline": "",
       "amount": "",
       "entry_fee": "",
-      "description": "",
+      "description": "Client Challenge A required part of this site couldn’t load.",
       "curator": "",
       "judge": "",
       "art_forms": [
@@ -11498,6 +11652,131 @@
       "status": "active"
     },
     {
+      "id": "acd01daef309f1196902436898b63c5ba7238627",
+      "source": "Instagram: art grants",
+      "title": "Less than two weeks remain to apply to our Open Call for 2028 Exhibitions!",
+      "link": "https://www.instagram.com/p/DeH4lH4Ddwj/",
+      "summary": "Source: Instagram #artopencall\nLess than two weeks remain to apply to our Open Call for 2028 Exhibitions!\n\nFor our Open Call for 2028 Exhibitions, we invite applications from artists working in any medium and location, whose practices emphasize experimentation, sustainability, and social engagement. As part of this opportunity, selected artists will receive artist fees based on the W.A.G.E. certification schedule, a production budget, and support from Open Source in the form of planning, production and communications. \n\nLearn more and apply at open-source-gallery.org/open-call-for-2028-exhibitions\n\n*To guarantee consideration of your proposal for the Open Call, please review and meet all application requirements prior to submission of your proposal. Thank you!*\n\nApplication Due: October 18th, 2026\nApplication Fee (Donation): $15\n\nPhoto: Hidemi Takagi opening reception at Open Source Gallery. Photo by Stefan Hagen.\n\n#opencall #artopencall #exhibitionopencall #artists #2028exhibitions",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "$15",
+      "entry_fee": "",
+      "description": "For our Open Call for 2028 Exhibitions, we invite applications from artists working in any medium and location, whose practices emphasize experimentation, sustainability, and socia",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Mixed Media"
+      ],
+      "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "626aca886a6e7fe9580dd764504c193b1c8f4cc6",
+      "source": "Instagram: art grants",
+      "title": "THE ESPERA ARTIST FUND",
+      "link": "https://www.instagram.com/p/DeHph4YFk9E/",
+      "summary": "Source: Instagram #artopencall\nTHE ESPERA ARTIST FUND\n\nESPERA is starting small.\n\nA portion of submission revenue will be set aside to build an artist fund supporting future grants, production support, exhibitions and residency opportunities.\n\nThe idea is simple:\n\nArtists participate.\nThe project grows.\nMore opportunities become possible.\n\nOne submission helps build the next opportunity.\n\nThis is only the beginning.\n\nart open call\ncontemporary art\nemerging artist\n\n#opencall #emergingartists #artopencall",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "A portion of submission revenue will be set aside to build an artist fund supporting future grants, production support, exhibitions and residency opportunities.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "7dc0fd82f036aa7bd1f6786591bdae80ad21a342",
+      "source": "Instagram: art grants",
+      "title": "ESPERA is an independent platform for contemporary art.",
+      "link": "https://www.instagram.com/p/DeHhNHQFrsf/",
+      "summary": "Source: Instagram #artopencall\nESPERA is an independent platform for contemporary art.\n\nWe create exhibitions and opportunities for artists at different stages of their practice.\n\nWe begin online.\n\nFor artists.\nFor what comes next.\n\n**OPEN CALL 01 : IN BETWEEN**\n\n€2 / one work / worldwide\n\nApplications open now.\n\nLink in bio.\n\nart open call\ncontemporary art\nemerging artist\n\n#opencall #emergingartists #artopencall",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "We create exhibitions and opportunities for artists at different stages of their practice.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "70545c591b54e64075906f1c41c584f72e8dfba0",
+      "source": "Instagram: art grants",
+      "title": "[ESPAÑOL ↓↓↓] Build community with your creativity! ✨ Our grants are open for arts and culture proje",
+      "link": "https://www.instagram.com/p/DeHezFYjHDG/",
+      "summary": "Source: Instagram #artgrant\n[ESPAÑOL ↓↓↓] Build community with your creativity! ✨ Our grants are open for arts and culture projects designed to be enjoyed by your community and create lasting connections among artists. We're excited to fund your ideas! Applications open from 10/5/26 to 11/2/26. Visit ArtsCouncilNapaValley.org to see more and apply. \n\n¡Construye comunidad con tu creatividad! ✨ Nuestras subvenciones están abiertas para proyectos de arte y cultura creados para ser disfrutados por tu comunidad y crean conexiones duraderas entre artistas. ¡Estamos emocionados de financiar tus ideas! Las solicitudes estarán abiertas del 5 de octubre de 2026 al 2 de noviembre de 2025. Visita ArtsCouncilNapaValley.org para obtener más información y postularte. \n\n#opencallforartists #SupportLocalArtists #artsnow #CulturalHeritage #InvestInArt #ArteYCultura #Arte #Artistas #Cultura #CreativeCommunity #LocalArtists #CommunityArt #CultureAndArt #communitygrants #artislife #artfunding #supportthearts #localarts #NapaCounty #NapaValley #opencall #artgrant",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Our grants are open for arts and culture projects designed to be enjoyed by your community and create lasting connections among artists.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "2932fe44599f5edce2cbd5159dca0d97d04e0867",
+      "source": "Instagram: art grants",
+      "title": "📣 Grants for Arts Programming Available! ⁠",
+      "link": "https://www.instagram.com/p/DeHdDU0DI-K/",
+      "summary": "Source: Instagram #artgrant\n📣 Grants for Arts Programming Available! ⁠\n⁠\n🎨 Artists, organizations, and towns in Cattaraugus, Chemung, Schuyler, Steuben, and Tioga Counties - check it out! ⬇️⁠\n⁠\n🌟 The ARTS Council of the Southern Finger Lakes, in partnership with New York State Council on the Arts (NYSCA), invites you to apply now for grants available for the 2027 Statewide Community Regrant (SCR) program! ⁠\n⁠\n ✔️ $7.5K for Community Arts initiatives 🫶⁠\n ✔️ $7.5K for Teaching Artist programs 🧑‍🏫⁠\n ✔️ $5K Individual Artist Grants projects 🧑‍🎨⁠\n⁠\n🔔 Applications will be accepted until Friday, December 4, 11:59pm!⁠\n⁠\n➡️ Get the details and apply - click the link in bio!⁠\n⁠\n_⁠\n📸 courtesy of Laura Simone. The Glass Knight, glass suit of armor created by Laura Simone.⁠\n⁠",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "$7",
+      "entry_fee": "",
+      "description": "Artists, organizations, and towns in Cattaraugus, Chemung, Schuyler, Steuben, and Tioga Counties - check it out!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "3be6a300edb4684a16f794e8afeec45aad91d90e",
       "source": "Instagram: art grants",
       "title": ".",
@@ -11677,6 +11956,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-22",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "8dc2602636b87330e37e44a3b12b682640193c13",
+      "source": "Instagram: art grants",
+      "title": "•",
+      "link": "https://www.instagram.com/reel/DeHtCk4tr78/",
+      "summary": "Source: Instagram #artgrant\n•\n💥 VOICES ON THE WALL YOUTH MURAL SERIES 💥\n\n2026 Final Schedule:\n—> Session 10: October 17 — Prep & Paint for Voices on the Wall Mural\n\n—> Session 11: November 21 — Final Details for Voices on the Wall Mural\n\n—> Session 12: December 19 — Community Unveiling & Celebration!​\n​\nWhether your child has been a part of Voices on the Wall Youth Mural Series or not this year, ALL are encouraged to participate!  As always, bring a friend and share the series with others! \n\ncalartscouncil \nsaucey_pasta \n\n#voicesonthewall\n#muralart \n#youthimpact\n#artgrant\n#weready",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "VOICES ON THE WALL YOUTH MURAL SERIES 💥 2026 Final Schedule:\n—> Session 10: October 17 — Prep & Paint for Voices on the Wall Mural —> Session 11: November 21 — Final Details for Vo",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting"
+      ],
+      "first_seen": "2026-10-06",
       "closing_soon_sent": false,
       "status": "active"
     }
