@@ -1049,7 +1049,8 @@
     "art_forms": [],
     "first_seen": "2026-08-09",
     "closing_soon_sent": false,
-    "status": "suppressed"
+    "status": "suppressed",
+    "superseded_by": "fc6f55381c49425c4e8511697abf01e7fe59279e"
   },
   "6218ce0202c5f763e36570e1d0e48c6d0f4d6b40": {
     "id": "6218ce0202c5f763e36570e1d0e48c6d0f4d6b40",
@@ -4744,7 +4745,7 @@
     "source": "Artsoz prize registry",
     "title": "Sulman Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
+    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4754,7 +4755,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "Client Challenge A required part of this site couldn’t load.",
+    "description": "",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -11193,7 +11194,7 @@
     ],
     "first_seen": "2026-09-03",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "146129a9aaf2b4e45fb0145b5570fcbd3914b6c2": {
     "id": "146129a9aaf2b4e45fb0145b5570fcbd3914b6c2",
@@ -16690,7 +16691,7 @@
     ],
     "first_seen": "2026-09-18",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "cf40fcb9967f14d420b7adeb55807b7064cd80ea": {
     "id": "cf40fcb9967f14d420b7adeb55807b7064cd80ea",
@@ -17777,7 +17778,7 @@
     ],
     "first_seen": "2026-09-19",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "f63e100665c461017c44df1accedadd2b21afbac": {
     "id": "f63e100665c461017c44df1accedadd2b21afbac",
@@ -18508,7 +18509,7 @@
     ],
     "first_seen": "2026-09-21",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "4446bac1684fbfb2c24946c8c9789e9f07cdf2a4": {
     "id": "4446bac1684fbfb2c24946c8c9789e9f07cdf2a4",
@@ -21511,7 +21512,7 @@
     ],
     "first_seen": "2026-10-02",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "c3676ab4ec87e527fce72eb39cce3404cab29ffa": {
     "id": "c3676ab4ec87e527fce72eb39cce3404cab29ffa",
@@ -22239,7 +22240,7 @@
     ],
     "first_seen": "2026-10-03",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "a87d76d2f6533e092e4114ed6b3728fb3d36461b": {
     "id": "a87d76d2f6533e092e4114ed6b3728fb3d36461b",
@@ -24400,6 +24401,212 @@
     "closing_soon_sent": false,
     "status": "active"
   },
+  "ffd31098a3d5906e9006b7db11188013633ea910": {
+    "id": "ffd31098a3d5906e9006b7db11188013633ea910",
+    "source": "Creative Australia",
+    "title": "Rhoda Roberts Trailblazer Award",
+    "link": "https://creative.gov.au/investments-opportunities/rhoda-roberts-trailblazer-award",
+    "summary": "Rhoda Roberts Trailblazer Award | Creative Australia Skip to main content First Nations Arts Open Rhoda Roberts Trailblazer Award Creative Australia is pleased to invite nominations for the Rhoda Roberts Trailblazer Award. We are seeking nominations from individuals, arts and community organisations. The recipient will be presented with the Award at the First Nations Arts and Culture Awards ceremony to be held on Thursday, 27 May 2027. Nominate now Rhoda Roberts Trailblazer Award Key dates Nominations open: Friday 9 October, 2026 Nominations close: Tuesday 10 November 2026 at 3pm AEST The First Nations Arts & Culture Awards will be held on Thursday 27 May 2027. Amount Amount: $80,000 Contact Tammy Close, Project Manager, First Nations Arts and Culture E: tammy.close@creative.gov.au Ph: (02) 9215 9145 Nominate now Please note: To nominate you must be registered in our application management system a minimum of two business days prior to the closing date. About the Award The Rhoda Roberts Trailblazer Award is a new category within Creative Australia First Nations Arts and Culture Awards , established in memory of the late Rhoda Roberts AO, one of Australia's most influential First Nations cultural leaders, broadcasters, festival directors and arts advocates. The award will be presented for the first time in 2027. The award honours the legacy, leadership and transformational contribution of Rhoda Roberts AO. Throughout her career, Rhoda demonstrated courage, cultural authority, innovation and an extraordinary ability to create new opportunities for First Nations artists and communities. Her influence extended beyond artistic achievement and advocacy through her work creating pathways for others, fostering innovation, leading major cultural events and festivals, and building national and international connections that strengthened the visibility and impact of First Nations arts and culture. The Rhoda Roberts Trailblazer Award recognises a First Nations leader whose visionary work, innovation and influence have transformed the arts and cultural sector through pioneering approaches and the creation of new opportunities for others. It celebrates individuals whose leadership has opened doors, expanded opportunities and driven lasting change for First Nations artists, cultural practitioners and communities. The award seeks to recognise individuals whose impact extends beyond their own artistic achievements or advocacy efforts and whose work has made a significant contribution to the development and growth of the sector. This may include creating new pathways and opportunities, leading innovative initiatives, working across multiple artforms and disciplines, building cultural and industry connections, and expanding opportunities for First Nations artists nationally and internationally. In recognition of Rhodas' legacy, the award celebrates individuals who have demonstrated visionary leadership and whose contribution has left a lasting impact and effected substantial change across the First Nations arts and cultural landscape, creating opportunities and possibilities (that didn't exist prior) for future generations. Expand all Collapse all Rhoda Roberts AO A proud Widjabul Wia-bal woman of the Bundjalung Nation, Rhoda Roberts was a pioneering figure across the arts, media, and cultural sectors. Across more than three decades, she championed truth-telling, community, cultural knowledge, and First Nations creative excellence across television, theatre, festivals, major national events, and arts policy. Some of her extraordinary achievements included: founding and leading major First Nations cultural initiatives and festivals serving as a creative force behind nationally significant events driving greater recognition and visibility of First Nations culture across Australia's arts sector championing storytelling, ceremony, performance, and cultural leadership throughout her career. Following her passing in March 2026, she was widely acknowle",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2027-05-27",
+    "amount": "$80,000",
+    "entry_fee": "",
+    "description": "Creative Australia is pleased to invite nominations for the Rhoda Roberts Trailblazer Award.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-09",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "7536ca5a8f7b17c06dd8cb978ffb9a75e9586270": {
+    "id": "7536ca5a8f7b17c06dd8cb978ffb9a75e9586270",
+    "source": "Artshow.com Competitions",
+    "title": "Museum for Art in Wood Winter Residency - Philadelphia, PA",
+    "link": "https://artshow.com/juriedshows/Northeast.html#639271396493635378",
+    "summary": "Dropped: US/EU-only competition.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-09",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "397fa23695dfd20bcdf3cf20ca8c7d489d356861": {
+    "id": "397fa23695dfd20bcdf3cf20ca8c7d489d356861",
+    "source": "art-prizes.com",
+    "title": "Contemporary art prize LAB ART PRIZE",
+    "link": "https://www.art-prizes.com/ArtPrize/Contemporary-art-prize-LAB-ART-PRIZE-",
+    "summary": "Deadline: 12/11/2026. Opens: 01/09/2026. Prize: EUR $1,000. Location: Italy. Eligibility: National and International Entries Allowed. Genre: General",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "$1,000",
+    "entry_fee": "",
+    "description": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-09",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "9b2078cfac76fb0ebc41c6f70a7b2a19ecd31f91": {
+    "id": "9b2078cfac76fb0ebc41c6f70a7b2a19ecd31f91",
+    "source": "Instagram: art grants",
+    "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/video-and-film",
+    "link": "https://www.instagram.com/p/DeSRuvKkYW-/",
+    "summary": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/video-and-film\n.\nnwfilmforum\nhe 2026 Collective Power Fund is accepting applications until October 21st! \nSwipe for more info on our grant ➡️\n\nApplications are due October 21st, 2026 @ 11:59PM. \nFunding available:\n$10,000 (artist collectives/teams)\n$5000 (new works/projects)\n\nA wide range of disciplines/mediums are accepted, as long as it functions in a visual arts context.\nIn-progress application feedback offered\n.\nThe Collective Power Fund 2026 application is NOW OPEN!\n\n2026 Collective Power Fund grants are project-based and distribute $60,000 in funding to 1 artist team/collective (10k) and 10 new works by individual artists (5k) to support the creation and presentation of visionary, new arts projects.\n\nCollective Power Fund supports projects that incite public dialogue, pushes boundaries, explores genre fluidity, speaks its truth through an authentic perspective, and\nis often non-traditional, anti-institutional, socially responsible, or disruptive of existing structures and conventions. It encourages a community-forward environment of resource-sharing, mutual support, and fellowship in the Pacific Northwest arts ecosystem.\n\n#opencall\n#callforartists\n#artist\n#artopencall\n#callforart",
+    "relevant": true,
+    "english": true,
+    "category": "Fellowship",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2026-10-21",
+    "amount": "$10,000",
+    "entry_fee": "",
+    "description": "nwfilmforum\nhe 2026 Collective Power Fund is accepting applications until October 21st!",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-09",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "3660040c8a30b5cc7b78358d2d0f04abc43e40fc"
+  },
+  "e981db7980fdbb99b3509e826bc9337b98134d39": {
+    "id": "e981db7980fdbb99b3509e826bc9337b98134d39",
+    "source": "Instagram: art grants",
+    "title": "poster format inspired by mutmuzgallery open call poster 🌝🏝️ apply by October 11",
+    "link": "https://www.instagram.com/p/DeSHw9nJ2jg/",
+    "summary": "Source: Instagram #artopencall\nposter format inspired by mutmuzgallery open call poster 🌝🏝️ apply by October 11\n\n#artopencall #opencall #opencallforartists #artspace #losangelesart",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "poster 🌝🏝️ apply by October 11 #artopencall #opencall #opencallforartists #artspace #losangelesart",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-09",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "74f5c8ee40ed801acd8e9145d21dee1091a990d0": {
+    "id": "74f5c8ee40ed801acd8e9145d21dee1091a990d0",
+    "source": "Instagram: art grants",
+    "title": "Our next group exhibition open call is available now!",
+    "link": "https://www.instagram.com/p/DeSEgExm2K-/",
+    "summary": "Source: Instagram #artopencall\nOur next group exhibition open call is available now!\n\nGHOST IN THE CLASSICAL BODY\n\nThis exhibition explores the relationship between classical representations of the body and their persistence within contemporary art and digital technology. From the idealized figures of antiquity to the weightless forms of Byzantine iconography, the body has long served as a proposal for how we see and understand ourselves. As these traditions reemerge through digital rendering, scanning, and image generation, traces of the past continue to shape our perception of the present. There is a lasting connection between the physical and the virtual, allowing artists to examine how inherited visual traditions influence the ways in which the body is represented, interpreted, and transformed across time and culture.\n\n🖼️Submit using this link: www.culturallyarts.com/opencall/ghostintheclassicalbody\nRound 1 Deadline: October 31, 2026\n\nAll mediums are welcome: painting, drawing, sculpture, photography, video, installation, 3D scanning. The figure should be present, though it may be fragmented, abstracted, veiled, or only implied.\n——————————————\n#opencall #groubexhibition #artexhibition #artopencall",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2026-10-31",
+    "amount": "",
+    "entry_fee": "",
+    "description": "GHOST IN THE CLASSICAL BODY This exhibition explores the relationship between classical representations of the body and their persistence within contemporary art and digital techno",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting",
+      "Drawing",
+      "Sculpture",
+      "Photography",
+      "Installation"
+    ],
+    "first_seen": "2026-10-09",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "918362480e89f98cfa281d44bf52ddbee53d52db": {
+    "id": "918362480e89f98cfa281d44bf52ddbee53d52db",
+    "source": "Instagram: art grants",
+    "title": "QIANKUN 2027 | GLOBAL ARTIST OPEN CALL",
+    "link": "https://www.instagram.com/p/DeRP9enDmnz/",
+    "summary": "Source: Instagram #artopencall\nQIANKUN 2027 | GLOBAL ARTIST OPEN CALL\nPARIS IS CALLING.🇫🇷\n\nWe are pleased to announce the official global open call for QIANKUN 2027, an international art project taking place in Paris, France, February 15–27, 2027.\n\nArtists from around the world are invited to participate, including creators working in:\n\nPainting · Photography · Video · Digital Art · Installation · Sculpture · Performance · Craft · Interdisciplinary Art\n\nARTIST BENEFITS\n\n• Central Paris Exhibition\n• Opening Reception\n• Artist Certificate & Souvenir\n• Artwork Sales Opportunities\n• Media & Interview Opportunities\n• Potential Brand & IP Collaborations\n\nOpen to artists aged 18+\nUp to 3 artworks per artist\nNo Application Fee\n📅 Application Deadline: December 31, 2026\n\nProgram Director: Huanhuan Xie \n\nTo apply for this arts program, please email\nGlobalArtCultureUSA@Gmail.com\nand attach your portfolio, résumé, and one professional artist photo.\n\n#QIANKUN2027 #artopencall #OpenCall #CallForArtists #InternationalArtists",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "2026-12-31",
+    "amount": "",
+    "entry_fee": "Free",
+    "description": "PARIS IS CALLING.🇫🇷 We are pleased to announce the official global open call for QIANKUN 2027, an international art project taking place in Paris, France, February 15–27, 2027.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting",
+      "Sculpture",
+      "Photography",
+      "Digital/New Media",
+      "Installation"
+    ],
+    "first_seen": "2026-10-09",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "fc6f55381c49425c4e8511697abf01e7fe59279e": {
+    "id": "fc6f55381c49425c4e8511697abf01e7fe59279e",
+    "source": "Instagram: art grants",
+    "title": "Anthology Photography Competition",
+    "link": "https://www.instagram.com/p/DeRB4jeDm1N/",
+    "summary": "Source: Instagram #artgrant\nAnthology Photography Competition\r\n\r\nDeadline: Nov 30, 2026\r\nEligibility: International\nLocation: Dublin, Ireland\r\n\r\nFull details at deadlinecalls.com 🔗\r\n\r\n#opencall #callforartists #artopportunity #artgrant #artistcall\n\n📷 Photo: Tanya Prodaan / Unsplash",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "2026-11-30",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Deadline: Nov 30, 2026 Eligibility: International\nLocation: Dublin, Ireland Full details at deadlinecalls.com 🔗 #opencall #callforartists #artopportunity #artgrant #artistcall 📷 Ph",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Photography"
+    ],
+    "first_seen": "2026-08-09",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -24446,7 +24653,7 @@
     "kangaroo|valley": "61d6bde40e959a24b8f79840e454544555a3fd7d",
     "basil|sellers": "2efc6a6398fef031318423fffcb738100e83d562",
     "contest|nature|photography": "10a2310e9e357ad4a6993231172300e2ea6defb6",
-    "anthology|photography": "c31dac60e7fbfcb17b08e1c3543708fe6b8c3750",
+    "anthology|photography": "fc6f55381c49425c4e8511697abf01e7fe59279e",
     "filmmaker|future|sony": "6218ce0202c5f763e36570e1d0e48c6d0f4d6b40",
     "photography|sony|world": "25165e077aeaf1b9d58419e3f9d91619a331ed1f",
     "2|day|dias|earth|kuweni|mendis|pigment|with|workshop": "58fc80f0b615eea077930c14322226215b093af8",
@@ -25258,6 +25465,12 @@
     "cimetta|emergency|fund|grants|mobility|roberto": "9a7aa433de2f2c751c626e6cb3b911ed8723c10c",
     "000|5|accepting|applications|creativity|everett|fund|g|is|now|powers|supportin": "52a54559954759e3ebaa7c615c1a0bbe779c1cce",
     "all|did|it|much|soo|thank|we|you": "7fed28a5bbca57d64ffc9b43b6a699a19834e4ac",
-    "beam|camp|project": "8658d55284b387d4e8970f6b8d093e2f764f36fa"
+    "beam|camp|project": "8658d55284b387d4e8970f6b8d093e2f764f36fa",
+    "rhoda|roberts|trailblazer": "ffd31098a3d5906e9006b7db11188013633ea910",
+    "in|museum|pa|philadelphia|residency|winter|wood": "7536ca5a8f7b17c06dd8cb978ffb9a75e9586270",
+    "lab": "397fa23695dfd20bcdf3cf20ca8c7d489d356861",
+    "11|apply|by|format|inspired|mutmuzgallery|october|poster": "e981db7980fdbb99b3509e826bc9337b98134d39",
+    "available|group|is|next|now|our": "74f5c8ee40ed801acd8e9145d21dee1091a990d0",
+    "global|qiankun": "918362480e89f98cfa281d44bf52ddbee53d52db"
   }
 }
