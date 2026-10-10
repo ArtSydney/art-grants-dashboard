@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-10T10:09:38+11:00",
-  "count": 359,
-  "total": 490,
+  "generated": "2026-10-11T09:24:01+11:00",
+  "count": 365,
+  "total": 495,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -20,31 +20,6 @@
     "Multidisciplinary"
   ],
   "items": [
-    {
-      "id": "c215728a63255733679ec04a0c19251bc46e55e4",
-      "source": "Google: Australian art prizes",
-      "title": "Woollahra Small Sculpture Prize",
-      "link": "https://www.woollahragallery.com.au/Artists/Woollahra-Small-Sculpture-Prize",
-      "summary": "A non-acquisitive award of $1,000. Key dates. Entries open: 13 April 2026. Entries close: 12 July 2026. Finalists announced: 10 August 2026. Cut-off for artwork ...",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-07-12",
-      "amount": "$1,000",
-      "entry_fee": "",
-      "description": "",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Sculpture"
-      ],
-      "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
-      "status": "closed"
-    },
     {
       "id": "fabe95d4c1740e1cfb273e13777ccbc73be42622",
       "source": "BNE Art: Opportunities",
@@ -3804,6 +3779,63 @@
       "status": "active"
     },
     {
+      "id": "e88e104a7dcffcfedf336506723e9f8f3983250a",
+      "source": "BNE Art: Opportunities",
+      "title": "Atelier Artist in Residence: France and Ireland",
+      "link": "https://bneart.com/atelier-artist-in-residence-france-and-ireland/",
+      "summary": "Deadline: October 15. Atelier Artist in Residence: France and Ireland – BNE ART - Brisbane Art Guide Skip to content Menu Atelier Artist in Residence: France and Ireland Deadline: Deadline: October 15 Atelier Artist in Residence is a curated international residency offering artists uninterrupted time, dedicated studio spaces and a community of fellow creatives in remarkable private estates. The 2026–2027 programs take place at Château de Cerisay in France and Westcove Estate in Ireland. The residencies are self-directed, allowing artists to focus on their own practice while participating in group dinners, local excursions, gallery visits and cultural activities. The program welcomes artists worldwide, including emerging and established practitioners, working across painting, writing, photography, music, small-scale sculpture, poetry, illustration, digital art, textiles and printmaking. Couples may apply provided both participants engage in artistic practice. Upcoming residency dates: France — Autumn 2026: 27 October – 10 November; 14–28 November; 1–15 December 2026. Final places are listed at a reduced fee of $2,500. France — Winter 2027: 15–29 January; 3–17 February; 22 February – 8 March; 12–26 March 2027. France — Spring 2027: 31 March – 14 April; 19 April – 3 May; 8–22 May; 27 May – 10 June; 15–29 June 2027. Ireland — Summer 2027: Sessions are listed from 3 July to 28 August 2027, but all four listed sessions are marked closed or at capacity. France — Autumn 2027: 10–24 September; 29 September – 13 October; 18 October – 1 November; 5–19 November; 24 November – 8 December 2027. Application deadline: 15 October 2026 for the listed application rounds. Applications are reviewed weekly, with notifications issued the following week. Availability should be confirmed directly with the organiser. Included: Private-room accommodation, shared and private studio spaces, chef-prepared group dinners, breakfast and lunch provisions, and day trips to local villages, galleries and cultural destinations. https://www.atelierair.com/ Info not available Info not available",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-10-15",
+      "amount": "$2,500",
+      "entry_fee": "",
+      "description": "Atelier Artist in Residence is a curated international residency offering artists uninterrupted time, dedicated studio spaces and a community of fellow creatives in remarkable priv",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Sculpture",
+        "Photography",
+        "Printmaking",
+        "Textiles",
+        "Illustration",
+        "Digital/New Media"
+      ],
+      "first_seen": "2026-10-10",
+      "closing_soon_sent": true,
+      "status": "active"
+    },
+    {
+      "id": "48dada6534ef1e1c94fb9a1eaca25fbaeaa7199b",
+      "source": "Instagram: art grants",
+      "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/photography",
+      "link": "https://www.instagram.com/p/DeU0D4fEW8a/",
+      "summary": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/photography\n.\nphmuseum\nPHOTO GRANT DEADLINE: October 15, 2026, for PhMuseum's Women Photographers Grant\n\nPresent your work for $11,000 in cash prizes, $6,000 MPB voucher for the MPB Special Mentions, a solo show at PhMuseum Lab, screenings at Photo Vogue Festival, and more.\n\nThe PhMuseum Women Photographers Grant, now in its 10th edition, aims to empower the work and careers of female and non-binary professionals of all ages and from all countries working in diverse areas of photography. Its mission is to support the growth of new generations and promote stories narrated from a female perspective while responding to the need to work for gender equality in the industry.\n\nPrizes include: \n–$11,000 in cash prizes\n–€5,000 voucher for MPB Special Mentions\n–A Solo Exhibition at PhMuseum Lab (Bologna, Italy)\n–A Featured Interview on Vogue Italia\n–Screening at PhotoVogue Festival 2027 (Italy)\n–Printed Features in PhMuseum's 2027 Annual Magazine\n–A Printed Feature in Nineteen Hundred Magazine\n–9 Free Online 1-on-1 Portfolio Reviews\n\n#opencall\n#callforartists\n#artist\n#artopencall\n#callforart",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-10-15",
+      "amount": "$11,000",
+      "entry_fee": "",
+      "description": "phmuseum\nPHOTO GRANT DEADLINE: October 15, 2026, for PhMuseum's Women Photographers Grant Present your work for $11,000 in cash prizes, $6,000 MPB voucher for the MPB Special Menti",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-10-10",
+      "closing_soon_sent": true,
+      "status": "active"
+    },
+    {
       "id": "f9acee2526f11d26f7c1fc92273587d43d89ad38",
       "source": "BNE Art: Opportunities",
       "title": "Open Cut Commission",
@@ -3926,7 +3958,7 @@
         "Visual Arts"
       ],
       "first_seen": "2026-08-22",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -3951,7 +3983,7 @@
         "Photography"
       ],
       "first_seen": "2026-09-26",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -4712,6 +4744,41 @@
       "status": "active"
     },
     {
+      "id": "ea2b5ea4ce48953c994e31f4b3d67a080de73c2f",
+      "source": "Instagram: art grants",
+      "title": "//OPEN CALL",
+      "link": "https://www.instagram.com/p/DeT4h3BE27e/",
+      "summary": "Deadline: 2 November 2026\nSource: Instagram #artopencall\n//OPEN CALL\n\nDear Creatures, Big and Small\n\nFrom the pets that make our homes feel warmer to the wildlife that surrounds us, from creatures beneath the ocean to those that once roamed ancient skies, animals have always inspired stories, memories, and works of art.\n\nArts to Hearts Project invites artists worldwide to submit their work for Dear Creatures, Big and Small, a curated online exhibition on Artsy celebrating the animal world in all its forms.\n\nYour artwork might feature a beloved pet, wild animals, an extinct species, a mythical creature, or a being born entirely from your imagination. Whether animals appear as subjects, symbols, characters, or part of a bigger story, we want to see your unique perspective.\n\nWho can apply: Artists aged 18 and above, from anywhere in the world, at any stage of their artistic journey.\n\nMediums: All mediums and styles are welcome, including painting, drawing, photography, sculpture, ceramics, textiles, printmaking, collage, mixed media, digital art, illustration, installation, and experimental practices.\n\nOpportunity: Selected artists will be showcased in a curated online exhibition on Artsy.\n\nDeadline: 2 November 2026, at 11:59 PM.\n\nWith over 35 curated art books published and more than 10,000 artists featured worldwide over the past six years, Arts to Hearts Project continues to create opportunities for artists to share their work with new audiences.\n\nNow, we invite you to bring your interpretation of the creatures, big and small, that",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "2026-11-02",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Dear Creatures, Big and Small From the pets that make our homes feel warmer to the wildlife that surrounds us, from creatures beneath the ocean to those that once roamed ancient sk",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Sculpture",
+        "Photography",
+        "Printmaking",
+        "Ceramics",
+        "Textiles",
+        "Illustration",
+        "Digital/New Media",
+        "Installation",
+        "Mixed Media"
+      ],
+      "first_seen": "2026-10-10",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "0648a16b757b7ab484dbe2cfc65545ac0f6ee498",
       "source": "Instagram: art grants",
       "title": "OPEN CALL: AGENCY RESIDENCY ▇",
@@ -4733,6 +4800,36 @@
         "Visual Arts"
       ],
       "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "7ca03e4c9c51ee040b58be017ae36d96ae81bad3",
+      "source": "BNE Art: Opportunities",
+      "title": "International Art Frontier",
+      "link": "https://bneart.com/international-art-frontier/",
+      "summary": "Deadline: November 4. International Art Frontier – BNE ART - Brisbane Art Guide Skip to content Menu International Art Frontier Deadline: Deadline: November 4 International Art Frontier, hosted by Moho Gallery, invites visual artists of all nationalities to submit work for its Venice Winter 2027 edition. There are no theme restrictions, and artists may submit work across painting, sculpture, photography, video, installation, digital art and mixed media. The curatorial team will select 12 finalists for a collective exhibition in Venice. From these finalists, four artists will be selected to receive an individual solo exhibition and a €1,000 cash prize each. Prizes and opportunities: 12 finalists selected for a collective exhibition. Four winners receive a solo exhibition and €1,000 each. Exhibitions take place at Moho Gallery’s two Venice venues, Cannaregio 883 and 1145. Each exhibition runs for 15 days. Round-trip artwork shipping costs are covered by Moho Gallery. Accommodation in Venice is provided for the exhibition opening. Application requirements: Open to artists of all nationalities. Submit between one and 10 artworks. Each work requires an image in JPG or PNG format (maximum 30MB), or a YouTube link for video works. Provide the title, medium, year and description for each work. Entry fee: €35 for the first artwork and €20 for each additional artwork, up to 10 works. Artists retain ownership and copyright of their work. By applying, artists grant International Art Frontier a non-exclusive, royalty-free licence to reproduce images of submitted works for promotional, editorial and archival purposes. https://internationalartfrontier.com Info not available support@internationalartfrontier.com",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-04",
+      "amount": "",
+      "entry_fee": "",
+      "description": "International Art Frontier, hosted by Moho Gallery, invites visual artists of all nationalities to submit work for its Venice Winter 2027 edition.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Sculpture",
+        "Photography",
+        "Digital/New Media",
+        "Installation",
+        "Mixed Media"
+      ],
+      "first_seen": "2026-10-10",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -5626,6 +5723,35 @@
         "Visual Arts"
       ],
       "first_seen": "2026-09-29",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "47c0f89920493f83405721b2fcdb3472b71065ca",
+      "source": "BNE Art: Opportunities",
+      "title": "BBA Artist Prize 2027",
+      "link": "https://bneart.com/bba-artist-prize-2027/",
+      "summary": "Deadline: December 7. BBA Artist Prize 2027 – BNE ART - Brisbane Art Guide Skip to content Menu BBA Artist Prize 2027 Deadline: Deadline: December 7 BBA Gallery invites visual artists from all backgrounds to submit work for the 2027 edition of its flagship Artist Prize. Open to emerging and established artists worldwide, the prize celebrates visual excellence across contemporary disciplines. Selected artists will gain international exposure, Artsy profile coverage and opportunities for promotion through BBA Gallery’s channels. Shortlisted artists will be included in a physical group exhibition at BBA Gallery in Berlin. Prizes and opportunities: First Prize: €1,000 cash prize, solo exhibition at BBA Gallery, Artsy profile and international promotion. Second Prize: €700 cash prize, Artsy profile and online promotion. Third Prize: €500 cash prize, Artsy profile and online promotion. Audience Award: €300 cash prize, Artsy profile and online promotion. Shortlist: Physical group exhibition at BBA Gallery in Berlin. Artist Features: Selected applicants may be featured across BBA channels during the open call. Eligibility and submission requirements: Open globally to visual artists aged 18 and over. All mediums accepted, including painting, sculpture, photography, video, installation, performance and mixed media. Up to five image uploads per entry, maximum 3 MB each. Applications require the artist’s name and contact details, an artist statement of up to 300 words, a CV or exhibition list, and artwork specifications including title, medium, dimensions, edition and year. Entry fee: €49. https://bba-prizes.com/artist-prize 03023355328 hello@bba-prizes.com",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-12-07",
+      "amount": "",
+      "entry_fee": "",
+      "description": "BBA Gallery invites visual artists from all backgrounds to submit work for the 2027 edition of its flagship Artist Prize.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Sculpture",
+        "Photography",
+        "Installation",
+        "Mixed Media"
+      ],
+      "first_seen": "2026-10-10",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -12341,6 +12467,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-10-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "dd8dcce90f5055b0e8357e3fb1bc8f3d47b731f5",
+      "source": "BNE Art: Opportunities",
+      "title": "Farm Studio India: International Artist Residency 2027",
+      "link": "https://bneart.com/farm-studio-india-international-artist-residency-2027/",
+      "summary": "Farm Studio India: International Artist Residency 2027 – BNE ART - Brisbane Art Guide Skip to content Menu Farm Studio India: International Artist Residency 2027 Deadline: Farm Studio International Artist Residency invites artists from around the world to live and create in a rural community in Rajasthan, India. The residency offers a quiet, supportive environment where artists can develop their practice away from everyday distractions, with an emphasis on collaboration, experimentation and intercultural exchange. Artists from all disciplines and working in any medium are welcome to apply. The program brings together practitioners from different countries and social, cultural and artistic backgrounds, encouraging dialogue through artist talks, presentations and work-in-progress showings. Farm Studio also celebrates the artistic and cultural identity of the local community while introducing Indian and international art and culture to local audiences. Studio facilities: Indoor studio spaces at Farm Studio. Outdoor working opportunities in the desert and surrounding farm environment. Access to Hinge Arts Space in Andore Village. Accommodation: Individual huts or private rooms. Bed and bedding provided. Table, stool or chair, and lighting in each room. Shared private bathroom facilities. Capacity for six residents at a time. Artists are required to bring their own art materials, although basic tools are available at Farm Studio. https://farmstudioindia.org/art-residency Info not available farmingartstudio@gmail.com",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Farm Studio International Artist Residency invites artists from around the world to live and create in a rural community in Rajasthan, India.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Mixed Media"
+      ],
+      "first_seen": "2026-10-10",
       "closing_soon_sent": false,
       "status": "active"
     },
