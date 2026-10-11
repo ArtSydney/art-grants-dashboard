@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-11T09:24:01+11:00",
-  "count": 365,
-  "total": 495,
+  "generated": "2026-10-12T09:53:37+11:00",
+  "count": 362,
+  "total": 494,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -20,31 +20,6 @@
     "Multidisciplinary"
   ],
   "items": [
-    {
-      "id": "fabe95d4c1740e1cfb273e13777ccbc73be42622",
-      "source": "BNE Art: Opportunities",
-      "title": "Mosman Art Prize 2026",
-      "link": "https://bneart.com/mosman-art-prize-2026/",
-      "summary": "Deadline: July 13. Mosman Art Prize 2026 – BNE ART - Brisbane Art Guide Skip to content Menu Mosman Art Prize 2026 Deadline: Deadline: July 13 Entries are now open for the 2026 Mosman Art Prize , Australia’s premier open painting prize and one of the nation’s longest-running acquisitive art awards. Established in 1947, the Mosman Art Prize celebrates excellence in contemporary Australian painting, supporting artists whose work reflects the ideas, identities and stories of contemporary life. The winning artwork joins the prestigious Mosman Art Collection alongside works by many of Australia’s leading painters. Prize Major Acquisitive Prize: $70,000 Key Dates Entries Close: 13 July 2026, 5:00pm Eligibility Open to artists living in Australia. The prize is dedicated to painting , with eligible works required to comply with the exhibition’s terms and conditions. Entry Fee $50 https://mosmanartgallery.org.au/event/2026-mosman-art-prize-entries-open/ 0299784178 gallery@mosman.nsw.gov.au",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-07-13",
-      "amount": "$70,000",
-      "entry_fee": "",
-      "description": "Entries are now open for the 2026 Mosman Art Prize, Australia's premier open painting prize and one of the nation's longest-running acquisitive art awards.Established in 1947, the ",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Painting"
-      ],
-      "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
-      "status": "closed"
-    },
     {
       "id": "b0ca6628ce2f0449f7bfbba5bad8381885a107e3",
       "source": "BNE Art: Opportunities",
@@ -3301,7 +3276,7 @@
       ],
       "first_seen": "2026-09-23",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "b6412daa2d1ac5e8878eaa72b417f12d5fb8ced7",
@@ -3326,7 +3301,7 @@
       ],
       "first_seen": "2026-09-29",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "821af007493760b94a6f74b1472934b305de39df",
@@ -3351,7 +3326,7 @@
       ],
       "first_seen": "2026-09-25",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "bd97ddadc195115bbb40331b80b18078e730a60c",
@@ -4010,7 +3985,7 @@
         "Digital/New Media"
       ],
       "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -4035,7 +4010,7 @@
         "Painting"
       ],
       "first_seen": "2026-10-04",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -12346,31 +12321,6 @@
       "status": "active"
     },
     {
-      "id": "8a2105ab8d1bdfa9934dbf21f70ecb46c7f812c8",
-      "source": "Instagram: art grants",
-      "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/grant",
-      "link": "https://www.instagram.com/p/DeP0rCKAL2T/",
-      "summary": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/grant\n.\nasianculturalcouncil\nWhat is an ACC grant? ✨\n\nIt’s more than just funding! It’s a chance to immerse yourself in a new culture, connect with global artists, and take creative risks.\n\nApplications officially open on October 1.\n\n#ACCGrants2027\n#opencall\n#callforartists\n#artist\n#artopencall",
-      "relevant": true,
-      "english": true,
-      "category": "Other",
-      "au_eligibility": "unclear",
-      "location_scope": "International",
-      "eligibility_note": "",
-      "deadline": "",
-      "amount": "",
-      "entry_fee": "",
-      "description": "asianculturalcouncil\nWhat is an ACC grant?",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Visual Arts"
-      ],
-      "first_seen": "2026-10-08",
-      "closing_soon_sent": false,
-      "status": "active"
-    },
-    {
       "id": "747250b5b9a5d6a287b2fc283ed6df6443632aae",
       "source": "Instagram: art grants",
       "title": "The first ESPERA exhibition is also the beginning of ESPERA itself.",
@@ -12492,6 +12442,31 @@
         "Mixed Media"
       ],
       "first_seen": "2026-10-10",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "3b6bb4ae92b82efe8e97af5710fddf12d9777bfa",
+      "source": "Instagram: art grants",
+      "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/grant",
+      "link": "https://www.instagram.com/p/DeXUZN_EaW_/",
+      "summary": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/grant\n.\nfilmindependent\nApplications are OPEN for the Film Independent x Humana Foundation Shorts initiative! \n\nWith support from the Humana Foundation, we’re bringing together five U.S.-based director/producer teams to create short films that explore the lives of senior citizens.\n\nEach project will have a $100k budget, along with support from development to distribution. \n\nThis is also the first time Film Independent is stepping into the role of both funder and producer, rather than just a supporter of independent film!\n\n✍ Applications are due October 26, or November 2 for #FiMembers.\n\n#opencall\n#callforartists\n#artist\n#artopencall",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "$100k",
+      "entry_fee": "",
+      "description": "filmindependent\nApplications are OPEN for the Film Independent x Humana Foundation Shorts initiative!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-08",
       "closing_soon_sent": false,
       "status": "active"
     },

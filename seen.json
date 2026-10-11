@@ -18119,7 +18119,7 @@
       "Digital/New Media"
     ],
     "first_seen": "2026-08-09",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "5ecd4e8d1bddcb58a2975f87f0af230864378690": {
@@ -19063,7 +19063,7 @@
     ],
     "first_seen": "2026-09-23",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "6a33c59d9647fb6d52772397de8cbe9d535df28b": {
     "id": "6a33c59d9647fb6d52772397de8cbe9d535df28b",
@@ -20779,7 +20779,7 @@
     ],
     "first_seen": "2026-09-29",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "1a7a08e3e7e911fc800e8b0fe52e8a5e17252d29": {
     "id": "1a7a08e3e7e911fc800e8b0fe52e8a5e17252d29",
@@ -22142,7 +22142,7 @@
     ],
     "first_seen": "2026-09-25",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "a40210df0b718a46f3d0995026ab8a3f33fb27e1": {
     "id": "a40210df0b718a46f3d0995026ab8a3f33fb27e1",
@@ -22601,7 +22601,7 @@
       "Painting"
     ],
     "first_seen": "2026-10-04",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "97f5e0e3e40b0208f8f3754c4ee78193c96b600a": {
@@ -24146,7 +24146,8 @@
     ],
     "first_seen": "2026-10-08",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "suppressed",
+    "superseded_by": "3b6bb4ae92b82efe8e97af5710fddf12d9777bfa"
   },
   "365c19bc177b7beae8cde511fb23dfbf5ba13c53": {
     "id": "365c19bc177b7beae8cde511fb23dfbf5ba13c53",
@@ -24853,6 +24854,149 @@
       "Visual Arts"
     ],
     "first_seen": "2026-10-10",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "70545c591b54e64075906f1c41c584f72e8dfba0"
+  },
+  "3b6bb4ae92b82efe8e97af5710fddf12d9777bfa": {
+    "id": "3b6bb4ae92b82efe8e97af5710fddf12d9777bfa",
+    "source": "Instagram: art grants",
+    "title": "Find & apply to this open call through Apply for Art: www.applyforart.com/grant",
+    "link": "https://www.instagram.com/p/DeXUZN_EaW_/",
+    "summary": "Source: Instagram #artopencall\nFind & apply to this open call through Apply for Art: www.applyforart.com/grant\n.\nfilmindependent\nApplications are OPEN for the Film Independent x Humana Foundation Shorts initiative! \n\nWith support from the Humana Foundation, we’re bringing together five U.S.-based director/producer teams to create short films that explore the lives of senior citizens.\n\nEach project will have a $100k budget, along with support from development to distribution. \n\nThis is also the first time Film Independent is stepping into the role of both funder and producer, rather than just a supporter of independent film!\n\n✍ Applications are due October 26, or November 2 for #FiMembers.\n\n#opencall\n#callforartists\n#artist\n#artopencall",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "$100k",
+    "entry_fee": "",
+    "description": "filmindependent\nApplications are OPEN for the Film Independent x Humana Foundation Shorts initiative!",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-08",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "3778be2152911f5632f33df49add01508b38a9fe": {
+    "id": "3778be2152911f5632f33df49add01508b38a9fe",
+    "source": "Instagram: art grants",
+    "title": "Mriya IFF 2027: Open Call",
+    "link": "https://www.instagram.com/p/DeXCip2Ovbl/",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-11",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "e6c4cb5ed510fda4cfca05064a2150e7d8404ac8": {
+    "id": "e6c4cb5ed510fda4cfca05064a2150e7d8404ac8",
+    "source": "Instagram: art grants",
+    "title": "Doomed revient en janvier 2027, pour une édition en faveur de la lutte pour la protection et la prés",
+    "link": "https://www.instagram.com/p/DeXCBFgOiHO/",
+    "summary": "Non-English.",
+    "relevant": false,
+    "english": false,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-11",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "70a7ce1e73767887f10c8006a8883b81c021ef01": {
+    "id": "70a7ce1e73767887f10c8006a8883b81c021ef01",
+    "source": "Instagram: art grants",
+    "title": "Check out the details of this open call and discover many other art opportunities on our website!",
+    "link": "https://www.instagram.com/p/DeXAoeHs7pL/",
+    "summary": "Source: Instagram #artopencall\nCheck out the details of this open call and discover many other art opportunities on our website!\n\nwww.artenda.net\n\n#artopencall #artopencalls #opencallforartists #callforartists",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "er many other art opportunities on our website!",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-11",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "d7bbe885e39b68f9d1d4a952ac6a43b23ffb92db"
+  },
+  "1a9be6ded00bfdc0ecc95419682702acc54de97f": {
+    "id": "1a9be6ded00bfdc0ecc95419682702acc54de97f",
+    "source": "Instagram: art grants",
+    "title": "*2 more days = today + tmr! lol. deadline is on Sunday",
+    "link": "https://www.instagram.com/p/DeVRAKJJ7Br/",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-11",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "cb4b3df9f3964d05ac6ee75e8e82528077c72c46": {
+    "id": "cb4b3df9f3964d05ac6ee75e8e82528077c72c46",
+    "source": "Instagram: art grants",
+    "title": "[ESPAÑOL ↓↓↓] Build community with your creativity! ✨ Our grants are open for arts and culture proje",
+    "link": "https://www.instagram.com/p/DeVwA5-jQSQ/",
+    "summary": "Source: Instagram #artgrant\n[ESPAÑOL ↓↓↓] Build community with your creativity! ✨ Our grants are open for arts and culture projects designed to be enjoyed by your community and create lasting connections among artists. We're excited to fund your ideas! Applications open from 10/5/26 to 11/2/26. Visit ArtsCouncilNapaValley.org to see more and apply.\n\n¡Construye comunidad con tu creatividad! ✨ Nuestras subvenciones están abiertas para proyectos de arte y cultura creados para ser disfrutados por tu comunidad y crean conexiones duraderas entre artistas. ¡Estamos emocionados de financiar tus ideas! Las solicitudes estarán abiertas del 5 de octubre de 2026 al 2 de noviembre de 2025. Visita ArtsCouncilNapaValley.org para obtener más información y postularte.\n\n#opencallforartists #SupportLocalArtists #artsnow #CulturalHeritage #InvestInArt #ArteYCultura #Arte #Artistas #Cultura #CreativeCommunity #LocalArtists #CommunityArt #CultureAndArt #communitygrants #artislife #artfunding #supportthearts #localarts #NapaCounty #NapaValley #opencall #artgrant",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Our grants are open for arts and culture projects designed to be enjoyed by your community and create lasting connections among artists.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-11",
     "closing_soon_sent": false,
     "status": "suppressed",
     "superseded_by": "70545c591b54e64075906f1c41c584f72e8dfba0"
@@ -25707,7 +25851,7 @@
     "assessor|eoi|industry|nsw|pool|sound": "c561d5e29a807ff20d868f9834d3d77c00e62561",
     "collaboration|creative|fund|nsw": "7ab11257d326fd935f0295dcf83d02699b6b0846",
     "fund|promoter|young": "6ee2123e8b196dc13302ea82c43f5df6e4496658",
-    "apply|applyforart|com|find|grant|this|through|to|www": "8a2105ab8d1bdfa9934dbf21f70ecb46c7f812c8",
+    "apply|applyforart|com|find|grant|this|through|to|www": "3b6bb4ae92b82efe8e97af5710fddf12d9777bfa",
     "big|creatures|dear|small": "365c19bc177b7beae8cde511fb23dfbf5ba13c53",
     "also|beginning|espera|first|is|itself": "747250b5b9a5d6a287b2fc283ed6df6443632aae",
     "body|digital|initiative|join|remember|s|starving|submissions": "e5ba4f185e646f245bc377a1ddbe9db698d4d551",
@@ -25727,6 +25871,9 @@
     "atelier|france|in|ireland|residence": "e88e104a7dcffcfedf336506723e9f8f3983250a",
     "frontier": "7ca03e4c9c51ee040b58be017ae36d96ae81bad3",
     "heralbony|japan|tokyo": "f642304472028a7befc550ff4d6c074bae0bc488",
-    "apply|applyforart|com|find|photography|this|through|to|www": "48dada6534ef1e1c94fb9a1eaca25fbaeaa7199b"
+    "apply|applyforart|com|find|photography|this|through|to|www": "48dada6534ef1e1c94fb9a1eaca25fbaeaa7199b",
+    "iff|mriya": "3778be2152911f5632f33df49add01508b38a9fe",
+    "de|dition|doomed|en|et|faveur|janvier|la|lutte|pour|pr|protection|revient|s|une": "e6c4cb5ed510fda4cfca05064a2150e7d8404ac8",
+    "2|days|deadline|is|lol|more|on|sunday|tmr|today": "1a9be6ded00bfdc0ecc95419682702acc54de97f"
   }
 }
