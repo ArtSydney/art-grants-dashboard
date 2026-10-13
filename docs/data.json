@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-13T12:18:03+11:00",
-  "count": 359,
-  "total": 495,
+  "generated": "2026-10-14T10:23:27+11:00",
+  "count": 367,
+  "total": 507,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -3451,7 +3451,7 @@
       ],
       "first_seen": "2026-09-04",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "47de91108928de3cc576c68af69f63b1413a627a",
@@ -3476,7 +3476,7 @@
       ],
       "first_seen": "2026-09-08",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "8b340bcc95224f78eb2962b7deb22c6f819e513c",
@@ -3501,7 +3501,7 @@
       ],
       "first_seen": "2026-09-09",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "98977d1ecb3764c4e01e8a53eaaaabdbf84a9854",
@@ -3526,7 +3526,7 @@
       ],
       "first_seen": "2026-10-02",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "e0d66dbd79f6953c97b7bdeaf8f72a1ae75228e8",
@@ -4139,6 +4139,31 @@
         "Mixed Media"
       ],
       "first_seen": "2026-10-04",
+      "closing_soon_sent": true,
+      "status": "active"
+    },
+    {
+      "id": "2a6768e6e5b411bd34b28d07744ca90d342511d9",
+      "source": "Instagram: art grants",
+      "title": "YOU HEAR IT? NOW SHOW US THE PUNK BEHIND IT 💥",
+      "link": "https://www.instagram.com/reel/DebyzO2zwdn/",
+      "summary": "Source: Instagram #artopencall\nYOU HEAR IT? NOW SHOW US THE PUNK BEHIND IT 💥\n\nAlready carrying too much, but still getting told to carry more?\nYeah. We all know that feeling.\nSo, turn that frustration, chaos, anger, or whatever’s been stuck in your head into something we can see!! 🫵\n\nSubmit your 2D, 3D, or video/audiovisual artworks and show us what punk looks like through your eyes. \n\nOPEN CALL‼️\n12 September - 20 October 2026\nSelected works will be curated and exhibited at Galeri Idealoka, Telkom University, Bandung, 23-30 November 2026.\n\n#VisibleEchoes2026 #RespondToTheMusic #OpenCall #ArtOpenCall #VisualArt MusicAndArt TelkomUniversity\nIdealokaGallery PunkScholarsNetwork",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2026-10-20",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Already carrying too much, but still getting told to carry more?",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-13",
       "closing_soon_sent": true,
       "status": "active"
     },
@@ -5781,6 +5806,31 @@
       "status": "active"
     },
     {
+      "id": "b230539eefad04ee2c3730a13f8720c55db173db",
+      "source": "Neon Marketplace",
+      "title": "Artist Applications - Sydney Comedy Festival 27",
+      "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/artist-applications-sydney-comedy-festival-27",
+      "summary": "Neon Marketplace | Artist Applications - Sydney Comedy Festival 27 Opportunity Artist Applications - Sydney Comedy Festival 27 EOIs open for comedians and comedy creators to present work as part of Sydney's biggest month of comedy. Opportunity closes 18 Dec 2026 Connect with Neon Marketplace Sydney Comedy Festival 27 Enquiries Get in touch Connect with Neon Marketplace Sydney Comedy Festival 27 Enquiries Get in touch Connect with Neon Marketplace Sydney Comedy Festival 27 Enquiries Get in touch date Applications close at 5pm (AEDT), Friday 18 December 2026. Details Applications are open for the Sydney Comedy Festival , inviting comedians, comedy creators and performers to pitch new and existing shows for inclusion in the festival program. Running from 12 April to 16 May 2027, the festival presents comedy across a network of venues throughout Sydney and provides a platform for emerging and established talent to reach new audiences. Who it is for Stand-up comedians Sketch and character performers Improv and alternative comedy acts Emerging comedy talent Established comedians with new work Comedy collectives and producers How to get involved Find out more and apply on the website . Share Categories Festival Entertainment Tags Comedy Published: 13 Oct 2026 You might also like See all Opportunities Posted by Destination NSW Vivid Sydney Local Business Program Local businesses are invited to join the Vivid Sydney Local Business Program, a chance to shine a spotlight on your business and connect with thousands of festival visitors. Local businesses are invited to join the Vivid Sydney Local Business Program, a chance to shine a spotlight on your business and connect with thousands of festival visitors. Opportunity closes 26 Mar 2027 Posted by Neon Marketplace Volunteer call out for Sydney Gay and Lesbian Mardi Gras Applications are now open to volunteer at select 2027 events. Applications are now open to volunteer at select 2027 events. Opportunity closes 11 Dec 2026 See a",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-12-18",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Artist Applications - Sydney Comedy Festival 27 Opportunity Artist Applications - Sydney Comedy Festival 27 EOIs open for comedians and comedy creators to present work as part of S",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-13",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "809158fce35804235d678d27022b5e4fd1d9d993",
       "source": "Google: Australian art prizes",
       "title": "Red Art Prize 2026",
@@ -6353,6 +6403,31 @@
         "Mixed Media"
       ],
       "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "125e923bd954ff631590f30394304834be19a7fc",
+      "source": "Neon Marketplace",
+      "title": "Vivid Sydney Local Business Program",
+      "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/vivid-local-business-program",
+      "summary": "Neon Marketplace | Vivid Local Business Program Opportunity Vivid Sydney Local Business Program Local businesses are invited to join the Vivid Sydney Local Business Program, a chance to shine a spotlight on your business and connect with thousands of festival visitors. Opportunity closes 26 Mar 2027 Connect with Destination NSW Vivid Sydney Local Business Program Enquiries only (please do not submit an EOI here) Get in touch Connect with Destination NSW Vivid Sydney Local Business Program Enquiries only (please do not submit an EOI here) Get in touch Connect with Destination NSW Vivid Sydney Local Business Program Enquiries only (please do not submit an EOI here) Get in touch Destination NSW date Applications close at 5.00pm (AEST) on date Friday 26 March 2027 Details Vivid Sydney returns 28 May – 19 June 2027, transforming the city into a vibrant celebration of creativity, innovation and technology. Local businesses are invited to join the Vivid Sydney Local Business Program, a chance to shine a spotlight on your business and connect with thousands of festival visitors. Show off your signature products, services and experiences. Highlight how your business contributes to Sydney’s night-time economy and creates memorable moments for visitors. We encourage you to feature local NSW produce or products, supporting the state’s growers and makers. There’s no need to create something new, just share what you do best during the festival. Participating businesses will be promoted to Vivid Sydney’s engaged audience. Selected participants will also receive free promotional assets, including a digital toolkit, LED screen and official window decals to highlight your involvement. How to get involved Find out more, read the FAQs and apply via the website . Share Categories Festival Other Published: 13 Oct 2026 You might also like See all Opportunities Posted by Neon Marketplace Artist Applications - Sydney Comedy Festival 27 EOIs open for comedians and comedy creators to present ",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2027-03-26",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Vivid Local Business Program Opportunity Vivid Sydney Local Business Program Local businesses are invited to join the Vivid Sydney Local Business Program, a chance to shine a spotl",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-13",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -8414,6 +8489,31 @@
       "status": "active"
     },
     {
+      "id": "ddb037dd4ad721dcb48c24a2f2fff9bd1952c6cc",
+      "source": "Artsoz prize registry",
+      "title": "Archibald Prize",
+      "link": "https://www.artgallery.nsw.gov.au/prizes/archibald/",
+      "summary": "Location: NSW, Australia. Medium: Portrait. Type: Portrait. Tags: portrait, major, AGNSW. Archibald Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "f6b21ae371f07d406cc34407df2c39f9086eac5d",
       "source": "Artsoz prize registry",
       "title": "Wynne Prize",
@@ -8458,6 +8558,33 @@
       "judge": "",
       "art_forms": [
         "Painting"
+      ],
+      "first_seen": "2026-08-09",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "178746a09b1ce50e99b9943e669661644682bc77",
+      "source": "Artsoz prize registry",
+      "title": "Mosman Youth Art Prize",
+      "link": "https://mosmanartgallery.org.au/art/mosman-youth-art-prize/",
+      "summary": "Location: NSW, Australia. Medium: Check official. Type: Youth. Tags: youth, council. Mosman Art Gallery What’s On Exhibitions Events Past Exhibitions Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Search Contact Venue Hire When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry What’s On Exhibitions Events Past Exhibitions Art Collections Mosman Art Trail Mosman Art Prize The Neil Balnaves Fellowship Public Art Give & Join Donate Become a Member Volunteer Corporate Partnerships Programs Kids & Families Education Public Programs Art & Wellbeing Members & Donors View All Programs The Gallery The Gallery Visit Us Venue Hire Gallery Shop Exhibitions Events Collections Education The Gallery When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry Search When we are open Monday-Tuesday 10am-4pm Wednesday 10am-8pm Thursday-Friday 10am-4pm Weekends 10am-4pm Public Holidays Closed Free entry Mosman Youth Art Prize Listen The Mosman Youth Art Prize is an annual competition organised by Mosman Council that aims to encourage the creative talents of young, aspiring and emerging artists whilst providing a showcase for their works. It was initiated in 1988 by the internationally renowned artist and local resident Ken Done AM. The Prize is open to all young people aged 12-21 years and is one of the richest youth art prizes in Australia. Online entries are now open for the 2024 Youth Art Prize – find out more . Mosman Youth Art Prize Archive: Please note that the 2020 and 2021 Mosman Youth Art Prizes were cancelled due to public health measures put in place due to COVID-19. Mosman Youth Art Prize 2023 Mosman Youth Art Prize 2022 Mosman Youth Art Prize 2019 Mosman Youth Art Prize 2018 Mosman Youth Art Prize 2017 Mosman Youth Art Prize 2016 Mosman Youth Art Prize 2015 Mosman Youth Art Prize 2014 Mosman Youth Art Prize 2013 Image: Laura Hayley, Experimental arts , 2020, ceramic installation, dimensions variable. Third Prize – Tertiary, 2019 Mosman Youth Art Prize. Mosman Art Gallery acknowledges the Borogegal and Cammeraigal people as the traditional custodians of this land. We pay our respects to Elders of the past and present and to those of the future and acknowledge their spiritual connection to Country.",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "Free",
+      "description": "The Mosman Youth Art Prize is an annual competition organised by Mosman Council that aims to encourage the creative talents of young, aspiring and emerging artists whilst providing",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Sculpture",
+        "Ceramics",
+        "Installation"
       ],
       "first_seen": "2026-08-09",
       "closing_soon_sent": false,
@@ -12495,6 +12622,158 @@
       "status": "active"
     },
     {
+      "id": "15bccf334821f91ecf7d14df9105eb86d1e5e932",
+      "source": "Instagram: art grants",
+      "title": "Etching by danielgravesart, founder of the Florence Academy of Art, which can be enjoyed in one of o",
+      "link": "https://www.instagram.com/p/Dec7Na0IAhO/",
+      "summary": "Source: Instagram #artprize\nEtching by danielgravesart, founder of the Florence Academy of Art, which can be enjoyed in one of our artist residencies. Daniel gifted us this piece for our collection during his visit. Thank you, Daniel! \n\nSubmissions for the 2025 Almenara Art Prize are now open. Link in bio.\n\n👨‍🎨 Tag your art with #thealmenaracollection \n\n#figurativeart #figurativeartist #artist #painting #oilpainting #contemporaryart #bamthegram #contemporaryrealism #contemporarypainting #artcollectors #artcollector #fineart #fineartists #artdetail #artwork #emergingartist #artupclose #paintingoftheday #artcontest #artcompetition #artcompetitions #artprize #opencall #opencallforartists #supportlivingartists #drawing #drawingoftheday #drawings #pencildrawing",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "e Academy of Art, which can be enjoyed in one of our artist residencies.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Printmaking"
+      ],
+      "first_seen": "2026-10-13",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "b16c23838902de409272a0fdee8f0380d075882b",
+      "source": "Instagram: art grants",
+      "title": "ABS Digital Art Prize, Lisbon",
+      "link": "https://www.instagram.com/p/DecUsF-Fean/",
+      "summary": "Source: Instagram #artprize\nABS Digital Art Prize, Lisbon\n\nLooking back at NFC Lisbon, May 2024, where Les Fleurs du Mal received the ABS Digital Art Prize. Poetry and generative art on the main stage.\n\n#DigitalArt #ArtPrize #NFCLisbon",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Looking back at NFC Lisbon, May 2024, where Les Fleurs du Mal received the ABS Digital Art Prize.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Digital/New Media"
+      ],
+      "first_seen": "2026-10-13",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "bb106001920ae16339242bd93e1e1e80ba0e629d",
+      "source": "Instagram: art grants",
+      "title": "Your next piece could be our next discovery. 🎨",
+      "link": "https://www.instagram.com/p/Dec2JdgDVWu/",
+      "summary": "Source: Instagram #artopencall\nYour next piece could be our next discovery. 🎨\n\nThe new edition of AweSnapp Art Awards is now open! Bring us the work that captures your creativity, your perspective, and the care you put into your craft.\n\nReady to share your art? Visit awesnapp.com for the full details and submit your work.\n\nKnow an artist who should enter? Share this open call with them.\n\n#AweSnapp #AweSnappArtAwards #ArtOpenCall #CallForArtists #ArtAwards #ContemporaryArt #EmergingArtists",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "The new edition of AweSnapp Art Awards is now open!",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-13",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "7cbb63e424b392676a963b6d8f3ac6b343935884",
+      "source": "Instagram: art grants",
+      "title": "Es gibt Ateliers mit Geld dran. Heißen Residencies.",
+      "link": "https://www.instagram.com/reel/Decq_FrAnHS/",
+      "summary": "Source: Instagram #artgrant\nEs gibt Ateliers mit Geld dran. Heißen Residencies.\n\nWohnen, arbeiten, bezahlt — wir listen sie.\n\nAlle offenen Fristen, geprüft: Link in Bio.\n\nMarkier deine Atelier-Mitbewohnung.\n\n#kunststipendium #künstlerförderung #stipendium #kunstförderung #förderung #künstlerleben #kunsthumor #atelierleben #kreativität #artlife #callforartists #opencall #artistopportunity #residency #grants #freischaffend #kulturförderung #artgrant",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Wohnen, arbeiten, bezahlt — wir listen sie.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-13",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "84714d21d001ceb67ac6137ecc6359fe29414630",
+      "source": "Instagram: art grants",
+      "title": "Pssst….. CRAZY PEACH little secrets 🤭",
+      "link": "https://www.instagram.com/p/DecBluwiIBX/",
+      "summary": "Source: Instagram #artgrant\nPssst….. CRAZY PEACH little secrets 🤭\n\nCan we find a balance between having typography to introduce and label artwork whilst still preserving the pure uninhibited presence of a piece? \n\n#neurodivergent #artfoundation #crazypeachartfoundation #artgrant",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Can we find a balance between having typography to introduce and label artwork whilst still preserving the pure uninhibited presence of a piece?",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-13",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "4406553909c579332a008837bb2d535b9c6797e7",
+      "source": "Instagram: art grants",
+      "title": "HOW? - GAME ART REIMAGINES POLITICS? A crazy peach “Mind Blow” special 👾",
+      "link": "https://www.instagram.com/p/Deb_5l4iNJ-/",
+      "summary": "Source: Instagram #artgrant\nHOW? - GAME ART REIMAGINES POLITICS? A crazy peach “Mind Blow” special 👾\n•\nIn today’s world, many people are tired of preachy political messages in news, speeches, and artworks. We’re no longer quick to believe that one narrative can speak for an entire truth. At this moment, video games—as an interactive art form—offer us a new perspective: instead of telling us what to think, they allow us to live through the question, “What would I do if it were me?”\n\n#artofinstagram #artforeveryone #crazypeachartfoundation #artgrant",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Mind Blow” special 👾\n•\nIn today’s world, many people are tired of preachy political messages in news, speeches, and artworks.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-10-13",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
       "id": "3be6a300edb4684a16f794e8afeec45aad91d90e",
       "source": "Instagram: art grants",
       "title": ".",
@@ -12699,6 +12978,31 @@
         "Painting"
       ],
       "first_seen": "2026-10-06",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "a0ab3a7f9d5c9ea2441b58a5fab1f687460fbdd6",
+      "source": "Instagram: art grants",
+      "title": "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗛𝗢𝗠𝗘, 𝗙𝗨𝗧𝗨𝗥𝗘 𝗘𝗫𝗣𝗘𝗥𝗜𝗠𝗘𝗡𝗧𝗘𝗥𝗦!🔥",
+      "link": "https://www.instagram.com/p/DeRtO_uqU0w/",
+      "summary": "Source: Instagram #artopencall\n𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗛𝗢𝗠𝗘, 𝗙𝗨𝗧𝗨𝗥𝗘 𝗘𝗫𝗣𝗘𝗥𝗜𝗠𝗘𝗡𝗧𝗘𝗥𝗦!🔥\nThe Experimental Photo Festival 2027 is opening its doors 🫂\n\n👀 We are looking for artists, creators and experimenters who want to become part of an international community where photography can transform, expand and take on new forms.\n\nThree open calls. Three ways to take part:\n🖼️ Exhibit your work in Barcelona.\n🧪 Share your knowledge and creative processes.\n🏠 Experiment collectively during the international residency.\n\n𝗡𝗘𝗪 𝗩𝗜𝗦𝗜𝗢𝗡𝗦. 𝗡𝗘𝗪 𝗙𝗢𝗥𝗠𝗦. 𝗡𝗘𝗪 𝗣𝗢𝗦𝗦𝗜𝗕𝗜𝗟𝗜𝗧𝗜𝗘𝗦.\n\n⏰ Submit your proposal before 𝗡𝗼𝘃𝗲𝗺𝗯𝗲𝗿 𝟳, 𝟮𝟬𝟮𝟲.\n👉 Discover all the open calls and submit your proposal. Ask us for the link in the comments!\n\nPh nanakoliu",
+      "relevant": true,
+      "english": true,
+      "category": "Residency",
+      "au_eligibility": "unclear",
+      "location_scope": "International",
+      "eligibility_note": "",
+      "deadline": "",
+      "amount": "",
+      "entry_fee": "",
+      "description": "The Experimental Photo Festival 2027 is opening its doors 🫂 👀 We are looking for artists, creators and experimenters who want to become part of an international community where pho",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-10-13",
       "closing_soon_sent": false,
       "status": "active"
     }
