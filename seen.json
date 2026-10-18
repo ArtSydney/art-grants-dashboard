@@ -4673,25 +4673,22 @@
     "source": "Artsoz prize registry",
     "title": "Archibald Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/archibald/",
-    "summary": "Location: NSW, Australia. Medium: Portrait. Type: Portrait. Tags: portrait, major, AGNSW. Archibald Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921",
-    "relevant": true,
+    "summary": "No visual art form detected.",
+    "relevant": false,
     "english": true,
-    "category": "Prize",
-    "au_eligibility": "eligible",
-    "location_scope": "Australia",
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
     "eligibility_note": "",
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
     "curator": "",
     "judge": "",
-    "art_forms": [
-      "Visual Arts"
-    ],
+    "art_forms": [],
     "first_seen": "2026-08-09",
     "closing_soon_sent": false,
-    "status": "active"
+    "status": "suppressed"
   },
   "f3ca72511b30510a00932763312efb81c8ab0eb4": {
     "id": "f3ca72511b30510a00932763312efb81c8ab0eb4",
@@ -6514,7 +6511,7 @@
     ],
     "first_seen": "2026-08-22",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "d562db369465598d6f9a300f3cd2ecabd1b1d466": {
     "id": "d562db369465598d6f9a300f3cd2ecabd1b1d466",
@@ -20052,7 +20049,7 @@
     ],
     "first_seen": "2026-09-26",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "2744ea985e42b5470e6c8ecf79dc7d3dc1f72dd1": {
     "id": "2744ea985e42b5470e6c8ecf79dc7d3dc1f72dd1",
@@ -22038,7 +22035,7 @@
       "Mixed Media"
     ],
     "first_seen": "2026-10-03",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "c83753f89c83b6f0e2530cbf787a85a5feb93c55": {
@@ -22779,7 +22776,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-10-04",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "d63ab59ce5fdfc04206947cbfee5161ee49c2476": {
