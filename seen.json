@@ -4720,7 +4720,7 @@
     "source": "Artsoz prize registry",
     "title": "Wynne Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
+    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4730,7 +4730,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -4745,7 +4745,7 @@
     "source": "Artsoz prize registry",
     "title": "Sulman Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
+    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4755,7 +4755,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -10512,7 +10512,8 @@
     "art_forms": [],
     "first_seen": "2026-09-02",
     "closing_soon_sent": false,
-    "status": "suppressed"
+    "status": "suppressed",
+    "superseded_by": "7d4e62b9ccfa7453334797f526d1b83d95a948a0"
   },
   "8d94c77f50c45a63d49f640673b22e787fab8796": {
     "id": "8d94c77f50c45a63d49f640673b22e787fab8796",
@@ -15706,7 +15707,7 @@
     ],
     "first_seen": "2026-09-15",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "271ee62bb4c47fe3f93215a091c0c505f2334093": {
     "id": "271ee62bb4c47fe3f93215a091c0c505f2334093",
@@ -19976,7 +19977,7 @@
     ],
     "first_seen": "2026-09-25",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "4b022feaa618d07b57e4e5de9f0dc0971938b2ad": {
     "id": "4b022feaa618d07b57e4e5de9f0dc0971938b2ad",
@@ -20371,7 +20372,7 @@
     ],
     "first_seen": "2026-09-29",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "a1fc1ebfff2cd48d237cdddc1f060b4fb6d466fc": {
     "id": "a1fc1ebfff2cd48d237cdddc1f060b4fb6d466fc",
@@ -20547,7 +20548,7 @@
     ],
     "first_seen": "2026-09-29",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "fd33191f32b27733e6d8a8db40ae6cd0c56d11d8": {
     "id": "fd33191f32b27733e6d8a8db40ae6cd0c56d11d8",
@@ -22653,7 +22654,7 @@
     ],
     "first_seen": "2026-10-04",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "926ee6e341d33c5d02834580203da0f0e92ea3c3": {
     "id": "926ee6e341d33c5d02834580203da0f0e92ea3c3",
@@ -25538,7 +25539,7 @@
     ],
     "first_seen": "2026-10-13",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "a2594d9a87774e235ca7470defa092e8f0bad8bf": {
     "id": "a2594d9a87774e235ca7470defa092e8f0bad8bf",
@@ -26495,6 +26496,122 @@
     "status": "suppressed",
     "superseded_by": "10a2310e9e357ad4a6993231172300e2ea6defb6"
   },
+  "7d4e62b9ccfa7453334797f526d1b83d95a948a0": {
+    "id": "7d4e62b9ccfa7453334797f526d1b83d95a948a0",
+    "source": "Google: Australian art prizes",
+    "title": "Ravenswood Australian Women's Art Prize",
+    "link": "https://www.ravenswoodartprize.com.au/",
+    "summary": "Ravenswood Australian Women’s Art Prize Search... About Entry Details Judges Past Prizes 2026 Art Prize 2025 Art Prize 2024 Art Prize 2023 Art Prize 2022 Art Prize 2021 Art Prize 2020 Art Prize 2019 Art Prize 2018 Art Prize 2017 Art Prize Partners Exhibition Media Contact Facebook Instagram YouTube Australia’s Highest Value Art Prize for Women For more than 10 years the Ravenswood Australian Women’s Art Prize has been leading the way for female artists in Australia. 2026 PRIZE highlights ENTRIES OPEN SOON 2027 Ravenswood Australian Women’s Art Prize 2027 Key Dates: Entries open Wednesday 4 November 2026 Entries close Wednesday 10 February 2027 at 12.00pm AEDT Finalists announced on Wednesday 31 March 2027 Opening Night (proudly presented by Taylor) on Friday 14 May 2027 (Tickets on sale February 2027) Exhibition of Finalists on Saturday 15 May – Sunday 30 May 2027 eNTRY DETAILS Congratulations 2026 Winners Professional Artist Prize Winner Monica Rani Rudhar – ‘When Both Shall Meet’ Emerging Artist Prize Winner Jane Burton Taylor – ‘Colonial Waistcoat’ Indigenous Emerging Artist Prize Winner Stephanie Bush – ‘Papa Tjukurrpa – Nyumannu’ People’s Choice Award Winner Winner Tara Stubley – ‘Spring Awakening’ PROFESSIONAL ARTIST WINNER | MONICA RUDHAR ‘WHEN BOTH SHALL MEET’ EMERGING ARTIST WINNER | JANE BURTON TAYLOR ‘COLONIAL WAISTCOAT’ INDIGENOUS EMERGING ARTIST WINNER | STEPHANIE BUSH ‘Papa Tjukurrpa – Nyumannu’ TARA STUBLEY – ‘SPRING AWAKENING’ Highly Commended Awards Professional Category Elvis Richardson –’ Settlement #9 ‘ Anna Mould – ‘ Silk State ‘ Emerging Category Jane Michaele Cameron –’ Bull ant Umwelt III ‘ Lily Mortensen – ‘ Aquarium Nocturne ‘ Indigenous Emerging Category Bryella Garmanjan Farrell – ‘Where Saltwater Meets Freshwater’ Merrkiyawuy #2 Munuŋgurr – ‘Dhatam (Lillies)’ The Ravenswood Australian Women’s Art Prize is the highest-value art prize for women in Australia with $58,000 in prize money available across Professional Artist, Emerging Artist and Indigenous Emerging Artist categories – plus a People’s Choice Award and Highly Commended Awards. Established in 2017 to advance art and opportunity for emerging and established women artists in Australia, entries to the Art Prize have grown exponentially each year. There are three prize categories: Professional Artist Prize of $35,000 Emerging Artist Prize of $7,500 (supported by The Reed Family Foundation). Indigenous Emerging Artist Prize of $7,500 (supported by the Guardian and Scarborough Foundation) There is also a People’s Choice Award of $2,000 (supported by Edwina Palmer) plus a Derivan art pack valued at $500 and six Highly Commended Awards (two for each category) of $1,000 each (supported by Community Bank Lindfield) will also be awarded. https://youtu.be/H2_PKMYWWeU Keen to enter an artwork in 2027? Entries for the 2027 Ravenswood Australian Women’s Art Prize open on 4 November 2026. find out more about entering ‘To be able to support these artists who are living and working and representing rural Australia is a key part of why we are really proud and happy to be involved in the prize as a whole.’ mark muller, editor-in-chief, R.M. Williams outback Excerpt from Mantle by Agneta Ekholm, 2020 Professional Artist Finalist ‘As Deputy Principal of Ravenswood, I am delighted to present the Ravenswood Australian Women’s Art Prize. Inspiring and connecting women visual artists, this significant Art Prize will strengthen the profile and legitimacy of careers in art for current and future generations of Australian women.’ SARAH GUY, Deputy Principal – head of junior school, Ravenswood Excerpt from Interloper by Michelle Cawthorn, 2021 Professional Artist Finalist ‘It’s exciting to see how the Art Prize has grown exponentially, garnering over 11,000 entries since its establishment in 2017, confirming the importance of the Art Prize in elevating the visibility of women artists in Australia.’ John McLean, Former Chair of Foundation Excerpt from Kungkarangkalpa (Se",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-11-04",
+    "amount": "$58,000",
+    "entry_fee": "",
+    "description": "Australia’s highest-value prize for women artists.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-02",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "6546b2d536e17f461ecea7421eccb00ead6293ad": {
+    "id": "6546b2d536e17f461ecea7421eccb00ead6293ad",
+    "source": "Neon Marketplace",
+    "title": "Music Recording Studio Residence Program",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/music-recording-studio-residence-program",
+    "summary": "Neon Marketplace | Music Recording Studio Residence Program Opportunity Music Recording Studio Residence Program Expressions of interest are open for the City of Parramatta's Music Recording Studio Residency Program at Wentworth Point Community Centre. Opportunity closes 02 Nov 2026 Connect with City of Parramatta Music Recording Studio Residence Program Enquiries (please do not submit your EOI here) Get in touch Connect with City of Parramatta Music Recording Studio Residence Program Enquiries (please do not submit your EOI here) Get in touch Connect with City of Parramatta Music Recording Studio Residence Program Enquiries (please do not submit your EOI here) Get in touch City of Parramatta Instagram date EOI Submission Closing Date: 5pm on Monday, 2 November 2026 Details The City of Parramatta is proud to support creativity and artistic development and expression across the community through an open call for Expressions of Interest for Music Recording Studio Residency Program at Wentworth Point Community Centre. The Residency will support a broad range of music production activities, including music composition, recording, mixing, and mastering. The Residency is designed to inspire creativity, provide professional development opportunities, and supports the growth of emerging and established music artists and composers, music producers, and music professionals across greater Western Sydney. This Residency offers successful applicants’ free access to a professional recording studio, and opportunities to develop and present new work. How to get involved Find out more and apply via the website . Share Categories Grant and sponsorship Other Tags Music Published: 20 Oct 2026 You might also like See all Opportunities Posted by Neon Marketplace Young Artist in Residency program Applications open for the 2027 Young Artist in Residency program offered by Wollongong City Council. Applications open for the 2027 Young Artist in Residency program offered by Wollongong City Co",
+    "relevant": true,
+    "english": true,
+    "category": "Residency",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-11-02",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Music Recording Studio Residence Program Opportunity Music Recording Studio Residence Program Expressions of interest are open for the City of Parramatta's Music Recording Studio R",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-10-20",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "b4b16ac946dd28707ee06b41a7f0873d21a7dbe0": {
+    "id": "b4b16ac946dd28707ee06b41a7f0873d21a7dbe0",
+    "source": "Neon Marketplace",
+    "title": "Food trucks wanted for North Parramatta",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/food-trucks-wanted-for-north-parramatta",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-20",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "811f08d6996086239b13fcfd3f35cd8a689eb000": {
+    "id": "811f08d6996086239b13fcfd3f35cd8a689eb000",
+    "source": "Neon Marketplace",
+    "title": "Performer EOIs open: Eastwood Lunar New Year Festival 2027",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/performer-eois-open-eastwood-lunar-new-year-festival-2027",
+    "summary": "Dropped: exclusively non-visual art form.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-20",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "5dce5e64b2255c28ce7f50c105d3fe58ec2a0e93": {
+    "id": "5dce5e64b2255c28ce7f50c105d3fe58ec2a0e93",
+    "source": "Neon Marketplace",
+    "title": "Stallholder EOIs open: Eastwood Lunar New Year Festival 2027",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/stallholder-eois-open-eastwood-lunar-new-year-festival-2027",
+    "summary": "Dropped: title matches noise keyword.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-20",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -26906,7 +27023,7 @@
     "27|partner|unlimited": "1afdcea6672e680125b5536b22c580ed08bc21df",
     "contest|october|photography|solo": "746b953e1be34e76432878262d40cd40a56dd66a",
     "italy|lab|venice": "2522836829f38aada6362da3da9f02e04d582476",
-    "ravenswood|s|women": "0b27af60f675f723aebcb5b6f876ed2e34ca6029",
+    "ravenswood|s|women": "7d4e62b9ccfa7453334797f526d1b83d95a948a0",
     "natural|science|waterhouse": "8d94c77f50c45a63d49f640673b22e787fab8796",
     "alice|bindi|digital|enterprises|springs": "9580ac8753f3ab615370bb3e9b37ae9d9551f2b4",
     "city|rockingham": "f2cee0f2301efc2bcac250a6ee3247177f9704f0",
@@ -27421,6 +27538,10 @@
     "meroogal|s|women": "1c677177534ba51a463be3857c5cbe666f2b261b",
     "music|nsw|regional|remote|s|women": "b567e7b2a458b1e77b0606db0cd0999584418162",
     "in|residency|young": "7d313fbfd43d390dfbd7e9928d875de9e70b94e8",
-    "eoi|opportunities|performer|stallholder|subscribe": "2afec37103c8247abce0199b10ed2d1cecb509ef"
+    "eoi|opportunities|performer|stallholder|subscribe": "2afec37103c8247abce0199b10ed2d1cecb509ef",
+    "music|recording|residence|studio": "6546b2d536e17f461ecea7421eccb00ead6293ad",
+    "food|north|parramatta|trucks|wanted": "b4b16ac946dd28707ee06b41a7f0873d21a7dbe0",
+    "eastwood|eois|festival|lunar|new|performer|year": "811f08d6996086239b13fcfd3f35cd8a689eb000",
+    "eastwood|eois|festival|lunar|new|stallholder|year": "5dce5e64b2255c28ce7f50c105d3fe58ec2a0e93"
   }
 }
