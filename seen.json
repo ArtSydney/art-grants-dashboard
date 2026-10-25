@@ -4720,7 +4720,7 @@
     "source": "Artsoz prize registry",
     "title": "Wynne Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
+    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4730,7 +4730,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "Client Challenge A required part of this site couldn’t load.",
+    "description": "",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -18678,7 +18678,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-22",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "671596a00f7c294aa69e6c3894eb5ee93d040468": {
@@ -18703,7 +18703,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-22",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "a18d48543dfdec22ef44acb643c04bec994aa96d": {
@@ -20303,7 +20303,7 @@
     ],
     "first_seen": "2026-09-29",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "59f2696c2bbe49c3ac5509f456a549fd907c35a8": {
     "id": "59f2696c2bbe49c3ac5509f456a549fd907c35a8",
@@ -21314,7 +21314,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-24",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "22f5a536c29cb67a2e60ef88216a2dc42f4b2c33": {
@@ -21340,7 +21340,7 @@
     ],
     "first_seen": "2026-10-02",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "7d7c667ea936ee0845c86f74162f86ecbed7ff2f": {
     "id": "7d7c667ea936ee0845c86f74162f86ecbed7ff2f",
@@ -24074,7 +24074,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-10-08",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "7ab11257d326fd935f0295dcf83d02699b6b0846": {
@@ -24182,7 +24182,7 @@
       "Mixed Media"
     ],
     "first_seen": "2026-10-08",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "f85762a7c56e58e203249885230b06a21cddeb4b": {
@@ -24830,7 +24830,7 @@
       "Mixed Media"
     ],
     "first_seen": "2026-10-10",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "6138fe412547cd06e86bcc8dfeac7f82b75daf92": {
@@ -26543,7 +26543,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-10-20",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "b4b16ac946dd28707ee06b41a7f0873d21a7dbe0": {
@@ -26761,7 +26761,126 @@
       "Mixed Media"
     ],
     "first_seen": "2026-10-24",
+    "closing_soon_sent": true,
+    "status": "active"
+  },
+  "dfcbddc72a911e619cb0235a5a462a8f5a1f29cc": {
+    "id": "dfcbddc72a911e619cb0235a5a462a8f5a1f29cc",
+    "source": "BNE Art: Opportunities",
+    "title": "FELTspace 2027 Exhibition Program",
+    "link": "https://bneart.com/feltspace-2027-exhibition-program/",
+    "summary": "Deadline: December 15. FELTspace 2027 Exhibition Program – BNE ART - Brisbane Art Guide Skip to content Menu FELTspace 2027 Exhibition Program Deadline: Deadline: December 15 FELTspace is inviting proposals from early-career and mid-career artists for its 2027 exhibition program in Tarntanya/Adelaide. The gallery supports experimental artistic practices, concepts and materials, and encourages applications from artists across diverse backgrounds and communities. Successful applicants receive: A $1,000 artist fee, subject to funding availability. A four-week exhibition. Marketing and communications support. Professional photography. An opening event and a lead public program. Available exhibition periods: 31 March – 1 May 2027 19 May – 19 June 2027 25 August – 25 September 2027 Artists can propose work for the Front Gallery, Back Gallery, FELTdark projection space, or the entire gallery. Applications are assessed on artistic merit, experimental approach, engagement with current cultural discourse, and geographic, demographic and art-form diversity. How to apply: Submit the completed proposal template as a PDF with an artist CV and supporting material, or email a link to a video or audio response with the same supporting documents. Applications should be sent to info@feltspace.org. For alternative application formats or access support, contact Access and Inclusion Officer Shani Engelbrecht at access@feltspace.org. https://www.feltspace.org/2027-program-callout Info not available access@feltspace.org",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-12-15",
+    "amount": "$1,000",
+    "entry_fee": "",
+    "description": "FELTspace is inviting proposals from early-career and mid-career artists for its 2027 exhibition program in Tarntanya/Adelaide.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Photography"
+    ],
+    "first_seen": "2026-10-25",
     "closing_soon_sent": false,
+    "status": "active"
+  },
+  "19f96762a13c05395b92c9aa07adb13c8f9bb906": {
+    "id": "19f96762a13c05395b92c9aa07adb13c8f9bb906",
+    "source": "BNE Art: Opportunities",
+    "title": "Curator + Program Manager — Canberra Contemporary",
+    "link": "https://bneart.com/curator-program-manager-canberra-contemporary/",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-25",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "a581766df2d813483068e0d54f9a4748f521ac1e": {
+    "id": "a581766df2d813483068e0d54f9a4748f521ac1e",
+    "source": "BNE Art: Opportunities",
+    "title": "2027 Midsumma Art Award",
+    "link": "https://bneart.com/2027-midsumma-art-award/",
+    "summary": "Deadline: November 6. 2027 Midsumma Art Award – BNE ART - Brisbane Art Guide Skip to content Menu 2027 Midsumma Art Award Deadline: Deadline: November 6 Presented by Midsumma Festival, the Midsumma Art Award is a national, non-acquisitive visual arts award celebrating contemporary LGBTQIA+ artists working across all mediums. Established in 2016, the annual award recognises artistic excellence and showcases outstanding queer artists whose work reflects personal and political perspectives on the world. Finalists are selected from across Australia, with their work exhibited as part of the 2027 Midsumma Festival. Three prizes are awarded: Major Prize: $6,000 cash. People’s Choice Award: $1,000 cash. Bundoora Homestead Art Prize: A development and exhibition opportunity at Bundoora Homestead Art Centre, developed in collaboration with the winning artist to support their practice. Artists working in any medium are encouraged to apply. https://www.midsumma.org.au/participate/midsumma-art-award-submissions 0392966600 Info not available",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-11-06",
+    "amount": "$6,000",
+    "entry_fee": "",
+    "description": "Presented by Midsumma Festival, the Midsumma Art Award is a national, non-acquisitive visual arts award celebrating contemporary LGBTQIA+ artists working across all mediums.Establi",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Mixed Media"
+    ],
+    "first_seen": "2026-10-25",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "ab049e9938b759e5e7c049ac7bf12cf0c66d8a31": {
+    "id": "ab049e9938b759e5e7c049ac7bf12cf0c66d8a31",
+    "source": "BNE Art: Opportunities",
+    "title": "un Magazine 21.1: Autodidactism — Call for Proposals",
+    "link": "https://bneart.com/un-magazine-21-1-autodidactism-call-for-proposals/",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-25",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "6139c3a1e8ebf9e8aea5d901d5914cc423784bb4": {
+    "id": "6139c3a1e8ebf9e8aea5d901d5914cc423784bb4",
+    "source": "BNE Art: Opportunities",
+    "title": "Museum of Brisbane: Work Opportunities",
+    "link": "https://bneart.com/museum-of-brisbane-work-opportunities/",
+    "summary": "Deadline: 2 November 2026. Museum of Brisbane: Work Opportunities – BNE ART - Brisbane Art Guide Skip to content Menu Museum of Brisbane: Work Opportunities Deadline: Museum of Brisbane is seeking creative, enthusiastic and skilled people to join its team and help champion Brisbane as a creative and connected city. Current opportunities span exhibition production, retail and visitor experience. Exhibition Build Technician Museum of Brisbane is recruiting an experienced Exhibition Build Technician to support the production and installation of exhibitions. Working alongside the Build and Production Manager, the successful applicant will undertake workshop pre-builds, construction and installation, helping bring exhibitions to life. The role requires high-level technical, construction and installation skills. Employment: Part-time or full-time applicants welcome. Applications close: Monday 2 November 2026, 9:00 am. Apply: Submit an application through SEEK Position description: Read the role details Casual Retail Assistants Museum of Brisbane is seeking casual Retail Assistants to join the MoB Shop team. This opportunity suits people who enjoy customer service, working in a creative environment and helping visitors discover gifts and products. Employment: Casual. How to apply: Submit a current CV and a one-page cover letter addressing the selection criteria. Email: employment@museumofbrisbane.com.au Position description: Read the Retail Assistant position description Closing date: Not specified in the supplied information. Visitor Experience Team Museum of Brisbane welcomes expressions of interest from enthusiastic, energetic and visitor-focused people interested in future opportunities with its Visitor Experience Team. How to apply: Submit a current CV and a one-page cover letter addressing the selection criteria. Email: employment@museumofbrisbane.com.au Position description: Read the Visitor Experience Officer position description Closing date: Not specified in the supplied information. Other opportunities Museum of Brisbane also lists opportunities to get involved through: Volunteering: Warrajamba volunteer expressions of interest Work experience: Opportunities for students in Grades 10–12. Find out more https://www.museumofbrisbane.com.au/work-with-us/ 0733390800 employment@museumofbrisbane.com.au",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-11-02",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Museum of Brisbane is seeking creative, enthusiastic and skilled people to join its team and help champion Brisbane as a creative and connected city.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Installation"
+    ],
+    "first_seen": "2026-10-25",
+    "closing_soon_sent": true,
     "status": "active"
   },
   "__dedup_index__": {
@@ -27699,6 +27818,11 @@
     "center|dc|galleries|hill|juried|regional|washington": "ccc0a165f6b880856a8fe024867c4b00c7379521",
     "architecture|nyc4pa|online|photography": "62be79c11938ad50c4d050bb56fe334ee0458287",
     "community|ipswich|meetups|residencies|workshop|workshops": "67b52e204f3088f1437529c59cdb45e2d873bcd3",
-    "expressions|gallery|hub|interest": "5566b7f2f74685f985072b1860c19f7570c2b538"
+    "expressions|gallery|hub|interest": "5566b7f2f74685f985072b1860c19f7570c2b538",
+    "feltspace": "dfcbddc72a911e619cb0235a5a462a8f5a1f29cc",
+    "canberra|curator|manager": "19f96762a13c05395b92c9aa07adb13c8f9bb906",
+    "midsumma": "a581766df2d813483068e0d54f9a4748f521ac1e",
+    "1|21|autodidactism|magazine|proposals|un": "ab049e9938b759e5e7c049ac7bf12cf0c66d8a31",
+    "brisbane|museum|opportunities|work": "6139c3a1e8ebf9e8aea5d901d5914cc423784bb4"
   }
 }
