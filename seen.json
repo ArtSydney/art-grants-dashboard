@@ -4720,7 +4720,7 @@
     "source": "Artsoz prize registry",
     "title": "Wynne Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
+    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4730,7 +4730,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -4745,7 +4745,7 @@
     "source": "Artsoz prize registry",
     "title": "Sulman Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
+    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4755,7 +4755,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -7815,7 +7815,7 @@
     ],
     "first_seen": "2026-08-30",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "45a69869585c80832747fa898db386ac2f26394b": {
     "id": "45a69869585c80832747fa898db386ac2f26394b",
@@ -23092,7 +23092,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-10-06",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "cf0607778f5a7191143338cb34bbed99a5172a06": {
@@ -24722,7 +24722,7 @@
       "Mixed Media"
     ],
     "first_seen": "2026-10-10",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "f642304472028a7befc550ff4d6c074bae0bc488": {
@@ -26518,7 +26518,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-02",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "6546b2d536e17f461ecea7421eccb00ead6293ad": {
@@ -26990,6 +26990,50 @@
     "judge": "",
     "art_forms": [],
     "first_seen": "2026-10-26",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "3aa0b92c43e353b1e6c34f85fed2fdea336f4db1": {
+    "id": "3aa0b92c43e353b1e6c34f85fed2fdea336f4db1",
+    "source": "Artshow.com Competitions",
+    "title": "Montague Sculpture Park Large Scale Sculpture - Hattiesburg, MS",
+    "link": "https://artshow.com/juriedshows/South.html#639286278453523568",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-27",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "c6374164d59739f762afd5bf24f3803209541203": {
+    "id": "c6374164d59739f762afd5bf24f3803209541203",
+    "source": "art-prizes.com",
+    "title": "Hopper Prize",
+    "link": "https://www.art-prizes.com/ArtPrize/Hopper-Prize",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-27",
     "closing_soon_sent": false,
     "status": "suppressed"
   },
@@ -27938,6 +27982,8 @@
     "craft|festival|inclusion|market|stallholders|wanted": "835c98f93c0a715351db85541a0d8ae872a887f8",
     "at|bites|diwali|farmers|market|parramatta|stallholders|wanted": "9bf06e83b892b70009c16002057277ecd4d51992",
     "expression|interest|maroubra|sound|stakeholder|waves": "00afbdca7d74d8e190c56bade03dc2edc13fb267",
-    "apply|at|become|farmers|market|parramatta|stallholder|to": "9e4e24181191eb180ba09eea43a62e4e7c9b7dff"
+    "apply|at|become|farmers|market|parramatta|stallholder|to": "9e4e24181191eb180ba09eea43a62e4e7c9b7dff",
+    "hattiesburg|large|montague|ms|park|scale|sculpture": "3aa0b92c43e353b1e6c34f85fed2fdea336f4db1",
+    "hopper": "c6374164d59739f762afd5bf24f3803209541203"
   }
 }
