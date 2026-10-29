@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-29T10:12:12+11:00",
+  "generated": "2026-10-30T10:14:51+11:00",
   "count": 360,
-  "total": 529,
+  "total": 528,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -20,31 +20,6 @@
     "Multidisciplinary"
   ],
   "items": [
-    {
-      "id": "d0c0c187cfe86443087ad68e5287b9a1a6106530",
-      "source": "BNE Art: Opportunities",
-      "title": "Brett Whiteley Travelling Art Scholarship 2026",
-      "link": "https://bneart.com/brett-whiteley-travelling-art-scholarship-2026/",
-      "summary": "Deadline: June 29. Brett Whiteley Travelling Art Scholarship 2026 – BNE ART - Brisbane Art Guide Skip to content Menu Brett Whiteley Travelling Art Scholarship 2026 Deadline: Deadline: June 29 The Brett Whiteley Travelling Art Scholarship 2026 , administered by the Art Gallery of New South Wales, is now accepting applications from emerging Australian artists aged 20 to 30 with an established body of work. Established in memory of Brett Whiteley, the scholarship supports excellence in painting while providing significant career development opportunities through funded residencies in Australia and overseas. Major Scholarship $50,000 Three-month residency at Cité Internationale des Arts, Paris Additional three months of independent travel throughout Europe Five Residency Scholarships $10,000 each Two-week residency at Shark Island Kangaroo Valley , NSW Residency includes a curated professional development program presented by the Brett Whiteley Studio. Eligibility Applicants must: Be aged 20–30 years on the closing date. Have been an Australian citizen for at least two years . Be living in Australia during the application and announcement period. Have an established body of work. Submission Requirements Applicants must submit: Images of 10 artworks At least five must be paintings Nominate one painting (maximum 100 × 150 cm) for judging. All submitted works must have been created between 30 July 2025 and 28 July 2026 . Key Dates Applications Open: 29 June 2026 Applications Close: 31 July 2026 (11:59pm) Finalists Exhibition: 15 October – 22 November 2026 Winners Announced: 21 October 2026 Shark Island Residency: 10–23 November 2026 Paris Residency: July – September 2027 https://www.artgallery.nsw.gov.au/about-us/opportunities-for-artists/brett-whiteley-travelling-art-scholarship/#instructions-and-conditions-the-work 1800679278 bwtas@ag.nsw.gov.au",
-      "relevant": true,
-      "english": true,
-      "category": "Scholarship",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-07-31",
-      "amount": "$50,000",
-      "entry_fee": "",
-      "description": "The Brett Whiteley Travelling Art Scholarship 2026, administered by the Art Gallery of New South Wales, is now accepting applications from emerging Australian artists aged 20 to 30",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Painting"
-      ],
-      "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
-      "status": "closed"
-    },
     {
       "id": "efb551f8173e502c8815f5fe4dc97139ce0726f5",
       "source": "BNE Art: Opportunities",
@@ -5035,7 +5010,7 @@
         "Digital/New Media"
       ],
       "first_seen": "2026-09-22",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -5060,7 +5035,7 @@
         "Mixed Media"
       ],
       "first_seen": "2026-10-25",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {

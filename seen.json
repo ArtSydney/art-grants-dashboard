@@ -18918,7 +18918,7 @@
       "Digital/New Media"
     ],
     "first_seen": "2026-09-22",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "eacb24006920712ba200c74ef5da86d0c8231e17": {
@@ -26833,7 +26833,7 @@
       "Mixed Media"
     ],
     "first_seen": "2026-10-25",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "ab049e9938b759e5e7c049ac7bf12cf0c66d8a31": {
@@ -27175,6 +27175,101 @@
     "first_seen": "2026-10-28",
     "closing_soon_sent": false,
     "status": "suppressed"
+  },
+  "40e02cee9a72bdee051b25c09507825ebc8d2bf3": {
+    "id": "40e02cee9a72bdee051b25c09507825ebc8d2bf3",
+    "source": "Artshow.com Competitions",
+    "title": "The Room Next Door - Online",
+    "link": "https://artshow.com/juriedshows/NA.html#639288585990881048",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-29",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "88ae15f008d8bebf7d18132507d35a626c900a4a": {
+    "id": "88ae15f008d8bebf7d18132507d35a626c900a4a",
+    "source": "Google: Australian art prizes",
+    "title": "Harden Art Prize Inc. – Harden and Murrumburrah",
+    "link": "https://hardenartprize.org.au/",
+    "summary": "Harden Art Prize Inc. – Harden and Murrumburrah Skip to content National Acquisitive Prize For Landscape Paintings $15,000 Winner 2026 Wayne Elliott – ‘Warracknabeal’ “Walking provides me with the opportunity to make sense of the landscape, Warracknabeal is one of those places I have walked over time. The importance of ANZAC Park as a sporting hub and place of remembrance. The long main street, Scott street and the Yarriambiack creek which winds its way through the town creating spaces of reflection. Finally, the golden wheat fields which are at the heart and soul of the town.” 91cm x 91 cm, Origins The Harden Art Prize is in its third year and has gained a following across Australia after its successful inaugural event held in Harden Murrumburrah in 2022. The organization responsible for the presentation of the event is Harden Art Prize Incorporated (a community committee) which evolved from an initiative of dual sponsors Harden Murrumburrah Community Bank and the Geoffrey Kruger Trust. The event aims to promote Harden-Murrumburrah to the arts community of Australia and to encourage visitors to our region to view the exhibition of work by the finalists. The exhibition is staged in autumn which is a glorious time to promote tourism to the area and to boost the economy of our small regional community. The Art Prize aims to promote cultural awareness in the district and will grow a quality art collection over the coming years contributing to the expansion and development of the arts scene in Australia. DETAILS Harden Art Prize is an acquisitive landscape painting prize. Cityscapes and seascapes are acceptable within the broad definition of landscape. Prizes Major prize $15,000 acquisitive. $1,000 People’s Choice Award Theme Artwork painting depicting a landscape, original work of the artist, executed entirely in the 12 months prior to entry closing date, not exhibited previously in any other art prize or award. Size No more than 152.4cm x 152.4cm (60 inches x 60 inches) Image upload Image file of artwork must be no bigger than 10Mb and must be in jpg format. Delivery Shortlisted artists will be advised of delivery instructions. Entry Fee $40 per artwork, non-refundable. Entry fee must be paid at time of entry, Let’s work together Your inquiry is important to us, and we will respond as soon as we can. Full Name Email Contact Number Message Submit",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "$15,000",
+    "entry_fee": "",
+    "description": "National Acquisitive Prize For Landscape Paintings $15,000 Winner 2026 Wayne Elliott – ‘Warracknabeal’ “Walking provides me with the opportunity to make sense of the landscape, War",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting"
+    ],
+    "first_seen": "2026-10-29",
+    "closing_soon_sent": false,
+    "status": "needs_review"
+  },
+  "8dfc2ee59ced18341c79a485220e003246cfc0ce": {
+    "id": "8dfc2ee59ced18341c79a485220e003246cfc0ce",
+    "source": "Neon Marketplace",
+    "title": "Community Festive Grants",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/community-festive-grants",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-10-29",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "32922a50d40e8f05f9682a49811b592cb9bc58b7": {
+    "id": "32922a50d40e8f05f9682a49811b592cb9bc58b7",
+    "source": "art-prizes.com",
+    "title": "Anthology Photography Competition 2026",
+    "link": "https://www.art-prizes.com/ArtPrize/Anthology-Photography-Competition-2026",
+    "summary": "Deadline: 30/11/2026. Opens: 01/12/2025. Prize: EUR $500. Location: Ireland. Eligibility: National and International Entries Allowed. Genre: Photography",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "unclear",
+    "location_scope": "International",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "$500",
+    "entry_fee": "",
+    "description": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Photography"
+    ],
+    "first_seen": "2026-10-29",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "fc6f55381c49425c4e8511697abf01e7fe59279e"
   },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
@@ -28129,6 +28224,9 @@
     "accelerator|first|light|nations|sydney|vivid": "1a7d96f302e1cff0b36c7a420162c722d8ccfe2b",
     "actor|auditions|chorus|dancer|in|line|roles|singer": "b84712a40891865a7ebb5b072d8184b68673b31b",
     "accelerator|councils|economy|night|time": "6c9ef062e1425e281ffc45cc9a85cfcf674dc9dd",
-    "john|ruskin": "0787229a01b0e2b0f078285cf4f523e5e14f377b"
+    "john|ruskin": "0787229a01b0e2b0f078285cf4f523e5e14f377b",
+    "door|next|online|room": "40e02cee9a72bdee051b25c09507825ebc8d2bf3",
+    "harden|inc|murrumburrah": "88ae15f008d8bebf7d18132507d35a626c900a4a",
+    "community|festive|grants": "8dfc2ee59ced18341c79a485220e003246cfc0ce"
   }
 }
