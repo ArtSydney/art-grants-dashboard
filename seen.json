@@ -3147,7 +3147,7 @@
       "Digital/New Media"
     ],
     "first_seen": "2026-08-09",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "3fbf3a9a88e44f90f0032d9108b3e0d38f869203": {
@@ -11605,7 +11605,7 @@
     ],
     "first_seen": "2026-09-04",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "427b71de04da2b742ee6bd8fe753a3cbdaff3903": {
     "id": "427b71de04da2b742ee6bd8fe753a3cbdaff3903",
@@ -18609,7 +18609,8 @@
     "art_forms": [],
     "first_seen": "2026-09-22",
     "closing_soon_sent": false,
-    "status": "suppressed"
+    "status": "suppressed",
+    "superseded_by": "021bd93a6e61baad17c8292fb3b783c93b7fa3e6"
   },
   "6bea2556b44601675f820319b66c4454a30694e2": {
     "id": "6bea2556b44601675f820319b66c4454a30694e2",
@@ -19929,7 +19930,7 @@
     ],
     "first_seen": "2026-09-25",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "a0e73263928a1a1f00e1fb111ba821e6b9e34a23": {
     "id": "a0e73263928a1a1f00e1fb111ba821e6b9e34a23",
@@ -23961,7 +23962,7 @@
     ],
     "first_seen": "2026-10-07",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "3e9582abf25dac5ff858966d9d968576a5edee21": {
     "id": "3e9582abf25dac5ff858966d9d968576a5edee21",
@@ -24555,7 +24556,7 @@
     ],
     "first_seen": "2026-10-09",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "918362480e89f98cfa281d44bf52ddbee53d52db": {
     "id": "918362480e89f98cfa281d44bf52ddbee53d52db",
@@ -26020,7 +26021,7 @@
     ],
     "first_seen": "2026-10-14",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "bcf4f22bd59025e1ce38bc9a09936a537d0d8ae9": {
     "id": "bcf4f22bd59025e1ce38bc9a09936a537d0d8ae9",
@@ -27593,7 +27594,8 @@
     "art_forms": [],
     "first_seen": "2026-10-30",
     "closing_soon_sent": false,
-    "status": "suppressed"
+    "status": "suppressed",
+    "superseded_by": "2ef8f7fd4eab94b35119a9dc102678a5d137063b"
   },
   "a6a83aa15f879cfce0abbcf0e4bab21bda41e10a": {
     "id": "a6a83aa15f879cfce0abbcf0e4bab21bda41e10a",
@@ -27881,6 +27883,61 @@
     "first_seen": "2026-10-30",
     "closing_soon_sent": false,
     "status": "suppressed"
+  },
+  "2ef8f7fd4eab94b35119a9dc102678a5d137063b": {
+    "id": "2ef8f7fd4eab94b35119a9dc102678a5d137063b",
+    "source": "Google: Australian art prizes",
+    "title": "The Jury Art Prize 2027 - OPEN EOIs",
+    "link": "https://www.courthousegallery.com.au/event-details/the-jury-art-prize-2027-open-eois-1",
+    "summary": "The Jury Art Prize 2027 - OPEN EOIs | Courthouse Gallery+Studio top of page Sat, 03 Oct | Courthouse Gallery+Studio The Jury Art Prize 2027 - OPEN EOIs Returning in 2027, the Jury Art Prize invites artists from across regional Western Australia to take part in one of the Pilbara’s leading contemporary art events. EOI now open. Time & Location 03 Oct 2026, 7:00 am Courthouse Gallery+Studio, 16 Edgar St, Port Hedland WA 6721, Australia About the event WHAT DOES REGIONAL WA LOOK LIKE THROUGH YOUR EYES? THE JURY ART PRIZE 2027 Open to visual artists across regional Western Australia All mediums welcome $40,000 ACROSS MULTIPLE PRIZES $10,000 JUDGES’ PRIZE + ADDITIONAL AWARDS + JURY ART PRIZE - PEOPLE’S CHOICE ENTRIES OPEN 3 OCTOBER 2026 – CLOSES 22 FEBUARY 2027 · 4:00 pm AWST [ CLICK HERE TO ENTER THE JURY ART PRIZE ] MORE THAN ONE WAY TO BE RECOGNISED $40,000 IN TOTAL PRIZE MONEY The Jury Art Prize brings together artists from across regional Western Australia for an exhibition celebrating different places, perspectives and creative practices. $10,000 JUDGES’ PRIZE The major acquisitive prize, selected by the appointed judging panel. ADDITIONAL AWARDS - MORE OPPORTUNITIES TO BE RECOGNISED A selection of additional awards will be presented as part of the Jury Art Prize. PEOPLE’S CHOICE - JURY ART PRIZE The public chooses their favourite work through visitor and online voting. EXPLORE THE PRIZES! THE JURY ART PRIZE 2027, Award description .pdf Download PDF • 143KB YOUR PLACE. YOUR PRACTICE. YOUR PERSPECTIVE. What are you making where you are? From the Pilbara to the Southwest. From the Kimberley to the Goldfields. The Jury Art Prize invites artists from across regional Western Australia to put forward a work that tells us something about where you are, what you see, what you experience or simply what you're thinking about. Painting. Sculpture. Photography. Drawing. Installation. Mixed media. Whatever your medium, we want to see what you're making. WHO CAN ENTER? The Jury Art Prize is open to artists aged 18 and over who reside in regional Western Australia , working across all visual art mediums. Artists from: Gascoyne · Goldfields–Esperance · Great Southern · Kimberley · Mid-West · Peel · Pilbara · Southwest · Wheatbelt Collaborative practices are welcome, provided all participating artists meet the eligibility requirements. For full eligibility requirements, artwork specifications and Terms & Conditions: VIEW THE PRIZE GUIDELINES & T&C THE JURY ART PRIZE 2027, T&C .pdf Download PDF • 166KB ONE EXHIBITION. REGIONAL WA, TOGETHER. [ MEET THE FINALISTS FROM 2026] Artists from across regional Western Australia come together at Courthouse Gallery + Studio, Port Hedland , for the Jury Art Prize exhibition. Different places. Different practices. Different perspectives. One exhibition. COULD YOUR WORK BE PART OF IT? You don't have to live in a capital city to make work that deserves to be seen. The Jury Art Prize is open to visual artists living and practising across regional Western Australia. Entries close 22 February 2027 · 4:00 pm AWST ENTER NOW Show More Share this event bottom of page",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2027-02-22",
+    "amount": "$40,000",
+    "entry_fee": "",
+    "description": "Returning in 2027, the Jury Art Prize invites artists from across regional Western Australia to take part in one of the Pilbara’s leading contemporary art events.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting",
+      "Drawing",
+      "Sculpture",
+      "Photography",
+      "Installation",
+      "Mixed Media"
+    ],
+    "first_seen": "2026-10-30",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "021bd93a6e61baad17c8292fb3b783c93b7fa3e6": {
+    "id": "021bd93a6e61baad17c8292fb3b783c93b7fa3e6",
+    "source": "Google: Australian art prizes",
+    "title": "Entry Details - Ravenswood Australian Women's Art Prize",
+    "link": "https://www.ravenswoodartprize.com.au/entry-details/",
+    "summary": "Entry Details - Ravenswood Australian Women’s Art Prize Search... About Entry Details Judges Past Prizes 2026 Art Prize 2025 Art Prize 2024 Art Prize 2023 Art Prize 2022 Art Prize 2021 Art Prize 2020 Art Prize 2019 Art Prize 2018 Art Prize 2017 Art Prize Partners Exhibition Media Contact Facebook Instagram YouTube Ravenswood Australian Women’s Art Prize Entry Details Make your mark in the art scene by entering the Ravenswood Australian Women’s Art Prize. ENTER NOW READ TERMS AND CONDITIONS OF ENTRY 2027 Key Dates: Entries open Wednesday 4 November 2026 Entries close Wednesday 10 February 2027 at 12.00pm AEDT Finalists announced on Wednesday 31 March 2027 Opening Night (proudly presented by Taylor) on Friday 14 May 2027 (Tickets on sale February 2027) Exhibition of Finalists on Saturday 15 May – Sunday 30 May 2027 There are three prize categories . In each category, the artwork entered must best reflect the intentions of your practice . Entry can only be made under one category , in the Professional Artist Prize, Emerging Artist Prize or the Indigenous Emerging Artist Prize. Artists can only submit a maximum of two entries . All entries must be available for sale at the Exhibition of Finalists. Professional Artist Prize – $35,000 (acquisitive) Emerging Artist Prize , supported by the Reed Family Foundation – $7,500 (acquisitive) Indigenous Emerging Artist Prize , supported by the Guardian and Scarborough Foundation – $7,500 (acquisitive) People’s Choice Award , supported by Edwina Palmer – $2,000 plus a $500 Derivan art pack Highly Commended Awards , supported by Community Bank Lindfield – six $1,000 awards (two for each category) Exhibition of Finalists Thursdays to Sundays, 10am to 4pm (Free entry) Held at Ravenswood School for Girls, 10 Henry Street, Gordon, NSW Artwork Sales Finalist Artworks will be available for sale at the Opening Night and during the Exhibition and may be purchased via an online sales platform. Entry Checklist You may edit your entry as many times as required up until the close of entries on 10 February 2027. Please make note of your Entry ID (which is different to your registration number). Please ensure you have the following documents and information that are required for entry: Artist’s statement (maximum 100 words) as a Word or PDF file CV/career background as a Word or PDF file One image of the artwork entered (maximum of 3 images) as a JPEG file (.jpg file extension), named with artist name and artwork. JPEG must not exceed 3MB. For video entries, provide a link to your video (for example, on YouTube, Dropbox or Vimeo). Your video must not exceed 10 minutes. Sale price of artwork (your artwork must be for sale) Please list the sale price on your entry form. ENTER NOW FAQ Do I need to be an Australian to enter the Art Prize? The Art Prize is open to all women who are Australian Citizens, Permanent Residents or who have resided in Australia during the twelve months preceding the closing date for entries. What if my artwork exceeds the dimensions stated in the Terms and Conditions? Artworks should not exceed 20 kilograms or be larger than 2 x 2 metres, including frame. Videos must not exceed 10 minutes. (Note that 4K monitors are provided. Video entries may be presented on a loop with other artists’ works.) What age restrictions are there? All entrants must be 18 years or over as of 1 February 2027. Which category should I apply for: Emerging Artist, Indigenous Emerging Artist or Professional Artist? An Emerging Artist is in the process of establishing a professional practice and has exhibited artwork and created a modest independent body of work. An Emerging Artist may have had artwork accepted into competitions and has been establishing an art practice for five years or more. An Emerging Artist is usually not formally represented by a major commercial gallery yet. An Emerging Artist may have specialist credentials, such as qualifications in visual art or design from a university or college. These ",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-11-04",
+    "amount": "$35,000",
+    "entry_fee": "Free",
+    "description": "he Ravenswood Australian Women’s Art Prize offers three acquisitive categories and is the highest-value art prize for women in Australia.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-22",
+    "closing_soon_sent": true,
+    "status": "active"
   },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
@@ -28553,7 +28610,7 @@
     "auch|draufsteht|eine|gef|ist|kostenlos|rdert|residency|selten|wenn": "4446bac1684fbfb2c24946c8c9789e9f07cdf2a4",
     "africa|cultural|focus|funding|guide|mobility|on|researchers": "de6d7411f694202a67ee5d19faffc2b6ad28654c",
     "co|grand|junction|rockies|watercolor|west": "3a483e58826be0c3ce8d469cab375ac1728c3173",
-    "details|entry|ravenswood|s|women": "98a8a6bee96838992dc0ac96d66aa7cc179313a9",
+    "details|entry|ravenswood|s|women": "021bd93a6e61baad17c8292fb3b783c93b7fa3e6",
     "27|nsw|partnerships|regional|strategic": "6bea2556b44601675f820319b66c4454a30694e2",
     "accommodation|glebe|grants|millers|point": "c4dc25c5c2e7ab6498d4618aa9f522d3ac8333af",
     "7|community|fund|investment|kembla|port|round": "3f9065bf27e3b59caf01578a17929b8cd37f1d60",
@@ -28842,7 +28899,7 @@
     "analogue|gallery|maud|photography|workshops": "bd1fef0e86975e3d9fa02d2b425cd77ed856efad",
     "int|l|minot|nd|paperworks": "0fba5b7ce372d8c9492bdcdbbea30dcc96a82dd7",
     "advisory|cng|show|small|summer|works": "b7cd39817c0b6a61cf422408f983d28aad8dcc9a",
-    "eois|jury": "8d96b938a3f2f619466cc6cacc38e710d65b845f",
+    "eois|jury": "2ef8f7fd4eab94b35119a9dc102678a5d137063b",
     "glover|landscape|most|prestigious|s": "9cf20b16e19dbe64c9cafdf490c5ea5d6a4e61d2",
     "abstraction|celebrates|new": "80490a79dfe6a3ef129a9da7bb31c30de0e51ff0",
     "global|impact|partner|summit|with": "8adb4be6b33e074ca1bc69fa8e52127639389c0c",
