@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-02T09:46:31+11:00",
-  "count": 352,
-  "total": 530,
+  "generated": "2026-11-03T12:37:56+11:00",
+  "count": 345,
+  "total": 533,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -4554,7 +4554,7 @@
       ],
       "first_seen": "2026-09-22",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "671596a00f7c294aa69e6c3894eb5ee93d040468",
@@ -4579,7 +4579,7 @@
       ],
       "first_seen": "2026-09-22",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "3660040c8a30b5cc7b78358d2d0f04abc43e40fc",
@@ -4604,7 +4604,7 @@
       ],
       "first_seen": "2026-09-24",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "c561d5e29a807ff20d868f9834d3d77c00e62561",
@@ -4629,7 +4629,7 @@
       ],
       "first_seen": "2026-10-08",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "365c19bc177b7beae8cde511fb23dfbf5ba13c53",
@@ -4664,7 +4664,7 @@
       ],
       "first_seen": "2026-10-08",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "6546b2d536e17f461ecea7421eccb00ead6293ad",
@@ -4689,7 +4689,7 @@
       ],
       "first_seen": "2026-10-20",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "5566b7f2f74685f985072b1860c19f7570c2b538",
@@ -4719,7 +4719,7 @@
       ],
       "first_seen": "2026-10-24",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "6139c3a1e8ebf9e8aea5d901d5914cc423784bb4",
@@ -4744,7 +4744,34 @@
       ],
       "first_seen": "2026-10-25",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
+    },
+    {
+      "id": "0a43ffd85cf4cbfe3d15134fece4997ee620fa54",
+      "source": "Google: Australian art prizes",
+      "title": "Whitehorse Art Prize",
+      "link": "https://www.creativewhitehorse.vic.gov.au/Art-prize",
+      "summary": "Whitehorse Art Prize | Creative Whitehorse Skip to main content Html is loading... Listen Whitehorse Art Prize Default tab title The Whitehorse Art Prize is a new acquisitive award for Victorian artists, awarding excellence in contemporary visual art across the fields of painting, works on paper, and ceramics. The theme of the prize is art inspired by the natural environment. Entries open 2 November 2026. Apply Now About the Art Prize Celebrating the centenary of the Whitehorse Art Collection in 2027, we are proud to launch the inaugural Whitehorse Art Prize, an exciting new opportunity for artists to showcase art inspired by the natural environment across the media of painting, works on paper and ceramics. Entries should be inspired by the natural environment. This includes landscape-based artworks, as well as works that reflect or respond to the natural world in other ways. Contemporary interpretations of this theme are warmly encouraged. All Victorian artists are eligible to enter the Main Prize ($20,000). Artists who live, work or study in the City of Whitehorse are additionally eligible for the Local Prize ($10,000). Artists submitting ceramic works are also eligible for the Lyn A. Baines Ceramic Prize ($5,000). Prize winners will receive prize money, and their winning artworks will be acquired into the Whitehorse Art Collection, one of the oldest and largest local government art collections in metropolitan Melbourne. Whitehorse has a rich and storied history in the development of Australian art. As the cradle of Australian Impressionism at the Box Hill Artists' Camp in the mid 1880s, this opportunity honours our rich heritage of art inspired by the natural world, while celebrating contemporary art by leading and emerging practitioners from across Victoria. A celebration of contemporary Australian art, the prize creates a new platform for Whitehorse City Council to add exceptional works to its collection and promote art and artists as a valuable part of the Australian community. Selected finalists will be presented in a finalist exhibition at the Whitehorse Art Gallery. Winners will be announced at the Exhibition Opening event on Friday 16 April 2027. Prizes Main Prize (Acquisitive): $20,000 Local Prize (Acquisitive): $10,000 Lyn A. Baines Ceramic Prize (Acquisitive): $5,000 People's Choice Prize (Non-acquisitive): $1,000 Judging Panel Entries will be judged by a panel of leading arts professionals. Judge profiles will be announced closer to applications opening. Key dates Entries Open: Monday 2 November, 1pm Entries Close: Tuesday 15 December, 1pm Exhibition Dates: Saturday 17 April – Saturday 12 June 2027 We encourage applicants to check this page for updates. Please read the and Terms and Conditions ( PDF 110.27KB) before applying. Frequently Asked Questions Apply Now Subscribe to Creative Whitehorse eNews and get updates on the Whitehorse Art Prize * indicates required Email Address *",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-02",
+      "amount": "$20,000",
+      "entry_fee": "",
+      "description": "Introducing the inaugural Whitehorse Art Prize, a brand-new acquisitive prize open to all Victorian artists for art inspired by the natural environment.",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Painting",
+        "Drawing",
+        "Ceramics"
+      ],
+      "first_seen": "2026-11-03",
+      "closing_soon_sent": false,
+      "status": "closed"
     },
     {
       "id": "ea2b5ea4ce48953c994e31f4b3d67a080de73c2f",
@@ -4779,7 +4806,7 @@
       ],
       "first_seen": "2026-10-10",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "dfb1c4ad87cd1b1126cbf1dad6c018dc0d273f6b",
@@ -5224,7 +5251,32 @@
         "Mixed Media"
       ],
       "first_seen": "2026-08-13",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
+      "status": "active"
+    },
+    {
+      "id": "c860c9a5cb850c09b66707b9d34d7875dd277dab",
+      "source": "Google: Australian art prizes",
+      "title": "Art Prize – Revival Art & Design Gallery",
+      "link": "https://revivalart.com.au/art-prizes/",
+      "summary": "Art Prize – Revival Art & Design Gallery Skip to content Art Prize ross 2026-10-20T00:20:51+00:00 THE ALBION ART PRIZE | 2026 KEY DATES ENTRIES OPEN: Tuesday 1st October 2026 ENTRIES CLOSE: 10AM Tuesday 10th November 2026 FINALISTS NOTIFIED: Prior to Sunday 15th November 2026 DELIVERY OF ARTWORKS TO THE GALLERY: Prior to midday Tuesday 24th November 2026 OPENING NIGHT: Thursday 26th November 2026 EXHIBITION DATES: Thursday 26th November – Saturday 19th December 2026 COLLECTION OF UNSOLD ARTWORKS: After Saturday 19th December 2026 MEET THE ALBION ART PRIZE JUDGES FOR 2026 PAULINE ELPHINSTONE | REVIVAL ART & DESIGN GALLERY DIRECTOR Pauline Elphinstone is the founder and director of Revival Art & Design Gallery. The gallery represents a diverse selection of established and emerging Australian artists. Pauline is passionate about supporting Australian artists and fostering a vibrant local arts community, she is particularly interested in originality, artistic voice, strong concepts and the quality of execution that gives a work lasting impact. As a judge, Pauline brings both a commercial gallery perspective and a genuine commitment to discovering and championing new artistic talent. With a strong understanding of contemporary art, collecting and the gallery landscape, Pauline has a discerning eye regarding the selection and presentation of artwork. Her work at Revival encompasses artist relationships, exhibitions, curation and connecting artists with collectors and new audiences. BRADY CADELL | CADELL COLLECTIVE DIRECTOR Brady Cadell is an Interior Designer and the Founder and Creative Director of Cadell Collective , a Brisbane-based interior furnishing and styling studio working across South East Queensland. Since founding Cadell Collective in 2023, Brady has had his work published and recognised by design platforms including Habitus, The Local Project, Houses, and has also been nominated in the Australian Interior Design Awards. An avid art collector himself, Brady has developed a strong appreciation for the role of original artwork in shaping the character and atmosphere of an interior. His design work has also included artworks from Revival Art & Design Gallery, giving him an established connection with the gallery and its artists. As a judge, Brady brings a designer’s perspective to the evaluation of artwork, with an appreciation for originality, composition, materiality and the way an artwork can create a meaningful connection with its surroundings. PRIZES First Prize (Non-Acquisitive) $1000 cash prize from Revival Art & Design Gallery. Inclusion in a mini-series exhibition at Revival Art & Design Gallery. Highly Commended (Non-Aquisitive) Framing Voucher from Burl by Design picture framing. More prizes to be announced soon! ELIGIBILITY The Albion Art Prize is open to Australian and New Zealand citizens or permanent residents over the age of 18. Revival Art & Design Gallery employees and employee family members are ineligible to enter. The Albion Art Prize accepts artworks created in the last 12 months. This prize is open to work created from most mediums, providing the work is an original, one of a kind and in a ‘unique state’. Two dimensional, 3D and assemblage works are welcome. The artwork size may be up to, but not larger than 50cm in any dimension (eg. 50x50cm, or 50x50x50cm). In other words, any shape or dimension to a maximum of 50cm in size. HOW TO ENTER Read the full T&Cs below. Pay for your entry or entries here on our website by purchasing here . To purchase 2 entries, please update the quantity in the cart prior to submitting payment. Copy and paste the ENTRY FORM below into an email and fill it out. Email it along with an image of your artwork, your artist bio AND evidence of your entry payment to hello@revivalart.com.au with the subject line ART PRIZE ENTRY. Purchase Your Entry Here Full Entry Terms and Conditions Key Dates Entries Open: 1 October 2026 Entries Close : 10 November 2026 Finalists Announced : 17 ",
+      "relevant": true,
+      "english": true,
+      "category": "Prize",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-10",
+      "amount": "$1000",
+      "entry_fee": "",
+      "description": "THE ALBION ART PRIZE | 2026 KEY DATES ENTRIES OPEN: Tuesday 1st October 2026 ENTRIES CLOSE: 10AM Tuesday 10th November 2026 FINALISTS",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-11-03",
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -6648,6 +6700,31 @@
         "Visual Arts"
       ],
       "first_seen": "2026-10-17",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "c8e36679d11ae48309b23ae7059484e591c64de0",
+      "source": "Artshow.com Competitions",
+      "title": "39th Annual Culture and Agriculture Exhibition - Stevens Point, WI",
+      "link": "https://artshow.com/juriedshows/Midwest.html#639286941302771718",
+      "summary": "$2,850 in awards. Deadline: Jan 31, 2027",
+      "relevant": true,
+      "english": true,
+      "category": "Other",
+      "au_eligibility": "unclear",
+      "location_scope": "Unknown",
+      "eligibility_note": "",
+      "deadline": "2027-01-31",
+      "amount": "$2,850",
+      "entry_fee": "",
+      "description": "",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Visual Arts"
+      ],
+      "first_seen": "2026-11-03",
       "closing_soon_sent": false,
       "status": "active"
     },

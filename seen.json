@@ -18683,7 +18683,7 @@
     ],
     "first_seen": "2026-09-22",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "671596a00f7c294aa69e6c3894eb5ee93d040468": {
     "id": "671596a00f7c294aa69e6c3894eb5ee93d040468",
@@ -18708,7 +18708,7 @@
     ],
     "first_seen": "2026-09-22",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "a18d48543dfdec22ef44acb643c04bec994aa96d": {
     "id": "a18d48543dfdec22ef44acb643c04bec994aa96d",
@@ -21319,7 +21319,7 @@
     ],
     "first_seen": "2026-09-24",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "22f5a536c29cb67a2e60ef88216a2dc42f4b2c33": {
     "id": "22f5a536c29cb67a2e60ef88216a2dc42f4b2c33",
@@ -24079,7 +24079,7 @@
     ],
     "first_seen": "2026-10-08",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "7ab11257d326fd935f0295dcf83d02699b6b0846": {
     "id": "7ab11257d326fd935f0295dcf83d02699b6b0846",
@@ -24187,7 +24187,7 @@
     ],
     "first_seen": "2026-10-08",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "f85762a7c56e58e203249885230b06a21cddeb4b": {
     "id": "f85762a7c56e58e203249885230b06a21cddeb4b",
@@ -24835,7 +24835,7 @@
     ],
     "first_seen": "2026-10-10",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "6138fe412547cd06e86bcc8dfeac7f82b75daf92": {
     "id": "6138fe412547cd06e86bcc8dfeac7f82b75daf92",
@@ -26548,7 +26548,7 @@
     ],
     "first_seen": "2026-10-20",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "b4b16ac946dd28707ee06b41a7f0873d21a7dbe0": {
     "id": "b4b16ac946dd28707ee06b41a7f0873d21a7dbe0",
@@ -26766,7 +26766,7 @@
     ],
     "first_seen": "2026-10-24",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "dfcbddc72a911e619cb0235a5a462a8f5a1f29cc": {
     "id": "dfcbddc72a911e619cb0235a5a462a8f5a1f29cc",
@@ -26885,7 +26885,7 @@
     ],
     "first_seen": "2026-10-25",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "0ebb8ed3e0512eeb8021d168c748e0fcc763546e": {
     "id": "0ebb8ed3e0512eeb8021d168c748e0fcc763546e",
@@ -27970,8 +27970,129 @@
       "Mixed Media"
     ],
     "first_seen": "2026-08-13",
+    "closing_soon_sent": true,
+    "status": "active"
+  },
+  "c8e36679d11ae48309b23ae7059484e591c64de0": {
+    "id": "c8e36679d11ae48309b23ae7059484e591c64de0",
+    "source": "Artshow.com Competitions",
+    "title": "39th Annual Culture and Agriculture Exhibition - Stevens Point, WI",
+    "link": "https://artshow.com/juriedshows/Midwest.html#639286941302771718",
+    "summary": "$2,850 in awards. Deadline: Jan 31, 2027",
+    "relevant": true,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "2027-01-31",
+    "amount": "$2,850",
+    "entry_fee": "",
+    "description": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-11-03",
     "closing_soon_sent": false,
     "status": "active"
+  },
+  "0a43ffd85cf4cbfe3d15134fece4997ee620fa54": {
+    "id": "0a43ffd85cf4cbfe3d15134fece4997ee620fa54",
+    "source": "Google: Australian art prizes",
+    "title": "Whitehorse Art Prize",
+    "link": "https://www.creativewhitehorse.vic.gov.au/Art-prize",
+    "summary": "Whitehorse Art Prize | Creative Whitehorse Skip to main content Html is loading... Listen Whitehorse Art Prize Default tab title The Whitehorse Art Prize is a new acquisitive award for Victorian artists, awarding excellence in contemporary visual art across the fields of painting, works on paper, and ceramics. The theme of the prize is art inspired by the natural environment. Entries open 2 November 2026. Apply Now About the Art Prize Celebrating the centenary of the Whitehorse Art Collection in 2027, we are proud to launch the inaugural Whitehorse Art Prize, an exciting new opportunity for artists to showcase art inspired by the natural environment across the media of painting, works on paper and ceramics. Entries should be inspired by the natural environment. This includes landscape-based artworks, as well as works that reflect or respond to the natural world in other ways. Contemporary interpretations of this theme are warmly encouraged. All Victorian artists are eligible to enter the Main Prize ($20,000). Artists who live, work or study in the City of Whitehorse are additionally eligible for the Local Prize ($10,000). Artists submitting ceramic works are also eligible for the Lyn A. Baines Ceramic Prize ($5,000). Prize winners will receive prize money, and their winning artworks will be acquired into the Whitehorse Art Collection, one of the oldest and largest local government art collections in metropolitan Melbourne. Whitehorse has a rich and storied history in the development of Australian art. As the cradle of Australian Impressionism at the Box Hill Artists' Camp in the mid 1880s, this opportunity honours our rich heritage of art inspired by the natural world, while celebrating contemporary art by leading and emerging practitioners from across Victoria. A celebration of contemporary Australian art, the prize creates a new platform for Whitehorse City Council to add exceptional works to its collection and promote art and artists as a valuable part of the Australian community. Selected finalists will be presented in a finalist exhibition at the Whitehorse Art Gallery. Winners will be announced at the Exhibition Opening event on Friday 16 April 2027. Prizes Main Prize (Acquisitive): $20,000 Local Prize (Acquisitive): $10,000 Lyn A. Baines Ceramic Prize (Acquisitive): $5,000 People's Choice Prize (Non-acquisitive): $1,000 Judging Panel Entries will be judged by a panel of leading arts professionals. Judge profiles will be announced closer to applications opening. Key dates Entries Open: Monday 2 November, 1pm Entries Close: Tuesday 15 December, 1pm Exhibition Dates: Saturday 17 April – Saturday 12 June 2027 We encourage applicants to check this page for updates. Please read the and Terms and Conditions ( PDF 110.27KB) before applying. Frequently Asked Questions Apply Now Subscribe to Creative Whitehorse eNews and get updates on the Whitehorse Art Prize * indicates required Email Address *",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-11-02",
+    "amount": "$20,000",
+    "entry_fee": "",
+    "description": "Introducing the inaugural Whitehorse Art Prize, a brand-new acquisitive prize open to all Victorian artists for art inspired by the natural environment.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting",
+      "Drawing",
+      "Ceramics"
+    ],
+    "first_seen": "2026-11-03",
+    "closing_soon_sent": false,
+    "status": "closed"
+  },
+  "c860c9a5cb850c09b66707b9d34d7875dd277dab": {
+    "id": "c860c9a5cb850c09b66707b9d34d7875dd277dab",
+    "source": "Google: Australian art prizes",
+    "title": "Art Prize – Revival Art & Design Gallery",
+    "link": "https://revivalart.com.au/art-prizes/",
+    "summary": "Art Prize – Revival Art & Design Gallery Skip to content Art Prize ross 2026-10-20T00:20:51+00:00 THE ALBION ART PRIZE | 2026 KEY DATES ENTRIES OPEN: Tuesday 1st October 2026 ENTRIES CLOSE: 10AM Tuesday 10th November 2026 FINALISTS NOTIFIED: Prior to Sunday 15th November 2026 DELIVERY OF ARTWORKS TO THE GALLERY: Prior to midday Tuesday 24th November 2026 OPENING NIGHT: Thursday 26th November 2026 EXHIBITION DATES: Thursday 26th November – Saturday 19th December 2026 COLLECTION OF UNSOLD ARTWORKS: After Saturday 19th December 2026 MEET THE ALBION ART PRIZE JUDGES FOR 2026 PAULINE ELPHINSTONE | REVIVAL ART & DESIGN GALLERY DIRECTOR Pauline Elphinstone is the founder and director of Revival Art & Design Gallery. The gallery represents a diverse selection of established and emerging Australian artists. Pauline is passionate about supporting Australian artists and fostering a vibrant local arts community, she is particularly interested in originality, artistic voice, strong concepts and the quality of execution that gives a work lasting impact. As a judge, Pauline brings both a commercial gallery perspective and a genuine commitment to discovering and championing new artistic talent. With a strong understanding of contemporary art, collecting and the gallery landscape, Pauline has a discerning eye regarding the selection and presentation of artwork. Her work at Revival encompasses artist relationships, exhibitions, curation and connecting artists with collectors and new audiences. BRADY CADELL | CADELL COLLECTIVE DIRECTOR Brady Cadell is an Interior Designer and the Founder and Creative Director of Cadell Collective , a Brisbane-based interior furnishing and styling studio working across South East Queensland. Since founding Cadell Collective in 2023, Brady has had his work published and recognised by design platforms including Habitus, The Local Project, Houses, and has also been nominated in the Australian Interior Design Awards. An avid art collector himself, Brady has developed a strong appreciation for the role of original artwork in shaping the character and atmosphere of an interior. His design work has also included artworks from Revival Art & Design Gallery, giving him an established connection with the gallery and its artists. As a judge, Brady brings a designer’s perspective to the evaluation of artwork, with an appreciation for originality, composition, materiality and the way an artwork can create a meaningful connection with its surroundings. PRIZES First Prize (Non-Acquisitive) $1000 cash prize from Revival Art & Design Gallery. Inclusion in a mini-series exhibition at Revival Art & Design Gallery. Highly Commended (Non-Aquisitive) Framing Voucher from Burl by Design picture framing. More prizes to be announced soon! ELIGIBILITY The Albion Art Prize is open to Australian and New Zealand citizens or permanent residents over the age of 18. Revival Art & Design Gallery employees and employee family members are ineligible to enter. The Albion Art Prize accepts artworks created in the last 12 months. This prize is open to work created from most mediums, providing the work is an original, one of a kind and in a ‘unique state’. Two dimensional, 3D and assemblage works are welcome. The artwork size may be up to, but not larger than 50cm in any dimension (eg. 50x50cm, or 50x50x50cm). In other words, any shape or dimension to a maximum of 50cm in size. HOW TO ENTER Read the full T&Cs below. Pay for your entry or entries here on our website by purchasing here . To purchase 2 entries, please update the quantity in the cart prior to submitting payment. Copy and paste the ENTRY FORM below into an email and fill it out. Email it along with an image of your artwork, your artist bio AND evidence of your entry payment to hello@revivalart.com.au with the subject line ART PRIZE ENTRY. Purchase Your Entry Here Full Entry Terms and Conditions Key Dates Entries Open: 1 October 2026 Entries Close : 10 November 2026 Finalists Announced : 17 ",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-11-10",
+    "amount": "$1000",
+    "entry_fee": "",
+    "description": "THE ALBION ART PRIZE | 2026 KEY DATES ENTRIES OPEN: Tuesday 1st October 2026 ENTRIES CLOSE: 10AM Tuesday 10th November 2026 FINALISTS",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-11-03",
+    "closing_soon_sent": true,
+    "status": "active"
+  },
+  "48e9e764f466f817077242b6a35536bd6a48787a": {
+    "id": "48e9e764f466f817077242b6a35536bd6a48787a",
+    "source": "Neon Marketplace",
+    "title": "Shellharbour City Council Stallholder Database EOI",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/shellharbour-city-council-stallholder-database-eoi",
+    "summary": "Dropped: title matches noise keyword.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-11-03",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "639801fa812ab6abf13fb0ae3d7f686d510d6962": {
+    "id": "639801fa812ab6abf13fb0ae3d7f686d510d6962",
+    "source": "Neon Marketplace",
+    "title": "Shellharbour City Council Performer Database EOI",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/shellharbour-city-council-performer-database-eoi",
+    "summary": "Dropped: exclusively non-visual art form.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-11-03",
+    "closing_soon_sent": false,
+    "status": "suppressed"
   },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
@@ -28938,6 +29059,11 @@
     "abstraction|celebrates|new": "80490a79dfe6a3ef129a9da7bb31c30de0e51ff0",
     "global|impact|partner|summit|with": "8adb4be6b33e074ca1bc69fa8e52127639389c0c",
     "festival|film|submissions|sydney": "03b75a39cc4bf7ed27dbfbc2ab5444cbfba403e1",
-    "freehills|herbert|portrait|smith": "a1a9d6851b90dd82e80a0b6558794fb87bcdd0a3"
+    "freehills|herbert|portrait|smith": "a1a9d6851b90dd82e80a0b6558794fb87bcdd0a3",
+    "39th|agriculture|culture|point|stevens|wi": "c8e36679d11ae48309b23ae7059484e591c64de0",
+    "whitehorse": "0a43ffd85cf4cbfe3d15134fece4997ee620fa54",
+    "design|gallery|revival": "c860c9a5cb850c09b66707b9d34d7875dd277dab",
+    "city|council|database|eoi|shellharbour|stallholder": "48e9e764f466f817077242b6a35536bd6a48787a",
+    "city|council|database|eoi|performer|shellharbour": "639801fa812ab6abf13fb0ae3d7f686d510d6962"
   }
 }
