@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-03T12:37:56+11:00",
+  "generated": "2026-11-04T10:57:34+11:00",
   "count": 345,
-  "total": 533,
+  "total": 534,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -4831,7 +4831,7 @@
       ],
       "first_seen": "2026-10-28",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "0648a16b757b7ab484dbe2cfc65545ac0f6ee498",
@@ -5301,7 +5301,7 @@
         "Photography"
       ],
       "first_seen": "2026-10-08",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -5724,6 +5724,31 @@
         "Installation"
       ],
       "first_seen": "2026-10-14",
+      "closing_soon_sent": false,
+      "status": "active"
+    },
+    {
+      "id": "026060dea4f2b1a4db48b733f7eec71ffb3dce19",
+      "source": "Neon Marketplace",
+      "title": "Made in NSW - Local Fund",
+      "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/made-in-nsw-local-fund",
+      "summary": "Neon Marketplace | Made in NSW - Local Fund Opportunity Made in NSW - Local Fund Supporting high-end feature film and television drama productions by Australian production companies that are genuinely footloose and able to complete the majority of principal photography in NSW. Opportunity closes 23 Nov 2026 Connect with Neon Marketplace Made in NSW - Local Fund Support and contact Get in touch Connect with Neon Marketplace Made in NSW - Local Fund Support and contact Get in touch Connect with Neon Marketplace Made in NSW - Local Fund Support and contact Get in touch Image by House of Gods date Applications close 23 November 2026, 5:00 pm Details The purpose of the Screen NSW Made in NSW – Local Fund is to strengthen NSW as a competitive and sustainable hub for high-end screen production by supporting projects that deliver both cultural and economic impact. It aims to attract and retain major television and feature film production in the state while driving job creation and industry growth for NSW-based practitioners. The objectives of the Made in NSW – Local Fund are to: Attract and retain high-end television and feature film production in NSW Stimulate economic activity and job creation within the screen sector Foster collaboration with international partners and new market access Support employment pathways and skills development for NSW-based practitioners Increase the participation of under-represented groups in the screen industry, including First Nations people, people from Western Sydney and Regional NSW, culturally and linguistically diverse communities, people with disability, and LGBTQIA+ practitioners How to get involved Find out more and apply via the website . Share Categories Grant and sponsorship Tags Film Published: 03 Nov 2026 You might also like See all Opportunities Posted by Neon Marketplace Partner with the Global Impact Summit 2027 Expressions of interest are open for organisations interested in partnering with the Global Impact Summit 2027. Ex",
+      "relevant": true,
+      "english": true,
+      "category": "Grant",
+      "au_eligibility": "eligible",
+      "location_scope": "Australia",
+      "eligibility_note": "",
+      "deadline": "2026-11-23",
+      "amount": "",
+      "entry_fee": "",
+      "description": "Made in NSW - Local Fund Opportunity Made in NSW - Local Fund Supporting high-end feature film and television drama productions by Australian production companies that are genuinel",
+      "curator": "",
+      "judge": "",
+      "art_forms": [
+        "Photography"
+      ],
+      "first_seen": "2026-11-03",
       "closing_soon_sent": false,
       "status": "active"
     },
@@ -9138,7 +9163,7 @@
       "source": "Artsoz prize registry",
       "title": "Sulman Prize",
       "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-      "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
+      "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
       "relevant": true,
       "english": true,
       "category": "Prize",
@@ -9148,7 +9173,7 @@
       "deadline": "",
       "amount": "",
       "entry_fee": "",
-      "description": "Client Challenge A required part of this site couldn’t load.",
+      "description": "",
       "curator": "",
       "judge": "",
       "art_forms": [
