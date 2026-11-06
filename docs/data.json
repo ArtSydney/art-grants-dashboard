@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-06T11:07:15+11:00",
-  "count": 339,
+  "generated": "2026-11-07T10:43:16+11:00",
+  "count": 337,
   "total": 534,
   "disciplines": [
     "Painting",
@@ -5011,7 +5011,7 @@
       ],
       "first_seen": "2026-09-22",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "a581766df2d813483068e0d54f9a4748f521ac1e",
@@ -5036,7 +5036,7 @@
       ],
       "first_seen": "2026-10-25",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "af9c7ee2b4e41d6d9d68353e7ef30f9e418ba1ea",
