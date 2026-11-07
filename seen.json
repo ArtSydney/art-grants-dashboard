@@ -11295,7 +11295,7 @@
       "Visual Arts"
     ],
     "first_seen": "2026-09-03",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "0a405f4b261d3ffff8101a8c37e0d0f6105ffd46": {
@@ -26523,7 +26523,8 @@
     ],
     "first_seen": "2026-09-02",
     "closing_soon_sent": true,
-    "status": "closed"
+    "status": "suppressed",
+    "superseded_by": "47dee8d8347004ae54cf0313f06f5601ed3b2ea6"
   },
   "6546b2d536e17f461ecea7421eccb00ead6293ad": {
     "id": "6546b2d536e17f461ecea7421eccb00ead6293ad",
@@ -28619,6 +28620,81 @@
     "status": "suppressed",
     "superseded_by": "932c288680d0f10aec87c6cf8eb8676c6e4a2012"
   },
+  "f0dceefd2c8cbb81f0a862658d8eeed9f299c7d8": {
+    "id": "f0dceefd2c8cbb81f0a862658d8eeed9f299c7d8",
+    "source": "Artshow.com Competitions",
+    "title": "2027 KIA Arts Fair - Kalamazoo, MI",
+    "link": "https://artshow.com/juriedshows/Midwest.html#639293925579448350",
+    "summary": "Dropped: US/EU-only competition.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-11-07",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "9f28d479abc02aaf7fef1834732e8e1ec4ef408e": {
+    "id": "9f28d479abc02aaf7fef1834732e8e1ec4ef408e",
+    "source": "Google: Australian art prizes",
+    "title": "Basil Sellers Art Prize",
+    "link": "https://www.rav.net.au/opportunity/basil-sellers-art-prize/",
+    "summary": "Basil Sellers Art Prize - Regional Arts Victoria Skip to content Home / Artist Callouts, Expressions of Interest and Prizes / Basil Sellers Art Prize Basil Sellers Art Prize Entries are now open for the 2026 Basil Sellers Art Prize The Basil Sellers Art Prize is a major national Australian art prize, celebrating artistic excellence in 2D works across painting, drawing and printmaking. This acquisitive biennial prize supports artists at all stages of their careers, with a structure grounded in care, accessibility and generosity. Since the Prize was established in 2004, listening closely to artists has shaped how we work. We are recognised for an artist‑first ethos that comes from understanding the cumulative challenges involved in entering art prizes – from financial outlay and administrative load to professional vulnerability – and from actively seeking to remove barriers wherever we can. As a regional gallery, we acknowledge that exceptional art knows no boundaries. We welcome entries from artists across Australia, from diverse backgrounds and regions, and at all stages of their practice. Whether you are an emerging practitioner or well established, we are genuinely excited to see the work you choose to submit. Key Dates Call for entries open 01/06/2026 Call for entries close 11/09/2026 Finalists announced 16/10/2026 Opening and winners' announcement 04/12/2026 Exhibition opens 05/12/2026 Exhibition closes 30/01/2027 Details Source: Basil Sellers Exhibition Centre Closes: 11/09/2026 Open to: National Open from: 01/06/2026 Art Form: Visual Arts Learn more About Us About Us Our Team Our Partners Media Employment Contact Us Membership About Our Membership Meet Our Members Current Opportunities Membership FAQs Ways to Get Involved Insurance Information Communities South West Creative Industries Strategy RAV in Residence Resources Resources Touring Touring with RAV Info for Artists and Producers 2027 Show Directory Info for Venues and Presenters Schools Program Overview 2026 On Call Program 2026 On the Road Program Teacher Resources Subsidies Available Australian Children’s Theatre Foundation Funding Funding Opportunities Regional Arts Fund Peer Assessors Grant Tips What’s On What’s On Latest News © Regional Arts Victoria 2026. Privacy Policy. Before continuing, please ensure you meet all five eligibility criteria listed above. Applications that do not meet these criteria cannot be funded. × Regional Arts Victoria acknowledges and pays respect to the Traditional Owners and Elders – past and present – of the lands on which Regional Arts Victoria operates. We acknowledge that sovereignty was not ceded. We acknowledge Aboriginal connection to cultural and creative practice for more than 65,000 years on the lands that we work on and extend our respect to First Nations people throughout the communities where we live and work. × Search for:",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "description": "The Basil Sellers Art Prize is a major national Australian art prize, celebrating artistic excellence in 2D works across painting, drawing and printmaking.",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting",
+      "Drawing",
+      "Printmaking"
+    ],
+    "first_seen": "2026-11-07",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "2efc6a6398fef031318423fffcb738100e83d562"
+  },
+  "47dee8d8347004ae54cf0313f06f5601ed3b2ea6": {
+    "id": "47dee8d8347004ae54cf0313f06f5601ed3b2ea6",
+    "source": "Google: Australian art prizes",
+    "title": "2027 Ravenswood Australian Women's Art Prize",
+    "link": "https://www.ravenswoodartprize.com.au/2026/11/04/2027-ravenswood-australian-womens-art-prize-entries-open/",
+    "summary": "2027 Ravenswood Australian Women’s Art Prize - Ravenswood Australian Women’s Art Prize Search... About Enter Now Judges Past Prizes 2026 Art Prize 2025 Art Prize 2024 Art Prize 2023 Art Prize 2022 Art Prize 2021 Art Prize 2020 Art Prize 2019 Art Prize 2018 Art Prize 2017 Art Prize Entry Details Partners Exhibition Media Contact Profile Update Entry My Entries Facebook Instagram YouTube 2027 Ravenswood Australian Women’s Art Prize – Entries Open November 4 2026 Share Entries Now Open for Australia’s Highest-Valued Art Prize for Women 2027 Ravenswood Australian Women’s Art Prize ENTER NOW Australia’s highest-valued art prize for women – the Ravenswood Australian Women’s Art Prize – is now accepting entries for the 2027 Prize, offering a total of $58,000 in prize money. Since launching in 2017, the Prize has become a major event on the national arts calendar, proudly supporting and celebrating the creative talents of Australian women from across the country. From its inception, the Ravenswood Australian Women’s Art Prize has attracted more than 14,750 entries, solidifying its role as a leading platform that amplifies the visibility and talent of women in the arts. Emerging and Indigenous artists have made up more than 60% of all entries, highlighting the Prize’s ongoing commitment to inclusion and opportunity for under-represented artists. Open to women artists across Australia The acquisitive Prize is open to women artists aged 18 years and over who reside in Australia* and accepts all artistic mediums in the following three prize categories: Professional Artist Prize – $35,000 Emerging Artist Prize – $7500 – (supported by the Reed Family Foundation) Indigenous Emerging Artist Prize – $7500 – (supported by the Scarborough and Guardian Foundation) Additional awards include: People’s Choice Award of $2000 (supported by Edwina Palmer) and a Derivan art pack valued at $500. Six Highly Commended Awards (two for each category) of $1000 each (supported by Community Bank Lindfield) ENTER NOW To learn more, visit Ravenswood Australian Women’s Art Prize. Entries close on 10 February 2027. Finalists are announced on 31 March 2027, with Opening Night (proudly presented by Taylor) to be held at Ravenswood School for Girls on 14 May 2027. The Exhibition of Finalists is free for the community to view either virtually via ravenswoodartprize.com.au or in person at Ravenswood School for Girls in Gordon, NSW on Thursdays to Sundays between 10am and 4pm between 15 – 30 May 2027. About the Prize The Ravenswood Australian Women’s Art Prize was established to recognise, connect and promote the outstanding achievements of women artists in Australia. Through the generous support of partners and the community, it continues to champion equality and excellence in the visual arts. Ravenswood Australian Women’s Art Prize acknowledges the generosity and support of its Partners including Major Partner Taylor; Gold Partner TWG Hospitality Services, The Australian, RM Williams OUTBACK, and Active Networks; Silver Partners Guardian and Scarborough Foundation, the Reed Family Foundation, Community Bank Lindfield, CB Interiors, and Clarke Murphy Print; and Bronze Partners Ku-ring-gai Council, Kelvin Hall Floral Design, EPM Projects, The Art Scene, Edwina Palmer and Derivan. *Open to women artists resident in Australia during the 12 months preceding the closing date for entries. Discover Ravenswood Art Prize Advancing Art and Opportunity How to Enter Discover our Judges Entries for the 2027 Ravenswood Australian Women's Art Prize open now Entries for the 2027 Ravenswood Australian Women's Art Prize will close 10 February 2027 Enter Now Opening Night (proudly presented by Taylor) and Exhibition 2027 winners will be announced at the Opening Night on Friday 14 May 2027. The Exhibition of Finalists showcases the Art Prize Finalists and is free and open to the public. Our Art Prize Judges Entries in the Art Prize represent every state and territory in Australia, includin",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2027-02-10",
+    "amount": "$58,000",
+    "entry_fee": "",
+    "description": "Entries Now Open for Australia’s Highest-Valued Art Prize for Women - 2027 Ravenswood Australian Women’s Art Prize",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Visual Arts"
+    ],
+    "first_seen": "2026-09-02",
+    "closing_soon_sent": true,
+    "status": "active"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -29030,7 +29106,7 @@
     "27|partner|unlimited": "1afdcea6672e680125b5536b22c580ed08bc21df",
     "contest|october|photography|solo": "746b953e1be34e76432878262d40cd40a56dd66a",
     "italy|lab|venice": "2522836829f38aada6362da3da9f02e04d582476",
-    "ravenswood|s|women": "7d4e62b9ccfa7453334797f526d1b83d95a948a0",
+    "ravenswood|s|women": "47dee8d8347004ae54cf0313f06f5601ed3b2ea6",
     "natural|science|waterhouse": "8d94c77f50c45a63d49f640673b22e787fab8796",
     "alice|bindi|digital|enterprises|springs": "9580ac8753f3ab615370bb3e9b37ae9d9551f2b4",
     "city|rockingham": "f2cee0f2301efc2bcac250a6ee3247177f9704f0",
@@ -29597,6 +29673,7 @@
     "cherry|co|creek|denver|festival": "f539024fab64c41f02af59563a828cd52b2cb1ee",
     "hart|now|outback|pro": "5a4c766961372f2d3b5425bbfb7613e8d5a82f25",
     "opportunities": "49c3fa64d16ae5c584ecd0238db2a88ed1efd780",
-    "applications|residency": "b11cf8319c56a9137ac05062862b637cd43eae06"
+    "applications|residency": "b11cf8319c56a9137ac05062862b637cd43eae06",
+    "fair|kalamazoo|kia|mi": "f0dceefd2c8cbb81f0a862658d8eeed9f299c7d8"
   }
 }
