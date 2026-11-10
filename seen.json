@@ -27973,7 +27973,7 @@
     ],
     "first_seen": "2026-08-13",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "c8e36679d11ae48309b23ae7059484e591c64de0": {
     "id": "c8e36679d11ae48309b23ae7059484e591c64de0",
@@ -28050,7 +28050,7 @@
     ],
     "first_seen": "2026-11-03",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "48e9e764f466f817077242b6a35536bd6a48787a": {
     "id": "48e9e764f466f817077242b6a35536bd6a48787a",
@@ -28858,6 +28858,51 @@
     "first_seen": "2026-11-10",
     "closing_soon_sent": false,
     "status": "active"
+  },
+  "bf47232ab1b143a17c26ae845ac3c4dbb007477a": {
+    "id": "bf47232ab1b143a17c26ae845ac3c4dbb007477a",
+    "source": "Artshow.com Competitions",
+    "title": "What the Streets Hold - Online",
+    "link": "https://artshow.com/juriedshows/NA.html#639298254220958525",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-11-10",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "341643367bb4ef6c1da998731f071e199ad31d7f": {
+    "id": "341643367bb4ef6c1da998731f071e199ad31d7f",
+    "source": "art-prizes.com",
+    "title": "Ravenswood Australian Women's Art Prize",
+    "link": "https://www.art-prizes.com/ArtPrize/Ravenswood-Australian-Womens-Art-Prize",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-11-10",
+    "closing_soon_sent": false,
+    "status": "suppressed",
+    "superseded_by": "47dee8d8347004ae54cf0313f06f5601ed3b2ea6"
   },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
@@ -29844,6 +29889,7 @@
     "eoi|first|garden|john|nations|pocket|public|street": "f61f143da88b23617eea71037a7c521e59d92d05",
     "all|calling|in|inner|lunar|new|performers|stallholders|west|year": "2b62e950ebc098df8a8e4aa21f84d1e324136772",
     "carlton|community|creative|eoi|food|groups|performers|vendors": "7b0737a8c4bd2683f9d88b5eee77b01849f2d369",
-    "indigenous|industry|support|visual": "1be2ca6b4cac9db18df782666bf68729c5cd0ce4"
+    "indigenous|industry|support|visual": "1be2ca6b4cac9db18df782666bf68729c5cd0ce4",
+    "hold|online|streets|what": "bf47232ab1b143a17c26ae845ac3c4dbb007477a"
   }
 }

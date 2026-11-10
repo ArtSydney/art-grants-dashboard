@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-10T13:01:00+11:00",
-  "count": 334,
-  "total": 535,
+  "generated": "2026-11-11T10:59:31+11:00",
+  "count": 332,
+  "total": 534,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -20,31 +20,6 @@
     "Multidisciplinary"
   ],
   "items": [
-    {
-      "id": "b985d25f13975f45cb41df35fcfa5800a479a13c",
-      "source": "BNE Art: Opportunities",
-      "title": "Singapore Design Biennale",
-      "link": "https://bneart.com/singapore-design-biennale/",
-      "summary": "Deadline: August 12. Singapore Design Biennale – BNE ART - Brisbane Art Guide Skip to content Menu Singapore Design Biennale Deadline: Deadline: August 12 Applications are now open for the inaugural Singapore Design Biennale (SDB) 2027 , taking place from 14 May – 20 June 2027 under the theme 1.35°N . Organised by the DesignSingapore Council, the Biennale succeeds Singapore Design Week with an expanded international platform for design, architecture, art and interdisciplinary practice. The theme 1.35°N references Singapore’s geographical latitude and invites designers, architects, artists, researchers, technologists and creative practitioners from around the world to respond to the realities of contemporary life and imagine future possibilities through experimentation, collaboration and innovation. The International Open Call welcomes proposals from independent practitioners, organisations, design festivals and creative brands for exhibitions, installations, workshops, performances, talks, studio visits and other public programmes. Physical projects are preferred, although digital proposals will also be considered where appropriate. Successful programme partners will receive marketing and publicity support through the Singapore Design Biennale. Applicants are responsible for funding, organising and delivering their own projects and securing suitable venues. Successful applicants will be notified by 2 October 2026 . https://sdb.designsingapore.org Info not available biennale@designsingapore.org",
-      "relevant": true,
-      "english": true,
-      "category": "Other",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-08-12",
-      "amount": "",
-      "entry_fee": "",
-      "description": "Applications are now open for the inaugural Singapore Design Biennale (SDB) 2027, taking place from 14 May – 20 June 2027 under the theme 1.35°N.",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Installation"
-      ],
-      "first_seen": "2026-08-09",
-      "closing_soon_sent": true,
-      "status": "closed"
-    },
     {
       "id": "cf7690927529072d3521dcf43a2c3e2b1c1a42fa",
       "source": "BNE Art: Opportunities",
@@ -5176,7 +5151,7 @@
       ],
       "first_seen": "2026-08-13",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "c860c9a5cb850c09b66707b9d34d7875dd277dab",
@@ -5201,7 +5176,7 @@
       ],
       "first_seen": "2026-11-03",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "6ee2123e8b196dc13302ea82c43f5df6e4496658",
