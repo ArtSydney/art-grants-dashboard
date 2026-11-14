@@ -4720,7 +4720,7 @@
     "source": "Artsoz prize registry",
     "title": "Wynne Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/wynne/",
-    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Wynne Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 1920 1919 1918 1917 1916 1915 1914 1913 1912 1911 1910 1909 1908 1907 1906 1905 1904 1903 1902 1901 1900 1899 1898 1897",
+    "summary": "Location: NSW, Australia. Medium: Landscape / figure sculpture. Type: Landscape / sculpture. Tags: landscape, sculpture. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4730,7 +4730,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -5827,7 +5827,7 @@
       "Mixed Media"
     ],
     "first_seen": "2026-08-11",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "5bd26ecb3ce8a87ea07623edc6191d441c214399": {
@@ -22075,7 +22075,7 @@
       "Mixed Media"
     ],
     "first_seen": "2026-10-03",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "e4674625221cce1b2a56dabc3805a2016d974d85": {
@@ -25947,7 +25947,7 @@
       "Installation"
     ],
     "first_seen": "2026-10-14",
-    "closing_soon_sent": false,
+    "closing_soon_sent": true,
     "status": "active"
   },
   "28ae3c31fc5182be4a8a1f0bd2d855d0ad3a8f6a": {
@@ -27721,7 +27721,7 @@
     ],
     "first_seen": "2026-08-19",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "c794848c37816c413f176f04b9f3c5262aad040a": {
     "id": "c794848c37816c413f176f04b9f3c5262aad040a",
@@ -29385,6 +29385,56 @@
     "closing_soon_sent": false,
     "status": "suppressed"
   },
+  "82c9d6ebd15ad6b9b0c0096fb8217192c2528c1b": {
+    "id": "82c9d6ebd15ad6b9b0c0096fb8217192c2528c1b",
+    "source": "BNE Art: Opportunities",
+    "title": "TAKEOVER 2027 – Expressions of Interest",
+    "link": "https://bneart.com/takeover-2027-expressions-of-interest/",
+    "summary": "Deadline: January 11. TAKEOVER 2027 – Expressions of Interest – BNE ART - Brisbane Art Guide Skip to content Menu TAKEOVER 2027 – Expressions of Interest Deadline: Deadline: January 11 TAKEOVER returns in 2027, inviting artists and creatives to explore the possibilities within The Old Ambulance Station in Nambour. Four supported residencies are available across four unique spaces, providing opportunities to experiment, create, collaborate and explore new ideas. The four spaces are: The Black Box Theatre Ramp Space Gallery Little Ambo Each residency includes a $2,000 artist stipend , access to one of the spaces and support from The Old Ambo team. TAKEOVER is designed to support experimentation, creative exploration and the development of new work. Artists are encouraged to propose projects that test ideas, explore different directions in their practice, develop performances or imagine new uses for the available spaces. The program prioritises the development of new work and ideas rather than the presentation of existing or completed projects. There is no expectation of a finished or polished outcome; the creative process is considered just as important as the result. Proposals are welcomed from artists and creatives working across all disciplines. EOIs close: 11 January 2027 Applicants notified: By 3 February 2027 Residency period: 8 March – 10 April 2027 https://theoldambulancestation.com/takeover-2027?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAacTkbIMQjxVj1Fkhe6TAms4lLyOFu_-krGhHsSNHsitSqWVrQ5kaAr4m2mwcA_aem_4UwgDGcBeDneywljbBdnGg Info not available gallery@theoldambulancestation.com",
+    "relevant": true,
+    "english": true,
+    "category": "Residency",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2027-01-11",
+    "amount": "$2,000",
+    "entry_fee": "",
+    "description": "TAKEOVER returns in 2027, inviting artists and creatives to explore the possibilities within The Old Ambulance Station in Nambour.Four supported residencies are available across fo",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Multidisciplinary"
+    ],
+    "first_seen": "2026-11-14",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
+  "a6d71398afa96e6825b2168bd8ad7c100de76d7f": {
+    "id": "a6d71398afa96e6825b2168bd8ad7c100de76d7f",
+    "source": "BNE Art: Opportunities",
+    "title": "Millmerran Artist Residency – Expressions of Interest",
+    "link": "https://bneart.com/millmerran-artist-residency-expressions-of-interest/",
+    "summary": "Deadline: November 20. Millmerran Artist Residency – Expressions of Interest – BNE ART - Brisbane Art Guide Skip to content Menu Millmerran Artist Residency – Expressions of Interest Deadline: Deadline: November 20 Expressions of Interest are invited for the upcoming QAGOMA Touring Millmerran Artist Residency. Coordinated by QAGOMA in collaboration with Toowoomba Regional Art Gallery and Millmerran Arts Council, and developed with the generous support of Nell Macqueen and family, the Millmerran Artist Residency is the first in a series of programs designed to foster artistic networks and build the skills of emerging artists in regional Queensland. The residency will respond to the work of renowned watercolourist Kenneth Macqueen, who farmed and painted the land around Mount Emlyn, leaving an enduring artistic legacy. Following the residency, participating artists will be invited to facilitate watercolour workshops in conjunction with QAGOMA’s regional tour of Under a Modern Sun: Art in Queensland 1930s–1950s . The exhibition will travel to 12 venues between October 2027 and February 2031. Residency Dates Arrival: Monday 14 December 2026, between 3pm and 4pm Departure: Wednesday 16 December 2026, at 3pm How to Apply Applicants are asked to submit: A short paragraph of up to 250 words describing their interest in watercolour and how a residency of this kind will extend and enrich their practice. A CV. Up to three images of their work in JPG format. Submit applications to: Henri van Noordenburg Program Officer, Regional Services regionaltouring@qagoma.qld.gov.au https://www.tr.qld.gov.au/Places-and-activities/Galleries-museums-and-theatres/Galleries/Toowoomba-Regional-Art-Gallery?utm_content=linkstream_link&utm_source=ig Info not available regionaltouring@qagoma.qld.gov.au",
+    "relevant": true,
+    "english": true,
+    "category": "Residency",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "2026-11-20",
+    "amount": "",
+    "entry_fee": "",
+    "description": "Expressions of Interest are invited for the upcoming QAGOMA Touring Millmerran Artist Residency.Coordinated by QAGOMA in collaboration with Toowoomba Regional Art Gallery and Millm",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Painting"
+    ],
+    "first_seen": "2026-11-14",
+    "closing_soon_sent": true,
+    "status": "active"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -30388,6 +30438,8 @@
     "big|idea|submit|summit|sydney|your": "04f1139332d6cdbd68b02f94e2d1aec4347907e8",
     "12|christmas|days|stallholders": "df0a2d7b1171615cfe5646ce8e85cc04c42d6a73",
     "bands|community|nsw": "41924172b0f1525902f6090d798d5122aa7ba54e",
-    "block|neighbourhood|parties|stallholders": "3e4ede81587d0120749e26369a1f53efc556efc7"
+    "block|neighbourhood|parties|stallholders": "3e4ede81587d0120749e26369a1f53efc556efc7",
+    "expressions|interest|takeover": "82c9d6ebd15ad6b9b0c0096fb8217192c2528c1b",
+    "expressions|interest|millmerran|residency": "a6d71398afa96e6825b2168bd8ad7c100de76d7f"
   }
 }
