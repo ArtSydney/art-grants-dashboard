@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-15T10:01:15+11:00",
-  "count": 335,
+  "generated": "2026-11-16T10:29:59+11:00",
+  "count": 332,
   "total": 538,
   "disciplines": [
     "Painting",
@@ -5226,7 +5226,7 @@
       ],
       "first_seen": "2026-09-03",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "fb4e8ce1b819c352374b97c55ebac61bef0fb20f",
@@ -5251,7 +5251,7 @@
       ],
       "first_seen": "2026-10-16",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "f61f143da88b23617eea71037a7c521e59d92d05",
@@ -5276,7 +5276,7 @@
       ],
       "first_seen": "2026-11-10",
       "closing_soon_sent": true,
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "fb774ce08ad292b1ae5d0de32974d626638ef3ee",
@@ -5597,7 +5597,7 @@
         "Photography"
       ],
       "first_seen": "2026-11-03",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
@@ -5623,7 +5623,7 @@
         "Sculpture"
       ],
       "first_seen": "2026-11-14",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
