@@ -4745,7 +4745,7 @@
     "source": "Artsoz prize registry",
     "title": "Sulman Prize",
     "link": "https://www.artgallery.nsw.gov.au/prizes/sulman/",
-    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Sir John Sulman Prize | Art Gallery of NSW We acknowledge the Gadigal, the traditional custodians of the Country on which the Art Gallery of New South Wales stands. Continue 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1991/92 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936",
+    "summary": "Location: NSW, Australia. Medium: Painting. Type: Subject / genre / mural. Tags: painting, mural. Client Challenge A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.",
     "relevant": true,
     "english": true,
     "category": "Prize",
@@ -4755,7 +4755,7 @@
     "deadline": "",
     "amount": "",
     "entry_fee": "",
-    "description": "",
+    "description": "Client Challenge A required part of this site couldn’t load.",
     "curator": "",
     "judge": "",
     "art_forms": [
@@ -15173,7 +15173,7 @@
     ],
     "first_seen": "2026-09-14",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "6d3a9e31bc505f7f6c5642bef2ce34c3af4ed15c": {
     "id": "6d3a9e31bc505f7f6c5642bef2ce34c3af4ed15c",
@@ -21468,7 +21468,7 @@
     ],
     "first_seen": "2026-10-02",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "ade0caaa077a8fd2dd9415218647b05d9f134080": {
     "id": "ade0caaa077a8fd2dd9415218647b05d9f134080",
@@ -26303,7 +26303,7 @@
     ],
     "first_seen": "2026-10-16",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "d43ce1158185735bea352af37306ea1dff425634": {
     "id": "d43ce1158185735bea352af37306ea1dff425634",
@@ -26427,7 +26427,7 @@
     ],
     "first_seen": "2026-10-19",
     "closing_soon_sent": true,
-    "status": "active"
+    "status": "closed"
   },
   "7d313fbfd43d390dfbd7e9928d875de9e70b94e8": {
     "id": "7d313fbfd43d390dfbd7e9928d875de9e70b94e8",
@@ -29435,6 +29435,119 @@
     "closing_soon_sent": true,
     "status": "active"
   },
+  "3cb5a9b6b0060ad1840091fc0503d8d75ec24c5e": {
+    "id": "3cb5a9b6b0060ad1840091fc0503d8d75ec24c5e",
+    "source": "Artshow.com Competitions",
+    "title": "33rd Annual Mulvane Art Fair - Topeka, KS",
+    "link": "https://artshow.com/juriedshows/Midwest.html#639288774427197121",
+    "summary": "Dropped: title matches noise keyword.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-11-17",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "a65d17b713651363796bd5a5ccfa7e85b0bc986d": {
+    "id": "a65d17b713651363796bd5a5ccfa7e85b0bc986d",
+    "source": "Neon Marketplace",
+    "title": "Lakemba Nights during Ramadan 2027 - Stall EOI Brief",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/lakemba-nights-during-ramadan-2027-stall-eoi-brief",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-11-17",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "0d0cdd556bb145e14c0e4f9fe81612ad16147a5d": {
+    "id": "0d0cdd556bb145e14c0e4f9fe81612ad16147a5d",
+    "source": "Neon Marketplace",
+    "title": "Singing harpist for an ethereal touch",
+    "link": "https://www.neonmarketplace.nsw.gov.au/opportunity/nd/singing-harpist-for-an-ethereal-touch",
+    "summary": "No opportunity signal found.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-11-17",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "0005908d6aec223b6c118e50af59a15f879ddef1": {
+    "id": "0005908d6aec223b6c118e50af59a15f879ddef1",
+    "source": "art-prizes.com",
+    "title": "Live Well Die Well Art Prize",
+    "link": "https://www.art-prizes.com/ArtPrize/Live-Well-Die-Well-Art-Prize",
+    "summary": "No visual art form detected.",
+    "relevant": false,
+    "english": true,
+    "category": "Other",
+    "au_eligibility": "unclear",
+    "location_scope": "Unknown",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "",
+    "entry_fee": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [],
+    "first_seen": "2026-11-17",
+    "closing_soon_sent": false,
+    "status": "suppressed"
+  },
+  "37b9663d0d1d6c94458bce4caf384711ba9a6d6d": {
+    "id": "37b9663d0d1d6c94458bce4caf384711ba9a6d6d",
+    "source": "art-prizes.com",
+    "title": "Adelaide Perry Prize for Drawing",
+    "link": "https://www.art-prizes.com/ArtPrize/Adelaide-Perry-Prize-for-Drawing",
+    "summary": "Deadline: 13/01/2027. Opens: 08/09/2026. Prize: AUD $27,000. Location: NSW, Australia. Eligibility: National Entries. Genre: Drawing",
+    "relevant": true,
+    "english": true,
+    "category": "Prize",
+    "au_eligibility": "eligible",
+    "location_scope": "Australia",
+    "eligibility_note": "",
+    "deadline": "",
+    "amount": "$27,000",
+    "entry_fee": "",
+    "description": "",
+    "curator": "",
+    "judge": "",
+    "art_forms": [
+      "Drawing"
+    ],
+    "first_seen": "2026-11-17",
+    "closing_soon_sent": false,
+    "status": "active"
+  },
   "__dedup_index__": {
     "groups|individuals|projects": "4439cb5a1c925e23fb1aa01e2d15c80c31b355cd",
     "organisations|projects": "e6947355bb5328d438d35fc183543288ff2f3835",
@@ -30440,6 +30553,11 @@
     "bands|community|nsw": "41924172b0f1525902f6090d798d5122aa7ba54e",
     "block|neighbourhood|parties|stallholders": "3e4ede81587d0120749e26369a1f53efc556efc7",
     "expressions|interest|takeover": "82c9d6ebd15ad6b9b0c0096fb8217192c2528c1b",
-    "expressions|interest|millmerran|residency": "a6d71398afa96e6825b2168bd8ad7c100de76d7f"
+    "expressions|interest|millmerran|residency": "a6d71398afa96e6825b2168bd8ad7c100de76d7f",
+    "33rd|fair|ks|mulvane|topeka": "3cb5a9b6b0060ad1840091fc0503d8d75ec24c5e",
+    "brief|during|eoi|lakemba|nights|ramadan|stall": "a65d17b713651363796bd5a5ccfa7e85b0bc986d",
+    "ethereal|harpist|singing|touch": "0d0cdd556bb145e14c0e4f9fe81612ad16147a5d",
+    "die|live|well": "0005908d6aec223b6c118e50af59a15f879ddef1",
+    "adelaide|drawing|perry": "37b9663d0d1d6c94458bce4caf384711ba9a6d6d"
   }
 }
