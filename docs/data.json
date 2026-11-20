@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-19T12:07:34+11:00",
+  "generated": "2026-11-20T12:09:12+11:00",
   "count": 330,
-  "total": 541,
+  "total": 539,
   "disciplines": [
     "Painting",
     "Drawing",
@@ -20,56 +20,6 @@
     "Multidisciplinary"
   ],
   "items": [
-    {
-      "id": "61d6bde40e959a24b8f79840e454544555a3fd7d",
-      "source": "BNE Art: Opportunities",
-      "title": "Kangaroo Valley Art Prize",
-      "link": "https://bneart.com/kangaroo-valley-art-prize-2/",
-      "summary": "Deadline: August 21. Kangaroo Valley Art Prize – BNE ART - Brisbane Art Guide Skip to content Menu Kangaroo Valley Art Prize Deadline: Deadline: August 21 Entries are now open for the Kangaroo Valley Art Prize 2026 , a national art prize presented as part of the Visual Arts in the Valley Festival . Offering a total prize pool of AUD $23,500 , the prize celebrates contemporary visual art from established, emerging and local artists. The 2026 exhibition will be curated by Olivia Welch , with judging by Steven Harvey . Artists may submit up to three artworks , with entry fees of AUD $30 per work or AUD $80 for three entries . Prizes include: Kangaroo Valley Art Prize: AUD $10,000 Highly Commended: AUD $3,000 Commended: AUD $2,000 Young & Emerging Artists Prize (30 years and under): AUD $4,000 Young & Emerging Commended: AUD $1,000 Salon of Local Artists Prize: AUD $1,500 Salon of Local Artists Commended: AUD $500 People’s Choice Award: AUD $1,000 Packing Room Prize: AUD $500 The finalists’ exhibition will be presented at Kangaroo Valley Hall during the Visual Arts in the Valley Festival , alongside artist studios, workshops, installations and public programs. https://www.artsinthevalley.net.au/visualarts2026 0467209819 info@artsinthevalley.net.au",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-08-21",
-      "amount": "$23,500",
-      "entry_fee": "",
-      "description": "Entries are now open for the Kangaroo Valley Art Prize 2026, a national art prize presented as part of the Visual Arts in the Valley Festival.Offering a total prize pool of AUD $23",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Installation"
-      ],
-      "first_seen": "2026-08-09",
-      "closing_soon_sent": true,
-      "status": "closed"
-    },
-    {
-      "id": "48f59228ee23a7fd336e2999a3cbfc5651a602ab",
-      "source": "BNE Art: Opportunities",
-      "title": "Bindi Digital Art Prize",
-      "link": "https://bneart.com/bindi-digital-art-prize/",
-      "summary": "Deadline: August 21. Bindi Digital Art Prize – BNE ART - Brisbane Art Guide Skip to content Menu Bindi Digital Art Prize Deadline: Deadline: August 21 Entries are now open for the Bindi Digital Art Prize 2026 , a national art prize celebrating digital and moving image practice by artists of all abilities across Australia. Presented by Bindi Enterprises , the non-acquisitive prize encourages artists to explore and celebrate digital media in all its forms, supporting creative and inclusive approaches to contemporary digital art. Prize Pool Winner: $3,000 Highly Commended: $500 People’s Choice Award: $500 Key Dates Entries Close: 21 August 2026 (4:00pm) Exhibition Opening & Winner Announcement: 23 October 2026 Eligibility Open to all artists living in Australia. Works must have been created within the past 12 months and not previously exhibited. Accepted Formats Digital still images (TIFF) Moving image works (MP4, including converted GIFs) Maximum of four artworks per artist Entry Fee $25 per artwork. https://www.bindienterprises.org.au 0418424122 bindidigitalart@lifestylesolutions.org.au",
-      "relevant": true,
-      "english": true,
-      "category": "Prize",
-      "au_eligibility": "eligible",
-      "location_scope": "Australia",
-      "eligibility_note": "",
-      "deadline": "2026-08-21",
-      "amount": "$3,000",
-      "entry_fee": "",
-      "description": "Entries are now open for the Bindi Digital Art Prize 2026, a national art prize celebrating digital and moving image practice by artists of all abilities across Australia.",
-      "curator": "",
-      "judge": "",
-      "art_forms": [
-        "Digital/New Media"
-      ],
-      "first_seen": "2026-08-09",
-      "closing_soon_sent": true,
-      "status": "closed"
-    },
     {
       "id": "7ecbff84fad4a7295dd5ccf77f37e27ec7808607",
       "source": "BNE Art: Opportunities",
@@ -5673,7 +5623,7 @@
         "Photography"
       ],
       "first_seen": "2026-08-09",
-      "closing_soon_sent": false,
+      "closing_soon_sent": true,
       "status": "active"
     },
     {
